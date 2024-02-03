@@ -40,6 +40,32 @@ Açılış küme parantezi `{` fonksiyon kodunun başlangıcını, kapanış kü
 
 İşlev "Merhaba dünya!" çıktısını verir.
 
-### Test Fonkssiyn
+### Fonksiyonlarda Argümanlar
 ---
-test merhaba dünya
+Fonksiyonlara argümanlar aracılığıyla bilgi aktarılabilir. Bir argüman tıpkı bir değişken gibidir.
+
+Bağımsız değişkenler fonksiyon adından sonra, parantez içinde belirtilir. İstediğiniz kadar argüman ekleyebilirsiniz, bunları virgülle ayırmanız yeterlidir.
+
+Aşağıdaki örnekte bir argümanı (`$fname`) olan bir fonksiyon bulunmaktadır. `aileIsmi()`fonksiyonu çağrıldığında, bir isim de iletiriz, örneğin `("Berat")` ve bu isim fonksiyonun içinde kullanılır, bu da birkaç farklı ilk isim, ancak eşit bir soyadı çıktısı verir:
+
+```PHP title:'Fonksiyonlarda argüman'
+function aileIsmi($isim) {
+  echo "$isim Masat.<br>";
+}
+
+familyName("Berat");
+familyName("Furkan");
+familyName("Osman");
+```
+
+Aşağıdaki örnekte iki bağımsız değişkenli (`$isim`, `$yil`) bir fonksiyon bulunmaktadır:
+
+```PHP title:'Fonksiyonlarda argümanlar'
+function aileIsmi($isim,$yil) {
+  echo "$isim Masat<br>Doğum Tarihi: $yil";
+}
+
+familyName("Berat",2003);
+familyName("Furkan",1999);
+familyName("Osman",1995);
+```
