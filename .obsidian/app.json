@@ -1,0 +1,17 @@
+{
+  "foldHeading": true,
+  "spellcheck": false,
+  "alwaysUpdateLinks": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 70
+  },
+  "promptDelete": false,
+  "autoConvertHtml": false,
+  "useTab": false,
+  "trashOption": "local",
+  "tabSize": 2
+}

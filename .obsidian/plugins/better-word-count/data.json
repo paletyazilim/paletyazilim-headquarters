@@ -1,0 +1,17 @@
+{
+  "statusBar": [],
+  "altBar": [
+    {
+      "prefix": "",
+      "suffix": " kelime",
+      "metric": {
+        "type": 2,
+        "counter": 0
+      }
+    }
+  ],
+  "countComments": false,
+  "collectStats": true,
+  "displaySectionCounts": false,
+  "pageWords": 300
+}
