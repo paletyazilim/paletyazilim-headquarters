@@ -41,3 +41,5 @@ Açılış küme parantezi `{` fonksiyon kodunun başlangıcını, kapanış kü
 İşlev "Merhaba dünya!" çıktısını verir.
 
 ### Test Fonkssiyn
+---
+test
