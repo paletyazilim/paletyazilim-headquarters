@@ -42,4 +42,4 @@ Açılış küme parantezi `{` fonksiyon kodunun başlangıcını, kapanış kü
 
 ### Test Fonkssiyn
 ---
-test
+test merhaba dünya
