@@ -5,6 +5,10 @@
       "path": "1- PHP'ye Giriş/18- PHP Functions (Fonksiyonlar).md"
     },
     {
+      "basename": "17- PHP Loops (Döngüler)",
+      "path": "1- PHP'ye Giriş/17- PHP Loops (Döngüler).md"
+    },
+    {
       "basename": "2- PHP Syntax (Söz Dizimi)",
       "path": "1- PHP'ye Giriş/2- PHP Syntax (Söz Dizimi).md"
     },
@@ -47,10 +51,6 @@
     {
       "basename": "10- PHP Casting (Tür Dönüşümü)",
       "path": "1- PHP'ye Giriş/10- PHP Casting (Tür Dönüşümü).md"
-    },
-    {
-      "basename": "17- PHP Loops (Döngüler)",
-      "path": "1- PHP'ye Giriş/17- PHP Loops (Döngüler).md"
     },
     {
       "basename": "14- PHP Operators (Operatörler)",
