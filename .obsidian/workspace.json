@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1- PHP'ye Giriş/9- PHP Numbers (Sayılar).md",
+                "file": "1- PHP'ye Giriş/18- PHP Functions (Fonksiyonlar).md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1- PHP'ye Giriş/9- PHP Numbers (Sayılar).md",
+                "file": "1- PHP'ye Giriş/18- PHP Functions (Fonksiyonlar).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1- PHP'ye Giriş/9- PHP Numbers (Sayılar).md",
+                "file": "1- PHP'ye Giriş/18- PHP Functions (Fonksiyonlar).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1- PHP'ye Giriş/9- PHP Numbers (Sayılar).md"
+                "file": "1- PHP'ye Giriş/18- PHP Functions (Fonksiyonlar).md"
               }
             }
           },
@@ -154,12 +154,11 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -174,24 +173,24 @@
   },
   "active": "1416c2c80499eae0",
   "lastOpenFiles": [
+    "1- PHP'ye Giriş/18- PHP Functions (Fonksiyonlar).md",
+    "1- PHP'ye Giriş/2- PHP Syntax (Söz Dizimi).md",
     "1- PHP'ye Giriş/8- PHP Strings (Dizeler).md",
+    "1- PHP'ye Giriş/12- PHP Constants (Sabitler).md",
+    "1- PHP'ye Giriş/9- PHP Numbers (Sayılar).md",
     "1- PHP'ye Giriş/7- PHP Data Types (Veri Türleri).md",
     "1- PHP'ye Giriş/6- PHP Echo-Print.md",
     "1- PHP'ye Giriş/5- PHP Variables Scope (Değişkenlerin Kapsamı).md",
     "1- PHP'ye Giriş/4- PHP Variables (Değişkenler).md",
     "1- PHP'ye Giriş/3- PHP Comments (Yorum).md",
-    "1- PHP'ye Giriş/2- PHP Syntax (Söz Dizimi).md",
     "1- PHP'ye Giriş/1- Başlarken.md",
-    "1- PHP'ye Giriş/18- PHP Functions (Fonksiyonlar).md",
     "1- PHP'ye Giriş/10- PHP Casting (Tür Dönüşümü).md",
     "1- PHP'ye Giriş/17- PHP Loops (Döngüler).md",
     "1- PHP'ye Giriş/14- PHP Operators (Operatörler).md",
     "1- PHP'ye Giriş/15- PHP If-Else-Elseif (Koşullar).md",
     "1- PHP'ye Giriş/16- PHP Switch.md",
     "1- PHP'ye Giriş/13- PHP Magic Constants (Ön Tanımlı Sabitler).md",
-    "1- PHP'ye Giriş/9- PHP Numbers (Sayılar).md",
     "1- PHP'ye Giriş/11- PHP Math.md",
-    "1- PHP'ye Giriş/12- PHP Constants (Sabitler).md",
     "Başlıksız.md",
     "2024-01-28.md",
     "Tutorial/6 - Comments.md",

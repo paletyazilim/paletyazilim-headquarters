@@ -39,3 +39,5 @@ mesajYazma();
 Açılış küme parantezi `{` fonksiyon kodunun başlangıcını, kapanış küme parantezi `}` ise fonksiyonun sonunu belirtir.
 
 İşlev "Merhaba dünya!" çıktısını verir.
+
+### Test
