@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1416c2c80499eae0",
+            "id": "f8bc7b91d609eb44",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1- PHP'ye Giriş/18- PHP Functions (Fonksiyonlar).md",
+                "file": "1- PHP'ye Giriş/19- PHP Arrays (Diziler).md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "19aedd361f9da44d",
@@ -93,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1- PHP'ye Giriş/18- PHP Functions (Fonksiyonlar).md",
+                "file": "1- PHP'ye Giriş/19- PHP Arrays (Diziler).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1- PHP'ye Giriş/18- PHP Functions (Fonksiyonlar).md",
+                "file": "1- PHP'ye Giriş/19- PHP Arrays (Diziler).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1- PHP'ye Giriş/18- PHP Functions (Fonksiyonlar).md"
+                "file": "1- PHP'ye Giriş/19- PHP Arrays (Diziler).md"
               }
             }
           },
@@ -171,25 +172,26 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "1416c2c80499eae0",
+  "active": "f8bc7b91d609eb44",
   "lastOpenFiles": [
+    "1- PHP'ye Giriş/19- PHP Arrays (Diziler).md",
     "1- PHP'ye Giriş/17- PHP Loops (Döngüler).md",
     "1- PHP'ye Giriş/18- PHP Functions (Fonksiyonlar).md",
+    "1- PHP'ye Giriş/7- PHP Data Types (Veri Türleri).md",
+    "1- PHP'ye Giriş/10- PHP Casting (Tür Dönüşümü).md",
+    "1- PHP'ye Giriş/15- PHP If-Else-Elseif (Koşullar).md",
+    "1- PHP'ye Giriş/14- PHP Operators (Operatörler).md",
+    "1- PHP'ye Giriş/12- PHP Constants (Sabitler).md",
+    "1- PHP'ye Giriş/13- PHP Magic Constants (Ön Tanımlı Sabitler).md",
+    "1- PHP'ye Giriş/1- Başlarken.md",
     "1- PHP'ye Giriş/2- PHP Syntax (Söz Dizimi).md",
     "1- PHP'ye Giriş/8- PHP Strings (Dizeler).md",
-    "1- PHP'ye Giriş/12- PHP Constants (Sabitler).md",
     "1- PHP'ye Giriş/9- PHP Numbers (Sayılar).md",
-    "1- PHP'ye Giriş/7- PHP Data Types (Veri Türleri).md",
     "1- PHP'ye Giriş/6- PHP Echo-Print.md",
     "1- PHP'ye Giriş/5- PHP Variables Scope (Değişkenlerin Kapsamı).md",
     "1- PHP'ye Giriş/4- PHP Variables (Değişkenler).md",
     "1- PHP'ye Giriş/3- PHP Comments (Yorum).md",
-    "1- PHP'ye Giriş/1- Başlarken.md",
-    "1- PHP'ye Giriş/10- PHP Casting (Tür Dönüşümü).md",
-    "1- PHP'ye Giriş/14- PHP Operators (Operatörler).md",
-    "1- PHP'ye Giriş/15- PHP If-Else-Elseif (Koşullar).md",
     "1- PHP'ye Giriş/16- PHP Switch.md",
-    "1- PHP'ye Giriş/13- PHP Magic Constants (Ön Tanımlı Sabitler).md",
     "1- PHP'ye Giriş/11- PHP Math.md",
     "Başlıksız.md",
     "2024-01-28.md",
@@ -198,7 +200,6 @@
     "Tutorial/27 - Array Sort.md",
     "Tutorial/26 - Array Methods.md",
     "Tutorial/3 - Output.md",
-    "Tutorial/28 - Array Iteration.md",
     "Tutorial/-a.canvas",
     "Pasted image 20231112165207.png",
     "Node.JS",

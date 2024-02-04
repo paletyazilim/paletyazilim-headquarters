@@ -120,7 +120,7 @@ NULL veri türündeki bir değişken, kendisine hiçbir değer atanmamış bir d
 Değişkenler, değer NULL olarak atanarak da boşaltılabilir:
 
 ```PHP
-$x = "Hello world!";
+$x = "Merhaba Dünya!";
 $x = null;
 var_dump($x);
 ```
@@ -143,7 +143,7 @@ Aynı değişkene bir dize atarsanız, tür bir dize olarak değişecektir:
 $x = 5;
 var_dump($x);
 
-$x = "Hello";
+$x = "Merhaba";
 var_dump($x);
 ```
 

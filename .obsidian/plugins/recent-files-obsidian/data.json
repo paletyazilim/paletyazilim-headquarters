@@ -1,12 +1,44 @@
 {
   "recentFiles": [
     {
-      "basename": "18- PHP Functions (Fonksiyonlar)",
-      "path": "1- PHP'ye Giriş/18- PHP Functions (Fonksiyonlar).md"
+      "basename": "19- PHP Arrays (Diziler)",
+      "path": "1- PHP'ye Giriş/19- PHP Arrays (Diziler).md"
     },
     {
       "basename": "17- PHP Loops (Döngüler)",
       "path": "1- PHP'ye Giriş/17- PHP Loops (Döngüler).md"
+    },
+    {
+      "basename": "18- PHP Functions (Fonksiyonlar)",
+      "path": "1- PHP'ye Giriş/18- PHP Functions (Fonksiyonlar).md"
+    },
+    {
+      "basename": "7- PHP Data Types (Veri Türleri)",
+      "path": "1- PHP'ye Giriş/7- PHP Data Types (Veri Türleri).md"
+    },
+    {
+      "basename": "10- PHP Casting (Tür Dönüşümü)",
+      "path": "1- PHP'ye Giriş/10- PHP Casting (Tür Dönüşümü).md"
+    },
+    {
+      "basename": "15- PHP If-Else-Elseif (Koşullar)",
+      "path": "1- PHP'ye Giriş/15- PHP If-Else-Elseif (Koşullar).md"
+    },
+    {
+      "basename": "14- PHP Operators (Operatörler)",
+      "path": "1- PHP'ye Giriş/14- PHP Operators (Operatörler).md"
+    },
+    {
+      "basename": "12- PHP Constants (Sabitler)",
+      "path": "1- PHP'ye Giriş/12- PHP Constants (Sabitler).md"
+    },
+    {
+      "basename": "13- PHP Magic Constants (Ön Tanımlı Sabitler)",
+      "path": "1- PHP'ye Giriş/13- PHP Magic Constants (Ön Tanımlı Sabitler).md"
+    },
+    {
+      "basename": "1- Başlarken",
+      "path": "1- PHP'ye Giriş/1- Başlarken.md"
     },
     {
       "basename": "2- PHP Syntax (Söz Dizimi)",
@@ -17,16 +49,8 @@
       "path": "1- PHP'ye Giriş/8- PHP Strings (Dizeler).md"
     },
     {
-      "basename": "12- PHP Constants (Sabitler)",
-      "path": "1- PHP'ye Giriş/12- PHP Constants (Sabitler).md"
-    },
-    {
       "basename": "9- PHP Numbers (Sayılar)",
       "path": "1- PHP'ye Giriş/9- PHP Numbers (Sayılar).md"
-    },
-    {
-      "basename": "7- PHP Data Types (Veri Türleri)",
-      "path": "1- PHP'ye Giriş/7- PHP Data Types (Veri Türleri).md"
     },
     {
       "basename": "6- PHP Echo-Print",
@@ -45,28 +69,8 @@
       "path": "1- PHP'ye Giriş/3- PHP Comments (Yorum).md"
     },
     {
-      "basename": "1- Başlarken",
-      "path": "1- PHP'ye Giriş/1- Başlarken.md"
-    },
-    {
-      "basename": "10- PHP Casting (Tür Dönüşümü)",
-      "path": "1- PHP'ye Giriş/10- PHP Casting (Tür Dönüşümü).md"
-    },
-    {
-      "basename": "14- PHP Operators (Operatörler)",
-      "path": "1- PHP'ye Giriş/14- PHP Operators (Operatörler).md"
-    },
-    {
-      "basename": "15- PHP If-Else-Elseif (Koşullar)",
-      "path": "1- PHP'ye Giriş/15- PHP If-Else-Elseif (Koşullar).md"
-    },
-    {
       "basename": "16- PHP Switch",
       "path": "1- PHP'ye Giriş/16- PHP Switch.md"
-    },
-    {
-      "basename": "13- PHP Magic Constants (Ön Tanımlı Sabitler)",
-      "path": "1- PHP'ye Giriş/13- PHP Magic Constants (Ön Tanımlı Sabitler).md"
     },
     {
       "basename": "11- PHP Math",
