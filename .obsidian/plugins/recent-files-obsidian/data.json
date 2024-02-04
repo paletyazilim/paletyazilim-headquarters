@@ -5,6 +5,10 @@
       "path": "1- PHP'ye Giriş/19- PHP Arrays (Diziler).md"
     },
     {
+      "basename": "2- PHP Syntax (Söz Dizimi)",
+      "path": "1- PHP'ye Giriş/2- PHP Syntax (Söz Dizimi).md"
+    },
+    {
       "basename": "17- PHP Loops (Döngüler)",
       "path": "1- PHP'ye Giriş/17- PHP Loops (Döngüler).md"
     },
@@ -39,10 +43,6 @@
     {
       "basename": "1- Başlarken",
       "path": "1- PHP'ye Giriş/1- Başlarken.md"
-    },
-    {
-      "basename": "2- PHP Syntax (Söz Dizimi)",
-      "path": "1- PHP'ye Giriş/2- PHP Syntax (Söz Dizimi).md"
     },
     {
       "basename": "8- PHP Strings (Dizeler)",

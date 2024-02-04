@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "69c16ee7fda9c9cb",
+        "id": "51d8bc3904c7612d",
         "type": "tabs",
         "children": [
           {
-            "id": "f8bc7b91d609eb44",
+            "id": "a67517d687da04ea",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -77,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "19aedd361f9da44d",
@@ -172,8 +171,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f8bc7b91d609eb44",
+  "active": "a67517d687da04ea",
   "lastOpenFiles": [
+    "1- PHP'ye Giriş/2- PHP Syntax (Söz Dizimi).md",
     "1- PHP'ye Giriş/19- PHP Arrays (Diziler).md",
     "1- PHP'ye Giriş/17- PHP Loops (Döngüler).md",
     "1- PHP'ye Giriş/18- PHP Functions (Fonksiyonlar).md",
@@ -184,7 +184,6 @@
     "1- PHP'ye Giriş/12- PHP Constants (Sabitler).md",
     "1- PHP'ye Giriş/13- PHP Magic Constants (Ön Tanımlı Sabitler).md",
     "1- PHP'ye Giriş/1- Başlarken.md",
-    "1- PHP'ye Giriş/2- PHP Syntax (Söz Dizimi).md",
     "1- PHP'ye Giriş/8- PHP Strings (Dizeler).md",
     "1- PHP'ye Giriş/9- PHP Numbers (Sayılar).md",
     "1- PHP'ye Giriş/6- PHP Echo-Print.md",
