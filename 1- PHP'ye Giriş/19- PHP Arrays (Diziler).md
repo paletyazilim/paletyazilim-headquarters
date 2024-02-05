@@ -98,6 +98,247 @@ $dizi["meyve"] = "kiraz";
 
 ## Diziye Erişme
 ---
+Bir dizi öğesine erişmek için, dizinli diziler için indeks numarasına ve ilişkisel diziler için anahtar adına başvurabilirsiniz.
+
+```PHP title:'İndeksli bir diziye erişim'
+$arabalar = array("Volvo", "BMW", "Toyota");
+echo $arabalar[2];
+```
+
+**Not:** İlk öğenin indeksi 0'dır.
+
+İlişkisel bir dizideki öğelere erişmek için anahtar adını kullanın:
+
+```PHP title:'İlişkisel bir diziye erişim'
+$araba = array("marka" => "Ford", "model" => "Mustang", "yıl" => 1964);
+echo $araba["yıl"];
+```
+
+Bir diziye erişirken hem çift hem de tek tırnak kullanabilirsiniz:
+
+```PHP title:'Tek tırnak ve çift tırnak kullanımı'
+echo $araba["model"];
+echo $araba['model'];
+```
+
+### Fonksiyon Öğesine Erişme
+---
+Dizi öğeleri, fonksiyon da dahil olmak üzere herhangi bir veri türünü barındırabilir.
+
+Fonksiyon tipi veri türlerini çalıştırmak için indeks numarasını ve ardından parantez `()` işaretini kullanın:
+
+```PHP title:'İndeksli dizide fonksiyon öğesine erişme'
+function testFonksiyon() {
+  echo "Ben bir fonksiyon öğesiyim!";
+}
+
+$dizi = array("Volvo", 15, testFonksiyon);
+
+$dizi[2]();
+```
+
+Fonksiyon bir ilişkisel dizideki bir öğe olduğunda anahtar adını kullanarak çağırabilirsiniz:
+
+```PHP title:'İlişkisel dizide fonksiyon öğesine erişme'
+function testFonksiyon() {
+  echo "Ben bir fonksiyon öğesiyim!";
+}
+
+$dizi = array("araba" => "Volvo", "yaş" => 15, "fonksiyon" => testFonksiyon);
+
+$dizi["fonksiyon"]();
+```
+
+## Dizi Güncelleme
+---
+Varolan bir dizi öğesini güncelleştirmek için, indeksli diziler için indeks numarasına, ilişkisel diziler için anahtar adına başvurabilirsiniz.
+
+```PHP title:'İndeksli bir dizinin öğesini güncelleme'
+$arabalar = array("Volvo", "BMW", "Toyota");
+$arabalar[1] = "Ford";
+```
+
+>**Not:** İlk öğenin indeksi 0'dır.
+
+İlişkisel bir dizideki öğeleri güncellemek için anahtar adını kullanın:
+
+```PHP title:'İlişkisel bir dizinin öğesini güncelleme'
+$araba = array("marka" => "Ford", "model" => "Mustang", "yıl" => 1964);
+$cars["marka"] = 2024;
+```
+
+### Döngü Kullanarak Dizi Güncelleme
+---
+Bir `foreach` döngüsünde öğe değerlerini değiştirirken kullanılacak farklı teknikler vardır.
+
+Bunun bir yolu, öğe değerini referans olarak atamak için atamaya `&` karakterini eklemek ve böylece döngü içindeki dizi öğesinde yapılan herhangi bir değişikliğin orijinal dizide yapılmasını sağlamaktır:
+
+```PHP title='Döngü kullanarak dizi öğesini güncelleme' hl:3
+$arabalar = array("Volvo", "BMW", "Toyota");
+
+foreach ($arabalar as &$araba) {
+  $araba = "Ford";
+}
+unset($araba);
+var_dump($arabalar);
+```
+
+**Not:** Döngüden sonra `unset()` fonksiyonunu kullanmayı unutmayın.
+
+`unset($araba)` fonksiyonu kullanmamanız durumunda, `$araba` değişkeni son dizi öğesine referans olarak kalacaktır.
+
+Bunu göstermek için `foreach` döngüsünden sonra `$araba` değerini değiştirdiğimizde ne olduğuna bakın:
+
+```PHP title:'Verilen referansın kaldırılmaması'
+$arabalar = array("Volvo", "BMW", "Toyota");
+
+foreach ($arabalar as &$araba) {
+  $araba = "Ford";
+}
+$araba = "BMW";
+
+var_dump($arabalar);
+```
+
+## Dizi Silme
+---
+Bir diziden mevcut bir öğeyi silmek için `unset()` fonksiyonunu kullanabilirsiniz.
+
+`unset()` fonksiyonu belirtilen değişkenleri siler ve bu nedenle dizi öğelerini silmek için kullanılabilir:
+
+```PHP title:'İndeksli dizide öğe silme'
+$arabalar = array("Volvo", "BMW", "Toyota");
+unset($arabalar[1]);
+```
+
+İlişkisel bir diziden öğe kaldırmak için `unset()` işlevini kullanabilirsiniz, ancak indeks numarası yerine anahtar adına atıfta bulunabilirsiniz.
+
+```PHP title:'İlişkisel dizide öğe silme'
+$araba = array("marka" => "Ford", "model" => "Mustang", "yıl" => 1964);
+unset($araba["model"]);
+```
+
+### Çoklu Silme
+---
+`unset()` fonksiyonu sınırsız sayıda bağımsız argüman alır ve bu nedenle birden çok dizi öğesini silmek için kullanılabilir:
+
+```PHP title:'Çoklu dizi öğesi silme'
+$arabalar = array("Volvo", "BMW", "Toyota");
+unset($arabalar[0], $arabalar[1]);
+```
+
+Not: `unset()` fonksiyonu indeksleri yeniden **DÜZENLEMEZ**, silinen öğeler yeniden sıralanmaz kalan öğe taşıdığı indeks numarasında kalır.
+
+### `array_splice` Fonksiyonu
+---
+Silinen öğelerin yeniden düzenlemesini istiyorsanız, `array_splice()` fonksiyonunu kullanabilirsiniz.
+
+`array_splice()` fonksiyonu ile indeksi (nereden başlayacağınızı) ve kaç öğe silmek istediğinizi belirtirsiniz.
+
+```PHP title:'array_splice fonksiyonu ile silme işlemi'
+$arabalar = array("Volvo", "BMW", "Toyota");
+array_splice($arabalaar, 1, 1);
+```
+
+Silme işleminden sonra, dizi `0` indeksinden başlayarak otomatik olarak yeniden indekslenir ve boş olan indeks bulunursa kaydırma işlemi yapılır.
+
+## Dizileri Sıralama
+---
+Bir dizideki öğeler alfabetik veya sayısal sıraya göre, azalan veya artan şekilde sıralanabilir. Sıralamak için önceden tanımlı fonksiyonları kullanabilirsiniz.
+
+Bu bölümde, aşağıdaki PHP dizi sıralama işlevlerini inceleyeceğiz:
+
+- `sort()` - dizileri sıralar
+- `rsort()` - dizileri ters sıralar
+- `asort()` - ilişkisel dizileri değere göre sıralar
+- `ksort()` - ilişkisel dizileri anahtara göre sıralar
+- `arsort()` - ilişkisel dizileri değere göre ters sıralar
+- `krsort()` - ilişkisel dizileri anahtara göre ters sıralar
+
+### İndeksli Dizilerde Sıralama
+---
+#### `sort()`
+---
+Aşağıdaki örnek `$arabalar` dizisinin öğeleri alfabetik sıraya göre sıralar:
+
+```PHP title:'Alfabetik sıralama'
+$arabalar = array("Volvo", "BMW", "Toyota");
+sort($arabalar);
+```
+
+Aşağıdaki örnek `$sayilar` öğeleri küçükten-büyüğe doğru sıralar:
+
+```PHP title:'Sayısal sıralama'
+$sayilar = array(4, 6, 2, 22, 11);
+sort($sayilar);
+```
+
+Bir dizide hem dize hem de sayısal öğeler varsa önce alfabetik daha sonra sayısal sıralama yapılır:
+
+```PHP title:'Karmaşık sıralama'
+$dizi = array("Volvo", "BMW","Toyota",4,6,2,22,11);
+sort($dizi);
+```
+#### `rsort()`
+---
+Aşağıdaki örnek `$arabalar` dizisinin öğeleri azalan alfabetik sıraya göre sıralar:
+
+```PHP title:'Alfabetik sıralama'
+$arabalar = array("Volvo", "BMW", "Toyota");
+rsort($arabalar);
+```
+
+Aşağıdaki örnek `$sayilar` dizisinin elemanlarını büyükten-küçüğe doğru sıralar:
+
+```PHP title:'Sayısal sıralama'
+$sayilar = array(4, 6, 2, 22, 11);
+rsort($sayilar);
+```
+
+Bir dizide hem dize hem de sayısal öğeler varsa önce sayısal daha sonra alfabetik sıralama yapılır:
+
+```PHP title:'Karmaşık sıralama'
+$dizi = array("Volvo", "BMW","Toyota",4,6,2,22,11);
+rsort($dizi);
+```
+
+### İlişkisel Dizilerde Sıralama
+---
+#### `asort()`
+---
+Aşağıdaki örnek, bir ilişkisel diziyi değere göre sıralar:
+
+```PHP title:'Öğe değerine göre sıralama'
+$yas = array("Berat"=>20, "Furkan"=>29, "Osman"=>32);
+asort($yas);
+```
+
+#### `arsort()`
+---
+Aşağıdaki örnek, bir ilişkisel diziyi değere göre ters sıralar:
+
+```PHP 'Öğe değerine göre tersine sıralama'
+$yas = array("Berat"=>20, "Furkan"=>29, "Osman"=>32);
+arsort($yas);
+```
+
+#### `ksort()`
+---
+Aşağıdaki örnek, bir ilişkisel diziyi anahtara göre sıralar:
+
+```PHP title:'Öğe anahtarına göre sıralama'
+$yas = array("Berat"=>20, "Furkan"=>29, "Osman"=>32);
+ksort($yas);
+```
+
+#### `krsort()`
+---
+Aşağıdaki örnek, bir ilişkisel diziyi anahtara göre ters sıralar:
+
+```PHP title:'Öğe anahtarına göre ters sıralama'
+$yas = array("Berat"=>20, "Furkan"=>29, "Osman"=>32);
+krsort($yas);
+```
 
 ## İndeksli Diziler
 ---
@@ -217,6 +458,65 @@ $araba = array("marka"=>"Ford", "model"=>"Mustang", "yıl"=>1964);
 
 foreach ($araba as $anahtar => $deger) {
   echo "$anahtar: $deger <br>";
+}
+```
+
+## Çok Boyutlu Diziler
+---
+Önceki sayfalarda, anahtar/değer çiftlerinden oluşan tek bir liste olan dizileri tanımladık.
+
+Ancak, bazen birden fazla anahtar içeren değerleri saklamak istersiniz. Bunun için çok boyutlu dizilerimiz vardır.
+
+Çok boyutlu dizi, bir veya daha fazla dizi içeren bir dizidir.
+
+PHP iki, üç, dört, beş veya daha fazla derinliğe sahip çok boyutlu dizileri destekler. Ancak, üç seviyeden daha derin dizileri yönetmek çoğu insan için zordur.
+
+Bir dizinin boyutu, bir öğeyi seçmek için ihtiyacınız olan indis sayısını gösterir.
+
+- İki boyutlu bir dizide bir elemanı seçmek için iki indise ihtiyacınız vardır.
+- Üç boyutlu bir dizide bir elemanı seçmek için üç indise ihtiyacınız vardır.
+
+### İki Boyutlu Diziler
+---
+İki boyutlu bir dizi, dizilerden oluşan bir dizidir.
+
+İlk olarak, aşağıdaki tabloya bir göz atın:
+
+| İsim | Stok | Satılan |
+| ---- | ---- | ---- |
+| Elma | 20 | 6 |
+| Armut | 30 | 12 |
+| Kiraz | 10 | 3 |
+Yukarıdaki tablodaki verileri aşağıdaki gibi iki boyutlu bir dizide saklayabiliriz:
+
+```PHP title:'Basit bir iki boyutlu dizi'
+$meyveler = array (
+  array("Elma",20,6),
+  array("Armut",30,12),
+  array("Kiraz",10,3),
+);
+```
+
+Şimdi iki boyutlu `$meyveler` dizisi üç dizi içerir ve iki indisi vardır: satır ve sütun.
+
+`$meyveler` dizisinin öğelerine erişmek için iki indisi (satır ve sütun) işaret etmeliyiz:
+
+```PHP title:'İki boyutlu dizinin öğelerine erişme'
+echo $meyveler[0][0].": Stokta: ".$meyveler[0][1].", Satıldı: ".$meyveler[0][2].".<br>";
+echo $meyveler[1][0].": Stokta: ".$meyveler[1][1].", Satıldı: ".$meyveler[1][2].".<br>";
+echo $meyveler[2][0].": Stokta: ".$meyveler[2][1].", Satıldı: ".$meyveler[2][2].".<br>";
+```
+
+Ayrıca `$meyveler` dizisinin öğelerini almak için başka bir `for` döngüsünün içine bir `for` döngüsü koyabiliriz (hala iki indise işaret etmemiz gerekir):
+
+```PHP title:'Döngü ile iki boyutlu bir dizinin öğelerine  erişme'
+for ($satir = 0; $satir < 3; $satir++) {
+  echo "<p><b>Satır Numarası $satir</b></p>";
+  echo "<ul>";
+    for ($sutun = 0; $sutun < 3; $sutun++) {
+      echo "<li>".$meyveler[$satir][$sutun]."</li>";
+    }
+  echo "</ul>";
 }
 ```
 
