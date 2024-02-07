@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1- PHP'ye Giriş/20- PHP Superglobals.md",
+                "file": "2- PHP'de Formlar/2- Formları Doğrulama.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "19aedd361f9da44d",
@@ -94,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1- PHP'ye Giriş/20- PHP Superglobals.md",
+                "file": "2- PHP'de Formlar/2- Formları Doğrulama.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1- PHP'ye Giriş/20- PHP Superglobals.md",
+                "file": "2- PHP'de Formlar/2- Formları Doğrulama.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1- PHP'ye Giriş/20- PHP Superglobals.md"
+                "file": "2- PHP'de Formlar/2- Formları Doğrulama.md"
               }
             }
           },
@@ -174,9 +173,13 @@
   },
   "active": "a67517d687da04ea",
   "lastOpenFiles": [
-    "1- PHP'ye Giriş/19- PHP Arrays (Diziler).md",
-    "1- PHP'ye Giriş/20- PHP Superglobals.md",
     "1- PHP'ye Giriş/1- Başlarken.md",
+    "2- PHP'de Formlar/2- Formları Doğrulama.md",
+    "2- PHP'de Formlar/1- Formları Yakalama.md",
+    "1- PHP'ye Giriş/21- PHP RegEx.md",
+    "2- PHP'de Formlar",
+    "1- PHP'ye Giriş/20- PHP Superglobals.md",
+    "1- PHP'ye Giriş/19- PHP Arrays (Diziler).md",
     "1- PHP'ye Giriş/2- PHP Syntax (Söz Dizimi).md",
     "1- PHP'ye Giriş/18- PHP Functions (Fonksiyonlar).md",
     "1- PHP'ye Giriş/17- PHP Loops (Döngüler).md",
@@ -197,9 +200,6 @@
     "Başlıksız.md",
     "2024-01-28.md",
     "Tutorial/6 - Comments.md",
-    "Tutorial/10 - Operators.md",
-    "Tutorial/27 - Array Sort.md",
-    "Tutorial/26 - Array Methods.md",
     "Tutorial/-a.canvas",
     "Pasted image 20231112165207.png",
     "Node.JS",

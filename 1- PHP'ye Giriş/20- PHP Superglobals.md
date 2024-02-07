@@ -228,3 +228,213 @@ echo $_REQUEST['subject'] . "'nin Orijinal Web Adresi: " . $_REQUEST['web'];
 </body>
 </html>
 ```
+## `$_POST`
+---
+`$_POST`, HTTP POST yöntemi aracılığıyla alınan değişkenlerin bir dizisini içerir.
+
+HTTP POST yöntemi aracılığıyla değişkenleri göndermenin iki ana yolu vardır:
+
+- HTML formları
+- JavaScript HTTP istekleri
+
+### HTML Formlarında `$_POST`
+---
+Bir HTML formu, formun `method` niteliği "`POST`" olarak ayarlanmışsa HTTP POST yöntemi aracılığıyla bilgi gönderir.
+
+Bunu göstermek için basit bir HTML formu oluşturarak başlıyoruz:
+
+```HTML title:'HTML ile HTTP POST isteği göndermek'
+<html>
+<body>
+
+<form method="POST" action="kullanici_giris.php">
+  Kullanıcı Adı: <input type="text" name="kullaniciadi">
+  <input type="submit">
+</form>
+
+</body>
+</html>
+```
+
+Kullanıcı gönder düğmesine tıkladığında, form verileri `<form>` etiketinin `action` niteliğinde belirtilen bir PHP dosyasına gönderilir.
+
+Eylem dosyasında, giriş alanının değerini yakalamak için `$_POST` değişkenini kullanabiliriz.
+
+```PHP title:'$_POST ile yakalanan veriyi değişkene atama'
+$kadi = $_POST['kullaniciadi'];
+echo $kadi;
+```
+
+Aşağıdaki örnekte HTML formunu ve PHP kodunu aynı PHP dosyasına koyduk.
+
+Ayrıca güvenlik için bazı ekstra hatlar ekledik.
+
+```PHP title:'POST yöntemi ile gönderilen verileri yakalama'
+<html>
+<body>
+
+<form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
+  Kullanıcı Adı: <input type="text" name="kullaniciadi">
+  <input type="submit">
+</form>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $kadi = htmlspecialchars($_POST['kullaniciadi']);
+  if (empty($name)) {
+    echo "Kullanıcı Adı Boş";
+  } else {
+    echo $name;
+  }
+}
+?>
+
+</body>
+</html>
+```
+
+### JavaScript HTTP İsteklerinde `$_POST`
+---
+JavaScript'te bir HTTP isteği gönderirken, HTTP yönteminin POST olduğunu belirtebilirsiniz.
+
+Bunu göstermek için bir HTTP isteği içeren bir JavaScript işlevi oluşturarak başlıyoruz:
+
+```JS title:'JavaScript ile HTTP POST isteği göndermek' hl:5-7
+function istekFonksiyonu() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.open("POST", "kullanici_giris.php");
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.onload = function() {
+    document.getElementById("test").innerHTML = this.responseText;
+  }
+  xhttp.send("kullaniciadi=Berat");
+  }
+}
+```
+
+Yukarıdaki kod:
+
+- Bir HTTP isteği başlatın
+- HTTP yöntemini POST olarak ayarlayın.
+- Geçerli bir istek başlığı ayarlayın.
+- İstek tamamlandığında çalıştırılacak bir fonksiyon oluşturun.
+- HTTP isteğini `kullaniciadi` değişkeni `Berat` olarak ayarlanmış olarak gönderilir.
+- İstek tamamlandığında yürütülecek olan işaretlenmiş kod parçası, alınan yanıtı `id="test"` ile bir HTML öğesine yazmaya çalışacaktır.
+
+Böyle bir öğe ve ayrıca fonksiyonu çalıştıran bir düğme içeren bir HTML sayfası yapalım:
+
+```HTML
+<html>
+<script>
+function istekFonksiyonu() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.open("POST", "kullanici_giris.php");
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.onload = function() {
+    document.getElementById("test").innerHTML = this.responseText;
+  }
+  xhttp.send("kullaniciadi=Berat");
+  }
+}
+</script>
+<body>
+
+<button onclick="istekFonksiyonu()">Bana Tıkla!</button>
+
+<h1 id="test"></h1>
+
+</body>
+</html>
+```
+
+Bu HTTP isteğini alan PHP dosyasında (`kullanici_giris.php`), `kullaniciadi` değişkenini almak için `$_POST` değişkenini kullanırız ve bunu bir yanıt olarak yazarız:
+
+```PHP title:'JavaScript ile gönderilen değeri ekrana yazdırma'
+$kadi = $_POST['kullaniciadi'];
+echo $kadi;
+```
+
+## `$_GET`
+---
+`$_GET`, HTTP GET yöntemi aracılığıyla alınan değişkenlerden oluşan bir dizi içerir.
+
+HTTP GET yöntemi aracılığıyla değişken göndermenin iki ana yolu vardır:
+
+- URL'deki sorgu dizeleri
+- HTML Formları
+
+### URL'deki Sorgu Dizeleri
+---
+Sorgu dizesi, bir URL'nin sonuna eklenen verilerdir. Aşağıdaki bağlantıda, `?` işaretinden sonraki her şey sorgu dizesinin bir parçasıdır:
+
+```HTML title:'Örnek bir URL sorgu dizesi'
+<a href="kullanici_giris.php?kullaniciadi=Berat&sife=123456">Test $GET</a>
+```
+
+Yukarıdaki sorgu dizesi iki anahtar/değer çifti içerir ve her biri `&` ile ayrılır:
+
+- `kullaniciadi=Berat`
+- `sifre=123456`
+
+PHP dosyasında sorgu dizesinin değerlerini yakalamak için `$_GET` superglobalini kullanabiliriz.
+
+```PHP title:'URL sorgularını yakalamak'
+<html>
+<body>
+
+<?php
+echo "Kullanıcı Adı: " . $_GET['kullaniciadi'] . "<br> Şifre:" . $_GET['sifre'];
+?>
+
+</body>
+</html>
+```
+
+### HTML Formlarında `$_GET`
+---
+Bir HTML formu, formun `method` niteliği "GET" olarak ayarlanmışsa HTTP GET yöntemi aracılığıyla bilgi gönderir.
+
+Bunu göstermek için basit bir HTML formu oluşturarak başlıyoruz:
+
+```HTML title:'HTML ile HTTP GET isteği göndermek'
+<html>
+<body>
+
+<form action="kullanici_giris.php" method="GET">
+  Kullanıcı Adı: <input type="text" name="kullaniciadi">
+  E-posta: <input type="text" name="eposta">
+  <input type="submit">
+</form>
+
+</body>
+</html>
+```
+
+Kullanıcı gönder düğmesine tıkladığında, form verileri `<form>` etiketinin `action` niteliğinde belirtilen bir PHP dosyasına gönderilir.
+
+Form alanları, girdilerinizle birlikte PHP dosyasına sorgu dizeleri olarak gönderilir:
+
+```
+kullanici_giris.php?kullaniciadi=Berat&eposta=birisi@ornek.com
+```
+
+Eylem dosyasında, giriş alanlarının değerini yakalamak için `$_GET` superglobalini kullanabiliriz.
+
+```PHP title:'$_GET ile yakalanan veriyi değişkene atama'
+<html>
+<body>
+
+Merhaba <?php echo $_GET["kullaniciadi"]; ?><br>
+E-Postanız: <?php echo $_GET["eposta"]; ?>
+
+</body>
+</html>
+```
+
+>PHP formlarını işlerken GÜVENLİĞİ düşünün!
+>
+>Yukarıdaki örnek herhangi bir form doğrulaması içermez, sadece form verilerini nasıl gönderebileceğinizi ve alabileceğinizi gösterir.
+>
+>PHP formlarının güvenlik göz önünde bulundurularak işlenmesi hakkında daha fazla bilgiyi Form Doğrulama bölümünde bulabilirsiniz.
+>
+>Form verilerinin doğru şekilde işlenmesi, formunuzu bilgisayar korsanlarından ve spam gönderenlerden korumak için önemlidir!
