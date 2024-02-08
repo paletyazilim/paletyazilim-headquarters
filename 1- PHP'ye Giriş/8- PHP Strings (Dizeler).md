@@ -1,4 +1,3 @@
-
 ## Dizelerin Temel Özellikleri
 ---
 Dizi, harflerin sıralanmış halidir, tıpkı "Merhaba dünya!" gibi.

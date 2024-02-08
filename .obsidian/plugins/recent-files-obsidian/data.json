@@ -1,20 +1,60 @@
 {
   "recentFiles": [
     {
-      "basename": "2- Formları Doğrulama",
-      "path": "2- PHP'de Formlar/2- Formları Doğrulama.md"
+      "basename": "2- PHP Include",
+      "path": "3- İleri Düzey PHP/2- PHP Include.md"
     },
     {
-      "basename": "1- Başlarken",
-      "path": "1- PHP'ye Giriş/1- Başlarken.md"
+      "basename": "1- PHP Date and Time (Tarih ve Zaman)",
+      "path": "3- İleri Düzey PHP/1- PHP Date and Time (Tarih ve Zaman).md"
+    },
+    {
+      "basename": "6- Formu Tamamlama",
+      "path": "2- PHP'de Formlar/6- Formu Tamamlama.md"
+    },
+    {
+      "basename": "4- Formlarda Zorunluluk",
+      "path": "2- PHP'de Formlar/4- Formlarda Zorunluluk.md"
+    },
+    {
+      "basename": "3- Formları Doğrulama",
+      "path": "2- PHP'de Formlar/3- Formları Doğrulama.md"
+    },
+    {
+      "basename": "2- Form Güvenliği",
+      "path": "2- PHP'de Formlar/2- Form Güvenliği.md"
     },
     {
       "basename": "1- Formları Yakalama",
       "path": "2- PHP'de Formlar/1- Formları Yakalama.md"
     },
     {
+      "basename": "5- Formlarda URL ve E-posta",
+      "path": "2- PHP'de Formlar/5- Formlarda URL ve E-posta.md"
+    },
+    {
+      "basename": "8- PHP Strings (Dizeler)",
+      "path": "1- PHP'ye Giriş/8- PHP Strings (Dizeler).md"
+    },
+    {
+      "basename": "9- PHP Numbers (Sayılar)",
+      "path": "1- PHP'ye Giriş/9- PHP Numbers (Sayılar).md"
+    },
+    {
+      "basename": "10- PHP Casting (Tür Dönüşümü)",
+      "path": "1- PHP'ye Giriş/10- PHP Casting (Tür Dönüşümü).md"
+    },
+    {
       "basename": "21- PHP RegEx",
       "path": "1- PHP'ye Giriş/21- PHP RegEx.md"
+    },
+    {
+      "basename": "18- PHP Functions (Fonksiyonlar)",
+      "path": "1- PHP'ye Giriş/18- PHP Functions (Fonksiyonlar).md"
+    },
+    {
+      "basename": "1- Başlarken",
+      "path": "1- PHP'ye Giriş/1- Başlarken.md"
     },
     {
       "basename": "20- PHP Superglobals",
@@ -27,10 +67,6 @@
     {
       "basename": "2- PHP Syntax (Söz Dizimi)",
       "path": "1- PHP'ye Giriş/2- PHP Syntax (Söz Dizimi).md"
-    },
-    {
-      "basename": "18- PHP Functions (Fonksiyonlar)",
-      "path": "1- PHP'ye Giriş/18- PHP Functions (Fonksiyonlar).md"
     },
     {
       "basename": "17- PHP Loops (Döngüler)",
@@ -49,10 +85,6 @@
       "path": "1- PHP'ye Giriş/11- PHP Math.md"
     },
     {
-      "basename": "9- PHP Numbers (Sayılar)",
-      "path": "1- PHP'ye Giriş/9- PHP Numbers (Sayılar).md"
-    },
-    {
       "basename": "7- PHP Data Types (Veri Türleri)",
       "path": "1- PHP'ye Giriş/7- PHP Data Types (Veri Türleri).md"
     },
@@ -67,14 +99,6 @@
     {
       "basename": "3- PHP Comments (Yorum)",
       "path": "1- PHP'ye Giriş/3- PHP Comments (Yorum).md"
-    },
-    {
-      "basename": "8- PHP Strings (Dizeler)",
-      "path": "1- PHP'ye Giriş/8- PHP Strings (Dizeler).md"
-    },
-    {
-      "basename": "10- PHP Casting (Tür Dönüşümü)",
-      "path": "1- PHP'ye Giriş/10- PHP Casting (Tür Dönüşümü).md"
     },
     {
       "basename": "14- PHP Operators (Operatörler)",
