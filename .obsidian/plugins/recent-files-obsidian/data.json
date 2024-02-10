@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "1- PHP Date and Time (Tarih ve Zaman)",
-      "path": "3- İleri Düzey PHP/1- PHP Date and Time (Tarih ve Zaman).md"
+      "basename": "6- PHP Filters (Filtreleme)",
+      "path": "3- İleri Düzey PHP/6- PHP Filters (Filtreleme).md"
+    },
+    {
+      "basename": "5- PHP Session",
+      "path": "3- İleri Düzey PHP/5- PHP Session.md"
+    },
+    {
+      "basename": "4- PHP Cookies",
+      "path": "3- İleri Düzey PHP/4- PHP Cookies.md"
     },
     {
       "basename": "3- PHP File",
@@ -15,6 +23,10 @@
     {
       "basename": "6- Formu Tamamlama",
       "path": "2- PHP'de Formlar/6- Formu Tamamlama.md"
+    },
+    {
+      "basename": "1- PHP Date and Time (Tarih ve Zaman)",
+      "path": "3- İleri Düzey PHP/1- PHP Date and Time (Tarih ve Zaman).md"
     },
     {
       "basename": "4- Formlarda Zorunluluk",

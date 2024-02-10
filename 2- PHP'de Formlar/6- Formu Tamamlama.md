@@ -28,7 +28,7 @@ Cinsiyet:
 <br><br>
 ```
 
-### Örneğin Bütün Kodu
+### Kodun Tamamlanmış Hali
 ---
 
 ```PHP title:'Bütün kod'
