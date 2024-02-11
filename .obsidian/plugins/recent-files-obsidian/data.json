@@ -1,20 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "6- PHP Filters (Filtreleme)",
-      "path": "3- İleri Düzey PHP/6- PHP Filters (Filtreleme).md"
+      "basename": "9- PHP Exceptions (Hata Yakalama)",
+      "path": "3- İleri Düzey PHP/9- PHP Exceptions (Hata Yakalama).md"
+    },
+    {
+      "basename": "8- PHP JSON",
+      "path": "3- İleri Düzey PHP/8- PHP JSON.md"
+    },
+    {
+      "basename": "6- PHP Filters (Filtreleme) - (Ç)",
+      "path": "3- İleri Düzey PHP/6- PHP Filters (Filtreleme) - (Ç).md"
+    },
+    {
+      "basename": "8- PHP Strings (Dizeler) - (Ç)",
+      "path": "1- PHP'ye Giriş/8- PHP Strings (Dizeler) - (Ç).md"
+    },
+    {
+      "basename": "7- PHP Callback Functions",
+      "path": "3- İleri Düzey PHP/7- PHP Callback Functions.md"
     },
     {
       "basename": "5- PHP Session",
       "path": "3- İleri Düzey PHP/5- PHP Session.md"
     },
     {
-      "basename": "4- PHP Cookies",
-      "path": "3- İleri Düzey PHP/4- PHP Cookies.md"
-    },
-    {
       "basename": "3- PHP File",
       "path": "3- İleri Düzey PHP/3- PHP File.md"
+    },
+    {
+      "basename": "4- PHP Cookies",
+      "path": "3- İleri Düzey PHP/4- PHP Cookies.md"
     },
     {
       "basename": "2- PHP Include",
@@ -47,10 +63,6 @@
     {
       "basename": "5- Formlarda URL ve E-posta",
       "path": "2- PHP'de Formlar/5- Formlarda URL ve E-posta.md"
-    },
-    {
-      "basename": "8- PHP Strings (Dizeler)",
-      "path": "1- PHP'ye Giriş/8- PHP Strings (Dizeler).md"
     },
     {
       "basename": "9- PHP Numbers (Sayılar)",

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3- İleri Düzey PHP/6- PHP Filters (Filtreleme).md",
+                "file": "3- İleri Düzey PHP/9- PHP Exceptions (Hata Yakalama).md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3- İleri Düzey PHP/6- PHP Filters (Filtreleme).md",
+                "file": "3- İleri Düzey PHP/9- PHP Exceptions (Hata Yakalama).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3- İleri Düzey PHP/6- PHP Filters (Filtreleme).md",
+                "file": "3- İleri Düzey PHP/9- PHP Exceptions (Hata Yakalama).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3- İleri Düzey PHP/6- PHP Filters (Filtreleme).md"
+                "file": "3- İleri Düzey PHP/9- PHP Exceptions (Hata Yakalama).md"
               }
             }
           },
@@ -173,10 +173,14 @@
   },
   "active": "e517a783a5bb8142",
   "lastOpenFiles": [
+    "3- İleri Düzey PHP/8- PHP JSON.md",
+    "3- İleri Düzey PHP/9- PHP Exceptions (Hata Yakalama).md",
+    "3- İleri Düzey PHP/6- PHP Filters (Filtreleme) - (Ç).md",
+    "1- PHP'ye Giriş/8- PHP Strings (Dizeler) - (Ç).md",
+    "3- İleri Düzey PHP/7- PHP Callback Functions.md",
     "3- İleri Düzey PHP/5- PHP Session.md",
-    "3- İleri Düzey PHP/6- PHP Filters (Filtreleme).md",
-    "3- İleri Düzey PHP/4- PHP Cookies.md",
     "3- İleri Düzey PHP/3- PHP File.md",
+    "3- İleri Düzey PHP/4- PHP Cookies.md",
     "3- İleri Düzey PHP/2- PHP Include.md",
     "2- PHP'de Formlar/6- Formu Tamamlama.md",
     "3- İleri Düzey PHP/1- PHP Date and Time (Tarih ve Zaman).md",
@@ -186,7 +190,6 @@
     "2- PHP'de Formlar/2- Form Güvenliği.md",
     "2- PHP'de Formlar/1- Formları Yakalama.md",
     "2- PHP'de Formlar/5- Formlarda URL ve E-posta.md",
-    "1- PHP'ye Giriş/8- PHP Strings (Dizeler).md",
     "1- PHP'ye Giriş/9- PHP Numbers (Sayılar).md",
     "1- PHP'ye Giriş/10- PHP Casting (Tür Dönüşümü).md",
     "1- PHP'ye Giriş/21- PHP RegEx.md",
@@ -199,9 +202,6 @@
     "1- PHP'ye Giriş/2- PHP Syntax (Söz Dizimi).md",
     "1- PHP'ye Giriş/17- PHP Loops (Döngüler).md",
     "1- PHP'ye Giriş/15- PHP If-Else-Elseif (Koşullar).md",
-    "1- PHP'ye Giriş/13- PHP Magic Constants (Ön Tanımlı Sabitler).md",
-    "1- PHP'ye Giriş/11- PHP Math.md",
-    "1- PHP'ye Giriş/7- PHP Data Types (Veri Türleri).md",
     "Tutorial/-a.canvas",
     "Pasted image 20231112165207.png",
     "Node.JS",
