@@ -1,12 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "9- PHP Exceptions (Hata Yakalama)",
-      "path": "3- İleri Düzey PHP/9- PHP Exceptions (Hata Yakalama).md"
+      "basename": "6- Inheritance (Miras)",
+      "path": "4- PHP OOP/6- Inheritance (Miras).md"
     },
     {
-      "basename": "8- PHP JSON",
-      "path": "3- İleri Düzey PHP/8- PHP JSON.md"
+      "basename": "1- OOP Nedir",
+      "path": "4- PHP OOP/1- OOP Nedir.md"
+    },
+    {
+      "basename": "9- Interfaces (Arayüzler)",
+      "path": "4- PHP OOP/9- Interfaces (Arayüzler).md"
+    },
+    {
+      "basename": "8- Soyut Sınıflar",
+      "path": "4- PHP OOP/8- Soyut Sınıflar.md"
+    },
+    {
+      "basename": "7- Sınıflarda Sabitler",
+      "path": "4- PHP OOP/7- Sınıflarda Sabitler.md"
+    },
+    {
+      "basename": "4- Destructor (Yıkıcı Metotlar)",
+      "path": "4- PHP OOP/4- Destructor (Yıkıcı Metotlar).md"
+    },
+    {
+      "basename": "3- Constructor (Yapıcı Metotlar)",
+      "path": "4- PHP OOP/3- Constructor (Yapıcı Metotlar).md"
+    },
+    {
+      "basename": "2- Sınıflar ve Nesneler",
+      "path": "4- PHP OOP/2- Sınıflar ve Nesneler.md"
+    },
+    {
+      "basename": "5- Erişim Belirleyicileri",
+      "path": "4- PHP OOP/5- Erişim Belirleyicileri.md"
     },
     {
       "basename": "6- PHP Filters (Filtreleme) - (Ç)",
@@ -15,6 +43,14 @@
     {
       "basename": "8- PHP Strings (Dizeler) - (Ç)",
       "path": "1- PHP'ye Giriş/8- PHP Strings (Dizeler) - (Ç).md"
+    },
+    {
+      "basename": "9- PHP Exceptions (Hata Yakalama)",
+      "path": "3- İleri Düzey PHP/9- PHP Exceptions (Hata Yakalama).md"
+    },
+    {
+      "basename": "8- PHP JSON",
+      "path": "3- İleri Düzey PHP/8- PHP JSON.md"
     },
     {
       "basename": "7- PHP Callback Functions",

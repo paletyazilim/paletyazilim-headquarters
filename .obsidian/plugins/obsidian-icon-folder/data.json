@@ -28,5 +28,7 @@
   "1- PHP'ye Giriş": "RiBookFill",
   "2- PHP'de Formlar": "RiBookFill",
   "3- İleri Düzey PHP": "RiBookFill",
-  "4- PHP OOP": "RiBookFill"
+  "4- PHP OOP": "RiBookFill",
+  "5- Veritabanı (PDO)": "RiBookFill",
+  "6- Laravel": "RiBookFill"
 }
