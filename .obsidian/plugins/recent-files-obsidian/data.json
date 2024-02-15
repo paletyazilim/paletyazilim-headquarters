@@ -1,24 +1,144 @@
 {
   "recentFiles": [
     {
-      "basename": "6- Inheritance (Miras)",
-      "path": "4- PHP OOP/6- Inheritance (Miras).md"
+      "basename": "19- PHP Functions (Fonksiyonlar)",
+      "path": "1- PHP'ye Giriş/19- PHP Functions (Fonksiyonlar).md"
+    },
+    {
+      "basename": "18- PHP Loops (Döngüler)",
+      "path": "1- PHP'ye Giriş/18- PHP Loops (Döngüler).md"
+    },
+    {
+      "basename": "17- PHP Switch",
+      "path": "1- PHP'ye Giriş/17- PHP Switch.md"
+    },
+    {
+      "basename": "15- PHP Comments (Yorum)",
+      "path": "1- PHP'ye Giriş/15- PHP Comments (Yorum).md"
+    },
+    {
+      "basename": "16- PHP If-Else-Elseif (Koşullar)",
+      "path": "1- PHP'ye Giriş/16- PHP If-Else-Elseif (Koşullar).md"
+    },
+    {
+      "basename": "23- PHP Date and Time (Tarih ve Zaman) 1",
+      "path": "1- PHP'ye Giriş/23- PHP Date and Time (Tarih ve Zaman) 1.md"
+    },
+    {
+      "basename": "30- PHP Filters (Filtreleme) - (Ç)",
+      "path": "1- PHP'ye Giriş/30- PHP Filters (Filtreleme) - (Ç).md"
+    },
+    {
+      "basename": "28- PHP Session",
+      "path": "1- PHP'ye Giriş/28- PHP Session.md"
+    },
+    {
+      "basename": "29- PHP RegEx",
+      "path": "1- PHP'ye Giriş/29- PHP RegEx.md"
+    },
+    {
+      "basename": "27- PHP Cookies",
+      "path": "1- PHP'ye Giriş/27- PHP Cookies.md"
+    },
+    {
+      "basename": "26- PHP File",
+      "path": "1- PHP'ye Giriş/26- PHP File.md"
+    },
+    {
+      "basename": "25- PHP Superglobals",
+      "path": "1- PHP'ye Giriş/25- PHP Superglobals.md"
+    },
+    {
+      "basename": "24- PHP JSON",
+      "path": "1- PHP'ye Giriş/24- PHP JSON.md"
+    },
+    {
+      "basename": "22- PHP Include",
+      "path": "1- PHP'ye Giriş/22- PHP Include.md"
+    },
+    {
+      "basename": "21- PHP Exceptions (Hata Yakalama)",
+      "path": "1- PHP'ye Giriş/21- PHP Exceptions (Hata Yakalama).md"
+    },
+    {
+      "basename": "20- PHP Callback Functions (Geri Çağırma Fonksiyonalrı)",
+      "path": "1- PHP'ye Giriş/20- PHP Callback Functions (Geri Çağırma Fonksiyonalrı).md"
+    },
+    {
+      "basename": "1- Başlarken",
+      "path": "1- PHP'ye Giriş/1- Başlarken.md"
+    },
+    {
+      "basename": "14- PHP Magic Constants (Ön Tanımlı Sabitler)",
+      "path": "1- PHP'ye Giriş/14- PHP Magic Constants (Ön Tanımlı Sabitler).md"
+    },
+    {
+      "basename": "13- PHP Constants (Sabitler)",
+      "path": "1- PHP'ye Giriş/13- PHP Constants (Sabitler).md"
+    },
+    {
+      "basename": "11- PHP Casting (Tür Dönüşümü)",
+      "path": "1- PHP'ye Giriş/11- PHP Casting (Tür Dönüşümü).md"
+    },
+    {
+      "basename": "12- PHP Operators (Operatörler)",
+      "path": "1- PHP'ye Giriş/12- PHP Operators (Operatörler).md"
+    },
+    {
+      "basename": "10- PHP Arrays (Diziler)",
+      "path": "1- PHP'ye Giriş/10- PHP Arrays (Diziler).md"
+    },
+    {
+      "basename": "9- PHP Math",
+      "path": "1- PHP'ye Giriş/9- PHP Math.md"
+    },
+    {
+      "basename": "8- PHP Numbers (Sayılar)",
+      "path": "1- PHP'ye Giriş/8- PHP Numbers (Sayılar).md"
+    },
+    {
+      "basename": "7- PHP Strings (Dizeler) - (Ç)",
+      "path": "1- PHP'ye Giriş/7- PHP Strings (Dizeler) - (Ç).md"
+    },
+    {
+      "basename": "6- PHP Variables Scope (Değişkenlerin Kapsamı)",
+      "path": "1- PHP'ye Giriş/6- PHP Variables Scope (Değişkenlerin Kapsamı).md"
+    },
+    {
+      "basename": "5- PHP Data Types (Veri Türleri)",
+      "path": "1- PHP'ye Giriş/5- PHP Data Types (Veri Türleri).md"
+    },
+    {
+      "basename": "4- PHP Variables (Değişkenler)",
+      "path": "1- PHP'ye Giriş/4- PHP Variables (Değişkenler).md"
+    },
+    {
+      "basename": "3- PHP Syntax (Söz Dizimi)",
+      "path": "1- PHP'ye Giriş/3- PHP Syntax (Söz Dizimi).md"
+    },
+    {
+      "basename": "2- PHP Echo-Print",
+      "path": "1- PHP'ye Giriş/2- PHP Echo-Print.md"
+    },
+    {
+      "basename": "14- Iterables (Yinelenebilir Tür) - (Ç)",
+      "path": "4- PHP OOP/14- Iterables (Yinelenebilir Tür) - (Ç).md"
+    },
+    {
+      "basename": "3- Dizin Yapısı",
+      "path": "6- Laravel'e Başlarken/3- Dizin Yapısı.md"
     },
     {
       "basename": "1- OOP Nedir",
       "path": "4- PHP OOP/1- OOP Nedir.md"
     },
     {
-      "basename": "9- Interfaces (Arayüzler)",
-      "path": "4- PHP OOP/9- Interfaces (Arayüzler).md"
+      "basename": "2- Laravel Projesi Oluşturma",
+      "path": "6- Laravel'e Başlarken/2- Laravel Projesi Oluşturma.md"
     },
     {
-      "basename": "8- Soyut Sınıflar",
-      "path": "4- PHP OOP/8- Soyut Sınıflar.md"
-    },
-    {
-      "basename": "7- Sınıflarda Sabitler",
-      "path": "4- PHP OOP/7- Sınıflarda Sabitler.md"
+      "basename": "1- Laravel Nedir",
+      "path": "6- Laravel'e Başlarken/1- Laravel Nedir.md"
     },
     {
       "basename": "4- Destructor (Yıkıcı Metotlar)",
@@ -33,52 +153,44 @@
       "path": "4- PHP OOP/2- Sınıflar ve Nesneler.md"
     },
     {
+      "basename": "9- Interfaces (Arayüzler)",
+      "path": "4- PHP OOP/9- Interfaces (Arayüzler).md"
+    },
+    {
+      "basename": "8- Soyut Sınıflar",
+      "path": "4- PHP OOP/8- Soyut Sınıflar.md"
+    },
+    {
+      "basename": "7- Sınıflarda Sabitler",
+      "path": "4- PHP OOP/7- Sınıflarda Sabitler.md"
+    },
+    {
+      "basename": "13- Namespaces",
+      "path": "4- PHP OOP/13- Namespaces.md"
+    },
+    {
+      "basename": "12- Statik Özellikler",
+      "path": "4- PHP OOP/12- Statik Özellikler.md"
+    },
+    {
+      "basename": "11- Statik Metotlar",
+      "path": "4- PHP OOP/11- Statik Metotlar.md"
+    },
+    {
+      "basename": "10- Traits (Nitelikler)",
+      "path": "4- PHP OOP/10- Traits (Nitelikler).md"
+    },
+    {
+      "basename": "6- Inheritance (Miras)",
+      "path": "4- PHP OOP/6- Inheritance (Miras).md"
+    },
+    {
       "basename": "5- Erişim Belirleyicileri",
       "path": "4- PHP OOP/5- Erişim Belirleyicileri.md"
     },
     {
-      "basename": "6- PHP Filters (Filtreleme) - (Ç)",
-      "path": "3- İleri Düzey PHP/6- PHP Filters (Filtreleme) - (Ç).md"
-    },
-    {
-      "basename": "8- PHP Strings (Dizeler) - (Ç)",
-      "path": "1- PHP'ye Giriş/8- PHP Strings (Dizeler) - (Ç).md"
-    },
-    {
-      "basename": "9- PHP Exceptions (Hata Yakalama)",
-      "path": "3- İleri Düzey PHP/9- PHP Exceptions (Hata Yakalama).md"
-    },
-    {
-      "basename": "8- PHP JSON",
-      "path": "3- İleri Düzey PHP/8- PHP JSON.md"
-    },
-    {
-      "basename": "7- PHP Callback Functions",
-      "path": "3- İleri Düzey PHP/7- PHP Callback Functions.md"
-    },
-    {
-      "basename": "5- PHP Session",
-      "path": "3- İleri Düzey PHP/5- PHP Session.md"
-    },
-    {
-      "basename": "3- PHP File",
-      "path": "3- İleri Düzey PHP/3- PHP File.md"
-    },
-    {
-      "basename": "4- PHP Cookies",
-      "path": "3- İleri Düzey PHP/4- PHP Cookies.md"
-    },
-    {
-      "basename": "2- PHP Include",
-      "path": "3- İleri Düzey PHP/2- PHP Include.md"
-    },
-    {
       "basename": "6- Formu Tamamlama",
       "path": "2- PHP'de Formlar/6- Formu Tamamlama.md"
-    },
-    {
-      "basename": "1- PHP Date and Time (Tarih ve Zaman)",
-      "path": "3- İleri Düzey PHP/1- PHP Date and Time (Tarih ve Zaman).md"
     },
     {
       "basename": "4- Formlarda Zorunluluk",
@@ -87,98 +199,6 @@
     {
       "basename": "3- Formları Doğrulama",
       "path": "2- PHP'de Formlar/3- Formları Doğrulama.md"
-    },
-    {
-      "basename": "2- Form Güvenliği",
-      "path": "2- PHP'de Formlar/2- Form Güvenliği.md"
-    },
-    {
-      "basename": "1- Formları Yakalama",
-      "path": "2- PHP'de Formlar/1- Formları Yakalama.md"
-    },
-    {
-      "basename": "5- Formlarda URL ve E-posta",
-      "path": "2- PHP'de Formlar/5- Formlarda URL ve E-posta.md"
-    },
-    {
-      "basename": "9- PHP Numbers (Sayılar)",
-      "path": "1- PHP'ye Giriş/9- PHP Numbers (Sayılar).md"
-    },
-    {
-      "basename": "10- PHP Casting (Tür Dönüşümü)",
-      "path": "1- PHP'ye Giriş/10- PHP Casting (Tür Dönüşümü).md"
-    },
-    {
-      "basename": "21- PHP RegEx",
-      "path": "1- PHP'ye Giriş/21- PHP RegEx.md"
-    },
-    {
-      "basename": "18- PHP Functions (Fonksiyonlar)",
-      "path": "1- PHP'ye Giriş/18- PHP Functions (Fonksiyonlar).md"
-    },
-    {
-      "basename": "1- Başlarken",
-      "path": "1- PHP'ye Giriş/1- Başlarken.md"
-    },
-    {
-      "basename": "20- PHP Superglobals",
-      "path": "1- PHP'ye Giriş/20- PHP Superglobals.md"
-    },
-    {
-      "basename": "19- PHP Arrays (Diziler)",
-      "path": "1- PHP'ye Giriş/19- PHP Arrays (Diziler).md"
-    },
-    {
-      "basename": "2- PHP Syntax (Söz Dizimi)",
-      "path": "1- PHP'ye Giriş/2- PHP Syntax (Söz Dizimi).md"
-    },
-    {
-      "basename": "17- PHP Loops (Döngüler)",
-      "path": "1- PHP'ye Giriş/17- PHP Loops (Döngüler).md"
-    },
-    {
-      "basename": "15- PHP If-Else-Elseif (Koşullar)",
-      "path": "1- PHP'ye Giriş/15- PHP If-Else-Elseif (Koşullar).md"
-    },
-    {
-      "basename": "13- PHP Magic Constants (Ön Tanımlı Sabitler)",
-      "path": "1- PHP'ye Giriş/13- PHP Magic Constants (Ön Tanımlı Sabitler).md"
-    },
-    {
-      "basename": "11- PHP Math",
-      "path": "1- PHP'ye Giriş/11- PHP Math.md"
-    },
-    {
-      "basename": "7- PHP Data Types (Veri Türleri)",
-      "path": "1- PHP'ye Giriş/7- PHP Data Types (Veri Türleri).md"
-    },
-    {
-      "basename": "6- PHP Echo-Print",
-      "path": "1- PHP'ye Giriş/6- PHP Echo-Print.md"
-    },
-    {
-      "basename": "5- PHP Variables Scope (Değişkenlerin Kapsamı)",
-      "path": "1- PHP'ye Giriş/5- PHP Variables Scope (Değişkenlerin Kapsamı).md"
-    },
-    {
-      "basename": "3- PHP Comments (Yorum)",
-      "path": "1- PHP'ye Giriş/3- PHP Comments (Yorum).md"
-    },
-    {
-      "basename": "14- PHP Operators (Operatörler)",
-      "path": "1- PHP'ye Giriş/14- PHP Operators (Operatörler).md"
-    },
-    {
-      "basename": "12- PHP Constants (Sabitler)",
-      "path": "1- PHP'ye Giriş/12- PHP Constants (Sabitler).md"
-    },
-    {
-      "basename": "4- PHP Variables (Değişkenler)",
-      "path": "1- PHP'ye Giriş/4- PHP Variables (Değişkenler).md"
-    },
-    {
-      "basename": "16- PHP Switch",
-      "path": "1- PHP'ye Giriş/16- PHP Switch.md"
     }
   ],
   "omittedPaths": [],

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "390806fa4400728d",
+        "id": "c94e80a3d61c6511",
         "type": "tabs",
         "children": [
           {
-            "id": "dfa573d1beb84377",
+            "id": "62e94e63a24698c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4- PHP OOP/6- Inheritance (Miras).md",
+                "file": "1- PHP'ye Giriş/19- PHP Functions (Fonksiyonlar).md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4- PHP OOP/6- Inheritance (Miras).md",
+                "file": "1- PHP'ye Giriş/19- PHP Functions (Fonksiyonlar).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4- PHP OOP/6- Inheritance (Miras).md",
+                "file": "1- PHP'ye Giriş/19- PHP Functions (Fonksiyonlar).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4- PHP OOP/6- Inheritance (Miras).md"
+                "file": "1- PHP'ye Giriş/19- PHP Functions (Fonksiyonlar).md"
               }
             }
           },
@@ -171,37 +171,38 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "dfa573d1beb84377",
+  "active": "62e94e63a24698c9",
   "lastOpenFiles": [
-    "4- PHP OOP/1- OOP Nedir.md",
-    "4- PHP OOP/9- Interfaces (Arayüzler).md",
-    "4- PHP OOP/8- Soyut Sınıflar.md",
-    "4- PHP OOP/7- Sınıflarda Sabitler.md",
-    "4- PHP OOP/6- Inheritance (Miras).md",
-    "6- Laravel",
+    "1- PHP'ye Giriş/18- PHP Loops (Döngüler).md",
+    "1- PHP'ye Giriş/17- PHP Switch.md",
+    "1- PHP'ye Giriş/15- PHP Comments (Yorum).md",
+    "1- PHP'ye Giriş/16- PHP If-Else-Elseif (Koşullar).md",
+    "1- PHP'ye Giriş/23- PHP Date and Time (Tarih ve Zaman) 1.md",
+    "1- PHP'ye Giriş/30- PHP Filters (Filtreleme) - (Ç).md",
+    "1- PHP'ye Giriş/28- PHP Session.md",
+    "1- PHP'ye Giriş/29- PHP RegEx.md",
+    "1- PHP'ye Giriş/27- PHP Cookies.md",
+    "1- PHP'ye Giriş/26- PHP File.md",
+    "1- PHP'ye Giriş/25- PHP Superglobals.md",
+    "1- PHP'ye Giriş/24- PHP JSON.md",
+    "1- PHP'ye Giriş/22- PHP Include.md",
+    "1- PHP'ye Giriş/21- PHP Exceptions (Hata Yakalama).md",
+    "1- PHP'ye Giriş/20- PHP Callback Functions (Geri Çağırma Fonksiyonalrı).md",
+    "1- PHP'ye Giriş/19- PHP Functions (Fonksiyonlar).md",
+    "1- PHP'ye Giriş/1- Başlarken.md",
+    "1- PHP'ye Giriş/14- PHP Magic Constants (Ön Tanımlı Sabitler).md",
+    "1- PHP'ye Giriş/13- PHP Constants (Sabitler).md",
+    "1- PHP'ye Giriş/11- PHP Casting (Tür Dönüşümü).md",
+    "1- PHP'ye Giriş/12- PHP Operators (Operatörler).md",
+    "1- PHP'ye Giriş/10- PHP Arrays (Diziler).md",
+    "1- PHP'ye Giriş/9- PHP Math.md",
+    "1- PHP'ye Giriş/8- PHP Numbers (Sayılar).md",
+    "1- PHP'ye Giriş/7- PHP Strings (Dizeler) - (Ç).md",
+    "1- PHP'ye Giriş/6- PHP Variables Scope (Değişkenlerin Kapsamı).md",
+    "6- Laravel'e Başlarken",
     "5- Veritabanı (PDO)",
-    "4- PHP OOP/4- Destructor (Yıkıcı Metotlar).md",
-    "4- PHP OOP/3- Constructor (Yapıcı Metotlar).md",
-    "4- PHP OOP/2- Sınıflar ve Nesneler.md",
-    "4- PHP OOP/5- Erişim Belirleyicileri.md",
-    "3- İleri Düzey PHP/6- PHP Filters (Filtreleme) - (Ç).md",
-    "1- PHP'ye Giriş/8- PHP Strings (Dizeler) - (Ç).md",
-    "3- İleri Düzey PHP/9- PHP Exceptions (Hata Yakalama).md",
-    "3- İleri Düzey PHP/8- PHP JSON.md",
-    "3- İleri Düzey PHP/7- PHP Callback Functions.md",
-    "3- İleri Düzey PHP/5- PHP Session.md",
-    "3- İleri Düzey PHP/3- PHP File.md",
-    "3- İleri Düzey PHP/4- PHP Cookies.md",
-    "3- İleri Düzey PHP/2- PHP Include.md",
-    "2- PHP'de Formlar/6- Formu Tamamlama.md",
-    "3- İleri Düzey PHP/1- PHP Date and Time (Tarih ve Zaman).md",
     "4- PHP OOP",
-    "2- PHP'de Formlar/4- Formlarda Zorunluluk.md",
-    "2- PHP'de Formlar/3- Formları Doğrulama.md",
-    "2- PHP'de Formlar/2- Form Güvenliği.md",
-    "2- PHP'de Formlar/1- Formları Yakalama.md",
-    "2- PHP'de Formlar/5- Formlarda URL ve E-posta.md",
-    "3- İleri Düzey PHP",
+    "1- PHP'ye Giriş/3- İleri Düzey PHP",
     "2- PHP'de Formlar",
     "Tutorial/-a.canvas",
     "Pasted image 20231112165207.png",

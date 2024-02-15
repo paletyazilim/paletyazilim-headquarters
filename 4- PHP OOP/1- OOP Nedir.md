@@ -19,7 +19,7 @@ Nesne Yönelimli Programlama (OOP), karmaşık problemleri çözmek için "nesne
 
 2. Kapsülleme (Encapsulation): Bir nesnenin veri ve işlevlerini tek bir birimde birleştirerek bir "kara kutu" oluşturma işlemidir. Kapsülleme, nesnenin iç işleyişini gizleyerek kodun daha modüler ve yeniden kullanılabilir olmasını sağlar.
 
-3. Miras (Inheritance): Bir nesnenin özelliklerini ve davranışlarını başka bir nesneye aktarma işlemidir. Miras, kod tekrarını azaltarak kodun daha az karmaşık ve daha bakımı kolay olmasını sağlar.
+3. Miras / Kalıtım (Inheritance): Bir nesnenin özelliklerini ve davranışlarını başka bir nesneye aktarma işlemidir. Miras, kod tekrarını azaltarak kodun daha az karmaşık ve daha bakımı kolay olmasını sağlar.
 
 4. Polimorfizm (Polymorphism): Farklı nesnelerin aynı işlevi farklı şekillerde gerçekleştirmesine izin verme işlemidir. Polimorfizm, kodun daha esnek ve genişletilebilir olmasını sağlar.
 
