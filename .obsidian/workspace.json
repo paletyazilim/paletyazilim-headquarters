@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1- PHP'ye Giriş/19- PHP Functions (Fonksiyonlar).md",
+                "file": "3- PHP OOP/14- Iterables (Yinelenebilir Tür) - (Ç).md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1- PHP'ye Giriş/19- PHP Functions (Fonksiyonlar).md",
+                "file": "3- PHP OOP/14- Iterables (Yinelenebilir Tür) - (Ç).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1- PHP'ye Giriş/19- PHP Functions (Fonksiyonlar).md",
+                "file": "3- PHP OOP/14- Iterables (Yinelenebilir Tür) - (Ç).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1- PHP'ye Giriş/19- PHP Functions (Fonksiyonlar).md"
+                "file": "3- PHP OOP/14- Iterables (Yinelenebilir Tür) - (Ç).md"
               }
             }
           },
@@ -173,6 +173,10 @@
   },
   "active": "62e94e63a24698c9",
   "lastOpenFiles": [
+    "3- PHP OOP/2- Sınıflar ve Nesneler.md",
+    "3- PHP OOP/14- Iterables (Yinelenebilir Tür) - (Ç).md",
+    "3- PHP OOP/13- Namespaces.md",
+    "1- PHP'ye Giriş/19- PHP Functions (Fonksiyonlar).md",
     "1- PHP'ye Giriş/18- PHP Loops (Döngüler).md",
     "1- PHP'ye Giriş/17- PHP Switch.md",
     "1- PHP'ye Giriş/15- PHP Comments (Yorum).md",
@@ -188,7 +192,6 @@
     "1- PHP'ye Giriş/22- PHP Include.md",
     "1- PHP'ye Giriş/21- PHP Exceptions (Hata Yakalama).md",
     "1- PHP'ye Giriş/20- PHP Callback Functions (Geri Çağırma Fonksiyonalrı).md",
-    "1- PHP'ye Giriş/19- PHP Functions (Fonksiyonlar).md",
     "1- PHP'ye Giriş/1- Başlarken.md",
     "1- PHP'ye Giriş/14- PHP Magic Constants (Ön Tanımlı Sabitler).md",
     "1- PHP'ye Giriş/13- PHP Constants (Sabitler).md",
@@ -196,12 +199,9 @@
     "1- PHP'ye Giriş/12- PHP Operators (Operatörler).md",
     "1- PHP'ye Giriş/10- PHP Arrays (Diziler).md",
     "1- PHP'ye Giriş/9- PHP Math.md",
-    "1- PHP'ye Giriş/8- PHP Numbers (Sayılar).md",
-    "1- PHP'ye Giriş/7- PHP Strings (Dizeler) - (Ç).md",
-    "1- PHP'ye Giriş/6- PHP Variables Scope (Değişkenlerin Kapsamı).md",
     "6- Laravel'e Başlarken",
     "5- Veritabanı (PDO)",
-    "4- PHP OOP",
+    "3- PHP OOP",
     "1- PHP'ye Giriş/3- İleri Düzey PHP",
     "2- PHP'de Formlar",
     "Tutorial/-a.canvas",
