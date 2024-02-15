@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3- PHP OOP/14- Iterables (Yinelenebilir Tür) - (Ç).md",
+                "file": "0- Başlamadan Önce/2- Gerekli Yazılımlar.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3- PHP OOP/14- Iterables (Yinelenebilir Tür) - (Ç).md",
+                "file": "0- Başlamadan Önce/2- Gerekli Yazılımlar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3- PHP OOP/14- Iterables (Yinelenebilir Tür) - (Ç).md",
+                "file": "0- Başlamadan Önce/2- Gerekli Yazılımlar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3- PHP OOP/14- Iterables (Yinelenebilir Tür) - (Ç).md"
+                "file": "0- Başlamadan Önce/2- Gerekli Yazılımlar.md"
               }
             }
           },
@@ -174,31 +174,32 @@
   "active": "62e94e63a24698c9",
   "lastOpenFiles": [
     "3- PHP OOP/2- Sınıflar ve Nesneler.md",
-    "3- PHP OOP/14- Iterables (Yinelenebilir Tür) - (Ç).md",
-    "3- PHP OOP/13- Namespaces.md",
-    "1- PHP'ye Giriş/19- PHP Functions (Fonksiyonlar).md",
-    "1- PHP'ye Giriş/18- PHP Loops (Döngüler).md",
-    "1- PHP'ye Giriş/17- PHP Switch.md",
-    "1- PHP'ye Giriş/15- PHP Comments (Yorum).md",
-    "1- PHP'ye Giriş/16- PHP If-Else-Elseif (Koşullar).md",
+    "0- Başlamadan Önce/1 - Kaynaklar.md",
+    "0- Başlamadan Önce/2- Gerekli Yazılımlar.md",
+    "6- Laravel'e Başlarken/1- Laravel Nedir.md",
+    "6- Laravel'e Başlarken/2- Laravel Projesi Oluşturma.md",
+    "6- Laravel'e Başlarken/3- Dizin Yapısı.md",
     "1- PHP'ye Giriş/23- PHP Date and Time (Tarih ve Zaman) 1.md",
-    "1- PHP'ye Giriş/30- PHP Filters (Filtreleme) - (Ç).md",
-    "1- PHP'ye Giriş/28- PHP Session.md",
-    "1- PHP'ye Giriş/29- PHP RegEx.md",
-    "1- PHP'ye Giriş/27- PHP Cookies.md",
-    "1- PHP'ye Giriş/26- PHP File.md",
-    "1- PHP'ye Giriş/25- PHP Superglobals.md",
-    "1- PHP'ye Giriş/24- PHP JSON.md",
     "1- PHP'ye Giriş/22- PHP Include.md",
     "1- PHP'ye Giriş/21- PHP Exceptions (Hata Yakalama).md",
     "1- PHP'ye Giriş/20- PHP Callback Functions (Geri Çağırma Fonksiyonalrı).md",
-    "1- PHP'ye Giriş/1- Başlarken.md",
-    "1- PHP'ye Giriş/14- PHP Magic Constants (Ön Tanımlı Sabitler).md",
-    "1- PHP'ye Giriş/13- PHP Constants (Sabitler).md",
-    "1- PHP'ye Giriş/11- PHP Casting (Tür Dönüşümü).md",
-    "1- PHP'ye Giriş/12- PHP Operators (Operatörler).md",
-    "1- PHP'ye Giriş/10- PHP Arrays (Diziler).md",
+    "1- PHP'ye Giriş/19- PHP Functions (Fonksiyonlar).md",
     "1- PHP'ye Giriş/9- PHP Math.md",
+    "1- PHP'ye Giriş/8- PHP Numbers (Sayılar).md",
+    "1- PHP'ye Giriş/3- PHP Syntax (Söz Dizimi).md",
+    "1- PHP'ye Giriş/2- PHP Echo-Print.md",
+    "1- PHP'ye Giriş/1- Başlarken.md",
+    "0- Başlamadan Önce",
+    "1- PHP'ye Giriş/0- Gereklilikler.md",
+    "3- PHP OOP/14- Iterables (Yinelenebilir Tür) - (Ç).md",
+    "3- PHP OOP/12- Statik Özellikler.md",
+    "3- PHP OOP/13- Namespaces.md",
+    "3- PHP OOP/11- Statik Metotlar.md",
+    "3- PHP OOP/10- Traits (Nitelikler).md",
+    "3- PHP OOP/7- Sınıflarda Sabitler.md",
+    "3- PHP OOP/6- Inheritance (Miras).md",
+    "3- PHP OOP/5- Erişim Belirleyicileri.md",
+    "3- PHP OOP/1- OOP Nedir.md",
     "6- Laravel'e Başlarken",
     "5- Veritabanı (PDO)",
     "3- PHP OOP",
@@ -210,7 +211,6 @@
     "Başlıksız.canvas",
     "assets/images",
     "assets",
-    "Tutorial",
-    "javascript-dersleri"
+    "Tutorial"
   ]
 }
