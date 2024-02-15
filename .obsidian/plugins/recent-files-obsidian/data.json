@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "4- MySQL Tablo Oluşturma",
+      "path": "5- Veritabanı (PDO)/4- MySQL Tablo Oluşturma.md"
+    },
+    {
       "basename": "3- MySQL Veritabanı Oluşturma",
       "path": "5- Veritabanı (PDO)/3- MySQL Veritabanı Oluşturma.md"
     },
@@ -11,6 +15,30 @@
     {
       "basename": "1- Veritabanı",
       "path": "5- Veritabanı (PDO)/1- Veritabanı.md"
+    },
+    {
+      "basename": "5- MySQL Kayıt Ekleme",
+      "path": "5- Veritabanı (PDO)/5- MySQL Kayıt Ekleme.md"
+    },
+    {
+      "basename": "21- PHP Exceptions (Hata Yakalama)",
+      "path": "1- PHP'ye Giriş/21- PHP Exceptions (Hata Yakalama).md"
+    },
+    {
+      "basename": "26- PHP File",
+      "path": "1- PHP'ye Giriş/26- PHP File.md"
+    },
+    {
+      "basename": "25- PHP Superglobals",
+      "path": "1- PHP'ye Giriş/25- PHP Superglobals.md"
+    },
+    {
+      "basename": "2- PHP Echo-Print",
+      "path": "1- PHP'ye Giriş/2- PHP Echo-Print.md"
+    },
+    {
+      "basename": "1- Başlarken",
+      "path": "1- PHP'ye Giriş/1- Başlarken.md"
     },
     {
       "basename": "1 - Kaynaklar",
@@ -77,28 +105,12 @@
       "path": "3- PHP OOP/4- Constructor (Yapıcı Metotlar).md"
     },
     {
-      "basename": "2- PHP Echo-Print",
-      "path": "1- PHP'ye Giriş/2- PHP Echo-Print.md"
-    },
-    {
-      "basename": "1- Başlarken",
-      "path": "1- PHP'ye Giriş/1- Başlarken.md"
-    },
-    {
-      "basename": "26- PHP File",
-      "path": "1- PHP'ye Giriş/26- PHP File.md"
-    },
-    {
       "basename": "29- PHP RegEx",
       "path": "1- PHP'ye Giriş/29- PHP RegEx.md"
     },
     {
       "basename": "7- Form ile Dosya Yükleme",
       "path": "2- PHP'de Formlar/7- Form ile Dosya Yükleme.md"
-    },
-    {
-      "basename": "25- PHP Superglobals",
-      "path": "1- PHP'ye Giriş/25- PHP Superglobals.md"
     },
     {
       "basename": "6- Formu Tamamlama",
@@ -153,10 +165,6 @@
       "path": "6- Laravel'e Başlarken/3- Dizin Yapısı.md"
     },
     {
-      "basename": "21- PHP Exceptions (Hata Yakalama)",
-      "path": "1- PHP'ye Giriş/21- PHP Exceptions (Hata Yakalama).md"
-    },
-    {
       "basename": "20- PHP Callback Functions (Geri Çağırma Fonksiyonalrı)",
       "path": "1- PHP'ye Giriş/20- PHP Callback Functions (Geri Çağırma Fonksiyonalrı).md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "16- PHP If-Else-Elseif (Koşullar)",
       "path": "1- PHP'ye Giriş/16- PHP If-Else-Elseif (Koşullar).md"
-    },
-    {
-      "basename": "11- PHP Casting (Tür Dönüşümü)",
-      "path": "1- PHP'ye Giriş/11- PHP Casting (Tür Dönüşümü).md"
-    },
-    {
-      "basename": "12- PHP Operators (Operatörler)",
-      "path": "1- PHP'ye Giriş/12- PHP Operators (Operatörler).md"
     }
   ],
   "omittedPaths": [],

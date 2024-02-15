@@ -23,12 +23,12 @@ MySQL veritabanındaki verilere erişebilmemiz için önce sunucuya bağlanabilm
 
 ```PHP title:'PDO ile MySQL Veritabanına Bağlanma'
 <?php
-$sunucuIsmi = "localhost";
-$kullaniciAdi = "username";
-$parola = "password";
+$servername = "localhost";
+$username = "username";
+$password = "password";
 
 try {
-  $conn = new PDO("mysql:host=$sunucuIsmi;dbname=myDB", $kullaniciAdi, $parola);
+  $conn = new PDO("mysql:host=$servername;dbname=myDB", $username, $password);
   // PDO hata modunu istisna olarak ayarlıyoruz
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   echo "Başarılı bir şekilde veritabanına bağlanıldı";
