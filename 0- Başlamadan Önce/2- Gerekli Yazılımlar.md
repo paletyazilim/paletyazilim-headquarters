@@ -32,7 +32,7 @@
     - DotENV
     - Laravel Artisan
     - Laravel Blade Formatter
-    - Laravel Balde Snippets
+    - Laravel Blade Snippets
     - Laravel Extra Intellisense
     - Laravel Goto
     - Laraavel Goto View

@@ -1,6 +1,54 @@
 {
   "recentFiles": [
     {
+      "basename": "16- MySQL Veri Limitleme",
+      "path": "5- Veritabanı (PDO)/16- MySQL Veri Limitleme.md"
+    },
+    {
+      "basename": "13-  MySQL Veri Güncelleme",
+      "path": "5- Veritabanı (PDO)/13-  MySQL Veri Güncelleme.md"
+    },
+    {
+      "basename": "12- MySQL Veri Silme",
+      "path": "5- Veritabanı (PDO)/12- MySQL Veri Silme.md"
+    },
+    {
+      "basename": "5- MySQL Kayıt Ekleme",
+      "path": "5- Veritabanı (PDO)/5- MySQL Kayıt Ekleme.md"
+    },
+    {
+      "basename": "10- MySQL WHERE Sözcüğü",
+      "path": "5- Veritabanı (PDO)/10- MySQL WHERE Sözcüğü.md"
+    },
+    {
+      "basename": "11- MySQL ORDER BY Sözcüğü",
+      "path": "5- Veritabanı (PDO)/11- MySQL ORDER BY Sözcüğü.md"
+    },
+    {
+      "basename": "9- MySQL Veri Seçme (Çekme)",
+      "path": "5- Veritabanı (PDO)/9- MySQL Veri Seçme (Çekme).md"
+    },
+    {
+      "basename": "6- MySQL Girilen Son ID'yi Alma",
+      "path": "5- Veritabanı (PDO)/6- MySQL Girilen Son ID'yi Alma.md"
+    },
+    {
+      "basename": "1- Veritabanı",
+      "path": "5- Veritabanı (PDO)/1- Veritabanı.md"
+    },
+    {
+      "basename": "8- MySQL Hazır Deyimler",
+      "path": "5- Veritabanı (PDO)/8- MySQL Hazır Deyimler.md"
+    },
+    {
+      "basename": "7- MySQL Çoklu Kayıt Ekleme",
+      "path": "5- Veritabanı (PDO)/7- MySQL Çoklu Kayıt Ekleme.md"
+    },
+    {
+      "basename": "12- PHP Operators (Operatörler)",
+      "path": "1- PHP'ye Giriş/12- PHP Operators (Operatörler).md"
+    },
+    {
       "basename": "4- MySQL Tablo Oluşturma",
       "path": "5- Veritabanı (PDO)/4- MySQL Tablo Oluşturma.md"
     },
@@ -9,16 +57,16 @@
       "path": "5- Veritabanı (PDO)/3- MySQL Veritabanı Oluşturma.md"
     },
     {
+      "basename": "2- Gerekli Yazılımlar",
+      "path": "0- Başlamadan Önce/2- Gerekli Yazılımlar.md"
+    },
+    {
+      "basename": "1 - Kaynaklar",
+      "path": "0- Başlamadan Önce/1 - Kaynaklar.md"
+    },
+    {
       "basename": "2- MySQL'e Bağlanma",
       "path": "5- Veritabanı (PDO)/2- MySQL'e Bağlanma.md"
-    },
-    {
-      "basename": "1- Veritabanı",
-      "path": "5- Veritabanı (PDO)/1- Veritabanı.md"
-    },
-    {
-      "basename": "5- MySQL Kayıt Ekleme",
-      "path": "5- Veritabanı (PDO)/5- MySQL Kayıt Ekleme.md"
     },
     {
       "basename": "21- PHP Exceptions (Hata Yakalama)",
@@ -39,10 +87,6 @@
     {
       "basename": "1- Başlarken",
       "path": "1- PHP'ye Giriş/1- Başlarken.md"
-    },
-    {
-      "basename": "1 - Kaynaklar",
-      "path": "0- Başlamadan Önce/1 - Kaynaklar.md"
     },
     {
       "basename": "2- Sınıflar ve Nesneler",
@@ -149,56 +193,12 @@
       "path": "1- PHP'ye Giriş/23- PHP Date and Time (Tarih ve Zaman).md"
     },
     {
-      "basename": "2- Gerekli Yazılımlar",
-      "path": "0- Başlamadan Önce/2- Gerekli Yazılımlar.md"
-    },
-    {
       "basename": "1- Laravel Nedir",
       "path": "6- Laravel'e Başlarken/1- Laravel Nedir.md"
     },
     {
       "basename": "2- Laravel Projesi Oluşturma",
       "path": "6- Laravel'e Başlarken/2- Laravel Projesi Oluşturma.md"
-    },
-    {
-      "basename": "3- Dizin Yapısı",
-      "path": "6- Laravel'e Başlarken/3- Dizin Yapısı.md"
-    },
-    {
-      "basename": "20- PHP Callback Functions (Geri Çağırma Fonksiyonalrı)",
-      "path": "1- PHP'ye Giriş/20- PHP Callback Functions (Geri Çağırma Fonksiyonalrı).md"
-    },
-    {
-      "basename": "19- PHP Functions (Fonksiyonlar)",
-      "path": "1- PHP'ye Giriş/19- PHP Functions (Fonksiyonlar).md"
-    },
-    {
-      "basename": "9- PHP Math",
-      "path": "1- PHP'ye Giriş/9- PHP Math.md"
-    },
-    {
-      "basename": "8- PHP Numbers (Sayılar)",
-      "path": "1- PHP'ye Giriş/8- PHP Numbers (Sayılar).md"
-    },
-    {
-      "basename": "3- PHP Syntax (Söz Dizimi)",
-      "path": "1- PHP'ye Giriş/3- PHP Syntax (Söz Dizimi).md"
-    },
-    {
-      "basename": "18- PHP Loops (Döngüler)",
-      "path": "1- PHP'ye Giriş/18- PHP Loops (Döngüler).md"
-    },
-    {
-      "basename": "17- PHP Switch",
-      "path": "1- PHP'ye Giriş/17- PHP Switch.md"
-    },
-    {
-      "basename": "15- PHP Comments (Yorum)",
-      "path": "1- PHP'ye Giriş/15- PHP Comments (Yorum).md"
-    },
-    {
-      "basename": "16- PHP If-Else-Elseif (Koşullar)",
-      "path": "1- PHP'ye Giriş/16- PHP If-Else-Elseif (Koşullar).md"
     }
   ],
   "omittedPaths": [],
