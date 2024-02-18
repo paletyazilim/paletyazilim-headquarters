@@ -1,6 +1,34 @@
 {
   "recentFiles": [
     {
+      "basename": "4- Bir İsteğin Yaşam Döngüsü",
+      "path": "6- Laravel'e Başlarken/4- Bir İsteğin Yaşam Döngüsü.md"
+    },
+    {
+      "basename": "3- Dizin Yapısı",
+      "path": "6- Laravel'e Başlarken/3- Dizin Yapısı.md"
+    },
+    {
+      "basename": "1- Laravel Nedir",
+      "path": "6- Laravel'e Başlarken/1- Laravel Nedir.md"
+    },
+    {
+      "basename": "2- Laravel Projesi Oluşturma",
+      "path": "6- Laravel'e Başlarken/2- Laravel Projesi Oluşturma.md"
+    },
+    {
+      "basename": "1- Başlarken",
+      "path": "1- PHP'ye Giriş/1- Başlarken.md"
+    },
+    {
+      "basename": "2- Gerekli Yazılımlar",
+      "path": "0- Başlamadan Önce/2- Gerekli Yazılımlar.md"
+    },
+    {
+      "basename": "1 - Kaynaklar",
+      "path": "0- Başlamadan Önce/1 - Kaynaklar.md"
+    },
+    {
       "basename": "16- MySQL Veri Limitleme",
       "path": "5- Veritabanı (PDO)/16- MySQL Veri Limitleme.md"
     },
@@ -13,28 +41,16 @@
       "path": "5- Veritabanı (PDO)/12- MySQL Veri Silme.md"
     },
     {
-      "basename": "5- MySQL Kayıt Ekleme",
-      "path": "5- Veritabanı (PDO)/5- MySQL Kayıt Ekleme.md"
+      "basename": "11- MySQL ORDER BY Sözcüğü",
+      "path": "5- Veritabanı (PDO)/11- MySQL ORDER BY Sözcüğü.md"
     },
     {
       "basename": "10- MySQL WHERE Sözcüğü",
       "path": "5- Veritabanı (PDO)/10- MySQL WHERE Sözcüğü.md"
     },
     {
-      "basename": "11- MySQL ORDER BY Sözcüğü",
-      "path": "5- Veritabanı (PDO)/11- MySQL ORDER BY Sözcüğü.md"
-    },
-    {
       "basename": "9- MySQL Veri Seçme (Çekme)",
       "path": "5- Veritabanı (PDO)/9- MySQL Veri Seçme (Çekme).md"
-    },
-    {
-      "basename": "6- MySQL Girilen Son ID'yi Alma",
-      "path": "5- Veritabanı (PDO)/6- MySQL Girilen Son ID'yi Alma.md"
-    },
-    {
-      "basename": "1- Veritabanı",
-      "path": "5- Veritabanı (PDO)/1- Veritabanı.md"
     },
     {
       "basename": "8- MySQL Hazır Deyimler",
@@ -45,8 +61,12 @@
       "path": "5- Veritabanı (PDO)/7- MySQL Çoklu Kayıt Ekleme.md"
     },
     {
-      "basename": "12- PHP Operators (Operatörler)",
-      "path": "1- PHP'ye Giriş/12- PHP Operators (Operatörler).md"
+      "basename": "6- MySQL Girilen Son ID'yi Alma",
+      "path": "5- Veritabanı (PDO)/6- MySQL Girilen Son ID'yi Alma.md"
+    },
+    {
+      "basename": "5- MySQL Kayıt Ekleme",
+      "path": "5- Veritabanı (PDO)/5- MySQL Kayıt Ekleme.md"
     },
     {
       "basename": "4- MySQL Tablo Oluşturma",
@@ -57,52 +77,32 @@
       "path": "5- Veritabanı (PDO)/3- MySQL Veritabanı Oluşturma.md"
     },
     {
-      "basename": "2- Gerekli Yazılımlar",
-      "path": "0- Başlamadan Önce/2- Gerekli Yazılımlar.md"
-    },
-    {
-      "basename": "1 - Kaynaklar",
-      "path": "0- Başlamadan Önce/1 - Kaynaklar.md"
-    },
-    {
       "basename": "2- MySQL'e Bağlanma",
       "path": "5- Veritabanı (PDO)/2- MySQL'e Bağlanma.md"
     },
     {
-      "basename": "21- PHP Exceptions (Hata Yakalama)",
-      "path": "1- PHP'ye Giriş/21- PHP Exceptions (Hata Yakalama).md"
-    },
-    {
-      "basename": "26- PHP File",
-      "path": "1- PHP'ye Giriş/26- PHP File.md"
-    },
-    {
-      "basename": "25- PHP Superglobals",
-      "path": "1- PHP'ye Giriş/25- PHP Superglobals.md"
-    },
-    {
-      "basename": "2- PHP Echo-Print",
-      "path": "1- PHP'ye Giriş/2- PHP Echo-Print.md"
-    },
-    {
-      "basename": "1- Başlarken",
-      "path": "1- PHP'ye Giriş/1- Başlarken.md"
-    },
-    {
-      "basename": "2- Sınıflar ve Nesneler",
-      "path": "3- PHP OOP/2- Sınıflar ve Nesneler.md"
-    },
-    {
-      "basename": "1- OOP Nedir",
-      "path": "3- PHP OOP/1- OOP Nedir.md"
-    },
-    {
-      "basename": "1- Formları Yakalama",
-      "path": "2- PHP'de Formlar/1- Formları Yakalama.md"
+      "basename": "1- Veritabanı",
+      "path": "5- Veritabanı (PDO)/1- Veritabanı.md"
     },
     {
       "basename": "14- Namespaces",
       "path": "3- PHP OOP/14- Namespaces.md"
+    },
+    {
+      "basename": "13- Iterables (Yinelenebilir Tür)",
+      "path": "3- PHP OOP/13- Iterables (Yinelenebilir Tür).md"
+    },
+    {
+      "basename": "12- Traits (Nitelikler)",
+      "path": "3- PHP OOP/12- Traits (Nitelikler).md"
+    },
+    {
+      "basename": "11- Statik Metotlar",
+      "path": "3- PHP OOP/11- Statik Metotlar.md"
+    },
+    {
+      "basename": "10- Statik Özellikler",
+      "path": "3- PHP OOP/10- Statik Özellikler.md"
     },
     {
       "basename": "9- Soyut Sınıflar",
@@ -117,26 +117,6 @@
       "path": "3- PHP OOP/7- Inheritance (Miras).md"
     },
     {
-      "basename": "3- Sınıflarda Sabitler",
-      "path": "3- PHP OOP/3- Sınıflarda Sabitler.md"
-    },
-    {
-      "basename": "11- Statik Metotlar",
-      "path": "3- PHP OOP/11- Statik Metotlar.md"
-    },
-    {
-      "basename": "10- Statik Özellikler",
-      "path": "3- PHP OOP/10- Statik Özellikler.md"
-    },
-    {
-      "basename": "13- Iterables (Yinelenebilir Tür)",
-      "path": "3- PHP OOP/13- Iterables (Yinelenebilir Tür).md"
-    },
-    {
-      "basename": "12- Traits (Nitelikler)",
-      "path": "3- PHP OOP/12- Traits (Nitelikler).md"
-    },
-    {
       "basename": "6- Erişim Belirleyicileri",
       "path": "3- PHP OOP/6- Erişim Belirleyicileri.md"
     },
@@ -149,8 +129,16 @@
       "path": "3- PHP OOP/4- Constructor (Yapıcı Metotlar).md"
     },
     {
-      "basename": "29- PHP RegEx",
-      "path": "1- PHP'ye Giriş/29- PHP RegEx.md"
+      "basename": "3- Sınıflarda Sabitler",
+      "path": "3- PHP OOP/3- Sınıflarda Sabitler.md"
+    },
+    {
+      "basename": "2- Sınıflar ve Nesneler",
+      "path": "3- PHP OOP/2- Sınıflar ve Nesneler.md"
+    },
+    {
+      "basename": "1- OOP Nedir",
+      "path": "3- PHP OOP/1- OOP Nedir.md"
     },
     {
       "basename": "7- Form ile Dosya Yükleme",
@@ -161,20 +149,32 @@
       "path": "2- PHP'de Formlar/6- Formu Tamamlama.md"
     },
     {
+      "basename": "5- Formlarda URL ve E-posta",
+      "path": "2- PHP'de Formlar/5- Formlarda URL ve E-posta.md"
+    },
+    {
+      "basename": "4- Formlarda Zorunluluk",
+      "path": "2- PHP'de Formlar/4- Formlarda Zorunluluk.md"
+    },
+    {
+      "basename": "3- Formları Doğrulama",
+      "path": "2- PHP'de Formlar/3- Formları Doğrulama.md"
+    },
+    {
+      "basename": "2- Form Güvenliği",
+      "path": "2- PHP'de Formlar/2- Form Güvenliği.md"
+    },
+    {
+      "basename": "1- Formları Yakalama",
+      "path": "2- PHP'de Formlar/1- Formları Yakalama.md"
+    },
+    {
       "basename": "30- PHP Filters (Filtreleme) - (Ç)",
       "path": "1- PHP'ye Giriş/30- PHP Filters (Filtreleme) - (Ç).md"
     },
     {
-      "basename": "22- PHP Include",
-      "path": "1- PHP'ye Giriş/22- PHP Include.md"
-    },
-    {
-      "basename": "14- PHP Magic Constants (Ön Tanımlı Sabitler)",
-      "path": "1- PHP'ye Giriş/14- PHP Magic Constants (Ön Tanımlı Sabitler).md"
-    },
-    {
-      "basename": "13- PHP Constants (Sabitler)",
-      "path": "1- PHP'ye Giriş/13- PHP Constants (Sabitler).md"
+      "basename": "29- PHP RegEx",
+      "path": "1- PHP'ye Giriş/29- PHP RegEx.md"
     },
     {
       "basename": "28- PHP Session",
@@ -185,20 +185,20 @@
       "path": "1- PHP'ye Giriş/27- PHP Cookies.md"
     },
     {
+      "basename": "26- PHP File",
+      "path": "1- PHP'ye Giriş/26- PHP File.md"
+    },
+    {
+      "basename": "25- PHP Superglobals",
+      "path": "1- PHP'ye Giriş/25- PHP Superglobals.md"
+    },
+    {
       "basename": "24- PHP JSON",
       "path": "1- PHP'ye Giriş/24- PHP JSON.md"
     },
     {
       "basename": "23- PHP Date and Time (Tarih ve Zaman)",
       "path": "1- PHP'ye Giriş/23- PHP Date and Time (Tarih ve Zaman).md"
-    },
-    {
-      "basename": "1- Laravel Nedir",
-      "path": "6- Laravel'e Başlarken/1- Laravel Nedir.md"
-    },
-    {
-      "basename": "2- Laravel Projesi Oluşturma",
-      "path": "6- Laravel'e Başlarken/2- Laravel Projesi Oluşturma.md"
     }
   ],
   "omittedPaths": [],
