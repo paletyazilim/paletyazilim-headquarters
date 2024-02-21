@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c7d328fd43996cfb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1- PHP'ye Giriş/1- Başlarken.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1- PHP'ye Giriş/1- Başlarken.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1- PHP'ye Giriş/1- Başlarken.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -171,8 +184,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e517a783a5bb8142",
+  "active": "c7d328fd43996cfb",
   "lastOpenFiles": [
+    "1- PHP'ye Giriş/1- Başlarken.md",
+    "conflict-files-obsidian-git.md",
+    "6- Laravel'e Başlarken/4- Bir İsteğin Yaşam Döngüsü.md",
     "6- Laravel'e Başlarken/3- Dizin Yapısı.md",
     "6- Laravel'e Başlarken/2- Laravel Projesi Oluşturma.md",
     "6- Laravel'e Başlarken/1- Laravel Nedir.md",
@@ -187,7 +203,6 @@
     "1- PHP'ye Giriş/21- PHP Exceptions (Hata Yakalama).md",
     "1- PHP'ye Giriş/26- PHP File.md",
     "1- PHP'ye Giriş/25- PHP Superglobals.md",
-    "1- PHP'ye Giriş/1- Başlarken.md",
     "3- PHP OOP/2- Sınıflar ve Nesneler.md",
     "3- PHP OOP/1- OOP Nedir.md",
     "2- PHP'de Formlar/1- Formları Yakalama.md",
@@ -197,8 +212,6 @@
     "3- PHP OOP/7- Inheritance (Miras).md",
     "3- PHP OOP/3- Sınıflarda Sabitler.md",
     "3- PHP OOP/11- Statik Metotlar.md",
-    "3- PHP OOP/10- Statik Özellikler.md",
-    "3- PHP OOP/13- Iterables (Yinelenebilir Tür).md",
     "0- Başlamadan Önce",
     "6- Laravel'e Başlarken",
     "5- Veritabanı (PDO)",

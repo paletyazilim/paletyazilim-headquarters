@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "conflict-files-obsidian-git",
+      "path": "conflict-files-obsidian-git.md"
+    },
+    {
       "basename": "1- Başlarken",
       "path": "1- PHP'ye Giriş/1- Başlarken.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "15- PHP Comments (Yorum)",
       "path": "1- PHP'ye Giriş/15- PHP Comments (Yorum).md"
-    },
-    {
-      "basename": "16- PHP If-Else-Elseif (Koşullar)",
-      "path": "1- PHP'ye Giriş/16- PHP If-Else-Elseif (Koşullar).md"
     }
   ],
   "omittedPaths": [],

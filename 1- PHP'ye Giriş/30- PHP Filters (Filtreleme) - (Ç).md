@@ -143,6 +143,5 @@ if (!filter_var($url, FILTER_VALIDATE_URL) === false) {
 
 ## Gelişmiş Filtreleme
 ---
-
 Çevrilecek...
 

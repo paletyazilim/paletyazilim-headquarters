@@ -16,7 +16,7 @@ PHP'de dönüşümler bu ifadelerle yapılır:
 ```PHP
 $a = 5;       // Integer
 $b = 5.34;    // Float
-$c = "hello"; // String
+$c = "merhaba"; // String
 $d = true;    // Boolean
 $e = NULL;    // NULL
 
@@ -39,9 +39,9 @@ var_dump($e);
 ```PHP
 $a = 5;       // Integer
 $b = 5.34;    // Float
-$c = "25 kilometers"; // String
-$d = "kilometers 25"; // String
-$e = "hello"; // String
+$c = "25 kilometre"; // String
+$d = "kilometre: 25"; // String
+$e = "merhaba"; // String
 $f = true;    // Boolean
 $g = NULL;    // NULL
 
@@ -60,9 +60,9 @@ $g = (int) $g;
 ```PHP
 $a = 5;       // Integer
 $b = 5.34;    // Float
-$c = "25 kilometers"; // String
-$d = "kilometers 25"; // String
-$e = "hello"; // String
+$c = "25 kilometre"; // String
+$d = "kilometre: 25"; // String
+$e = "merhaba"; // String
 $f = true;    // Boolean
 $g = NULL;    // NULL
 
@@ -88,7 +88,7 @@ $b = 5.34;    // Float
 $c = 0;       // Integer
 $d = -1;      // Integer
 $e = 0.1;     // Float
-$f = "hello"; // String
+$f = "merhaba"; // String
 $g = "";      // String
 $h = true;    // Boolean
 $i = NULL;    // NULL
@@ -110,7 +110,7 @@ $i = (bool) $i;
 ```PHP
 $a = 5;       // Integer
 $b = 5.34;    // Float
-$c = "hello"; // String
+$c = "merhaba"; // String
 $d = true;    // Boolean
 $e = NULL;    // NULL
 
@@ -152,7 +152,7 @@ var_dump($arabam);
 ```PHP
 $a = 5;       // Integer
 $b = 5.34;    // Float
-$c = "hello"; // String
+$c = "merhaba"; // String
 $d = true;    // Boolean
 $e = NULL;    // NULL
 
@@ -173,7 +173,7 @@ Dizinli diziler, özellik adı olarak dizin numarası ve özellik değeri olarak
 
 ```PHP
 $a = array("Volvo", "BMW", "Toyota");
-$b = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+$b = array("Berat"=>"20", "Metin"=>"31", "Furkan"=>"29");
 
 $a = (object) $a;
 $b = (object) $b;
@@ -184,7 +184,7 @@ $b = (object) $b;
 ```PHP
 $a = 5;       // Integer
 $b = 5.34;    // Float
-$c = "hello"; // String
+$c = "merhaba"; // String
 $d = true;    // Boolean
 $e = NULL;    // NULL
 
