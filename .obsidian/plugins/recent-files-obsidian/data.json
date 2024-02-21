@@ -1,6 +1,34 @@
 {
   "recentFiles": [
     {
+      "basename": "1- Başlarken",
+      "path": "1- PHP'ye Giriş/1- Başlarken.md"
+    },
+    {
+      "basename": "3- Dizin Yapısı",
+      "path": "6- Laravel'e Başlarken/3- Dizin Yapısı.md"
+    },
+    {
+      "basename": "2- Laravel Projesi Oluşturma",
+      "path": "6- Laravel'e Başlarken/2- Laravel Projesi Oluşturma.md"
+    },
+    {
+      "basename": "1- Laravel Nedir",
+      "path": "6- Laravel'e Başlarken/1- Laravel Nedir.md"
+    },
+    {
+      "basename": "2- Gerekli Yazılımlar",
+      "path": "0- Başlamadan Önce/2- Gerekli Yazılımlar.md"
+    },
+    {
+      "basename": "1 - Kaynaklar",
+      "path": "0- Başlamadan Önce/1 - Kaynaklar.md"
+    },
+    {
+      "basename": "2- PHP Echo-Print",
+      "path": "1- PHP'ye Giriş/2- PHP Echo-Print.md"
+    },
+    {
       "basename": "4- MySQL Tablo Oluşturma",
       "path": "5- Veritabanı (PDO)/4- MySQL Tablo Oluşturma.md"
     },
@@ -31,18 +59,6 @@
     {
       "basename": "25- PHP Superglobals",
       "path": "1- PHP'ye Giriş/25- PHP Superglobals.md"
-    },
-    {
-      "basename": "2- PHP Echo-Print",
-      "path": "1- PHP'ye Giriş/2- PHP Echo-Print.md"
-    },
-    {
-      "basename": "1- Başlarken",
-      "path": "1- PHP'ye Giriş/1- Başlarken.md"
-    },
-    {
-      "basename": "1 - Kaynaklar",
-      "path": "0- Başlamadan Önce/1 - Kaynaklar.md"
     },
     {
       "basename": "2- Sınıflar ve Nesneler",
@@ -147,22 +163,6 @@
     {
       "basename": "23- PHP Date and Time (Tarih ve Zaman)",
       "path": "1- PHP'ye Giriş/23- PHP Date and Time (Tarih ve Zaman).md"
-    },
-    {
-      "basename": "2- Gerekli Yazılımlar",
-      "path": "0- Başlamadan Önce/2- Gerekli Yazılımlar.md"
-    },
-    {
-      "basename": "1- Laravel Nedir",
-      "path": "6- Laravel'e Başlarken/1- Laravel Nedir.md"
-    },
-    {
-      "basename": "2- Laravel Projesi Oluşturma",
-      "path": "6- Laravel'e Başlarken/2- Laravel Projesi Oluşturma.md"
-    },
-    {
-      "basename": "3- Dizin Yapısı",
-      "path": "6- Laravel'e Başlarken/3- Dizin Yapısı.md"
     },
     {
       "basename": "20- PHP Callback Functions (Geri Çağırma Fonksiyonalrı)",

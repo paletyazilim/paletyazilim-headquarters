@@ -11,8 +11,12 @@
             "id": "8e2de92543570d2d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "1- PHP'ye Giriş/1- Başlarken.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -73,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 508.5
+    "width": 204.5
   },
   "right": {
     "id": "19aedd361f9da44d",
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "1- PHP'ye Giriş/1- Başlarken.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "1- PHP'ye Giriş/1- Başlarken.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "1- PHP'ye Giriş/1- Başlarken.md"
+              }
             }
           },
           {
@@ -163,8 +171,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8e2de92543570d2d",
+  "active": "e517a783a5bb8142",
   "lastOpenFiles": [
+    "6- Laravel'e Başlarken/3- Dizin Yapısı.md",
+    "6- Laravel'e Başlarken/2- Laravel Projesi Oluşturma.md",
+    "6- Laravel'e Başlarken/1- Laravel Nedir.md",
+    "0- Başlamadan Önce/2- Gerekli Yazılımlar.md",
+    "0- Başlamadan Önce/1 - Kaynaklar.md",
+    "1- PHP'ye Giriş/2- PHP Echo-Print.md",
     "5- Veritabanı (PDO)/4- MySQL Tablo Oluşturma.md",
     "5- Veritabanı (PDO)/3- MySQL Veritabanı Oluşturma.md",
     "5- Veritabanı (PDO)/2- MySQL'e Bağlanma.md",
@@ -173,9 +187,7 @@
     "1- PHP'ye Giriş/21- PHP Exceptions (Hata Yakalama).md",
     "1- PHP'ye Giriş/26- PHP File.md",
     "1- PHP'ye Giriş/25- PHP Superglobals.md",
-    "1- PHP'ye Giriş/2- PHP Echo-Print.md",
     "1- PHP'ye Giriş/1- Başlarken.md",
-    "0- Başlamadan Önce/1 - Kaynaklar.md",
     "3- PHP OOP/2- Sınıflar ve Nesneler.md",
     "3- PHP OOP/1- OOP Nedir.md",
     "2- PHP'de Formlar/1- Formları Yakalama.md",
@@ -187,10 +199,6 @@
     "3- PHP OOP/11- Statik Metotlar.md",
     "3- PHP OOP/10- Statik Özellikler.md",
     "3- PHP OOP/13- Iterables (Yinelenebilir Tür).md",
-    "3- PHP OOP/12- Traits (Nitelikler).md",
-    "3- PHP OOP/6- Erişim Belirleyicileri.md",
-    "3- PHP OOP/5- Destructor (Yıkıcı Metotlar).md",
-    "3- PHP OOP/4- Constructor (Yapıcı Metotlar).md",
     "0- Başlamadan Önce",
     "6- Laravel'e Başlarken",
     "5- Veritabanı (PDO)",
