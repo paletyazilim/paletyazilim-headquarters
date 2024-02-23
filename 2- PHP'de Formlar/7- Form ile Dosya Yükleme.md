@@ -155,7 +155,7 @@ if ($yuklemeOnaylandi == 0) {
   echo "Üzgünüz, dosyanız yüklenmedi.";
 } else {
   if (move_uploaded_file($_FILES["yuklenecekDosya"]["tmp_name"], $hedef_dosya)) {
-    echo htmlspecialchars( basename( $_FILES["yuklenecekDosya"]["name"])). " yüklenmiştir.";
+    echo htmlspecialchars(basename($_FILES["yuklenecekDosya"]["name"])). " yüklenmiştir.";
   } else {
     echo "Üzgünüz, dosyanız yüklenirken bir hata meydana geldi.";
   }

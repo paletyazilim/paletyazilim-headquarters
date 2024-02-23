@@ -36,7 +36,7 @@ Başlıca proje dizinimiz ise şu şekildedir:
 
 #### `bootstrap` Dizini
 ---
-`bootstrap` dizini, çerçeveyi önyükleyen `app.php` dosyasını içerir. Bu dizin aynı zamanda rota ve hizmetler önbellek dosyaları gibi performans optimizasyonu için çerçeve tarafından oluşturulan dosyaları içeren bir `cache` dizini barındırır. Genellikle bu dizin içindeki herhangi bir dosyayı değiştirmeniz gerekmez.
+`bootstrap` dizini, frameworku önyükleyen `app.php` dosyasını içerir. Bu dizin aynı zamanda rota ve hizmetler önbellek dosyaları gibi performans optimizasyonu için framework tarafından oluşturulan dosyaları içeren bir `cache` dizini barındırır. Genellikle bu dizin içindeki herhangi bir dosyayı değiştirmeniz gerekmez.
 
 #### `config` Dizini
 ---
@@ -44,7 +44,7 @@ Başlıca proje dizinimiz ise şu şekildedir:
 
 #### `database` Dizini
 ---
-`database` dizini veritabanı geçişlerinizi, model fabrikalarınızı ve tohumlarınızı içerir. Dilerseniz bu dizini bir SQLite veritabanı tutmak için de kullanabilirsiniz.
+`database` dizini veritabanı migrations, model factories ve seedlerinizi içerir. Dilerseniz bu dizini bir SQLite veritabanı tutmak için de kullanabilirsiniz.
 
 #### `public` Dizini
 ---
@@ -58,17 +58,17 @@ Kaynaklar dizini, görünümlerinizin yanı sıra CSS veya JavaScript gibi ham, 
 ---
 `routes` dizini uygulamanız için tüm rota tanımlarını içerir. Varsayılan olarak, Laravel'e birkaç rota dosyası dahildir:` web.php`, `api.php`, `console.php` ve `channels.php`.
 
-`web.php` dosyası, `RouteServiceProvider`'ın `web` ara yazılım grubuna yerleştirdiği ve oturum durumu, CSRF koruması ve çerez şifrelemesi sağlayan rotaları içerir. Uygulamanız durumsuz, RESTful bir API sunmuyorsa, tüm rotalarınız büyük olasılıkla `web.php` dosyasında tanımlanacaktır.
+`web.php` dosyası, `RouteServiceProvider`'ın `web` middleware grubuna yerleştirdiği ve oturum durumu, CSRF koruması ve çerez şifrelemesi sağlayan rotaları içerir. Uygulamanız durumsuz, RESTful bir API sunmuyorsa, tüm rotalarınız büyük olasılıkla `web.php` dosyasında tanımlanacaktır.
 
-`api.php` dosyası, `RouteServiceProvider`'ın `api` ara yazılım grubuna yerleştirdiği rotaları içerir. Bu rotaların durumsuz olması amaçlanmıştır, bu nedenle bu rotalar aracılığıyla uygulamaya giren isteklerin belirteçler aracılığıyla doğrulanması ve oturum durumuna erişmemesi amaçlanmıştır.
+`api.php` dosyası, `RouteServiceProvider`'ın `api` middleware grubuna yerleştirdiği rotaları içerir. Bu rotaların durumsuz olması amaçlanmıştır, bu nedenle bu rotalar aracılığıyla uygulamaya giren isteklerin belirteçler aracılığıyla doğrulanması ve oturum durumuna erişmemesi amaçlanmıştır.
 
 `console.php` dosyası, tüm kapatma tabanlı konsol komutlarınızı tanımlayabileceğiniz yerdir. Her kapanış bir komut örneğine bağlıdır ve her komutun IO yöntemleriyle etkileşim kurmak için basit bir yaklaşım sağlar. Bu dosya HTTP rotalarını tanımlamasa da, uygulamanıza konsol tabanlı giriş noktalarını (rotaları) tanımlar.
 
-`channels.php` dosyası, uygulamanızın desteklediği tüm olay yayın kanallarını kaydedebileceğiniz yerdir.
+`channels.php` dosyası, uygulamanızın desteklediği tüm event broadcasting kanallarınızı kaydedebileceğiniz yerdir.
 
 #### `storage` Dizini
 ---
-`storage` dizini günlüklerinizi, derlenmiş Blade şablonlarını, dosya tabanlı oturumları, dosya önbelleklerini ve çerçeve tarafından oluşturulan diğer dosyaları içerir. Bu dizin, `app`, `framework` ve `logs` dizinleri olarak ayrılmıştır. `app` dizini, uygulamanız tarafından oluşturulan tüm dosyaları depolamak için kullanılabilir. `framework` dizini, framework tarafından oluşturulan dosyaları ve önbellekleri saklamak için kullanılır. Son olarak, `logs` dizini uygulamanızın günlük dosyalarını içerir.
+`storage` dizini günlüklerinizi, derlenmiş Blade şablonlarını, dosya tabanlı oturumları, dosya önbelleklerini ve framework tarafından oluşturulan diğer dosyaları içerir. Bu dizin, `app`, `framework` ve `logs` dizinleri olarak ayrılmıştır. `app` dizini, uygulamanız tarafından oluşturulan tüm dosyaları depolamak için kullanılabilir. `framework` dizini, framework tarafından oluşturulan dosyaları ve önbellekleri saklamak için kullanılır. Son olarak, `logs` dizini uygulamanızın günlük dosyalarını içerir.
 
 `storage/app/public` dizini, profil avatarları gibi kullanıcı tarafından oluşturulan ve herkesin erişimine açık olması gereken dosyaları depolamak için kullanılabilir. `public/storage` adresinde bu dizini işaret eden bir sembolik bağlantı oluşturmalısınız. Bağlantıyı `php artisan storage:link` Artisan komutunu kullanarak oluşturabilirsiniz.
 
@@ -96,11 +96,11 @@ Sınıfları oluşturmak için `make` Artisan komutlarını kullandıkça `app` 
 
 #### `Console` Dizini
 ---
-Konsol dizini, uygulamanız için tüm özel Artisan komutlarını içerir. Bu komutlar `make:command` komutu kullanılarak oluşturulabilir. Bu dizin aynı zamanda özel Artisan komutlarınızın kaydedildiği ve zamanlanmış görevlerinizin tanımlandığı konsol çekirdeğinizi de barındırır.
+`Console` dizini, uygulamanız için tüm özel Artisan komutlarını içerir. Bu komutlar `make:command` komutu kullanılarak oluşturulabilir. Bu dizin aynı zamanda özel Artisan komutlarınızın kaydedildiği ve scheduled tasks (zamanlanmış görevlerinizin) tanımlandığı konsol çekirdeğinizi de barındırır.
 
 #### `Events` Dizini
 ---
-Bu dizin varsayılan olarak mevcut değildir, ancak `event:generate` ve `make:event` Artisan komutları tarafından sizin için oluşturulacaktır. Olaylar dizini olay sınıflarını barındırır. Olaylar, uygulamanızın diğer bölümlerini belirli bir eylemin gerçekleştiği konusunda uyarmak için kullanılabilir ve büyük ölçüde esneklik ve ayrıştırma sağlar.
+Bu dizin varsayılan olarak mevcut değildir, ancak `event:generate` ve `make:event` Artisan komutları tarafından sizin için oluşturulacaktır. `Events` dizini event sınıflarını barındırır. Eventler, uygulamanızın diğer bölümlerini belirli bir eylemin gerçekleştiği konusunda uyarmak için kullanılabilir ve büyük ölçüde esneklik ve ayrıştırma sağlar.
 
 #### `Exceptions` Dizini
 ---
@@ -112,11 +112,11 @@ Bu dizin varsayılan olarak mevcut değildir, ancak `event:generate` ve `make:ev
 
 #### `Jobs` Dizini
 ---
-Bu dizin varsayılan olarak mevcut değildir, ancak `make:job` Artisan komutunu çalıştırırsanız sizin için oluşturulacaktır. `Jobs` dizini, uygulamanız için kuyruğa alınabilir işleri barındırır. İşler uygulamanız tarafından kuyruğa alınabilir veya geçerli istek yaşam döngüsü içinde eşzamanlı olarak çalıştırılabilir. Geçerli istek sırasında eşzamanlı olarak çalışan işler, komut modelinin bir uygulaması olduklarından bazen "komutlar" olarak adlandırılırlar.
+Bu dizin varsayılan olarak mevcut değildir, ancak `make:job` Artisan komutunu çalıştırırsanız sizin için oluşturulacaktır. `Jobs` dizini, uygulamanız için queueable jobs (kuyruğa alınabilir) işleri barındırır. `Jobs` uygulamanız tarafından kuyruğa alınabilir veya geçerli istek yaşam döngüsü içinde eşzamanlı olarak çalıştırılabilir. Geçerli istek sırasında eşzamanlı olarak çalışan işler, command pattern (komut modelinin) bir uygulaması olduklarından bazen "commands" olarak adlandırılırlar.
 
 #### `Listeners` Dizini
 ---
-Bu dizin varsayılan olarak mevcut değildir, ancak `event:generate` veya `make:listener` Artisan komutlarını çalıştırırsanız sizin için oluşturulacaktır. `Listeners` dizini, olaylarınızı işleyen sınıfları içerir. Olay dinleyicileri bir olay örneği alır ve ateşlenen olaya yanıt olarak mantık yürütür. Örneğin, bir `UserRegistered` olayı bir `SendWelcomeEmail` dinleyicisi tarafından işlenebilir.
+Bu dizin varsayılan olarak mevcut değildir, ancak `event:generate` veya `make:listener` Artisan komutlarını çalıştırırsanız sizin için oluşturulacaktır. `Listeners` dizini, eventslerinizi işleyen sınıfları içerir. Event listeners bir event örneği alır ve ateşlenen evente yanıt olarak mantık yürütür. Örneğin, bir `UserRegistered` eventi bir `SendWelcomeEmail` dinleyicisi tarafından işlenebilir.
 
 #### `Mail` Dizini
 ---
@@ -128,18 +128,18 @@ Bu dizin varsayılan olarak mevcut değildir, ancak `make:mail` Artisan komutunu
 
 #### `Notifications` Dizini
 ---
-Bu dizin varsayılan olarak mevcut değildir, ancak `make:notification` Artisan komutunu çalıştırırsanız sizin için oluşturulacaktır. `Notifications` dizini, uygulamanızda gerçekleşen olaylar hakkında basit bildirimler gibi uygulamanız tarafından gönderilen tüm "işlemsel" bildirimleri içerir. Laravel'in bildirim özelliği, e-posta, Slack, SMS gibi çeşitli sürücüler üzerinden bildirim göndermeyi veya bir veritabanında saklamayı soyutlar.
+Bu dizin varsayılan olarak mevcut değildir, ancak `make:notification` Artisan komutunu çalıştırırsanız sizin için oluşturulacaktır. `Notifications` dizini, uygulamanızda gerçekleşen eventler hakkında basit bildirimler gibi uygulamanız tarafından gönderilen tüm "işlemsel" bildirimleri içerir. Laravel'in bildirim özelliği, e-posta, Slack, SMS gibi çeşitli sürücüler üzerinden bildirim göndermeyi veya bir veritabanında saklamayı soyutlar.
 
 #### `Policies` Dizini
 ---
-Bu dizin varsayılan olarak mevcut değildir, ancak `make:policy` Artisan komutunu çalıştırırsanız sizin için oluşturulacaktır. `Policies` dizini, uygulamanız için yetkilendirme ilkesi sınıflarını içerir. İlkeler, bir kullanıcının bir kaynağa karşı belirli bir eylemi gerçekleştirip gerçekleştiremeyeceğini belirlemek için kullanılır.
+Bu dizin varsayılan olarak mevcut değildir, ancak `make:policy` Artisan komutunu çalıştırırsanız sizin için oluşturulacaktır. `Policies` dizini, uygulamanız için yetkilendirme ilkesi sınıflarını içerir. Policies, bir kullanıcının bir kaynağa karşı belirli bir eylemi gerçekleştirip gerçekleştiremeyeceğini belirlemek için kullanılır.
 
 #### `Providers` Dizini
 ---
-`Providers` dizini, uygulamanız için tüm hizmet sağlayıcıları içerir. Hizmet sağlayıcılar, hizmetleri hizmet kapsayıcısına bağlayarak, olayları kaydederek veya uygulamanızı gelen isteklere hazırlamak için diğer görevleri yerine getirerek uygulamanızı önyükler.
+`Providers` dizini, uygulamanız için tüm (service providers) hizmet sağlayıcıları içerir. Service providers, hizmetleri service container (hizmet kapsayıcısına) bağlayarak, eventleri kaydederek veya uygulamanızı gelen isteklere hazırlamak için diğer görevleri yerine getirerek uygulamanızı önyükler.
 
-Yeni bir Laravel uygulamasında, bu dizin zaten birkaç sağlayıcı içerecektir. Gerektiğinde bu dizine kendi sağlayıcılarınızı eklemekte özgürsünüz.
+Yeni bir Laravel uygulamasında, bu dizin zaten birkaç (provider) sağlayıcı içerecektir. Gerektiğinde bu dizine kendi (providers) sağlayıcılarınızı eklemekte özgürsünüz.
 
 #### `Rules` Dizini
 ---
-Bu dizin varsayılan olarak mevcut değildir, ancak `make:rule` Artisan komutunu çalıştırırsanız sizin için oluşturulacaktır. `Rules` dizini, uygulamanız için özel doğrulama kuralı nesnelerini içerir. Kurallar, karmaşık doğrulama mantığını basit bir nesnede kapsüllemek için kullanılır.
+Bu dizin varsayılan olarak mevcut değildir, ancak `make:rule` Artisan komutunu çalıştırırsanız sizin için oluşturulacaktır. `Rules` dizini, uygulamanız için özel doğrulama kuralı nesnelerini içerir. Rules, karmaşık doğrulama mantığını basit bir nesnede kapsüllemek için kullanılır.
