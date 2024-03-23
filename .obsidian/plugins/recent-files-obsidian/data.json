@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "conflict-files-obsidian-git",
+      "path": "conflict-files-obsidian-git.md"
+    },
+    {
       "basename": "9- Facades",
       "path": "6- Laravel'e Başlarken/9- Facades.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "2- Create a Project (Laravel Projesi Oluşturma)",
       "path": "6- Laravel'e Başlarken/2- Create a Project (Laravel Projesi Oluşturma).md"
-    },
-    {
-      "basename": "11- Middleware",
-      "path": "6- Laravel'e Başlarken/11- Middleware.md"
     }
   ],
   "omittedPaths": [],
