@@ -62,7 +62,7 @@ Neyse ki, bir Laravel uygulaması oluştururken yazacağınız sınıfların ço
 
 #### Kapsayıcılar Ne Zaman Kullanılır
 ---
-Zero configuration resolution sayesinde, kapsamların manuel olarak etkileşime girmeden routes (rotalar), controllerlar (denetleyiciler), event listeners (olay dinleyicileri) ve başka yerlerdeki dependencyleri sık sık yazarak ima edersiniz. Örneğin, mevcut requeste (isteğe) kolayca erişebilmek için rota tanımınızda (Illuminate\Http\Request) nesnesini işaretleyebilirsiniz. Bu kodu yazmak için hiçbir zaman kapsayıcılarla etkileşime girmemize gerek olmasa da, kapsayıcı bu dependencyleri perde arkasında yönetmektedir:
+Zero configuration resolution sayesinde, kapsamların manuel olarak etkileşime girmeden routes (rotalar), controllerlar (denetleyiciler), event listeners (olay dinleyicileri) ve başka yerlerdeki dependencyleri sık sık yazarak ima edersiniz. Örneğin, mevcut requeste (isteğe) kolayca erişebilmek için rota tanımınızda (`Illuminate\Http\Request`) nesnesini işaretleyebilirsiniz. Bu kodu yazmak için hiçbir zaman kapsayıcılarla etkileşime girmemize gerek olmasa da, kapsayıcı bu dependencyleri perde arkasında yönetmektedir:
 
 ```PHP
 use Illuminate\Http\Request;

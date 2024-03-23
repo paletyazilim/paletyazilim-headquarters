@@ -75,7 +75,3 @@ Gördüğünüz gibi Livewire, Laravel uygulamanızın forntendi ile backendini 
 Birçokları için Livewire, Laravel ile frontend geliştirmede devrim yaratarak modern, dinamik web uygulamaları oluştururken Laravel'in rahatlığı içinde kalmalarını sağladı. Tipik olarak, Livewire kullanan geliştiriciler, JavaScript'i yalnızca bir iletişim penceresi oluşturmak gibi ihtiyaç duyulan yerlerde frontendlerine "serpmek" için Alpine.js'yi de kullanacaklardır.
 
 Laravel'de yeniyseniz, views ve Blade'in temel kullanımına aşina olmanızı öneririz. Ardından, etkileşimli Livewire bileşenleri ile uygulamanızı bir sonraki seviyeye nasıl taşıyacağınızı öğrenmek için resmi Laravel Livewire belgelerine başvurun.
-
-## Vue / React
----
-...
