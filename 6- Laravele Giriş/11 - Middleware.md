@@ -8,7 +8,7 @@ Kimlik doğrulamanın yanı sıra çeşitli görevleri yerine getirmek için ek 
 ---
 Yeni bir middleware oluşturmak için `make:middleware` Artisan komutunu kullanın:
 
-```bash
+```shell
 php artisan make:middleware EnsureTokenIsValid
 ```
 
@@ -225,18 +225,18 @@ Route::middleware(['md-group'])->group(function () {
 
 Laravel, web ve API rotalarınıza uygulamak isteyebileceğiniz ortak middleware’leri içeren önceden tanımlanmış `web` ve `api` middleware grupları içerir. Unutmayın, Laravel bu middleware gruplarını otomatik olarak ilgili `routes/web.php` ve `routes/api.php` dosyalarına uygular:
 
-| web Middleware Grupları |
-| --- |
-| Illuminate\Cookie\Middleware\EncryptCookies |
-| Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse |
-| Illuminate\Session\Middleware\StartSession |
-| Illuminate\View\Middleware\ShareErrorsFromSession |
-| Illuminate\Foundation\Http\Middleware\ValidateCsrfToken |
-| Illuminate\Routing\Middleware\SubstituteBindings |
+| web Middleware Grupları                                     |
+| ----------------------------------------------------------- |
+|  `Illuminate\Cookie\Middleware\EncryptCookies`              |
+|  `Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse`  |
+|  `Illuminate\Session\Middleware\StartSession`               |
+|  `Illuminate\View\Middleware\ShareErrorsFromSession`        |
+|  `Illuminate\Foundation\Http\Middleware\ValidateCsrfToken`  |
+| `Illuminate\Routing\Middleware\SubstituteBindings`          |
 
-| api Middleware Grupları |
-| --- |
-| Illuminate\Routing\Middleware\SubstituteBindings |
+| api Middleware Grupları                            |
+| -------------------------------------------------- |
+| `Illuminate\Routing\Middleware\SubstituteBindings` |
 
 Middleware’leri bu gruplara eklemek veya önceden eklemek isterseniz, uygulamanızın `bootstrap/app.php` dosyasındaki `web` ve `api` metodlarını kullanabilirsiniz. `web` ve `api` metodlarınnı `appendToGroup` metoduna uygun alternatiflerdir:
 
@@ -331,20 +331,20 @@ Route::get('/user', function () {
 
 Kolaylık sağlamak için, Laravel'in bazı yerleşik middleware’leri varsayılan olarak takma adlıdır. Örneğin, `auth` middleware’i `Illuminate\Auth\Middleware\Authenticate` middleware’i için bir takma addır. Aşağıda varsayılan middleware takma adlarının bir listesi bulunmaktadır:
 
-| Alias | Middleware |
-| --- | --- |
-| auth | Illuminate\Auth\Middleware\Authenticate |
-| auth.basic | Illuminate\Auth\Middleware\AuthenticateWithBasicAuth |
-| auth.session | Illuminate\Session\Middleware\AuthenticateSession |
-| cache.headers | Illuminate\Http\Middleware\SetCacheHeaders |
-| can | Illuminate\Auth\Middleware\Authorize |
-| guest | Illuminate\Auth\Middleware\RedirectIfAuthenticated |
-| password.confirm | Illuminate\Auth\Middleware\RequirePassword |
-| precognitive | Illuminate\Foundation\Http\Middleware\HandlePrecognitiveRequests |
-| signed | Illuminate\Routing\Middleware\ValidateSignature |
-| subscribed | \Spark\Http\Middleware\VerifyBillableIsSubscribed |
-| throttle | Illuminate\Routing\Middleware\ThrottleRequests or Illuminate\Routing\Middleware\ThrottleRequestsWithRedis |
-| verified | Illuminate\Auth\Middleware\EnsureEmailIsVerified |
+| Alias            | Middleware                                                                                                |
+| ---------------- | --------------------------------------------------------------------------------------------------------- |
+| `auth`             | `Illuminate\Auth\Middleware\Authenticate`                                                                   |
+| `auth.basic`       | `Illuminate\Auth\Middleware\AuthenticateWithBasicAuth`                                                      |
+| `auth.session`     | `Illuminate\Session\Middleware\AuthenticateSession`                                                         |
+| `cache.headers`    | `Illuminate\Http\Middleware\SetCacheHeaders`                                                                |
+| `can`              | `Illuminate\Auth\Middleware\Authorize`                                                                      |
+| `guest`            | `Illuminate\Auth\Middleware\RedirectIfAuthenticated`                                                        |
+| `password.confirm` | `Illuminate\Auth\Middleware\RequirePassword`                                                                |
+| `precognitive`     | `Illuminate\Foundation\Http\Middleware\HandlePrecognitiveRequests`                                          |
+| `signed`           | `Illuminate\Routing\Middleware\ValidateSignature`                                                           |
+| `subscribed`       | `\Spark\Http\Middleware\VerifyBillableIsSubscribed`                                                         |
+| `throttle`         | `Illuminate\Routing\Middleware\ThrottleRequests or Illuminate\Routing\Middleware\ThrottleRequestsWithRedis` |
+| `verified`         | `Illuminate\Auth\Middleware\EnsureEmailIsVerified`                                                          |
 
 ## Middleware’leri Sıralama
 
@@ -421,3 +421,5 @@ Route::put('/post/{id}', function (string $id) {
 ```
 
 # `#` Terminable (Sonlandırılabilir) Middleware’ler
+
+

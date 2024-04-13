@@ -35,7 +35,7 @@ DB_PASSWORD=
 
 SQLite dışında bir veritabanı kullanmayı seçerseniz, veritabanını oluşturmanız ve uygulamanızın veritabanı migration’larını çalıştırmanız gerekecektir:
 
-```bash
+```shell
 php artisan migrate
 ```
 

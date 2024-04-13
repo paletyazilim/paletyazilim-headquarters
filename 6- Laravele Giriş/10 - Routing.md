@@ -13,7 +13,6 @@ Route::get('/', function () {
 
 # `#` Basit Rotalandırma
 ---
-
 ## Varsayılan Rota Dosyaları
 
 Tüm Laravel rotaları, `routes` dizininde bulunan rota dosyalarınızda tanımlanır. Bu dosyalar uygulamanızın `App\Providers\RouteServiceProvider`'ı tarafından otomatik olarak yüklenir. `routes/web.php` dosyası web arayüzünüz için olan rotaları tanımlar. Bu rotalara, oturum durumu ve CSRF koruması gibi özellikler sağlayan `web` middleware grubu atanır. `routes/api.php` dosyasındaki rotalar durumsuzdur ve `api` middleware grubuna atanmıştır.
@@ -40,8 +39,6 @@ Route::patch('/istek', function () { });
 Route::delete('/istek', function () { });
 Route::options('/istek', function () { });
 ```
-
- 
 
 Bazen birden fazla HTTP fiiline yanıt veren bir rota kaydetmeniz gerekebilir. Bunu `match` yöntemini kullanarak yapabilirsiniz. Ya da `any` yöntemini kullanarak tüm HTTP fiillerine yanıt veren bir rota kaydedebilirsiniz:
 
@@ -349,13 +346,13 @@ Route::get('/redirect', function () {
 
 `route:list` Artisan komutu, uygulamanız tarafından tanımlanan tüm rotaların genel bir listesini kolayca sağlayabilir:
 
-```bash
+```shell
 php artisan route:list
 ```
 
 Varsayılan olarak, her rotaya atanan rota middleware `route:list` çıktısında görüntülenmeyecektir; ancak, komuta `-v` seçeneğini ekleyerek Laravel'e rota middleware ve middleware grup adlarını görüntülemesi talimatını verebilirsiniz:
 
-```bash
+```shell
 php artisan route:list -v
  
 # Middleware Gruplarını Genişletir
@@ -364,19 +361,19 @@ php artisan route:list -vv
 
 Laravel'e sadece belirli bir URI ile başlayan rotaları göstermesi talimatını da verebilirsiniz:
 
-```bash
+```shell
 php artisan route:list --path=api
 ```
 
 Buna ek olarak, `route:list` komutunu çalıştırırken `--except-vendor` seçeneğini sağlayarak Laravel'e üçüncü taraf paketleri tarafından tanımlanan rotaları gizlemesi talimatını verebilirsiniz:
 
-```bash
+```shell
 php artisan route:list --except-vendor
 ```
 
 Aynı şekilde, `route:list` komutunu çalıştırırken `--only-vendor` seçeneğini sağlayarak Laravel'e sadece üçüncü taraf paketleri tarafından tanımlanan rotaları göstermesi talimatını da verebilirsiniz:
 
-```bash
+```shell
 php artisan route:list --only-vendor
 ```
 
@@ -385,7 +382,7 @@ php artisan route:list --only-vendor
 
 Uygulamanız aynı zamanda durum bilgisi olmayan bir API sunacaksa, `install:api` Artisan komutunu kullanarak API yönlendirmesini etkinleştirebilirsiniz:
 
-```bash
+```shell
 php artisan install:api
 ```
 

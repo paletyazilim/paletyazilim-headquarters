@@ -22,7 +22,7 @@ HTTP çekirdeği, istek yürütülmeden önce çalıştırılacak bir dizi öny�
 
 HTTP çekirdeği ayrıca isteği uygulamanın middleware (ara yazılım) yığınından geçirmekten de sorumludur. Bu middleware’ler HTTP session (oturumunu) okuma ve yazma, uygulamanın bakım modunda olup olmadığını belirleme, CSRF tokenini doğrulama ve daha fazlasını gerçekleştirir. Bunlar hakkında yakında daha fazla konuşacağız.
 
-HTTP çekirdeğinin `handle` metotu için yöntem oldukça basittir: bir `Request` (İstek) alır ve bir `Response` (Yanıt) döndürür. Çekirdeği tüm uygulamanızı temsil eden büyük bir kara kutu olarak düşünün. Onu HTTP istekleriyle besleyin ve o da HTTP yanıtları döndürsün.
+HTTP çekirdeğinin `handle` metodu için yöntem oldukça basittir: bir `Request` (İstek) alır ve bir `Response` (Yanıt) döndürür. Çekirdeği tüm uygulamanızı temsil eden büyük bir kara kutu olarak düşünün. Onu HTTP istekleriyle besleyin ve o da HTTP yanıtları döndürsün.
 
 ## Service Providers
 
@@ -47,7 +47,6 @@ Route (Rota) veya controller (denetleyici) metotu bir yanıt döndürdüğünde,
 Son olarak, yanıt middleware (ara katman) üzerinden geri döndüğünde, HTTP çekirdeğinin `handle` metotu yanıt nesnesini uygulama örneğinin `handleRequest`'ine döndürür ve bu metot döndürülen yanıt üzerinde `send` metotunu çağırır. `send` metotu yanıt içeriğini kullanıcının web tarayıcısına gönderir. Şimdi tüm Laravel istek yaşam döngüsü boyunca yolculuğumuzu tamamladık!
 
 # `#` Service Providers’lara Odaklanın
-
 ---
 
 Service providers bir Laravel uygulamasını bootstrap yapmanın (önyüklemenin) gerçek anahtarıdır. Uygulama örneği oluşturulur, service providers kaydedilir ve istek bootstrapped uygulamaya iletilir. Gerçekten bu kadar basit!
@@ -55,3 +54,4 @@ Service providers bir Laravel uygulamasını bootstrap yapmanın (önyüklemenin
 Bir Laravel uygulamasının service providers aracılığıyla nasıl inşa edildiğini ve önyüklendiğini kavramak çok değerlidir. Uygulamanızın kullanıcı tanımlı service providers’ları `app/Providers` dizininde saklanır.
 
 Varsayılan olarak `AppServiceProvider` oldukça boştur. Bu provider, uygulamanızın kendi bootstrap (önyükleme) ve service container bağlarını eklemek için harika bir yerdir. Büyük uygulamalar için, her biri uygulamanız tarafından kullanılan belirli hizmetler için daha ayrıntılı bootstrap (önyükleme) içeren birkaç service providers oluşturmak isteyebilirsiniz.
+

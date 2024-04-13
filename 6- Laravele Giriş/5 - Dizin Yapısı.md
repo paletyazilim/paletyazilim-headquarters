@@ -1,11 +1,9 @@
 # `#` Giriş
-
 ---
 
 Varsayılan Laravel uygulama yapısı hem büyük hem de küçük uygulamalar için harika bir başlangıç noktası sağlamak üzere tasarlanmıştır. Ancak uygulamanızı istediğiniz gibi düzenlemekte özgürsünüz. Laravel, Composer sınıfı otomatik olarak yükleyebildiği sürece, herhangi bir sınıfın nerede bulunduğu konusunda neredeyse hiçbir kısıtlama getirmez.
 
 # `#` Kök (Root) Dizini
-
 ---
 
 ## App Dizini
@@ -61,7 +59,6 @@ Depolama dizini logs (günlüklerinizi), derlenmiş Blade şablonlarını, dosya
 `vendor` dizini Composer bağımlılıklarınızı içerir.
 
 # `#` Uygulama (App) Dizini
-
 ---
 
 Uygulamanızın büyük bir kısmı `app` dizininde yer alır ve PSR-4 otomatik yükleme standardı kullanılarak Composer tarafından otomatik yüklenir.

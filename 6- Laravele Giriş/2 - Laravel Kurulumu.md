@@ -10,13 +10,13 @@
 
 PHP ve Composer'ı kurduktan sonra, Composer'ın `create-project` komutu ile yeni bir Laravel projesi oluşturabilirsiniz:
 
-```bash
+```shell
 composer create-project laravel/laravel:^11.0 ornek-uygulama
 ```
 
 Ya da, Composer aracılığıyla [Laravel Installer](https://github.com/laravel/installer) aracını global olarak yükleyerek yeni Laravel projeleri oluşturabilirsiniz:
 
-```bash
+```shell
 composer global require laravel/installer
  
 laravel new ornek-uygulama
@@ -24,7 +24,7 @@ laravel new ornek-uygulama
 
 Proje oluşturulduktan sonra, Laravel Artisan'ın `serve` komutunu kullanarak Laravel'in yerel geliştirme sunucusunu başlatın:
 
-```bash
+```shell
 cd ornek-uygulama
  
 php artisan serve

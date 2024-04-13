@@ -1,5 +1,4 @@
 # `#` Giriş
-
 ---
 
 Laravel dokümantasyonu boyunca, Laravel'in özellikleri ile facades aracılığıyla etkileşime giren kod örnekleri göreceksiniz. Facade'ler, uygulamanın service providers’larında mevcut olan sınıflara "statik" bir arayüz sağlar. Laravel, Laravel'in neredeyse tüm özelliklerine erişim sağlayan birçok facade ile birlikte gelir.
@@ -42,7 +41,6 @@ Route::get('/users', function () {
 ```
 
 # `#` Facades’ler Ne Zaman Kullanılmalı
-
 ---
 
 Facade'lerin birçok faydası vardır. Enjekte edilmesi veya manuel olarak yapılandırılması gereken uzun sınıf adlarını hatırlamadan Laravel'in özelliklerini kullanmanıza izin veren kısa ve akılda kalıcı bir sözdizimi sağlarlar. Ayrıca, PHP'nin dinamik yöntemlerini benzersiz bir şekilde kullandıkları için test edilmeleri kolaydır.

@@ -1,5 +1,4 @@
 # `#` Giriş
-
 ---
 
 Service providers tüm Laravel uygulama bootstrap’inin (önyüklemesinin) merkezi yeridir. Kendi uygulamanızın yanı sıra Laravel'in tüm çekirdek hizmetleri service providers aracılığıyla bootstrap’lanir (önyüklenir).
@@ -11,5 +10,4 @@ Laravel, mailer, queue, cache ve diğerleri gibi temel hizmetlerini bootstrap (�
 Tüm kullanıcı tanımlı service provider’lar `bootstrap/providers.php` dosyasına kaydedilir. Aşağıdaki dokümantasyonda, kendi servis sağlayıcılarınızı nasıl yazacağınızı ve Laravel uygulamanıza nasıl kaydedeceğinizi öğreneceksiniz.
 
 # `#` Service Providers Oluşturma
-
 ---

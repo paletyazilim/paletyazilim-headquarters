@@ -1,5 +1,4 @@
 # `#` Giriş
-
 ---
 
 Laravel, routing (yönlendirme), validation (doğrulama), caching (önbelleğe alma), queue (kuyruklar), storage (dosya depolama) ve daha fazlası gibi modern web uygulamaları oluşturmak için ihtiyaç duyduğunuz tüm özellikleri sağlayan bir backend framework’üdür. Bununla birlikte, geliştiricilere uygulamanızın frontend’ini oluşturmak için güçlü yaklaşımlar da dahil olmak üzere güzel bir fullstack deneyimi sunar.
@@ -7,7 +6,6 @@ Laravel, routing (yönlendirme), validation (doğrulama), caching (önbelleğe a
 Laravel ile bir uygulama oluştururken frontend geliştirmeyi ele almanın iki temel yolu vardır ve hangi yaklaşımı seçeceğiniz, frontend’i PHP'den yararlanarak mı yoksa Vue ve React gibi JavaScript çerçevelerini kullanarak mı oluşturmak istediğinize göre belirlenir. Aşağıda bu seçeneklerin her ikisini de tartışacağız, böylece uygulamanız için ön uç geliştirmeye en iyi yaklaşım konusunda bilinçli bir karar verebilirsiniz.
 
 # `#` PHP Kullanarak
-
 ---
 
 ## PHP ve Blade
