@@ -1,6 +1,58 @@
 {
   "recentFiles": [
     {
+      "basename": "4 - Bir İsteğin Yaşam Döngüsü",
+      "path": "6- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md"
+    },
+    {
+      "basename": "3 - Yapılandırma",
+      "path": "6- Laravele Giriş/3 - Yapılandırma.md"
+    },
+    {
+      "basename": "2 - Laravel Kurulumu",
+      "path": "6- Laravele Giriş/2 - Laravel Kurulumu.md"
+    },
+    {
+      "basename": "1 - Laravel’e Başlamadan Önce",
+      "path": "6- Laravele Giriş/1 - Laravel’e Başlamadan Önce.md"
+    },
+    {
+      "basename": "10 - Routing",
+      "path": "6- Laravele Giriş/10 - Routing.md"
+    },
+    {
+      "basename": "11 - Middleware",
+      "path": "6- Laravele Giriş/11 - Middleware.md"
+    },
+    {
+      "basename": "13 - Controllers",
+      "path": "6- Laravele Giriş/13 - Controllers.md"
+    },
+    {
+      "basename": "12 - CSRF Protection",
+      "path": "6- Laravele Giriş/12 - CSRF Protection.md"
+    },
+    {
+      "basename": "9 - Facades",
+      "path": "6- Laravele Giriş/9 - Facades.md"
+    },
+    {
+      "basename": "8 - Service Providers",
+      "path": "6- Laravele Giriş/8 - Service Providers.md"
+    },
+    {
+      "basename": "7 - Service Container",
+      "path": "6- Laravele Giriş/7 - Service Container.md"
+    },
+    {
+      "basename": "6 - Frontend",
+      "path": "6- Laravele Giriş/6 - Frontend.md"
+    },
+    {
+      "basename": "5 - Dizin Yapısı",
+      "path": "6- Laravele Giriş/5 - Dizin Yapısı.md"
+    },
+    {
       "basename": "10- PHP Arrays (Diziler)",
       "path": "1- PHP'ye Giriş/10- PHP Arrays (Diziler).md"
     },
@@ -147,14 +199,6 @@
     {
       "basename": "28- PHP Session",
       "path": "1- PHP'ye Giriş/28- PHP Session.md"
-    },
-    {
-      "basename": "4- Formlarda Zorunluluk",
-      "path": "2- PHP'de Formlar/4- Formlarda Zorunluluk.md"
-    },
-    {
-      "basename": "8- MySQL Hazır Deyimler",
-      "path": "5- Veritabanı (PDO)/8- MySQL Hazır Deyimler.md"
     }
   ],
   "omittedPaths": [],
