@@ -7,10 +7,10 @@ Kimlik doğrulamanın yanı sıra çeşitli görevleri yerine getirmek için ek 
 Yeni bir middleware oluşturmak için `make:middleware` Artisan komutunu kullanın:
 
 ```
-php artisan make:middleware EnsureTokenIsValid
+php artisan make:middleware BuTokenVarMi
 ```
 
-Bu komut, `app/Http/Middleware` dizininize yeni bir `EnsureTokenIsValid` sınıfı yerleştirecektir. Bu middleware, yalnızca sağlanan token girişi belirtilen bir değerle eşleşirse rotaya erişime izin vereceğiz. Aksi takdirde, kullanıcıları ana URI'ye geri yönlendireceğiz:
+Bu komut, `app/Http/Middleware` dizininize yeni bir `BuTokenVarMi` sınıfı yerleştirecektir. Bu middleware, yalnızca sağlanan token girişi belirtilen bir değerle eşleşirse rotaya erişime izin vereceğiz. Aksi takdirde, kullanıcıları ana URI'ye geri yönlendireceğiz:
 
 ```PHP
 <?php
@@ -30,7 +30,7 @@ class EnsureTokenIsValid
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if ($request->input('id') !== '1234') {
+        if ($request->input('token') !== '1234') {
             return redirect('home');
         }
 
@@ -39,7 +39,7 @@ class EnsureTokenIsValid
 }
 ```
 
-Gördüğünüz gibi, verilen id gizli id'ile eşleşmezse, middleware istemciye bir HTTP yönlendirmesi döndürecektir; aksi takdirde, istek uygulamaya daha fazla aktarılacaktır. İsteği uygulamanın daha derinlerine iletmek için (middlewarein "geçmesine" izin vererek), `$request` ile `$next` geri çağrısını çağırmalısınız.
+Gördüğünüz gibi, verilen `token` gizli `token` ile eşleşmezse, middleware istemciye bir HTTP yönlendirmesi döndürecektir; aksi takdirde, istek uygulamaya daha fazla aktarılacaktır. İsteği uygulamanın daha derinlerine iletmek için (middleware'in "geçmesine" izin vererek), `$request` ile `$next` geri çağrısını çağırmalısınız.
 
 Middlewarei, HTTP isteklerinin uygulamanıza ulaşmadan önce geçmesi gereken bir dizi "katman" olarak düşünmek en iyisidir. Her katman isteği inceleyebilir ve hatta tamamen reddedebilir.
 
@@ -99,7 +99,17 @@ class AfterMiddleware
 ---
 #### Global Middleware
 ---
-Uygulamanıza yapılan her HTTP isteği sırasında bir ara yazılımın çalışmasını istiyorsanız, ara yazılım sınıfını `app/Http/Kernel.php` sınıfınızın `$middleware` özelliğinde listeleyin.
+Uygulamanıza yapılan her HTTP isteği sırasında bir middleware çalışmasını istiyorsanız, bunu uygulamanızın `bootstrap/app.php` dosyasındaki global middleware yığınına ekleyebilirsiniz:
+
+```PHP
+use App\Http\Middleware\BuTokenVarMi;
+
+->withMiddleware(function (Middleware $middleware) {
+        $middleware->append(BuTokenVarMi::class);
+    })
+```
+
+`withMiddleware` kapanışına sağlanan `$middleware` nesnesi, `Illuminate\Foundation\Configuration\Middleware`'in bir örneğidir ve uygulamanızın rotalarına atanan ara yazılımları yönetmekten sorumludur. `append` metotu, middleware'i global middleware listesinin sonuna ekler. Listenin başına bir middleware eklemek isterseniz `prepend` metotu kullanmalısınız.
 
 #### Rotalara Middleware Atama
 ---
@@ -121,61 +131,3 @@ Route::get('/', function () {
 })->middleware([First::class, Second::class]);
 ```
 
-Kolaylık sağlamak için, uygulamanızın `app/Http/Kernel.php` dosyasında middlewarelere takma adlar atayabilirsiniz. Varsayılan olarak, bu sınıfın `$middlewareAliases` özelliği Laravel ile birlikte gelen ara katman yazılımları için girişler içerir. Bu listeye kendi ara katmanınızı ekleyebilir ve ona seçtiğiniz bir takma ad atayabilirsiniz:
-
-```PHP title:app/Http/Kernel.php'
-protected $middlewareAliases = [
-    'auth' => \App\Http\Middleware\Authenticate::class,
-    'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
-    'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
-    'cache.headers' => \Illuminate\Http\Middleware\SetCacheHeaders::class,
-    'can' => \Illuminate\Auth\Middleware\Authorize::class,
-    'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
-    'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
-    'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
-    'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
-];
-```
-
-HTTP çekirdeğinde middleware takma adı tanımlandıktan sonra, rotalara middleware atarken bu takma adı kullanabilirsiniz:
-
-```PHP
-Route::get('/profile', function () {
-    // ...
-})->middleware('auth');
-```
-
-###### Middleware Hariç
----
-Bir grup rotaya middleware atarken, middleware grup içindeki tek bir rotaya uygulanmasını bazen engellemeniz gerekebilir. Bunu `withoutMiddleware` metotunu kullanarak gerçekleştirebilirsiniz:
-
-```PHP title:'routes/web.php'
-use App\Http\Middleware\EnsureTokenIsValid;
- 
-Route::middleware([EnsureTokenIsValid::class])->group(function () {
-    Route::get('/', function () {
-        // ...
-    });
- 
-    Route::get('/profile', function () {
-        // ...
-    })->withoutMiddleware([EnsureTokenIsValid::class]);
-});
-```
-
-Ayrıca, belirli bir middlewarei tüm rota tanımları grubundan hariç tutabilirsiniz:
-
-```PHP
-use App\Http\Middleware\EnsureTokenIsValid;
- 
-Route::withoutMiddleware([EnsureTokenIsValid::class])->group(function () {
-    Route::get('/profile', function () {
-        // ...
-    });
-});
-```
-
-`withoutMiddleware` metotu yalnızca rota middlewarei kaldırabilir ve global middleware için geçerli değildir.
-
-#### Middleware Grupları
----

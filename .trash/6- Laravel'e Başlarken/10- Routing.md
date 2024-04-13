@@ -24,6 +24,18 @@ Route::get('/user', [UserController::class, 'index']);
 
 `routes/api.php` dosyasında tanımlanan rotalar `RouteServiceProvider` tarafından bir rota grubu içinde iç içe yerleştirilir. Bu grup içinde `/api` URI öneki otomatik olarak uygulanır, böylece dosyadaki her rotaya manuel olarak uygulamanız gerekmez. `RouteServiceProvider` sınıfınızı değiştirerek öneki ve diğer rota grubu seçeneklerini değiştirebilirsiniz.
 
+#### View Routes (View Rotaları)
+---
+Rotanızın yalnızca bir view döndürmesi gerekiyorsa, `Route::view` metotunu kullanabilirsiniz. `redirect` metotu gibi, bu yöntem de tam bir rota veya denetleyici tanımlamak zorunda kalmamanız için basit bir kısayol sağlar. `view` yöntemi ilk argüman olarak bir URI ve ikinci argüman olarak bir görünüm adı kabul eder. Buna ek olarak, isteğe bağlı üçüncü bir bağımsız değişken olarak görünüme aktarılacak bir veri dizisi sağlayabilirsiniz:
+
+```PHP
+Route::view('/welcome', 'welcome');
+ 
+Route::view('/welcome', 'welcome', ['name' => 'Taylor']);
+```
+
+>Görünüm rotalarında rota parametrelerini kullanırken, aşağıdaki parametreler Laravel tarafından ayrılmıştır ve kullanılamaz: `view`, `data`, `status` ve `headers`.
+
 #### Router Methods
 ---
 Router, herhangi bir HTTP fiiline yanıt veren rotaları kaydetmenize olanak tanır:
@@ -53,7 +65,15 @@ Route::any('/', function () {
 
 #### Dependency Enjeksiyonu
 ---
-Rotanızın geri çağırma imzasında rotanızın gerektirdiği dependencyleri yazabilirsiniz. Bildirilen dependencyler otomatik olarak çözümlenecek ve Laravel service containers (servis kapsamları) tarafından geri aramaya enjekte edilecektir. Örneğin, mevcut HTTP isteğinin rota geri çağırmanıza otomatik olarak enjekte edilmesi için `Illuminate\Http\Request` sınıfını işaretleyebilirsiniz:
+Rotanızın çağrıma isteğinizde rotanızın gerektirdiği dependencyleri (bağımlılıkları) yazabilirsiniz. Bildirilen dependencyler (bağımlılıklar) otomatik olarak çözümlenecek ve Laravel service containers (servis kapsamları) tarafından rotaya enjekte edilecektir. Örneğin, mevcut HTTP isteğinin rota çağırmanıza otomatik olarak enjekte edilmesi için `Illuminate\Http\Request` sınıfını işaretleyebilirsiniz:
+
+```PHP
+use Illuminate\Http\Request;
+ 
+Route::get('/users', function (Request $request) {
+    // ...
+});
+```
 
 ###### CSRF Koruması
 ---
@@ -66,73 +86,6 @@ Web rotaları dosyasında tanımlanan `POST`, `PUT`, `PATCH` veya `DELETE` rotal
 </form>
 ```
 
-#### Redirect Routes (Yönlendirme Rotaları)
----
-Başka bir URI'ye yönlendiren bir rota tanımlıyorsanız, `Route::redirect` metotunu kullanabilirsiniz. Bu metot, basit bir yönlendirme gerçekleştirmek için tam bir rota veya denetleyici tanımlamak zorunda kalmamanız için kullanışlı bir kısayol sağlar:
-
-```PHP
-Route::redirect('/here', '/there');
-```
-
-Varsayılan olarak, `Route::redirect` `302` durum kodunu döndürür. İsteğe bağlı üçüncü parametreyi kullanarak durum kodunu özelleştirebilirsiniz:
-
-```PHP
-Route::redirect('/here', '/there', 301);
-```
-
-Ya da `301` durum kodu döndürmek için `Route::permanentRedirect` metotunu kullanabilirsiniz:
-
-```PHP
-Route::permanentRedirect('/here', '/there');
-```
-
->Yönlendirme rotalarında rota parametrelerini kullanırken, aşağıdaki parametreler Laravel tarafından ayrılmıştır ve kullanılamaz: `destination` ve `status`.
-
-#### View Routes (View Rotaları)
----
-Rotanızın yalnızca bir view döndürmesi gerekiyorsa, `Route::view` metotunu kullanabilirsiniz. `redirect` metotu gibi, bu yöntem de tam bir rota veya denetleyici tanımlamak zorunda kalmamanız için basit bir kısayol sağlar. `view` yöntemi ilk argüman olarak bir URI ve ikinci argüman olarak bir görünüm adı kabul eder. Buna ek olarak, isteğe bağlı üçüncü bir bağımsız değişken olarak görünüme aktarılacak bir veri dizisi sağlayabilirsiniz:
-
-```PHP
-Route::view('/welcome', 'welcome');
- 
-Route::view('/welcome', 'welcome', ['name' => 'Taylor']);
-```
-
->Görünüm rotalarında rota parametrelerini kullanırken, aşağıdaki parametreler Laravel tarafından ayrılmıştır ve kullanılamaz: `view`, `data`, `status` ve `headers`.
-
-#### Route List (Rota Listesi)
----
-`route:list` Artisan komutu, uygulamanız tarafından tanımlanan tüm rotaların genel bir görünümünü kolayca sağlayabilir:
-
-```
-php artisan route:list
-```
-
-Varsayılan olarak, her rotaya atanan rota middlewareleri `route:list` çıktısında görüntülenmeyecektir; ancak, komuta `-v` seçeneğini ekleyerek Laravel'e rota middleware ve middleware grup adlarını görüntülemesi talimatını verebilirsiniz:
-
-```
-php artisan route:list -v
- 
-php artisan route:list -vv
-```
-
-Laravel'e sadece belirli bir URI ile başlayan rotaları göstermesi talimatını da verebilirsiniz:
-
-```
-php artisan route:list --path=api
-```
-
-Buna ek olarak, `route:list` komutunu çalıştırırken `--except-vendor` seçeneğini sağlayarak Laravel'e üçüncü taraf paketleri tarafından tanımlanan rotaları gizlemesi talimatını verebilirsiniz:
-
-```
-php artisan route:list --except-vendor
-```
-
-Aynı şekilde, `route:list` komutunu çalıştırırken `--only-vendor` seçeneğini sağlayarak Laravel'e sadece üçüncü taraf paketleri tarafından tanımlanan rotaları göstermesi talimatını da verebilirsiniz:
-
-```
-php artisan route:list --only-vendor
-```
 
 ## Route Parameters (Rota Parametreleri)
 ---
@@ -254,3 +207,116 @@ Route::get('/search/{search}', function (string $search) {
 ```
 
 >Kodlanmış ileri eğik çizgiler yalnızca son rota segmenti içinde desteklenir.
+
+## Named Routes (İsimlendirilmiş Rotalar)
+---
+Adlandırılmış rotalar, belirli rotalar için URL'lerin veya yönlendirmelerin kolayca oluşturulmasını sağlar. `name` metotu rota tanımına zincirleyerek bir rota için bir ad belirtebilirsiniz:
+
+```PHP
+Route::get('/user/profile', function () {
+    // ...
+})->name('profile');
+```
+
+Controller eylemleri için rota adları da belirtebilirsiniz:
+
+```PHP
+Route::get(
+    '/user/profile',
+    [UserProfileController::class, 'show']
+)->name('profile');
+```
+
+>Rota adları her zaman benzersiz olmalıdır.
+
+#### İsimlendirilmiş Rotalara URL Oluşturma
+---
+Belirli bir rotaya bir isim atadıktan sonra, Laravel'in `route` ve `redirect` yardımcı fonksiyonları aracılığıyla URL'ler veya yönlendirmeler oluştururken rotanın adını kullanabilirsiniz:
+
+```PHP
+// URL'ler Oluşturuluyor...
+$url = route('profile');
+ 
+// Yönlendirmeler Oluşturuluyor...
+return redirect()->route('profile');
+ 
+return to_route('profile');
+```
+
+İsimlendirilmiş rota parametre içeriyorsa, parametreleri `route` metotunun ikinci bağımsız değişken olarak tanımlayabilirsin. Verilen parametreler otomatik olarak oluşturulan URL'ye doğru konumlarında eklenecektir:
+
+```PHP
+Route::get('/user/{id}/profile', function (string $id) {
+    // ...
+})->name('profile');
+ 
+$url = route('profile', ['id' => 1]);
+```
+
+Diziye ek parametreler tanımlarsanız, bu anahtar / değer çiftleri otomatik olarak oluşturulan URL'nin sorgu dizesine eklenecektir:
+
+```PHP
+Route::get('/user/{id}/profile', function (string $id) {
+    // ...
+})->name('profile');
+ 
+$url = route('profile', ['id' => 1, 'photos' => 'yes']);
+ 
+// /user/1/profile?photos=yes
+```
+
+## Redirect Routes (Yönlendirme Rotaları)
+---
+Başka bir URI'ye yönlendiren bir rota tanımlıyorsanız, `Route::redirect` metotunu kullanabilirsiniz. Bu metot, basit bir yönlendirme gerçekleştirmek için tam bir rota veya denetleyici tanımlamak zorunda kalmamanız için kullanışlı bir kısayol sağlar:
+
+```PHP
+Route::redirect('/here', '/there');
+```
+
+Varsayılan olarak, `Route::redirect` `302` durum kodunu döndürür. İsteğe bağlı üçüncü parametreyi kullanarak durum kodunu özelleştirebilirsiniz:
+
+```PHP
+Route::redirect('/here', '/there', 301);
+```
+
+Ya da `301` durum kodu döndürmek için `Route::permanentRedirect` metotunu kullanabilirsiniz:
+
+```PHP
+Route::permanentRedirect('/here', '/there');
+```
+
+>Yönlendirme rotalarında rota parametrelerini kullanırken, aşağıdaki parametreler Laravel tarafından ayrılmıştır ve kullanılamaz: `destination` ve `status`.
+
+## Route List (Rotaları Listeleme)
+---
+`route:list` Artisan komutu, uygulamanız tarafından tanımlanan tüm rotaların genel bir görünümünü kolayca sağlayabilir:
+
+```
+php artisan route:list
+```
+
+Varsayılan olarak, her rotaya atanan rota middlewareleri `route:list` çıktısında görüntülenmeyecektir; ancak, komuta `-v` seçeneğini ekleyerek Laravel'e rota middleware ve middleware grup adlarını görüntülemesi talimatını verebilirsiniz:
+
+```
+php artisan route:list -v
+ 
+php artisan route:list -vv
+```
+
+Laravel'e sadece belirli bir URI ile başlayan rotaları göstermesi talimatını da verebilirsiniz:
+
+```
+php artisan route:list --path=api
+```
+
+Buna ek olarak, `route:list` komutunu çalıştırırken `--except-vendor` seçeneğini sağlayarak Laravel'e üçüncü taraf paketleri tarafından tanımlanan rotaları gizlemesi talimatını verebilirsiniz:
+
+```
+php artisan route:list --except-vendor
+```
+
+Aynı şekilde, `route:list` komutunu çalıştırırken `--only-vendor` seçeneğini sağlayarak Laravel'e sadece üçüncü taraf paketleri tarafından tanımlanan rotaları göstermesi talimatını da verebilirsiniz:
+
+```
+php artisan route:list --only-vendor
+```

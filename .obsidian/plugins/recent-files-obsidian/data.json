@@ -1,36 +1,76 @@
 {
   "recentFiles": [
     {
-      "basename": "conflict-files-obsidian-git",
-      "path": "conflict-files-obsidian-git.md"
+      "basename": "10- PHP Arrays (Diziler)",
+      "path": "1- PHP'ye Giriş/10- PHP Arrays (Diziler).md"
     },
     {
-      "basename": "9- Facades",
-      "path": "6- Laravel'e Başlarken/9- Facades.md"
+      "basename": "12- Traits (Nitelikler)",
+      "path": "3- PHP OOP/12- Traits (Nitelikler).md"
     },
     {
-      "basename": "8- Service Providers (Hizmet Sağlayıcılar)",
-      "path": "6- Laravel'e Başlarken/8- Service Providers (Hizmet Sağlayıcılar).md"
+      "basename": "13- Iterables (Yinelenebilir Tür)",
+      "path": "3- PHP OOP/13- Iterables (Yinelenebilir Tür).md"
     },
     {
-      "basename": "7- Service Container (Hizmet Kapsayıcı)",
-      "path": "6- Laravel'e Başlarken/7- Service Container (Hizmet Kapsayıcı).md"
+      "basename": "5- Destructor (Yıkıcı Metotlar)",
+      "path": "3- PHP OOP/5- Destructor (Yıkıcı Metotlar).md"
     },
     {
-      "basename": "6- Request Lifecycle (İstek Yaşam Döngüsü)",
-      "path": "6- Laravel'e Başlarken/6- Request Lifecycle (İstek Yaşam Döngüsü).md"
+      "basename": "4- PHP Variables (Değişkenler)",
+      "path": "1- PHP'ye Giriş/4- PHP Variables (Değişkenler).md"
     },
     {
-      "basename": "5- Frontend - PHP",
-      "path": "6- Laravel'e Başlarken/5- Frontend - PHP.md"
+      "basename": "5- PHP Data Types (Veri Türleri)",
+      "path": "1- PHP'ye Giriş/5- PHP Data Types (Veri Türleri).md"
     },
     {
-      "basename": "4- Directory Structure (Dizin Yapısı)",
-      "path": "6- Laravel'e Başlarken/4- Directory Structure (Dizin Yapısı).md"
+      "basename": "6- PHP Variables Scope (Değişkenlerin Kapsamı)",
+      "path": "1- PHP'ye Giriş/6- PHP Variables Scope (Değişkenlerin Kapsamı).md"
     },
     {
-      "basename": "3- Configuration (Laraveli Yapılandırma) - (Ç)",
-      "path": "6- Laravel'e Başlarken/3- Configuration (Laraveli Yapılandırma) - (Ç).md"
+      "basename": "6- Erişim Belirleyicileri",
+      "path": "3- PHP OOP/6- Erişim Belirleyicileri.md"
+    },
+    {
+      "basename": "7- Inheritance (Miras)",
+      "path": "3- PHP OOP/7- Inheritance (Miras).md"
+    },
+    {
+      "basename": "8- Interfaces (Arayüzler)",
+      "path": "3- PHP OOP/8- Interfaces (Arayüzler).md"
+    },
+    {
+      "basename": "9- Soyut Sınıflar",
+      "path": "3- PHP OOP/9- Soyut Sınıflar.md"
+    },
+    {
+      "basename": "4- Constructor (Yapıcı Metotlar)",
+      "path": "3- PHP OOP/4- Constructor (Yapıcı Metotlar).md"
+    },
+    {
+      "basename": "2- Sınıflar ve Nesneler",
+      "path": "3- PHP OOP/2- Sınıflar ve Nesneler.md"
+    },
+    {
+      "basename": "11- Statik Metotlar",
+      "path": "3- PHP OOP/11- Statik Metotlar.md"
+    },
+    {
+      "basename": "10- Statik Özellikler",
+      "path": "3- PHP OOP/10- Statik Özellikler.md"
+    },
+    {
+      "basename": "3- Sınıflarda Sabitler",
+      "path": "3- PHP OOP/3- Sınıflarda Sabitler.md"
+    },
+    {
+      "basename": "27- PHP Cookies",
+      "path": "1- PHP'ye Giriş/27- PHP Cookies.md"
+    },
+    {
+      "basename": "23- PHP Date and Time (Tarih ve Zaman)",
+      "path": "1- PHP'ye Giriş/23- PHP Date and Time (Tarih ve Zaman).md"
     },
     {
       "basename": "26- PHP File",
@@ -57,10 +97,6 @@
       "path": "5- Veritabanı (PDO)/16- MySQL Veri Limitleme.md"
     },
     {
-      "basename": "12- Traits (Nitelikler)",
-      "path": "3- PHP OOP/12- Traits (Nitelikler).md"
-    },
-    {
       "basename": "6- Formu Tamamlama",
       "path": "2- PHP'de Formlar/6- Formu Tamamlama.md"
     },
@@ -71,10 +107,6 @@
     {
       "basename": "1- Formları Yakalama",
       "path": "2- PHP'de Formlar/1- Formları Yakalama.md"
-    },
-    {
-      "basename": "27- PHP Cookies",
-      "path": "1- PHP'ye Giriş/27- PHP Cookies.md"
     },
     {
       "basename": "25- PHP Superglobals",
@@ -93,10 +125,6 @@
       "path": "1- PHP'ye Giriş/11- PHP Casting (Tür Dönüşümü).md"
     },
     {
-      "basename": "10- PHP Arrays (Diziler)",
-      "path": "1- PHP'ye Giriş/10- PHP Arrays (Diziler).md"
-    },
-    {
       "basename": "9- PHP Math",
       "path": "1- PHP'ye Giriş/9- PHP Math.md"
     },
@@ -107,18 +135,6 @@
     {
       "basename": "7- PHP Strings (Dizeler)",
       "path": "1- PHP'ye Giriş/7- PHP Strings (Dizeler).md"
-    },
-    {
-      "basename": "6- PHP Variables Scope (Değişkenlerin Kapsamı)",
-      "path": "1- PHP'ye Giriş/6- PHP Variables Scope (Değişkenlerin Kapsamı).md"
-    },
-    {
-      "basename": "5- PHP Data Types (Veri Türleri)",
-      "path": "1- PHP'ye Giriş/5- PHP Data Types (Veri Türleri).md"
-    },
-    {
-      "basename": "4- PHP Variables (Değişkenler)",
-      "path": "1- PHP'ye Giriş/4- PHP Variables (Değişkenler).md"
     },
     {
       "basename": "3- PHP Syntax (Söz Dizimi)",
@@ -139,66 +155,6 @@
     {
       "basename": "8- MySQL Hazır Deyimler",
       "path": "5- Veritabanı (PDO)/8- MySQL Hazır Deyimler.md"
-    },
-    {
-      "basename": "7- MySQL Çoklu Kayıt Ekleme",
-      "path": "5- Veritabanı (PDO)/7- MySQL Çoklu Kayıt Ekleme.md"
-    },
-    {
-      "basename": "3- MySQL Veritabanı Oluşturma",
-      "path": "5- Veritabanı (PDO)/3- MySQL Veritabanı Oluşturma.md"
-    },
-    {
-      "basename": "2- MySQL'e Bağlanma",
-      "path": "5- Veritabanı (PDO)/2- MySQL'e Bağlanma.md"
-    },
-    {
-      "basename": "4- Constructor (Yapıcı Metotlar)",
-      "path": "3- PHP OOP/4- Constructor (Yapıcı Metotlar).md"
-    },
-    {
-      "basename": "11- Statik Metotlar",
-      "path": "3- PHP OOP/11- Statik Metotlar.md"
-    },
-    {
-      "basename": "9- Soyut Sınıflar",
-      "path": "3- PHP OOP/9- Soyut Sınıflar.md"
-    },
-    {
-      "basename": "10- Statik Özellikler",
-      "path": "3- PHP OOP/10- Statik Özellikler.md"
-    },
-    {
-      "basename": "7- Inheritance (Miras)",
-      "path": "3- PHP OOP/7- Inheritance (Miras).md"
-    },
-    {
-      "basename": "6- Erişim Belirleyicileri",
-      "path": "3- PHP OOP/6- Erişim Belirleyicileri.md"
-    },
-    {
-      "basename": "8- Interfaces (Arayüzler)",
-      "path": "3- PHP OOP/8- Interfaces (Arayüzler).md"
-    },
-    {
-      "basename": "14- Namespaces",
-      "path": "3- PHP OOP/14- Namespaces.md"
-    },
-    {
-      "basename": "22- PHP Include",
-      "path": "1- PHP'ye Giriş/22- PHP Include.md"
-    },
-    {
-      "basename": "0- Neler Öğreneceğiz",
-      "path": "6- Laravel'e Başlarken/0- Neler Öğreneceğiz.md"
-    },
-    {
-      "basename": "1- Laravel Nedir",
-      "path": "6- Laravel'e Başlarken/1- Laravel Nedir.md"
-    },
-    {
-      "basename": "2- Create a Project (Laravel Projesi Oluşturma)",
-      "path": "6- Laravel'e Başlarken/2- Create a Project (Laravel Projesi Oluşturma).md"
     }
   ],
   "omittedPaths": [],

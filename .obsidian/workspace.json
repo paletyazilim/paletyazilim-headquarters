@@ -20,24 +20,24 @@
             }
           },
           {
-            "id": "945d9bf2c7fbc713",
+            "id": "8898323b71bb0242",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6- Laravel'e Başlarken/9- Facades.md",
+                "file": "1- PHP'ye Giriş/27- PHP Cookies.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d534d7d590bf9e5a",
+            "id": "36bd2a238ea63a59",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "1- PHP'ye Giriş/10- PHP Arrays (Diziler).md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "1- PHP'ye Giriş/10- PHP Arrays (Diziler).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "1- PHP'ye Giriş/10- PHP Arrays (Diziler).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "1- PHP'ye Giriş/10- PHP Arrays (Diziler).md"
               }
             }
           },
@@ -196,34 +196,34 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d534d7d590bf9e5a",
+  "active": "36bd2a238ea63a59",
   "lastOpenFiles": [
+    "6- Laravel'e Başlarken/11- Middleware.md",
+    "1- PHP'ye Giriş/10- PHP Arrays (Diziler).md",
+    "6- Laravele Giriş",
+    "3- PHP OOP/12- Traits (Nitelikler).md",
+    "3- PHP OOP/13- Iterables (Yinelenebilir Tür).md",
+    "3- PHP OOP/5- Destructor (Yıkıcı Metotlar).md",
+    "1- PHP'ye Giriş/4- PHP Variables (Değişkenler).md",
+    "1- PHP'ye Giriş/5- PHP Data Types (Veri Türleri).md",
+    "1- PHP'ye Giriş/6- PHP Variables Scope (Değişkenlerin Kapsamı).md",
+    "3- PHP OOP/6- Erişim Belirleyicileri.md",
+    "3- PHP OOP/7- Inheritance (Miras).md",
+    "3- PHP OOP/8- Interfaces (Arayüzler).md",
+    "3- PHP OOP/9- Soyut Sınıflar.md",
+    "3- PHP OOP/4- Constructor (Yapıcı Metotlar).md",
+    "3- PHP OOP/2- Sınıflar ve Nesneler.md",
+    "3- PHP OOP/11- Statik Metotlar.md",
+    "3- PHP OOP/10- Statik Özellikler.md",
+    "3- PHP OOP/3- Sınıflarda Sabitler.md",
+    "1- PHP'ye Giriş/23- PHP Date and Time (Tarih ve Zaman).md",
+    "6- Laravel'e Başlarken/10- Routing.md",
+    "6- Laravel'e Başlarken/14- Views.md",
+    "6- Laravel'e Başlarken/4- Directory Structure (Dizin Yapısı).md",
+    "6- Laravel'e Başlarken/0- Neler Öğreneceğiz.md",
     "6- Laravel'e Başlarken/9- Facades.md",
     "conflict-files-obsidian-git.md",
     "6- Laravel'e Başlarken/8- Service Providers (Hizmet Sağlayıcılar).md",
-    "6- Laravel'e Başlarken/7- Service Container (Hizmet Kapsayıcı).md",
-    "6- Laravel'e Başlarken/6- Request Lifecycle (İstek Yaşam Döngüsü).md",
-    "6- Laravel'e Başlarken/5- Frontend - PHP.md",
-    "6- Laravel'e Başlarken/4- Directory Structure (Dizin Yapısı).md",
-    "6- Laravel'e Başlarken/3- Configuration (Laraveli Yapılandırma) - (Ç).md",
-    "1- PHP'ye Giriş/26- PHP File.md",
-    "1- PHP'ye Giriş/21- PHP Exceptions (Hata Yakalama).md",
-    "2- PHP'de Formlar/2- Form Güvenliği.md",
-    "5- Veritabanı (PDO)/9- MySQL Veri Seçme (Çekme).md",
-    "5- Veritabanı (PDO)/16- MySQL Veri Limitleme.md",
-    "3- PHP OOP/12- Traits (Nitelikler).md",
-    "2- PHP'de Formlar/6- Formu Tamamlama.md",
-    "2- PHP'de Formlar/3- Formları Doğrulama.md",
-    "2- PHP'de Formlar/1- Formları Yakalama.md",
-    "1- PHP'ye Giriş/27- PHP Cookies.md",
-    "1- PHP'ye Giriş/25- PHP Superglobals.md",
-    "1- PHP'ye Giriş/29- PHP RegEx.md",
-    "1- PHP'ye Giriş/16- PHP If-Else-Elseif (Koşullar).md",
-    "1- PHP'ye Giriş/11- PHP Casting (Tür Dönüşümü).md",
-    "1- PHP'ye Giriş/10- PHP Arrays (Diziler).md",
-    "1- PHP'ye Giriş/9- PHP Math.md",
-    "1- PHP'ye Giriş/8- PHP Numbers (Sayılar).md",
-    "1- PHP'ye Giriş/7- PHP Strings (Dizeler).md",
     "7- Laravel Nasıl Çalışır",
     "0- Başlamadan Önce",
     "6- Laravel'e Başlarken",
@@ -235,7 +235,6 @@
     "Pasted image 20231112165207.png",
     "Node.JS",
     "Başlıksız.canvas",
-    "assets/images",
-    "assets"
+    "assets/images"
   ]
 }
