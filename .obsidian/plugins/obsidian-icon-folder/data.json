@@ -6,6 +6,8 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "RiBookMarkFill",
+      "RiBookOpenFill",
       "RiFolderFill",
       "RiBookFill"
     ],
@@ -27,8 +29,14 @@
   "Tutorial": "RiBookFill",
   "1- PHP'ye Giriş": "RiBookFill",
   "2- PHP'de Formlar": "RiBookFill",
-  "5- Veritabanı (PDO)": "RiBookFill",
   "3- PHP OOP": "RiBookFill",
   "0- Başlamadan Önce": "RiBookFill",
-  "6- Laravele Giriş": "RiBookFill"
+  "4- Veritabanı (PDO)": "RiBookFill",
+  "5- Laravele Giriş": "RiBookFill",
+  "6 - Laravel Temelleri": "RiBookFill",
+  "Laravel/5 - HTTP Requests": "RiBookMarkFill",
+  "Laravel/1 - Routing": "RiBookMarkFill",
+  "Laravel/2 - Middleware": "RiBookMarkFill",
+  "Laravel/3 - CSRF Protection": "RiBookMarkFill",
+  "Laravel/4 - Controllers": "RiBookMarkFill"
 }

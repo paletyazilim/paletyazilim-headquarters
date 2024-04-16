@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"aac3559640969b3c","type":"text","text":"View","x":-480,"y":-30,"width":250,"height":60},
+		{"id":"b7335e81002c6c5a","type":"text","text":"Model","x":260,"y":-30,"width":250,"height":60},
+		{"id":"9ffc3a6255db8843","type":"text","text":"Controller","x":-100,"y":-30,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"3ca19f0d636f1e10","fromNode":"aac3559640969b3c","fromSide":"right","toNode":"9ffc3a6255db8843","toSide":"left"},
+		{"id":"a2a00dfaaf7a86ee","fromNode":"9ffc3a6255db8843","fromSide":"right","toNode":"b7335e81002c6c5a","toSide":"left"}
+	]
+}

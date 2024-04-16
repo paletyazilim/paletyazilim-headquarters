@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "86ae9ea8dcb5e357",
+        "id": "80f0b498f6e73e58",
         "type": "tabs",
         "children": [
           {
-            "id": "b9eeaca8e6162ae4",
+            "id": "bdb835adf2cd632d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6- Laravele Giriş/13 - Controllers.md",
+                "file": "6 - Laravel Temelleri/2 - Görüntü (View) Rotaları.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "6- Laravele Giriş/13 - Controllers.md",
+                "file": "6 - Laravel Temelleri/2 - Görüntü (View) Rotaları.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "6- Laravele Giriş/13 - Controllers.md",
+                "file": "6 - Laravel Temelleri/2 - Görüntü (View) Rotaları.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "6- Laravele Giriş/13 - Controllers.md"
+                "file": "6 - Laravel Temelleri/2 - Görüntü (View) Rotaları.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -171,46 +171,49 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e517a783a5bb8142",
+  "active": "bdb835adf2cd632d",
   "lastOpenFiles": [
-    "6- Laravele Giriş/14 - HTTP Requests.md",
-    "6- Laravele Giriş/13 - Controllers.md",
-    "6- Laravele Giriş/12 - CSRF Protection.md",
-    "6- Laravele Giriş/11 - Middleware.md",
-    "6- Laravele Giriş/8 - Service Providers.md",
-    "6- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md",
-    "6- Laravele Giriş/1 - Laravel’e Başlamadan Önce.md",
-    "6- Laravele Giriş/2 - Laravel Kurulumu.md",
-    "6- Laravele Giriş/10 - Routing.md",
-    "6- Laravele Giriş/9 - Facades.md",
-    "6- Laravele Giriş/7 - Service Container.md",
-    "6- Laravele Giriş/6 - Frontend.md",
-    "6- Laravele Giriş/5 - Dizin Yapısı.md",
-    "6- Laravele Giriş/3 - Yapılandırma.md",
-    "1- PHP'ye Giriş/27- PHP Cookies.md",
+    "6 - Laravel Temelleri/1 - Rota Temelleri.md",
+    "6 - Laravel Temelleri/2 - Görüntü (View) Rotaları.md",
+    "6 - Laravel Temelleri/11 - Blade Components (Bileşenleri).md",
+    "6 - Laravel Temelleri/10 - Blade Templates (Şablonları).md",
+    "6 - Laravel Temelleri/9 - Blade Döngü Yönergeleri.md",
+    "6 - Laravel Temelleri/8 - Blade If ve Switch Yönergeleri.md",
+    "6 - Laravel Temelleri/7  - Blade Şablonu Nedir ve Veri Nasıl Gösterilir.md",
+    "6 - Laravel Temelleri/6 - Rota Grupları.md",
+    "6 - Laravel Temelleri/5 - İsimlendirilmiş Rotalar.md",
+    "6 - Laravel Temelleri/4 - Rota Parametreleri.md",
+    "6 - Laravel Temelleri/3 - Controller Temelleri.md",
+    "Laravel/1 - Routing/4 - Bütün Konu.md",
+    "5- Laravele Giriş/6 - Frontend.md",
+    "5- Laravele Giriş/5 - Dizin Yapısı.md",
+    "6 - Laravel Temelleri/4 - Controllers.md",
+    "6 - Laravel Temelleri/1 - Rotalar (Routing).md",
+    "Laravel/4 - Controllers/1 - Controllers Temelleri.md",
+    "Laravel/1 - Routing/1 - Routing Temelleri.md",
+    "Laravel/2 - Middleware/2 - Gelişmiş Middleware.md",
+    "Laravel/2 - Middleware/1 - Middleware Temelleri.md",
+    "Laravel/1 - Routing/2 - Gelişmiş Rotalar.md",
+    "Laravel/1 - Routing/3 - Rotalara Erişme, Düzenleme ve Cachleme.md",
+    "Laravel/5 - HTTP Requests/1 - HTTP Requests.md",
+    "6 - Laravel Temelleri/1 - Routing/Başlıksız.md",
+    "Laravel/12 - CSRF Protection.md",
+    "Laravel/3 - CSRF Protection/1 - CSRF Protection.md",
+    "Laravel",
+    "Laravel/5 - HTTP Requests",
+    "6 - Laravel Temelleri/Başlıksız.canvas",
+    "Laravel/3 - CSRF Protection",
+    "Laravel/4 - Controllers",
+    "Laravel/2 - Middleware",
+    "Laravel/1 - Routing",
+    "5- Laravele Giriş/10 - Routing",
+    "5- Laravele Giriş/Başlıksız.canvas",
     "6- Laravele Giriş/Başlıksız.canvas",
-    "2- PHP'de Formlar/7- Form ile Dosya Yükleme.md",
-    "6- Laravele Giriş/Example Laravel Doc.md",
-    "1- PHP'ye Giriş/10- PHP Arrays (Diziler).md",
-    "6- Laravel'e Başlarken/11- Middleware.md",
-    "6- Laravele Giriş",
-    "3- PHP OOP/12- Traits (Nitelikler).md",
-    "3- PHP OOP/13- Iterables (Yinelenebilir Tür).md",
-    "3- PHP OOP/5- Destructor (Yıkıcı Metotlar).md",
-    "1- PHP'ye Giriş/4- PHP Variables (Değişkenler).md",
-    "1- PHP'ye Giriş/5- PHP Data Types (Veri Türleri).md",
-    "1- PHP'ye Giriş/6- PHP Variables Scope (Değişkenlerin Kapsamı).md",
-    "7- Laravel Nasıl Çalışır",
+    "5- Laravele Giriş",
+    "6 - Laravel Temelleri",
     "0- Başlamadan Önce",
-    "6- Laravel'e Başlarken",
-    "5- Veritabanı (PDO)",
-    "3- PHP OOP",
-    "1- PHP'ye Giriş/3- İleri Düzey PHP",
-    "2- PHP'de Formlar",
     "Tutorial/-a.canvas",
     "Pasted image 20231112165207.png",
-    "Node.JS",
-    "Başlıksız.canvas",
-    "assets/images"
+    "Başlıksız.canvas"
   ]
 }

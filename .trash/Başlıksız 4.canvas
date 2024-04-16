@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"f1ed889c8373b332","x":-640,"y":-20,"width":250,"height":60,"type":"text","text":"İstek"},
+		{"id":"2f5f540e739bdfbe","x":-60,"y":-20,"width":250,"height":60,"type":"text","text":"View"},
+		{"id":"acb20cf6847bb52a","x":220,"y":-20,"width":250,"height":60,"type":"text","text":"Controller"},
+		{"id":"ce1faf84253f485b","x":500,"y":-20,"width":250,"height":60,"type":"text","text":"Model"},
+		{"id":"87bb38466355f98d","x":-360,"y":-180,"width":250,"height":60,"type":"text","text":"Middleware"}
+	],
+	"edges":[
+		{"id":"4ebb67287ffd3cee","fromNode":"f1ed889c8373b332","fromSide":"right","toNode":"87bb38466355f98d","toSide":"left"},
+		{"id":"6dd546492ab88ec6","fromNode":"87bb38466355f98d","fromSide":"right","toNode":"2f5f540e739bdfbe","toSide":"left"},
+		{"id":"e86478098f80bd63","fromNode":"2f5f540e739bdfbe","fromSide":"right","toNode":"acb20cf6847bb52a","toSide":"left"},
+		{"id":"5b3720d90b4ed612","fromNode":"acb20cf6847bb52a","fromSide":"right","toNode":"ce1faf84253f485b","toSide":"left"},
+		{"id":"4bd26ee7147bcef7","fromNode":"f1ed889c8373b332","fromSide":"right","toNode":"2f5f540e739bdfbe","toSide":"left"}
+	]
+}

@@ -193,7 +193,9 @@ Hatta `resources` metoduna bir dizi `[]` oluşturarak birçok resource controlle
 | GET            | `/photos/{photo}/edit` | edit               | photos.edit    |
 | PUT/PATCH      | `/photos/{photo}`      | update             | photos.update  |
 | DELETE         | `/photos/{photo}`      | destroy            | photos.destroy |
+## Resource'a Model Belirtme
 
+Rota model bağlama kullanıyorsanız ve resource controller metodlarının bir model örneğini yazmasını istiyorsanız, denetleyiciyi oluştururken --model seçeneğini kullanabilirsiniz:
 ## Eksik Model Davranışını Özelleştirme
 
 Genellikle, örtük olarak bağlanmış bir kaynak modeli bulunamazsa 404 HTTP yanıtı oluşturulur. Ancak, kaynak rotanızı tanımlarken `missing` metodunu çağırarak bu davranışı özelleştirebilirsiniz. `missing` metodu, kaynağın rotalarından herhangi biri için örtük olarak bağlanmış bir model bulunamazsa çağrılacak bir closure kabul eder:
@@ -209,7 +211,7 @@ Route::resource('photos', PhotoController::class)
 
 ## Soft Deleted Models
 
-Tipik olarak, örtük model bağlama, yazılımla silinmiş modelleri almaz ve bunun yerine 404 HTTP yanıtı döndürür. Ancak, kaynak rotanızı tanımlarken `withTrashed` metodunu çağırarak framework'e yazılımla silinmiş modellere izin vermesi talimatını verebilirsiniz:
+Genellikle, kapsayıcı model bağlama işlemi silinmiş olan modelleri almayacak ve bunun yerine bir 404 HTTP yanıtı döndürecektir. Ancak, çerçeveye silinmiş modelleri izin vermesi için kaynak rotanızı tanımlarken `withTrashed` metodunu çağırarak çerçeveye silinmiş modelleri alması için talimat verebilirsiniz:
 
 ```php
 Route::resource('photos', PhotoController::class)->withTrashed();
