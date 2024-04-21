@@ -27,6 +27,32 @@ Route::get('/user', function () {
 
 `routes/api.php` dosyasında tanımlanan rotalar `RouteServiceProvider` tarafından bir rota grubu içinde iç içe yerleştirilir. Bu grup içinde `/api` URI öneki otomatik olarak uygulanır, böylece dosyadaki her rotaya manuel olarak uygulamanız gerekmez. `RouteServiceProvider` sınıfınızı değiştirerek öneki ve diğer rota grubu seçeneklerini değiştirebilirsiniz.
 
+## API Rotalar
+
+Uygulamanız aynı zamanda durum bilgisi olmayan bir API sunacaksa, `install:api` Artisan komutunu kullanarak API yönlendirmesini etkinleştirebilirsiniz:
+
+```shell
+php artisan install:api
+```
+
+`install:api` komutu, üçüncü taraf API tüketicilerini, SPA'ları veya mobil uygulamaları doğrulamak için kullanılabilecek sağlam ancak basit bir API token kimlik doğrulama koruması sağlayan Laravel Sanctum'u yükler. Ek olarak, `install:api` komutu `routes/api.php` dosyasını oluşturur:
+
+```php
+Route::get('/user', function (Request $request) {
+    return $request->user();
+})->middleware('auth:sanctum');
+```
+
+`routes/api.php` dosyasındaki rotalar durum bilgisi içermez ve `api` middleware grubuna atanır. Ayrıca, `/api` URI öneki bu rotalara otomatik olarak uygulanır, bu nedenle dosyadaki her rotaya manuel olarak uygulamanız gerekmez. Uygulamanızın `bootstrap/app.php` dosyasını düzenleyerek öneki değiştirebilirsiniz:
+
+```php
+->withRouting(
+    api: __DIR__.'/../routes/api.php',
+    apiPrefix: 'api/admin', // Ön ek değiştirme işlemi
+    // ...
+)
+```
+
 ## Mevcut Yönlendirme Yöntemleri
 
 Router, herhangi bir HTTP fiiline yanıt veren rotaları kaydetmenize olanak tanır:
@@ -691,32 +717,6 @@ Aynı şekilde, `route:list` komutunu çalıştırırken `--only-vendor` seçene
 php artisan route:list --only-vendor
 ```
 
-# `#` API Rotalar
----
-
-Uygulamanız aynı zamanda durum bilgisi olmayan bir API sunacaksa, `install:api` Artisan komutunu kullanarak API yönlendirmesini etkinleştirebilirsiniz:
-
-```shell
-php artisan install:api
-```
-
-`install:api` komutu, üçüncü taraf API tüketicilerini, SPA'ları veya mobil uygulamaları doğrulamak için kullanılabilecek sağlam ancak basit bir API token kimlik doğrulama koruması sağlayan Laravel Sanctum'u yükler. Ek olarak, `install:api` komutu `routes/api.php` dosyasını oluşturur:
-
-```php
-Route::get('/user', function (Request $request) {
-    return $request->user();
-})->middleware('auth:sanctum');
-```
-
-`routes/api.php` dosyasındaki rotalar durum bilgisi içermez ve `api` middleware grubuna atanır. Ayrıca, `/api` URI öneki bu rotalara otomatik olarak uygulanır, bu nedenle dosyadaki her rotaya manuel olarak uygulamanız gerekmez. Uygulamanızın `bootstrap/app.php` dosyasını düzenleyerek öneki değiştirebilirsiniz:
-
-```php
-->withRouting(
-    api: __DIR__.'/../routes/api.php',
-    apiPrefix: 'api/admin', // Ön ek değiştirme işlemi
-    // ...
-)
-```
 
 # `#` Rotaları Özelleştirme
 ---

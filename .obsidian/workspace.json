@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "80f0b498f6e73e58",
+        "id": "ee03c20c8f07231a",
         "type": "tabs",
         "children": [
           {
-            "id": "bdb835adf2cd632d",
+            "id": "36305a8df3fbbbec",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6 - Laravel Temelleri/2 - Görüntü (View) Rotaları.md",
+                "file": "Laravel/8 - Blade Templates/7  - Blade Şablonu Nedir ve Veri Nasıl Gösterilir.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 508.5
+    "width": 498.5
   },
   "right": {
     "id": "19aedd361f9da44d",
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "6 - Laravel Temelleri/2 - Görüntü (View) Rotaları.md",
+                "file": "Laravel/8 - Blade Templates/7  - Blade Şablonu Nedir ve Veri Nasıl Gösterilir.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "6 - Laravel Temelleri/2 - Görüntü (View) Rotaları.md",
+                "file": "Laravel/8 - Blade Templates/7  - Blade Şablonu Nedir ve Veri Nasıl Gösterilir.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "6 - Laravel Temelleri/2 - Görüntü (View) Rotaları.md"
+                "file": "Laravel/8 - Blade Templates/7  - Blade Şablonu Nedir ve Veri Nasıl Gösterilir.md"
               }
             }
           },
@@ -171,36 +171,37 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "bdb835adf2cd632d",
+  "active": "e517a783a5bb8142",
   "lastOpenFiles": [
-    "6 - Laravel Temelleri/1 - Rota Temelleri.md",
-    "6 - Laravel Temelleri/2 - Görüntü (View) Rotaları.md",
-    "6 - Laravel Temelleri/11 - Blade Components (Bileşenleri).md",
-    "6 - Laravel Temelleri/10 - Blade Templates (Şablonları).md",
-    "6 - Laravel Temelleri/9 - Blade Döngü Yönergeleri.md",
-    "6 - Laravel Temelleri/8 - Blade If ve Switch Yönergeleri.md",
-    "6 - Laravel Temelleri/7  - Blade Şablonu Nedir ve Veri Nasıl Gösterilir.md",
+    "Laravel/U - Breeze",
+    "Laravel/5 - Requests/1 - Requests.md",
+    "Laravel/8 - Blade Templates/Başlıksız.md",
+    "Laravel/8 - Blade Templates",
+    "Laravel/14 - Requests.md",
+    "Laravel/4 - Controllers/3 - Bütün Konu.md",
+    "Laravel/3 - CSRF Protection/1 - CSRF Protection.md",
+    "Laravel/12 - CSRF Protection.md",
+    "Laravel/2 - Middleware/3 - Bütün Konu.md",
+    "Laravel/2 - Middleware/2 - Gelişmiş Middleware.md",
+    "Laravel/2 - Middleware/1 - Middleware Temelleri.md",
+    "Laravel/1 - Routing/4 - Bütün Konu.md",
+    "Laravel/1 - Routing/3 - Rotalara Erişme, Düzenleme ve Cachleme.md",
+    "Laravel/4 - Controllers/2 - Gelişmiş Controller.md",
+    "Laravel/1 - Routing/2 - Gelişmiş Rotalar.md",
+    "Laravel/1 - Routing/1 - Routing Temelleri.md",
+    "Laravel/U - Breeze/12 - Breeze.md",
+    "Laravel/8 - Blade Templates/10 - Blade Templates.md",
+    "Laravel/8 - Blade Templates/11 - Blade Components (Bileşenleri).md",
+    "Laravel/8 - Blade Templates/8 - Blade If ve Switch Yönergeleri.md",
+    "Laravel/8 - Blade Templates/9 - Blade Döngü Yönergeleri.md",
+    "Laravel/8 - Blade Templates/7  - Blade Şablonu Nedir ve Veri Nasıl Gösterilir.md",
     "6 - Laravel Temelleri/6 - Rota Grupları.md",
     "6 - Laravel Temelleri/5 - İsimlendirilmiş Rotalar.md",
     "6 - Laravel Temelleri/4 - Rota Parametreleri.md",
+    "1- PHP'ye Giriş/29- PHP RegEx.md",
     "6 - Laravel Temelleri/3 - Controller Temelleri.md",
-    "Laravel/1 - Routing/4 - Bütün Konu.md",
-    "5- Laravele Giriş/6 - Frontend.md",
-    "5- Laravele Giriş/5 - Dizin Yapısı.md",
-    "6 - Laravel Temelleri/4 - Controllers.md",
-    "6 - Laravel Temelleri/1 - Rotalar (Routing).md",
-    "Laravel/4 - Controllers/1 - Controllers Temelleri.md",
-    "Laravel/1 - Routing/1 - Routing Temelleri.md",
-    "Laravel/2 - Middleware/2 - Gelişmiş Middleware.md",
-    "Laravel/2 - Middleware/1 - Middleware Temelleri.md",
-    "Laravel/1 - Routing/2 - Gelişmiş Rotalar.md",
-    "Laravel/1 - Routing/3 - Rotalara Erişme, Düzenleme ve Cachleme.md",
-    "Laravel/5 - HTTP Requests/1 - HTTP Requests.md",
-    "6 - Laravel Temelleri/1 - Routing/Başlıksız.md",
-    "Laravel/12 - CSRF Protection.md",
-    "Laravel/3 - CSRF Protection/1 - CSRF Protection.md",
     "Laravel",
-    "Laravel/5 - HTTP Requests",
+    "Laravel/5 - Requests",
     "6 - Laravel Temelleri/Başlıksız.canvas",
     "Laravel/3 - CSRF Protection",
     "Laravel/4 - Controllers",
@@ -211,7 +212,6 @@
     "6- Laravele Giriş/Başlıksız.canvas",
     "5- Laravele Giriş",
     "6 - Laravel Temelleri",
-    "0- Başlamadan Önce",
     "Tutorial/-a.canvas",
     "Pasted image 20231112165207.png",
     "Başlıksız.canvas"

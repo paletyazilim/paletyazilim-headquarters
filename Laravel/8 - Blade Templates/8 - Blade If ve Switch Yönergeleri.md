@@ -38,7 +38,7 @@ Zaten tartışılan koşullu yönergelerin yanı sıra, `@isset` ve `@empty` yö
 
 ## Authentication (Kimlik) Yönergeleri
 
-`@auth` ve `@gues`t yönergeleri, mevcut kullanıcının kimliği doğrulandı mı yoksa misafir mi olduğunu hızlı bir şekilde belirlemek için kullanılabilir.
+`@auth` ve `@guest` yönergeleri, mevcut kullanıcının kimliği doğrulandı mı yoksa misafir mi olduğunu hızlı bir şekilde belirlemek için kullanılabilir.
 
 ```php
 @auth

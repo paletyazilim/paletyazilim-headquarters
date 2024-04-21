@@ -1,32 +1,72 @@
 {
   "recentFiles": [
     {
-      "basename": "2 - Görüntü (View) Rotaları",
-      "path": "6 - Laravel Temelleri/2 - Görüntü (View) Rotaları.md"
+      "basename": "7  - Blade Şablonu Nedir ve Veri Nasıl Gösterilir",
+      "path": "Laravel/8 - Blade Templates/7  - Blade Şablonu Nedir ve Veri Nasıl Gösterilir.md"
     },
     {
-      "basename": "1 - Rota Temelleri",
-      "path": "6 - Laravel Temelleri/1 - Rota Temelleri.md"
+      "basename": "1 - Requests",
+      "path": "Laravel/5 - Requests/1 - Requests.md"
+    },
+    {
+      "basename": "3 - Bütün Konu",
+      "path": "Laravel/4 - Controllers/3 - Bütün Konu.md"
+    },
+    {
+      "basename": "1 - CSRF Protection",
+      "path": "Laravel/3 - CSRF Protection/1 - CSRF Protection.md"
+    },
+    {
+      "basename": "3 - Bütün Konu",
+      "path": "Laravel/2 - Middleware/3 - Bütün Konu.md"
+    },
+    {
+      "basename": "2 - Gelişmiş Middleware",
+      "path": "Laravel/2 - Middleware/2 - Gelişmiş Middleware.md"
+    },
+    {
+      "basename": "1 - Middleware Temelleri",
+      "path": "Laravel/2 - Middleware/1 - Middleware Temelleri.md"
+    },
+    {
+      "basename": "4 - Bütün Konu",
+      "path": "Laravel/1 - Routing/4 - Bütün Konu.md"
+    },
+    {
+      "basename": "3 - Rotalara Erişme, Düzenleme ve Cachleme",
+      "path": "Laravel/1 - Routing/3 - Rotalara Erişme, Düzenleme ve Cachleme.md"
+    },
+    {
+      "basename": "2 - Gelişmiş Controller",
+      "path": "Laravel/4 - Controllers/2 - Gelişmiş Controller.md"
+    },
+    {
+      "basename": "2 - Gelişmiş Rotalar",
+      "path": "Laravel/1 - Routing/2 - Gelişmiş Rotalar.md"
+    },
+    {
+      "basename": "1 - Routing Temelleri",
+      "path": "Laravel/1 - Routing/1 - Routing Temelleri.md"
+    },
+    {
+      "basename": "12 - Breeze",
+      "path": "Laravel/U - Breeze/12 - Breeze.md"
+    },
+    {
+      "basename": "10 - Blade Templates",
+      "path": "Laravel/8 - Blade Templates/10 - Blade Templates.md"
     },
     {
       "basename": "11 - Blade Components (Bileşenleri)",
-      "path": "6 - Laravel Temelleri/11 - Blade Components (Bileşenleri).md"
-    },
-    {
-      "basename": "10 - Blade Templates (Şablonları)",
-      "path": "6 - Laravel Temelleri/10 - Blade Templates (Şablonları).md"
-    },
-    {
-      "basename": "9 - Blade Döngü Yönergeleri",
-      "path": "6 - Laravel Temelleri/9 - Blade Döngü Yönergeleri.md"
+      "path": "Laravel/8 - Blade Templates/11 - Blade Components (Bileşenleri).md"
     },
     {
       "basename": "8 - Blade If ve Switch Yönergeleri",
-      "path": "6 - Laravel Temelleri/8 - Blade If ve Switch Yönergeleri.md"
+      "path": "Laravel/8 - Blade Templates/8 - Blade If ve Switch Yönergeleri.md"
     },
     {
-      "basename": "7  - Blade Şablonu Nedir ve Veri Nasıl Gösterilir",
-      "path": "6 - Laravel Temelleri/7  - Blade Şablonu Nedir ve Veri Nasıl Gösterilir.md"
+      "basename": "9 - Blade Döngü Yönergeleri",
+      "path": "Laravel/8 - Blade Templates/9 - Blade Döngü Yönergeleri.md"
     },
     {
       "basename": "6 - Rota Grupları",
@@ -41,12 +81,28 @@
       "path": "6 - Laravel Temelleri/4 - Rota Parametreleri.md"
     },
     {
+      "basename": "29- PHP RegEx",
+      "path": "1- PHP'ye Giriş/29- PHP RegEx.md"
+    },
+    {
       "basename": "3 - Controller Temelleri",
       "path": "6 - Laravel Temelleri/3 - Controller Temelleri.md"
     },
     {
-      "basename": "4 - Bütün Konu",
-      "path": "Laravel/1 - Routing/4 - Bütün Konu.md"
+      "basename": "2 - Görüntü (View) Rotaları",
+      "path": "6 - Laravel Temelleri/2 - Görüntü (View) Rotaları.md"
+    },
+    {
+      "basename": "1 - Rota Temelleri",
+      "path": "6 - Laravel Temelleri/1 - Rota Temelleri.md"
+    },
+    {
+      "basename": "14- PHP Magic Constants (Ön Tanımlı Sabitler)",
+      "path": "1- PHP'ye Giriş/14- PHP Magic Constants (Ön Tanımlı Sabitler).md"
+    },
+    {
+      "basename": "4- Constructor (Yapıcı Metotlar)",
+      "path": "3- PHP OOP/4- Constructor (Yapıcı Metotlar).md"
     },
     {
       "basename": "6 - Frontend",
@@ -59,50 +115,6 @@
     {
       "basename": "1 - Controllers Temelleri",
       "path": "Laravel/4 - Controllers/1 - Controllers Temelleri.md"
-    },
-    {
-      "basename": "1 - Routing Temelleri",
-      "path": "Laravel/1 - Routing/1 - Routing Temelleri.md"
-    },
-    {
-      "basename": "2 - Gelişmiş Middleware",
-      "path": "Laravel/2 - Middleware/2 - Gelişmiş Middleware.md"
-    },
-    {
-      "basename": "1 - Middleware Temelleri",
-      "path": "Laravel/2 - Middleware/1 - Middleware Temelleri.md"
-    },
-    {
-      "basename": "2 - Gelişmiş Rotalar",
-      "path": "Laravel/1 - Routing/2 - Gelişmiş Rotalar.md"
-    },
-    {
-      "basename": "3 - Rotalara Erişme, Düzenleme ve Cachleme",
-      "path": "Laravel/1 - Routing/3 - Rotalara Erişme, Düzenleme ve Cachleme.md"
-    },
-    {
-      "basename": "1 - HTTP Requests",
-      "path": "Laravel/5 - HTTP Requests/1 - HTTP Requests.md"
-    },
-    {
-      "basename": "12 - CSRF Protection",
-      "path": "Laravel/12 - CSRF Protection.md"
-    },
-    {
-      "basename": "1 - CSRF Protection",
-      "path": "Laravel/3 - CSRF Protection/1 - CSRF Protection.md"
-    },
-    {
-      "basename": "2 - Gelişmiş Controller",
-      "path": "Laravel/4 - Controllers/2 - Gelişmiş Controller.md"
-    },
-    {
-      "basename": "13 - Controllers",
-      "path": "Laravel/13 - Controllers.md"
-    },
-    {
-      "basename": "11 - Middleware",
-      "path": "Laravel/11 - Middleware.md"
     },
     {
       "basename": "4 - Bir İsteğin Yaşam Döngüsü",
@@ -119,10 +131,6 @@
     {
       "basename": "7 - Service Container",
       "path": "5- Laravele Giriş/7 - Service Container.md"
-    },
-    {
-      "basename": "14 - HTTP Requests",
-      "path": "Laravel/14 - HTTP Requests.md"
     },
     {
       "basename": "8 - Service Providers",
@@ -183,22 +191,6 @@
     {
       "basename": "8- Interfaces (Arayüzler)",
       "path": "3- PHP OOP/8- Interfaces (Arayüzler).md"
-    },
-    {
-      "basename": "9- Soyut Sınıflar",
-      "path": "3- PHP OOP/9- Soyut Sınıflar.md"
-    },
-    {
-      "basename": "4- Constructor (Yapıcı Metotlar)",
-      "path": "3- PHP OOP/4- Constructor (Yapıcı Metotlar).md"
-    },
-    {
-      "basename": "2- Sınıflar ve Nesneler",
-      "path": "3- PHP OOP/2- Sınıflar ve Nesneler.md"
-    },
-    {
-      "basename": "11- Statik Metotlar",
-      "path": "3- PHP OOP/11- Statik Metotlar.md"
     }
   ],
   "omittedPaths": [],

@@ -66,7 +66,7 @@ Route::delete('/istek', function () { });
 Route::options('/istek', function () { });
 ```
 
-Bazen birden fazla HTTP fiiline yanıt veren bir rota kaydetmeniz gerekebilir. Bunu `match` yöntemini kullanarak yapabilirsiniz. Ya da `any` yöntemini kullanarak tüm HTTP fiillerine yanıt veren bir rota kaydedebilirsiniz:
+Bazen birden fazla HTTP fiiline yanıt veren bir rota kaydetmeniz gerekebilir. Bunu `match` metodunu kullanarak yapabilirsiniz. Ya da `any` metodunu kullanarak tüm HTTP fiillerine yanıt veren bir rota kaydedebilirsiniz:
 
 ```php
 Route::match(['get', 'post'], '/istek', function () {

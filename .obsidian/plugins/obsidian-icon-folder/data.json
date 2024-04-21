@@ -34,9 +34,11 @@
   "4- Veritabanı (PDO)": "RiBookFill",
   "5- Laravele Giriş": "RiBookFill",
   "6 - Laravel Temelleri": "RiBookFill",
-  "Laravel/5 - HTTP Requests": "RiBookMarkFill",
   "Laravel/1 - Routing": "RiBookMarkFill",
   "Laravel/2 - Middleware": "RiBookMarkFill",
   "Laravel/3 - CSRF Protection": "RiBookMarkFill",
-  "Laravel/4 - Controllers": "RiBookMarkFill"
+  "Laravel/4 - Controllers": "RiBookMarkFill",
+  "Laravel/5 - Requests": "RiBookMarkFill",
+  "Laravel/8 - Blade Templates": "RiBookMarkFill",
+  "Laravel/U - Breeze": "RiBookMarkFill"
 }

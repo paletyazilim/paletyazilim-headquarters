@@ -1,6 +1,6 @@
 # `#` Giriş
 ---
-Tüm istek işleme mantığınızı rota dosyalarınızda closure olarak tanımlamak yerine, bu davranışı "controller" sınıflarını kullanarak düzenlemek isteyebilirsiniz. Controller, ilgili istek işleme mantığını tek bir sınıfta gruplandırabilir. Örneğin, bir `UserController` sınıfı, kullanıcıları gösterme, oluşturma, güncelleme ve silme dahil olmak üzere kullanıcılarla ilgili tüm gelen istekleri işleyebilir. Varsayılan olarak, denetleyiciler `app/Http/Controllers` dizininde saklanır.
+Tüm istek işleme mantığınızı rota dosyalarınızda closure olarak tanımlamak yerine, bu davranışı "controller" sınıflarını kullanarak düzenlemek isteyebilirsiniz. Controller, ilgili istek işleme mantığını tek bir sınıfta gruplandırabilir. Örneğin, bir `UserController` sınıfı, kullanıcıları gösterme, oluşturma, güncelleme ve silme dahil olmak üzere kullanıcılarla ilgili tüm gelen istekleri işleyebilir. Varsayılan olarak, controllerlar `app/Http/Controllers` dizininde saklanır.
 
 # `#` Basit Controller’lar
 ---
