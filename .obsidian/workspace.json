@@ -8,15 +8,23 @@
         "type": "tabs",
         "children": [
           {
-            "id": "36305a8df3fbbbec",
+            "id": "a40c7f88b513205e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Laravel/8 - Blade Templates/7  - Blade Şablonu Nedir ve Veri Nasıl Gösterilir.md",
+                "file": "Laravel/8 - Blade Templates/10 - Blade Templates.md",
                 "mode": "source",
                 "source": false
               }
+            }
+          },
+          {
+            "id": "498fd05f87134247",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -93,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Laravel/8 - Blade Templates/7  - Blade Şablonu Nedir ve Veri Nasıl Gösterilir.md",
+                "file": "Laravel/8 - Blade Templates/10 - Blade Templates.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Laravel/8 - Blade Templates/7  - Blade Şablonu Nedir ve Veri Nasıl Gösterilir.md",
+                "file": "Laravel/8 - Blade Templates/10 - Blade Templates.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Laravel/8 - Blade Templates/7  - Blade Şablonu Nedir ve Veri Nasıl Gösterilir.md"
+                "file": "Laravel/8 - Blade Templates/10 - Blade Templates.md"
               }
             }
           },
@@ -154,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -171,47 +179,47 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e517a783a5bb8142",
+  "active": "a40c7f88b513205e",
   "lastOpenFiles": [
-    "Laravel/U - Breeze",
-    "Laravel/5 - Requests/1 - Requests.md",
-    "Laravel/8 - Blade Templates/Başlıksız.md",
-    "Laravel/8 - Blade Templates",
-    "Laravel/14 - Requests.md",
-    "Laravel/4 - Controllers/3 - Bütün Konu.md",
-    "Laravel/3 - CSRF Protection/1 - CSRF Protection.md",
-    "Laravel/12 - CSRF Protection.md",
-    "Laravel/2 - Middleware/3 - Bütün Konu.md",
-    "Laravel/2 - Middleware/2 - Gelişmiş Middleware.md",
-    "Laravel/2 - Middleware/1 - Middleware Temelleri.md",
+    "Laravel/8 - Blade Templates/7  - Blade Şablonu Nedir ve Veri Nasıl Gösterilir.md",
+    "Laravel/1 - Routing/1 - Routing Temelleri.md",
+    "Laravel/1 - Routing/2 - Gelişmiş Rotalar.md",
     "Laravel/1 - Routing/4 - Bütün Konu.md",
     "Laravel/1 - Routing/3 - Rotalara Erişme, Düzenleme ve Cachleme.md",
-    "Laravel/4 - Controllers/2 - Gelişmiş Controller.md",
-    "Laravel/1 - Routing/2 - Gelişmiş Rotalar.md",
-    "Laravel/1 - Routing/1 - Routing Temelleri.md",
+    "Laravel/2 - Middleware/1 - Middleware Temelleri.md",
+    "Laravel/2 - Middleware/2 - Gelişmiş Middleware.md",
+    "Laravel/U - Eloquent ORM/1 - Eloquent'a Başlarken.md",
+    "Laravel/6 - Views/1 - Views.md",
+    "Laravel/U - Migrations/1 - Migrations.md",
+    "Laravel/U - Migrations/2 - Tablo Oluşturma.md",
     "Laravel/U - Breeze/12 - Breeze.md",
+    "Laravel/5 - Requests & Respones/2 - HTTP Respones (Yanıtlar).md",
+    "Laravel/5 - Requests & Respones/1 - HTTP Requests (İstekler).md",
+    "Laravel/4 - Controllers/3 - Bütün Konu.md",
+    "Laravel/4 - Controllers/1 - Controllers Temelleri.md",
+    "Laravel/4 - Controllers/2 - Gelişmiş Controller.md",
+    "Laravel/U - Auth",
+    "Laravel/U - Eloquent ORM",
     "Laravel/8 - Blade Templates/10 - Blade Templates.md",
+    "Laravel/U - Migrations",
+    "Laravel/Başlıksız.md",
     "Laravel/8 - Blade Templates/11 - Blade Components (Bileşenleri).md",
-    "Laravel/8 - Blade Templates/8 - Blade If ve Switch Yönergeleri.md",
-    "Laravel/8 - Blade Templates/9 - Blade Döngü Yönergeleri.md",
-    "Laravel/8 - Blade Templates/7  - Blade Şablonu Nedir ve Veri Nasıl Gösterilir.md",
-    "6 - Laravel Temelleri/6 - Rota Grupları.md",
-    "6 - Laravel Temelleri/5 - İsimlendirilmiş Rotalar.md",
-    "6 - Laravel Temelleri/4 - Rota Parametreleri.md",
-    "1- PHP'ye Giriş/29- PHP RegEx.md",
-    "6 - Laravel Temelleri/3 - Controller Temelleri.md",
+    "5- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md",
+    "5- Laravele Giriş/3 - Yapılandırma.md",
+    "5- Laravele Giriş/2 - Laravel Kurulumu.md",
+    "5- Laravele Giriş/1 - Laravel’e Başlamadan Önce.md",
+    "Laravel/3 - CSRF Protection/1 - CSRF Protection.md",
+    "Laravel/6 - Views",
+    "Laravel/8 - Blade Templates/1 - Bütün Konu.md",
+    "Laravel/U - Breeze",
+    "Laravel/8 - Blade Templates",
     "Laravel",
-    "Laravel/5 - Requests",
+    "Laravel/5 - Requests & Respones",
     "6 - Laravel Temelleri/Başlıksız.canvas",
     "Laravel/3 - CSRF Protection",
     "Laravel/4 - Controllers",
-    "Laravel/2 - Middleware",
-    "Laravel/1 - Routing",
-    "5- Laravele Giriş/10 - Routing",
     "5- Laravele Giriş/Başlıksız.canvas",
     "6- Laravele Giriş/Başlıksız.canvas",
-    "5- Laravele Giriş",
-    "6 - Laravel Temelleri",
     "Tutorial/-a.canvas",
     "Pasted image 20231112165207.png",
     "Başlıksız.canvas"

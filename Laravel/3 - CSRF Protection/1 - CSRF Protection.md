@@ -47,7 +47,8 @@ Uygulamanızda bir "POST", "PUT", "PATCH" veya "DELETE" HTML formu tanımladığ
 <form method="POST" action="/profile">
     @csrf
  
-    <!-- Equivalent to... -->
+    <!-- YADA -->
+    
     <input type="hidden" name="_token" value="{{ csrf_token() }}" />
 </form>
 ```

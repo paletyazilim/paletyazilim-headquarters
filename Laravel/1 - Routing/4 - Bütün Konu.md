@@ -154,6 +154,94 @@ Route::view('/gorunum', 'welcome', ['isim' => 'Berat']);
 
 View rotalarında rota parametrelerini kullanırken, aşağıdaki parametreler Laravel tarafından rezervedir ve kullanılamaz: `view`, `data`, `status` ve `header`.
 
+## Rotalarınızı Listeleme
+
+`route:list` Artisan komutu, uygulamanız tarafından tanımlanan tüm rotaların genel bir listesini kolayca sağlayabilir:
+
+```shell
+php artisan route:list
+```
+
+Varsayılan olarak, her rotaya atanan rota middleware `route:list` çıktısında görüntülenmeyecektir; ancak, komuta `-v` seçeneğini ekleyerek Laravel'e rota middleware ve middleware grup adlarını görüntülemesi talimatını verebilirsiniz:
+
+```shell
+php artisan route:list -v
+ 
+# Middleware Gruplarını Genişletir
+php artisan route:list -vv
+```
+
+Laravel'e sadece belirli bir URI ile başlayan rotaları göstermesi talimatını da verebilirsiniz:
+
+```shell
+php artisan route:list --path=api
+```
+
+Buna ek olarak, `route:list` komutunu çalıştırırken `--except-vendor` seçeneğini sağlayarak Laravel'e üçüncü taraf paketleri tarafından tanımlanan rotaları gizlemesi talimatını verebilirsiniz:
+
+```shell
+php artisan route:list --except-vendor
+```
+
+Aynı şekilde, `route:list` komutunu çalıştırırken `--only-vendor` seçeneğini sağlayarak Laravel'e sadece üçüncü taraf paketleri tarafından tanımlanan rotaları göstermesi talimatını da verebilirsiniz:
+
+```shell
+php artisan route:list --only-vendor
+```
+
+## Rotaları Özelleştirme
+
+Varsayılan olarak, uygulamanızın rotaları `bootstrap/app.php` dosyası tarafından yapılandırılır ve yüklenir.
+
+```php
+<?php
+ 
+use Illuminate\Foundation\Application;
+ 
+return Application::configure(basePath: dirname(__DIR__))
+    ->withRouting(
+        web: __DIR__.'/../routes/web.php',
+        commands: __DIR__.'/../routes/console.php',
+        health: '/up',
+    )->create();
+```
+
+Ancak, bazen uygulamanızın rotalarının bir alt kümesini içeren tamamen yeni bir dosya tanımlamak isteyebilirsiniz. Bunun için `withRouting` metoduna bir `then` closure'u sağlayabilirsiniz. Bu kapanış içinde, uygulamanız için gerekli olan ek rotaları kaydedebilirsiniz.
+
+```php
+use Illuminate\Support\Facades\Route;
+ 
+->withRouting(
+    web: __DIR__.'/../routes/web.php',
+    commands: __DIR__.'/../routes/console.php',
+    health: '/up',
+    then: function () {
+        Route::middleware('api')
+            ->prefix('webhooks')
+            ->name('webhooks.')
+            ->group(base_path('routes/webhooks.php'));
+    },
+)
+```
+
+Veya, `withRouting` metoduna bir kullanma kapanı sağlayarak rota kaydının tam kontrolünü bile alabilirsiniz. Bu argüman geçirildiğinde, çerçeve tarafından hiçbir HTTP rota kaydedilmez ve tüm rotaları manuel olarak kaydetmek sizin sorumluluğunuzdadır.
+
+```php
+use Illuminate\Support\Facades\Route;
+ 
+->withRouting(
+    commands: __DIR__.'/../routes/console.php',
+    using: function () {
+        Route::middleware('api')
+            ->prefix('api')
+            ->group(base_path('routes/api.php'));
+ 
+        Route::middleware('web')
+            ->group(base_path('routes/web.php'));
+    },
+)
+```
+
 # `#` Parametreli Rota Tanımlama
 ---
 
@@ -492,7 +580,7 @@ Model bağlamanın belirli bir model sınıfını alırken her zaman `id` dış�
 ```php
 public function getRouteKeyName(): string
 {
-    return 'slug';
+    return 'name';
 }
 ```
 
@@ -681,92 +769,3 @@ Rota önbelleğini temizlemek için `route:clear` komutunu kullanabilirsiniz.
 php artisan route:clear
 ```
 
-# `#` Rotalarınızı Listeleme
----
-
-`route:list` Artisan komutu, uygulamanız tarafından tanımlanan tüm rotaların genel bir listesini kolayca sağlayabilir:
-
-```shell
-php artisan route:list
-```
-
-Varsayılan olarak, her rotaya atanan rota middleware `route:list` çıktısında görüntülenmeyecektir; ancak, komuta `-v` seçeneğini ekleyerek Laravel'e rota middleware ve middleware grup adlarını görüntülemesi talimatını verebilirsiniz:
-
-```shell
-php artisan route:list -v
- 
-# Middleware Gruplarını Genişletir
-php artisan route:list -vv
-```
-
-Laravel'e sadece belirli bir URI ile başlayan rotaları göstermesi talimatını da verebilirsiniz:
-
-```shell
-php artisan route:list --path=api
-```
-
-Buna ek olarak, `route:list` komutunu çalıştırırken `--except-vendor` seçeneğini sağlayarak Laravel'e üçüncü taraf paketleri tarafından tanımlanan rotaları gizlemesi talimatını verebilirsiniz:
-
-```shell
-php artisan route:list --except-vendor
-```
-
-Aynı şekilde, `route:list` komutunu çalıştırırken `--only-vendor` seçeneğini sağlayarak Laravel'e sadece üçüncü taraf paketleri tarafından tanımlanan rotaları göstermesi talimatını da verebilirsiniz:
-
-```shell
-php artisan route:list --only-vendor
-```
-
-
-# `#` Rotaları Özelleştirme
----
-Varsayılan olarak, uygulamanızın rotaları `bootstrap/app.php` dosyası tarafından yapılandırılır ve yüklenir.
-
-```php
-<?php
- 
-use Illuminate\Foundation\Application;
- 
-return Application::configure(basePath: dirname(__DIR__))
-    ->withRouting(
-        web: __DIR__.'/../routes/web.php',
-        commands: __DIR__.'/../routes/console.php',
-        health: '/up',
-    )->create();
-```
-
-Ancak, bazen uygulamanızın rotalarının bir alt kümesini içeren tamamen yeni bir dosya tanımlamak isteyebilirsiniz. Bunun için `withRouting` metoduna bir `then` closure'u sağlayabilirsiniz. Bu kapanış içinde, uygulamanız için gerekli olan ek rotaları kaydedebilirsiniz.
-
-```php
-use Illuminate\Support\Facades\Route;
- 
-->withRouting(
-    web: __DIR__.'/../routes/web.php',
-    commands: __DIR__.'/../routes/console.php',
-    health: '/up',
-    then: function () {
-        Route::middleware('api')
-            ->prefix('webhooks')
-            ->name('webhooks.')
-            ->group(base_path('routes/webhooks.php'));
-    },
-)
-```
-
-Veya, `withRouting` metoduna bir kullanma kapanı sağlayarak rota kaydının tam kontrolünü bile alabilirsiniz. Bu argüman geçirildiğinde, çerçeve tarafından hiçbir HTTP rota kaydedilmez ve tüm rotaları manuel olarak kaydetmek sizin sorumluluğunuzdadır.
-
-```php
-use Illuminate\Support\Facades\Route;
- 
-->withRouting(
-    commands: __DIR__.'/../routes/console.php',
-    using: function () {
-        Route::middleware('api')
-            ->prefix('api')
-            ->group(base_path('routes/api.php'));
- 
-        Route::middleware('web')
-            ->group(base_path('routes/web.php'));
-    },
-)
-```

@@ -38,7 +38,11 @@
   "Laravel/2 - Middleware": "RiBookMarkFill",
   "Laravel/3 - CSRF Protection": "RiBookMarkFill",
   "Laravel/4 - Controllers": "RiBookMarkFill",
-  "Laravel/5 - Requests": "RiBookMarkFill",
   "Laravel/8 - Blade Templates": "RiBookMarkFill",
-  "Laravel/U - Breeze": "RiBookMarkFill"
+  "Laravel/U - Breeze": "RiBookMarkFill",
+  "Laravel/5 - Requests & Respones": "RiBookMarkFill",
+  "Laravel/6 - Views": "RiBookMarkFill",
+  "Laravel/U - Migrations": "RiBookMarkFill",
+  "Laravel/U - Eloquent ORM": "RiBookMarkFill",
+  "Laravel/U - Auth": "RiBookMarkFill"
 }

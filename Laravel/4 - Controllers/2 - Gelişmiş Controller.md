@@ -20,8 +20,8 @@ Hatta `resources` metoduna bir dizi `[]` oluşturarak birçok resource controlle
 
 ## Resource Controller Eylemleri
 
-| **HTTP Fiili** | **URI**              | **Action (Eylem)** | **Rota İsmi**  |
-| -------------- | -------------------- | ------------------ | -------------- |
+| **HTTP Fiili** | **URI**                | **Action (Eylem)** | **Rota İsmi**  |
+| -------------- | ---------------------- | ------------------ | -------------- |
 | GET            | `/photos`              | index              | photos.index   |
 | GET            | `/photos/create`       | create             | photos.create  |
 | POST           | `/photos`              | store              | photos.store   |
@@ -57,6 +57,14 @@ Route::resource('photos', PhotoController::class)->withTrashed();
 
 ```php
 Route::resource('photos', PhotoController::class)->withTrashed(['show']);
+```
+
+## Resource Controller'e Model Belirtme
+
+Eğer rotanızda model kullanıyorsanız ve resource controllerinin metodlarının bir model örneğini tür belirtmesini istiyorsanız, controlleri oluştururken `--model` özelliğini kullanabilirsiniz.
+
+```shell
+php artisan make:controller PhotoController --model=Photo --resource
 ```
 
 

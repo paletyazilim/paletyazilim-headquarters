@@ -1,32 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "10 - Blade Templates",
+      "path": "Laravel/8 - Blade Templates/10 - Blade Templates.md"
+    },
+    {
       "basename": "7  - Blade Şablonu Nedir ve Veri Nasıl Gösterilir",
       "path": "Laravel/8 - Blade Templates/7  - Blade Şablonu Nedir ve Veri Nasıl Gösterilir.md"
     },
     {
-      "basename": "1 - Requests",
-      "path": "Laravel/5 - Requests/1 - Requests.md"
+      "basename": "1 - Routing Temelleri",
+      "path": "Laravel/1 - Routing/1 - Routing Temelleri.md"
     },
     {
-      "basename": "3 - Bütün Konu",
-      "path": "Laravel/4 - Controllers/3 - Bütün Konu.md"
-    },
-    {
-      "basename": "1 - CSRF Protection",
-      "path": "Laravel/3 - CSRF Protection/1 - CSRF Protection.md"
-    },
-    {
-      "basename": "3 - Bütün Konu",
-      "path": "Laravel/2 - Middleware/3 - Bütün Konu.md"
-    },
-    {
-      "basename": "2 - Gelişmiş Middleware",
-      "path": "Laravel/2 - Middleware/2 - Gelişmiş Middleware.md"
-    },
-    {
-      "basename": "1 - Middleware Temelleri",
-      "path": "Laravel/2 - Middleware/1 - Middleware Temelleri.md"
+      "basename": "2 - Gelişmiş Rotalar",
+      "path": "Laravel/1 - Routing/2 - Gelişmiş Rotalar.md"
     },
     {
       "basename": "4 - Bütün Konu",
@@ -37,28 +25,84 @@
       "path": "Laravel/1 - Routing/3 - Rotalara Erişme, Düzenleme ve Cachleme.md"
     },
     {
-      "basename": "2 - Gelişmiş Controller",
-      "path": "Laravel/4 - Controllers/2 - Gelişmiş Controller.md"
+      "basename": "1 - Middleware Temelleri",
+      "path": "Laravel/2 - Middleware/1 - Middleware Temelleri.md"
     },
     {
-      "basename": "2 - Gelişmiş Rotalar",
-      "path": "Laravel/1 - Routing/2 - Gelişmiş Rotalar.md"
+      "basename": "2 - Gelişmiş Middleware",
+      "path": "Laravel/2 - Middleware/2 - Gelişmiş Middleware.md"
     },
     {
-      "basename": "1 - Routing Temelleri",
-      "path": "Laravel/1 - Routing/1 - Routing Temelleri.md"
+      "basename": "1 - Eloquent'a Başlarken",
+      "path": "Laravel/U - Eloquent ORM/1 - Eloquent'a Başlarken.md"
+    },
+    {
+      "basename": "1 - Views",
+      "path": "Laravel/6 - Views/1 - Views.md"
+    },
+    {
+      "basename": "1 - Migrations",
+      "path": "Laravel/U - Migrations/1 - Migrations.md"
+    },
+    {
+      "basename": "2 - Tablo Oluşturma",
+      "path": "Laravel/U - Migrations/2 - Tablo Oluşturma.md"
     },
     {
       "basename": "12 - Breeze",
       "path": "Laravel/U - Breeze/12 - Breeze.md"
     },
     {
-      "basename": "10 - Blade Templates",
-      "path": "Laravel/8 - Blade Templates/10 - Blade Templates.md"
+      "basename": "2 - HTTP Respones (Yanıtlar)",
+      "path": "Laravel/5 - Requests & Respones/2 - HTTP Respones (Yanıtlar).md"
+    },
+    {
+      "basename": "1 - HTTP Requests (İstekler)",
+      "path": "Laravel/5 - Requests & Respones/1 - HTTP Requests (İstekler).md"
+    },
+    {
+      "basename": "3 - Bütün Konu",
+      "path": "Laravel/4 - Controllers/3 - Bütün Konu.md"
+    },
+    {
+      "basename": "1 - Controllers Temelleri",
+      "path": "Laravel/4 - Controllers/1 - Controllers Temelleri.md"
+    },
+    {
+      "basename": "2 - Gelişmiş Controller",
+      "path": "Laravel/4 - Controllers/2 - Gelişmiş Controller.md"
     },
     {
       "basename": "11 - Blade Components (Bileşenleri)",
       "path": "Laravel/8 - Blade Templates/11 - Blade Components (Bileşenleri).md"
+    },
+    {
+      "basename": "4 - Bir İsteğin Yaşam Döngüsü",
+      "path": "5- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md"
+    },
+    {
+      "basename": "3 - Yapılandırma",
+      "path": "5- Laravele Giriş/3 - Yapılandırma.md"
+    },
+    {
+      "basename": "2 - Laravel Kurulumu",
+      "path": "5- Laravele Giriş/2 - Laravel Kurulumu.md"
+    },
+    {
+      "basename": "1 - Laravel’e Başlamadan Önce",
+      "path": "5- Laravele Giriş/1 - Laravel’e Başlamadan Önce.md"
+    },
+    {
+      "basename": "1 - CSRF Protection",
+      "path": "Laravel/3 - CSRF Protection/1 - CSRF Protection.md"
+    },
+    {
+      "basename": "1 - Bütün Konu",
+      "path": "Laravel/8 - Blade Templates/1 - Bütün Konu.md"
+    },
+    {
+      "basename": "3 - Bütün Konu",
+      "path": "Laravel/2 - Middleware/3 - Bütün Konu.md"
     },
     {
       "basename": "8 - Blade If ve Switch Yönergeleri",
@@ -113,32 +157,12 @@
       "path": "5- Laravele Giriş/5 - Dizin Yapısı.md"
     },
     {
-      "basename": "1 - Controllers Temelleri",
-      "path": "Laravel/4 - Controllers/1 - Controllers Temelleri.md"
-    },
-    {
-      "basename": "4 - Bir İsteğin Yaşam Döngüsü",
-      "path": "5- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md"
-    },
-    {
-      "basename": "3 - Yapılandırma",
-      "path": "5- Laravele Giriş/3 - Yapılandırma.md"
-    },
-    {
-      "basename": "2 - Laravel Kurulumu",
-      "path": "5- Laravele Giriş/2 - Laravel Kurulumu.md"
-    },
-    {
       "basename": "7 - Service Container",
       "path": "5- Laravele Giriş/7 - Service Container.md"
     },
     {
       "basename": "8 - Service Providers",
       "path": "5- Laravele Giriş/8 - Service Providers.md"
-    },
-    {
-      "basename": "1 - Laravel’e Başlamadan Önce",
-      "path": "5- Laravele Giriş/1 - Laravel’e Başlamadan Önce.md"
     },
     {
       "basename": "9 - Facades",
@@ -175,22 +199,6 @@
     {
       "basename": "5- PHP Data Types (Veri Türleri)",
       "path": "1- PHP'ye Giriş/5- PHP Data Types (Veri Türleri).md"
-    },
-    {
-      "basename": "6- PHP Variables Scope (Değişkenlerin Kapsamı)",
-      "path": "1- PHP'ye Giriş/6- PHP Variables Scope (Değişkenlerin Kapsamı).md"
-    },
-    {
-      "basename": "6- Erişim Belirleyicileri",
-      "path": "3- PHP OOP/6- Erişim Belirleyicileri.md"
-    },
-    {
-      "basename": "7- Inheritance (Miras)",
-      "path": "3- PHP OOP/7- Inheritance (Miras).md"
-    },
-    {
-      "basename": "8- Interfaces (Arayüzler)",
-      "path": "3- PHP OOP/8- Interfaces (Arayüzler).md"
     }
   ],
   "omittedPaths": [],

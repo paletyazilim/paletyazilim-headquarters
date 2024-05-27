@@ -97,7 +97,6 @@ class AfterMiddleware
 
 # `#` Middleware’lerin Kaydedilmesi
 ---
-
 ## Global Middleware
 
 Uygulamanıza yapılan her HTTP isteği sırasında bir middleware’in çalışmasını istiyorsanız, bunu uygulamanızın `bootstrap/app.php` dosyasındaki global middleware yığınına ekleyebilirsiniz:
