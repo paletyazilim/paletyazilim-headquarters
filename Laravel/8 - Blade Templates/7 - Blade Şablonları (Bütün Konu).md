@@ -812,13 +812,521 @@ class Alert extends Component
 
 ## Bileşen Nitelikleri
 
+Veri niteliklerinin bir bileşene nasıl aktarılacağını daha önce incelemiştik; ancak bazen bir bileşenin çalışması için gereken verilerin parçası olmayan sınıf gibi ek HTML nitelikleri belirtmeniz gerekebilir. Tipik olarak, bu ek nitelikleri bileşen şablonunun kök öğesine aktarmak istersiniz. Örneğin, bir uyarı bileşenini şu şekilde oluşturmak istediğimizi düşünün:
 
+```php
+<x-alert type="error" :message="$message" class="mt-4"/>
+```
+
+Bileşenin construcator'unun bir parçası olmayan tüm nitelikler otomatik olarak bileşenin "nitelik çantasına" eklenecektir. Bu nitelik çantası, `$attributes` değişkeni aracılığıyla bileşen tarafından otomatik olarak kullanılabilir hale getirilir. Tüm nitelikler, bu değişken yankılanarak bileşen içinde oluşturulabilir:
+
+```php
+<div {{ $attributes }}>
+    <!-- Component content -->
+</div>
+```
+
+>Bileşen etiketleri içinde @env gibi direktiflerin kullanılması şu anda desteklenmemektedir. Örneğin, `<x-alert :live="@env('production')"/>` derlenmeyecektir.
+
+### Varsayılan / Birleştirilmiş Nitelikler
+
+Bazen nitelikler için varsayılan değerler belirtmeniz veya bileşenin bazı niteliklerine ek değerler eklemeniz gerekebilir. Bunu gerçekleştirmek için nitelik çantasının `merge` metodunu kullanabilirsiniz. Bu metot özellikle bir bileşene her zaman uygulanması gereken bir dizi varsayılan CSS sınıfı tanımlamak için kullanışlıdır:
+
+```php
+<div {{ $attributes->merge(['class' => 'alert alert-'.$type]) }}>
+    {{ $message }}
+</div>
+```
+
+Bu bileşenin bu şekilde kullanıldığını varsayarsak:
+
+```php
+<x-alert type="error" :message="$message" class="mb-4"/>
+```
+
+Bileşenin son, renderlenmiş HTML'si aşağıdaki gibi görünecektir:
+
+```php
+<div class="alert alert-error mb-4">
+    <!-- Contents of the $message variable -->
+</div>
+```
+
+### Sınıfları Koşullu Olarak Birleştirme
+
+Bazen belirli bir koşul `true` ise sınıfları birleştirmek isteyebilirsiniz. Bunu, dizi anahtarının eklemek istediğiniz sınıf veya sınıfları içerdiği, değerin ise boolean bir ifade olduğu bir dizi sınıfı kabul eden `class` metoduyla gerçekleştirebilirsiniz. Dizi öğesi sayısal bir anahtara sahipse, her zaman işlenen sınıf listesine dahil edilecektir:
+
+```php
+<div {{ $attributes->class(['p-4', 'bg-red' => $hasError]) }}>
+    {{ $message }}
+</div>
+```
+
+Bileşeninizde başka nitelikleri birleştirmeniz gerekiyorsa, `merge` metodunu `class` metoduna zincirleyebilirsiniz:
+
+```php
+<button {{ $attributes->class(['p-4'])->merge(['type' => 'button']) }}>
+    {{ $slot }}
+</button>
+```
+
+>Birleştirilmiş nitelikleri almaması gereken diğer HTML öğeleri üzerinde sınıfları koşullu olarak derlemeniz gerekiyorsa, `@class` yönergesini kullanabilirsiniz.
+
+### Sınıf Dışı Nitelik Birleştirme
+
+`class` nitelikleri olmayan nitelikler birleştirilirken, `merge` metoduna sağlanan değerler niteliğin "varsayılan" değerleri olarak kabul edilecektir. Ancak, `class` niteliğinden farklı olarak, bu nitelikler enjekte edilen nitelik değerleriyle birleştirilmeyecektir. Bunun yerine, üzerlerine yazılacaktır. Örneğin, bir `button` bileşeninin uygulaması aşağıdaki gibi görünebilir:
+
+```php
+<button {{ $attributes->merge(['type' => 'button']) }}>
+    {{ $slot }}
+</button>
+```
+
+`button` bileşenini özel bir `type` ile oluşturmak için, bileşen oluşturulurken bu `type` belirtilebilir. Herhangi bir `type` belirtilmezse, `type` `button` değerini kullanır kullanılır:
+
+```php
+<x-button type="submit">
+    Submit
+</x-button>
+```
+
+Bu örnekteki `button` bileşeninin işlenmiş HTML'si şöyle olacaktır:
+
+```php
+<button type="submit">
+    Submit
+</button>
+```
+
+`class` dışındaki bir niteliğin varsayılan değerinin ve enjekte edilen değerlerin bir araya getirilmesini istiyorsanız `prepends` metodunu kullanabilirsiniz. Bu örnekte, `data-controller` niteliği her zaman `profile-controller` ile başlayacak ve enjekte edilen tüm ek `data-controller` değerleri bu varsayılan değerden sonra yerleştirilecektir:
+
+```php
+<div {{ $attributes->merge(['data-controller' => $attributes->prepends('profile-controller')]) }}>
+    {{ $slot }}
+</div>
+```
+
+### Nitelikleri Alma ve Filtreleme
+
+`filter` metodunu kullanarak nitelikleri filtreleyebilirsiniz. Bu metod, niteliği nitelik torbasında tutmak istiyorsanız `true` değerini döndürmesi gereken bir closure kabul eder:
+
+```php
+{{ $attributes->filter(fn (string $value, string $key) => $key == 'foo') }}
+```
+
+Kolaylık sağlamak amacıyla, anahtarları belirli bir dizeyle başlayan tüm nitelikleri almak için `whereStartsWith` metodunu kullanabilirsiniz:
+
+```php
+{{ $attributes->whereStartsWith('wire:model') }}
+```
+
+Tersine, `whereDoesntStartWith` metodu, anahtarları belirli bir dizeyle başlayan tüm nitelikleri hariç tutmak için kullanılabilir:
+
+```php
+{{ $attributes->whereDoesntStartWith('wire:model') }}
+```
+
+`first` metodu kullanarak, belirli bir nitelik torbasındaki ilk niteliği işleyebilirsiniz:
+
+```php
+{{ $attributes->whereStartsWith('wire:model')->first() }}
+```
+
+Bileşende bir niteliğin mevcut olup olmadığını kontrol etmek isterseniz `has` metodunu kullanabilirsiniz. Bu metot, nitelik adını tek argüman olarak kabul eder ve niteliğin mevcut olup olmadığını gösteren bir `boolean` döndürür:
+
+```php
+@if ($attributes->has('class'))
+    <div>Class attribute is present</div>
+@endif
+```
+
+`has` metoduna bir dizi aktarılırsa, metot verilen tüm niteliklerin bileşen üzerinde mevcut olup olmadığını belirler:
+
+```php
+@if ($attributes->has(['name', 'class']))
+    <div>All of the attributes are present</div>
+@endif
+```
+
+`hasAny` metodu, verilen niteliklerden herhangi birinin bileşen üzerinde mevcut olup olmadığını belirlemek için kullanılabilir:
+
+```php
+@if ($attributes->hasAny(['href', ':href', 'v-bind:href']))
+    <div>One of the attributes is present</div>
+@endif
+```
+
+`get` metodunu kullanarak belirli bir niteliğin değerini alabilirsiniz:
+
+```php
+{{ $attributes->get('class') }}
+```
+
+## Rezerve Edilmiş Anahtar Kelimeler
+
+Varsayılan olarak, bazı anahtar kelimeler bileşenleri oluşturmak için Blade'in dahili kullanımına ayrılmıştır. Aşağıdaki anahtar sözcükler, bileşenleriniz içinde genel özellikler veya metot adları olarak tanımlanamaz:
+
+- `data`
+- `render`
+- `resloveView`
+- `shouldRender`
+- `view`
+- `withAttributes`
+- `withName`
+
+## Slots (Yuvalar)
+
+Sıklıkla bileşeninize "yuvalar" aracılığıyla ek içerik aktarmanız gerekecektir. Bileşen slot'ları `$slot` değişkeninin echo'lanması ile oluşturulur. Bu kavramı keşfetmek için, bir `alert` bileşeninin aşağıdaki işaretlemeye sahip olduğunu düşünelim:
+
+```php
+<div class="alert alert-danger">
+    {{ $slot }}
+</div>
+```
+
+Bileşene içerik enjekte ederek slot'a içerik aktarabiliriz:
+
+```php
+<x-alert>
+    <strong>Whoops!</strong> Something went wrong!
+</x-alert>
+```
+
+Bazen bir bileşenin, bileşen içinde farklı konumlarda birden fazla farklı slot oluşturması gerekebilir. Uyarı bileşenimizi bir "title" slot'unun eklenmesine izin verecek şekilde değiştirelim:
+
+```php
+<!-- /resources/views/components/alert.blade.php -->
+ 
+<span class="alert-title">{{ $title }}</span>
+ 
+<div class="alert alert-danger">
+    {{ $slot }}
+</div>
+```
+
+İsimlendirilmiş slto'un içeriğini `x-slot` etiketini kullanarak tanımlayabilirsiniz. Açık bir `x-slot` etiketi içinde olmayan herhangi bir içerik `$slot` değişkeni içinde bileşene aktarılacaktır:
+
+```php
+<x-alert>
+    <x-slot:title>
+        Server Error
+    </x-slot>
+ 
+    <strong>Whoops!</strong> Something went wrong!
+</x-alert>
+```
+
+Slotun içerik içerip içermediğini belirlemek için bir slotun `isEmpty` metodunu çağırabilirsiniz:
+
+```php
+<span class="alert-title">{{ $title }}</span>
+ 
+<div class="alert alert-danger">
+    @if ($slot->isEmpty())
+        This is default content if the slot is empty.
+    @else
+        {{ $slot }}
+    @endif
+</div>
+```
+
+Ayrıca, `hasActualContent` metodu, slot'un HTML yorumu olmayan herhangi bir "gerçek" içerik içerip içermediğini belirlemek için kullanılabilir:
+
+```php
+@if ($slot->hasActualContent())
+    The scope has non-comment content.
+@endif
+```
+
+### Kapsamlı Slot'lar
+
+Vue gibi bir JavaScript framework kullandıysanız, slotlarınızda ki bileşenden verilere veya metodlara erişmenizi sağlayan "kapsamlandırılmış slot"lara aşina olabilirsiniz. Benzer davranışı Laravel'de bileşeniniz üzerinde `public` metotlar veya özellikler tanımlayarak ve slotunuz içindeki bileşene `$component` değişkeni üzerinden erişerek elde edebilirsiniz. Bu örnekte, `x-alert` bileşeninin bileşen sınıfı üzerinde tanımlanmış `public` bir `formatAlert` metoduna sahip olduğunu varsayacağız:
+
+```php
+<x-alert>
+    <x-slot:title>
+        {{ $component->formatAlert('Server Error') }}
+    </x-slot>
+ 
+    <strong>Whoops!</strong> Something went wrong!
+</x-alert>
+```
+
+### Slot Nitelikleri
+
+Blade bileşenlerinde olduğu gibi, slot'lara CSS sınıf adları gibi ek nitelikler atayabilirsiniz:
+
+```php
+<x-card class="shadow-sm">
+    <x-slot:heading class="font-bold">
+        Heading
+    </x-slot>
+ 
+    Content
+ 
+    <x-slot:footer class="text-sm">
+        Footer
+    </x-slot>
+</x-card>
+```
+
+Slot nitelikleriyle etkileşim kurmak için, slot değişkeninin `attributes` özelliğine erişebilirsiniz. 
+
+```php
+@props([
+    'heading',
+    'footer',
+])
+ 
+<div {{ $attributes->class(['border']) }}>
+    <h1 {{ $heading->attributes->class(['text-lg']) }}>
+        {{ $heading }}
+    </h1>
+ 
+    {{ $slot }}
+ 
+    <footer {{ $footer->attributes->class(['text-gray-700']) }}>
+        {{ $footer }}
+    </footer>
+</div>
+```
+
+## Inline Bileşen Görünümler
+
+Çok küçük bileşenler için hem bileşen sınıfını hem de bileşenin görünüm şablonunu yönetmek zahmetli olabilir. Bu nedenle, bileşenin biçimlendirmesini doğrudan render metodundan döndürebilirsiniz:
+
+```php
+public function render(): string
+{
+    return <<<'blade'
+        <div class="alert alert-danger">
+            {{ $slot }}
+        </div>
+    blade;
+}
+```
+
+### Inline Bileşen Oluşturma
+
+Inline görünüm oluşturan bir bileşen oluşturmak için `make:component` komutunu çalıştırırken `--inline` seçeneğini kullanabilirsiniz:
+
+```shell
+php artisan make:component Alert --inline
+```
+
+## Dinamik Bileşenler
+
+Bazen bir bileşeni render etmeniz gerekebilir ancak çalışma zamanına kadar hangi bileşenin render edileceğini bilemeyebilirsiniz. Bu durumda, bileşeni bir çalışma zamanı değerine veya değişkenine göre render etmek için Laravel'in yerleşik `dynamic-component` bileşenini kullanabilirsiniz:
+
+```php
+// $componentName = "secondary-button";
+ 
+<x-dynamic-component :component="$componentName" class="mt-4" />
+```
+
+## Manually Registering Components
+
+#çevrilecek 
+
+# `#` Anonim Bileşenler
+---
+Inline bileşenlere benzer şekilde, anonim bileşenler de bir bileşeni tek bir dosya üzerinden yönetmek için bir mekanizma sağlar. Bununla birlikte, anonim bileşenler tek bir görünüm dosyası kullanır ve ilişkili bir sınıfı yoktur. Anonim bir bileşen tanımlamak için `sources/views/components` dizininize bir Blade şablonu yerleştirmeniz yeterlidir. Örneğin, `resources/views/components/alert.blade.php` adresinde bir bileşen tanımladığınızı varsayarsak, bu bileşeni şu şekilde oluşturabilirsiniz:
+
+```php
+<x-alert/>
+```
+
+Bir bileşenin `components` dizini içinde daha derinde yuvalanmış olup olmadığını belirtmek için `.` karakterini kullanabilirsiniz. Örneğin, bileşenin `resources/views/components/inputs/button.blade.php` adresinde tanımlandığını varsayarsak, bileşeni şu şekilde oluşturabilirsiniz:
+
+```php
+<x-inputs.button/>
+```
+
+## Anonim Index Bileşenler
+
+Bazen, bir bileşen birçok Blade şablonundan oluştuğunda, söz konusu bileşenin şablonlarını tek bir dizinde gruplamak isteyebilirsiniz. Örneğin, aşağıdaki dizin yapısına sahip bir "accoridon" bileşeni hayal edin:
+
+```plaintext
+/resources/views/components/accordion.blade.php
+/resources/views/components/accordion/item.blade.php
+```
+
+Bu dizin yapısı, akordeon bileşenini ve öğesini aşağıdaki gibi oluşturmanıza olanak tanır:
+
+```php
+<x-accordion>
+    <x-accordion.item>
+        ...
+    </x-accordion.item>
+</x-accordion>
+```
+
+Ancak, accordion bileşenini `x-accordion` aracılığıyla oluşturmak için, "index" accordion bileşeni şablonunu accprdion dizini içinde accordion ile ilgili diğer şablonlarla birlikte yerleştirmek yerine `resources/views/components` dizinine yerleştirmek zorunda kaldık.
+
+Neyse ki Blade, bir bileşenin şablon dizinine bir `index.blade.php` dosyası yerleştirmenize izin verir. Bileşen için bir `index.blade.php` şablonu mevcut olduğunda, bileşenin "kök" düğümü olarak işlenecektir. Dolayısıyla, yukarıdaki örnekte verilen aynı Blade sözdizimini kullanmaya devam edebiliriz; ancak dizin yapımızı şu şekilde ayarlayacağız:
+
+```plaintext
+/resources/views/components/accordion/index.blade.php
+/resources/views/components/accordion/item.blade.php
+```
+
+## Veri Özellikleri / Nitelikleri
+
+Anonim bileşenlerin ilişkili bir sınıfı olmadığından, hangi verilerin değişken olarak bileşene aktarılacağını ve hangi niteliklerin bileşenin nitelik çantasına yerleştirileceğini nasıl ayırt edebileceğinizi merak edebilirsiniz.
+
+Bileşeninizin Blade şablonunun üst kısmındaki `@props` yönergesini kullanarak hangi niteliklerin veri değişkenleri olarak kabul edileceğini belirtebilirsiniz. Bileşen üzerindeki diğer tüm nitelikler, bileşenin nitelik çantası aracılığıyla kullanılabilir olacaktır. Bir veri değişkenine varsayılan bir değer vermek isterseniz, dizi anahtarı olarak değişkenin adını ve dizi değeri olarak varsayılan değeri belirtebilirsiniz:
+
+```php
+<!-- /resources/views/components/alert.blade.php -->
+ 
+@props(['type' => 'info', 'message'])
+ 
+<div {{ $attributes->merge(['class' => 'alert alert-'.$type]) }}>
+    {{ $message }}
+</div>
+```
+
+Yukarıdaki bileşen tanımı göz önüne alındığında, bileşeni şu şekilde oluşturabiliriz:
+
+```php
+<x-alert type="error" :message="$message" class="mb-4"/>
+```
+
+## Ebevyn Veriye Erişme
+
+Bazen bir alt bileşen içindeki bir üst bileşenden verilere erişmek isteyebilirsiniz. Bu durumlarda `@aware` yönergesini kullanabilirsiniz. Örneğin, bir üst `<x-menu>` ve alt `<x-menu.item>` bileşeninden oluşan karmaşık bir menü bileşeni oluşturduğumuzu düşünün:
+
+```php
+<x-menu color="purple">
+    <x-menu.item>...</x-menu.item>
+    <x-menu.item>...</x-menu.item>
+</x-menu>
+```
+
+`<x-menu>` bileşeni aşağıdaki gibi bir uygulamaya sahip olabilir:
+
+```php
+<!-- /resources/views/components/menu/index.blade.php -->
+ 
+@props(['color' => 'gray'])
+ 
+<ul {{ $attributes->merge(['class' => 'bg-'.$color.'-200']) }}>
+    {{ $slot }}
+</ul>
+```
+
+Renk prop'u yalnızca üst öğeye (`<x-menu>`) aktarıldığı için, `<x-menu.item>` içinde kullanılamayacaktır. Ancak, `@aware` yönergesini kullanırsak, bunu `<x-menu.item>` içinde de kullanılabilir hale getirebiliriz:
+
+```php
+<!-- /resources/views/components/menu/item.blade.php -->
+ 
+@aware(['color' => 'gray'])
+ 
+<li {{ $attributes->merge(['class' => 'text-'.$color.'-800']) }}>
+    {{ $slot }}
+</li>
+```
+
+>`@aware` yönergesi, HTML nitelikleri aracılığıyla üst bileşene açıkça aktarılmayan üst verilere erişemez. Üst bileşene açıkça aktarılmayan varsayılan `@props` değerlerine `@aware` yönergesi tarafından erişilemez.
+
+## Anonim Bileşen Yolları
+
+Daha önce tartışıldığı gibi, anonim bileşenler genellikle `resources/views/components` dizininize bir Blade şablonu yerleştirerek tanımlanır. Ancak, zaman zaman varsayılan yola ek olarak Laravel'e başka anonim bileşen yolları kaydetmek isteyebilirsiniz.
+
+`anonymousComponentPath` metodu, ilk bağımsız değişkeni olarak anonim bileşen konumuna giden "yolu" ve ikinci bağımsız değişkeni olarak bileşenlerin altına yerleştirilmesi gereken isteğe bağlı bir "ad alanını" kabul eder. Tipik olarak, bu metod uygulamanızın service providerslarınızın birinin `boot` metodundan çağrılmalıdır:
+
+```php
+/**
+ * Bootstrap any application services.
+ */
+public function boot(): void
+{
+    Blade::anonymousComponentPath(__DIR__.'/../components');
+}
+```
+
+Bileşen yolları, yukarıdaki örnekte olduğu gibi belirtilen bir önek olmadan kaydedildiğinde, Blade bileşenlerinizde de karşılık gelen bir önek olmadan oluşturulabilir. Örneğin, yukarıda kaydedilen yolda bir `panel.blade.php` bileşeni varsa, bu şekilde oluşturulabilir:
+
+```php
+<x-panel />
+```
+
+"namespaces" öneki `anonymousComponentPath` metoduna ikinci argüman olarak sağlanabilir:
+
+```php
+Blade::anonymousComponentPath(__DIR__.'/../components', 'dashboard');
+```
+
+Bir önek sağlandığında, bu "namespaces" içindeki bileşenler, bileşen oluşturulduğunda bileşen adına bileşenin ad alanının öneki eklenerek oluşturulabilir:
+
+```php
+<x-dashboard::panel />
+```
 
 # `#` Şablon Oluşturma
 ---
 ## Componentleri Kullanarak Şablon Oluşturma
 
-#çevrilecek 
+Çoğu web uygulaması çeşitli sayfalarda aynı genel düzeni korur. Oluşturduğumuz her görünümde tüm HTML düzenini tekrarlamak zorunda kalsaydık, uygulamamızı sürdürmek inanılmaz derecede külfetli ve zor olurdu. Neyse ki, bu düzeni tek bir Blade bileşeni olarak tanımlamak ve daha sonra uygulamamız boyunca kullanmak uygundur.
+
+### Şablon Bileşenininin Tanımlanması
+
+Örneğin, bir "yapılacaklar" listesi uygulaması oluşturduğumuzu düşünün. Aşağıdaki gibi görünen bir `layout` bileşeni tanımlayabiliriz:
+
+```php
+<!-- resources/views/components/layout.blade.php -->
+ 
+<html>
+    <head>
+        <title>{{ $title ?? 'Todo Manager' }}</title>
+    </head>
+    <body>
+        <h1>Todos</h1>
+        <hr/>
+        {{ $slot }}
+    </body>
+</html>
+```
+
+### Şablon Bileşeninin Uygulanması
+
+`layout` bileşeni tanımlandıktan sonra, bileşeni kullanan bir Blade görünümü oluşturabiliriz. Bu örnekte, görev listemizi görüntüleyen basit bir görünüm tanımlayacağız:
+
+```php
+<!-- resources/views/tasks.blade.php -->
+ 
+<x-layout>
+    @foreach ($tasks as $task)
+        {{ $task }}
+    @endforeach
+</x-layout>
+```
+
+Unutmayın, bir bileşene enjekte edilen içerik, düzen bileşenimizdeki varsayılan `$slot` değişkenine sağlanacaktır. Fark etmiş olabileceğiniz gibi, düzenimiz ayrıca sağlanmışsa bir `$title` slot'una da saygı duyar; aksi takdirde varsayılan bir başlık gösterilir. Bileşen belgelerinde tartışılan standart slot sözdizimini kullanarak görev listesi görünümümüzden özel bir başlık enjekte edebiliriz:
+
+```php
+<!-- resources/views/tasks.blade.php -->
+ 
+<x-layout>
+    <x-slot:title>
+        Custom Title
+    </x-slot>
+ 
+    @foreach ($tasks as $task)
+        {{ $task }}
+    @endforeach
+</x-layout>
+```
+
+Artık şablonumuzu ve görev listesi görünümlerimizi tanımladığımıza göre, `task` görünümünü bir rotadan döndürmemiz gerekiyor:
+
+```php
+use App\Models\Task;
+ 
+Route::get('/tasks', function () {
+    return view('tasks', ['tasks' => Task::all()]);
+});
+```
 
 ## Şablon Kalıtımı Kullanarak Şablon Oluşturma
 

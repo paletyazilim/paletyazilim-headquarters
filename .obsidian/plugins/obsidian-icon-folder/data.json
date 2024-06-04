@@ -44,5 +44,6 @@
   "Laravel/6 - Views": "RiBookMarkFill",
   "Laravel/U - Migrations": "RiBookMarkFill",
   "Laravel/U - Eloquent ORM": "RiBookMarkFill",
-  "Laravel/U - Auth": "RiBookMarkFill"
+  "Laravel/U - Auth": "RiBookMarkFill",
+  "Laravel/9 - URL Generation": "RiBookMarkFill"
 }

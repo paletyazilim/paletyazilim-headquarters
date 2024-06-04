@@ -1,8 +1,48 @@
 {
   "recentFiles": [
     {
-      "basename": "1 - Blade Şablonları",
-      "path": "Laravel/8 - Blade Templates/1 - Blade Şablonları.md"
+      "basename": "7 - Blade Şablonları (Bütün Konu)",
+      "path": "Laravel/8 - Blade Templates/7 - Blade Şablonları (Bütün Konu).md"
+    },
+    {
+      "basename": "6 - Stacks (Yığınlar)",
+      "path": "Laravel/8 - Blade Templates/6 - Stacks (Yığınlar).md"
+    },
+    {
+      "basename": "5 - Formlar",
+      "path": "Laravel/8 - Blade Templates/5 - Formlar.md"
+    },
+    {
+      "basename": "4 - Şablon Oluşturma",
+      "path": "Laravel/8 - Blade Templates/4 - Şablon Oluşturma.md"
+    },
+    {
+      "basename": "3 - Bileşenler",
+      "path": "Laravel/8 - Blade Templates/3 - Bileşenler.md"
+    },
+    {
+      "basename": "2 - Blade Yönergeleri",
+      "path": "Laravel/8 - Blade Templates/2 - Blade Yönergeleri.md"
+    },
+    {
+      "basename": "1 - Blade Şablonlarına Giriş",
+      "path": "Laravel/8 - Blade Templates/1 - Blade Şablonlarına Giriş.md"
+    },
+    {
+      "basename": "12 - Breeze",
+      "path": "Laravel/U - Breeze/12 - Breeze.md"
+    },
+    {
+      "basename": "1 - Eloquent'a Başlarken",
+      "path": "Laravel/U - Eloquent ORM/1 - Eloquent'a Başlarken.md"
+    },
+    {
+      "basename": "1 - Migrations",
+      "path": "Laravel/U - Migrations/1 - Migrations.md"
+    },
+    {
+      "basename": "2 - Tablo Oluşturma",
+      "path": "Laravel/U - Migrations/2 - Tablo Oluşturma.md"
     },
     {
       "basename": "1 - Views",
@@ -29,14 +69,6 @@
       "path": "1- PHP'ye Giriş/5- PHP Data Types (Veri Türleri).md"
     },
     {
-      "basename": "10 - Blade Templates",
-      "path": "Laravel/8 - Blade Templates/10 - Blade Templates.md"
-    },
-    {
-      "basename": "7  - Blade Şablonu Nedir ve Veri Nasıl Gösterilir",
-      "path": "Laravel/8 - Blade Templates/7  - Blade Şablonu Nedir ve Veri Nasıl Gösterilir.md"
-    },
-    {
       "basename": "2 - Gelişmiş Rotalar",
       "path": "Laravel/1 - Routing/2 - Gelişmiş Rotalar.md"
     },
@@ -53,22 +85,6 @@
       "path": "Laravel/2 - Middleware/2 - Gelişmiş Middleware.md"
     },
     {
-      "basename": "1 - Eloquent'a Başlarken",
-      "path": "Laravel/U - Eloquent ORM/1 - Eloquent'a Başlarken.md"
-    },
-    {
-      "basename": "1 - Migrations",
-      "path": "Laravel/U - Migrations/1 - Migrations.md"
-    },
-    {
-      "basename": "2 - Tablo Oluşturma",
-      "path": "Laravel/U - Migrations/2 - Tablo Oluşturma.md"
-    },
-    {
-      "basename": "12 - Breeze",
-      "path": "Laravel/U - Breeze/12 - Breeze.md"
-    },
-    {
       "basename": "3 - Bütün Konu",
       "path": "Laravel/4 - Controllers/3 - Bütün Konu.md"
     },
@@ -79,10 +95,6 @@
     {
       "basename": "2 - Gelişmiş Controller",
       "path": "Laravel/4 - Controllers/2 - Gelişmiş Controller.md"
-    },
-    {
-      "basename": "11 - Blade Components (Bileşenleri)",
-      "path": "Laravel/8 - Blade Templates/11 - Blade Components (Bileşenleri).md"
     },
     {
       "basename": "4 - Bir İsteğin Yaşam Döngüsü",
@@ -107,14 +119,6 @@
     {
       "basename": "3 - Bütün Konu",
       "path": "Laravel/2 - Middleware/3 - Bütün Konu.md"
-    },
-    {
-      "basename": "8 - Blade If ve Switch Yönergeleri",
-      "path": "Laravel/8 - Blade Templates/8 - Blade If ve Switch Yönergeleri.md"
-    },
-    {
-      "basename": "9 - Blade Döngü Yönergeleri",
-      "path": "Laravel/8 - Blade Templates/9 - Blade Döngü Yönergeleri.md"
     },
     {
       "basename": "6 - Rota Grupları",
@@ -195,10 +199,6 @@
     {
       "basename": "5- Destructor (Yıkıcı Metotlar)",
       "path": "3- PHP OOP/5- Destructor (Yıkıcı Metotlar).md"
-    },
-    {
-      "basename": "4- PHP Variables (Değişkenler)",
-      "path": "1- PHP'ye Giriş/4- PHP Variables (Değişkenler).md"
     }
   ],
   "omittedPaths": [],
