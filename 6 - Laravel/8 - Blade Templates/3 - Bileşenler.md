@@ -488,7 +488,7 @@ Bazen bir bileşenin, bileşen içinde farklı konumlarda birden fazla farklı s
 </div>
 ```
 
-İsimlendirilmiş slto'un içeriğini `x-slot` etiketini kullanarak tanımlayabilirsiniz. Açık bir `x-slot` etiketi içinde olmayan herhangi bir içerik `$slot` değişkeni içinde bileşene aktarılacaktır:
+İsimlendirilmiş slot'un içeriğini `x-slot` etiketini kullanarak tanımlayabilirsiniz. Açık bir `x-slot` etiketi içinde olmayan herhangi bir içerik `$slot` değişkeni içinde bileşene aktarılacaktır:
 
 ```php
 <x-alert>

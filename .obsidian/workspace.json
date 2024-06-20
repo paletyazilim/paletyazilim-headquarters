@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Laravel/8 - Blade Templates/6 - Stacks (Yığınlar).md",
+                "file": "6 - Laravel/8 - Blade Templates/6 - Stacks (Yığınlar).md",
                 "mode": "source",
                 "source": false
               }
@@ -25,18 +25,10 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Laravel/8 - Blade Templates/7 - Blade Şablonları (Bütün Konu).md",
+                "file": "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken.md",
                 "mode": "source",
                 "source": false
               }
-            }
-          },
-          {
-            "id": "0edca5db2592f84e",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
             }
           }
         ],
@@ -100,7 +92,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Laravel/8 - Blade Templates/7 - Blade Şablonları (Bütün Konu).md"
+                "file": "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken.md"
               }
             }
           }
@@ -124,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Laravel/8 - Blade Templates/7 - Blade Şablonları (Bütün Konu).md",
+                "file": "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Laravel/8 - Blade Templates/7 - Blade Şablonları (Bütün Konu).md",
+                "file": "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,43 +186,44 @@
   },
   "active": "e517a783a5bb8142",
   "lastOpenFiles": [
-    "Laravel/9 - URL Generation",
-    "Laravel/8 - Blade Templates/6 - Stacks (Yığınlar).md",
-    "Laravel/8 - Blade Templates/7 - Blade Şablonları (Bütün Konu).md",
-    "Laravel/8 - Blade Templates/5 - Formlar.md",
-    "Laravel/8 - Blade Templates/4 - Şablon Oluşturma.md",
-    "Laravel/8 - Blade Templates/3 - Bileşenler.md",
-    "Laravel/8 - Blade Templates/2 - Blade Yönergeleri.md",
-    "Laravel/8 - Blade Templates/1 - Blade Şablonlarına Giriş.md",
+    "6 - Laravel/8 - Blade Templates/2 - Blade Yönergeleri.md",
+    "6 - Laravel/17 - Seeding",
+    "6 - Laravel/15 - Security",
+    "6 - Laravel/14 - Mail",
+    "6 - Laravel/13 - File Storage",
+    "6 - Laravel/12 - Collections",
+    "6 - Laravel/11 - Error Handling",
+    "6 - Laravel/8 - Blade Templates/7 - Blade Şablonları (Bütün Konu).md",
+    "6 - Laravel/8 - Blade Templates/6 - Stacks (Yığınlar).md",
+    "6 - Laravel/10 - Validation/1 - Validation (Doğrulama).md",
+    "6 - Laravel/9 - URL Generation/1 - URL Oluşturma.md",
+    "6 - Laravel/5 - Requests & Respones & Session/3 - HTTP Sessions.md",
+    "6 - Laravel/8 - Blade Templates/3 - Bileşenler.md",
+    "Untitled.canvas",
+    "Untitled 1.canvas",
+    "6 - Laravel/U - Breeze/12 - Breeze.md",
+    "1- PHP'ye Giriş/7- PHP Strings (Dizeler).md",
+    "6 - Laravel/2 - Middleware/3 - Bütün Konu.md",
+    "6 - Laravel/10 - Validation",
+    "6 - Laravel/9 - URL Generation",
+    "6 - Laravel/8 - Blade Templates/5 - Formlar.md",
+    "6 - Laravel/8 - Blade Templates/4 - Şablon Oluşturma.md",
+    "6 - Laravel/8 - Blade Templates/1 - Blade Şablonlarına Giriş.md",
     "Laravel/8 - Blade Templates/7  - Blade Şablonu Nedir ve Veri Nasıl Gösterilir.md",
     "Laravel/8 - Blade Templates/11 - Blade Components (Bileşenleri).md",
-    "Laravel/U - Breeze/12 - Breeze.md",
-    "Laravel/U - Eloquent ORM/1 - Eloquent'a Başlarken.md",
-    "Laravel/U - Migrations/1 - Migrations.md",
-    "Laravel/U - Migrations/2 - Tablo Oluşturma.md",
-    "Laravel/6 - Views/1 - Views.md",
-    "Laravel/5 - Requests & Respones/2 - HTTP Respones (Yanıtlar).md",
-    "Laravel/5 - Requests & Respones/1 - HTTP Requests (İstekler).md",
-    "Laravel/1 - Routing/1 - Routing Temelleri.md",
-    "Laravel/1 - Routing/4 - Bütün Konu.md",
+    "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken.md",
+    "6 - Laravel/16 - Migrations/1 - Migrations.md",
+    "6 - Laravel/16 - Migrations/2 - Tablo Oluşturma.md",
+    "6 - Laravel/6 - Views/1 - Views.md",
+    "6 - Laravel/5 - Requests & Respones & Session/2 - HTTP Respones (Yanıtlar).md",
+    "6 - Laravel/5 - Requests & Respones & Session/1 - HTTP Requests (İstekler).md",
+    "6 - Laravel/1 - Routing/1 - Routing Temelleri.md",
+    "6 - Laravel/1 - Routing/4 - Bütün Konu.md",
     "1- PHP'ye Giriş/5- PHP Data Types (Veri Türleri).md",
     "Laravel/8 - Blade Templates/10 - Blade Templates.md",
-    "Laravel/1 - Routing/2 - Gelişmiş Rotalar.md",
-    "Laravel/1 - Routing/3 - Rotalara Erişme, Düzenleme ve Cachleme.md",
-    "Laravel/2 - Middleware/1 - Middleware Temelleri.md",
-    "Laravel/2 - Middleware/2 - Gelişmiş Middleware.md",
-    "Laravel/4 - Controllers/3 - Bütün Konu.md",
     "Laravel/U - Auth",
-    "Laravel/U - Eloquent ORM",
-    "Laravel/U - Migrations",
-    "Laravel/6 - Views",
-    "Laravel/U - Breeze",
-    "Laravel/8 - Blade Templates",
-    "Laravel",
-    "Laravel/5 - Requests & Respones",
+    "6 - Laravel/18 - Eloquent ORM",
     "6 - Laravel Temelleri/Başlıksız.canvas",
-    "Laravel/3 - CSRF Protection",
-    "Laravel/4 - Controllers",
     "5- Laravele Giriş/Başlıksız.canvas",
     "6- Laravele Giriş/Başlıksız.canvas",
     "Tutorial/-a.canvas",
