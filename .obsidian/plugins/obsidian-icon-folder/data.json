@@ -46,5 +46,8 @@
   "6 - Laravel/U - Breeze": "RiBookMarkFill",
   "6 - Laravel/16 - Migrations": "RiBookMarkFill",
   "6 - Laravel/18 - Eloquent ORM": "RiBookMarkFill",
-  "6 - Laravel": "RiBookFill"
+  "6 - Laravel": "RiBookFill",
+  "6 - Laravel/11 - Error Handling": "RiBookMarkFill",
+  "6 - Laravel/12 - Collections": "RiBookMarkFill",
+  "6 - Laravel/17 - Seeding": "RiBookMarkFill"
 }

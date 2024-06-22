@@ -16,7 +16,7 @@ Laravel, migration dosyasının adından tablonun adını ve migration'un yeni b
 
 Eğer oluşturulan migration için özel bir yol belirtmek isterseniz, `make:migration` komutunu çalıştırırken `--path` seçeneğini kullanabilirsiniz. Verilen yol, uygulamanızın temel yoluna göre göreceli olmalıdır.
 
-# `#` Migration'ları Sıkıştırma
+## Migration'ları Sıkıştırma
 ---
 Uygulamanızı oluştururken, zamanla daha fazla migration biriktirebilirsiniz. Bu, `database/migrations` dizininizin potansiyel olarak yüzlerce migration ile şişmesine neden olabilir. İsterseniz, migrationları tek bir SQL dosyasına "sıkıştırabilirsiniz". Başlamak için `schema:dump` komutunu çalıştırın:
 
@@ -227,7 +227,7 @@ Schema::create('users', function (Blueprint $table) {
 });
 ```
 
-## Tablo ve Sütun Varlığı Koşulları
+### Tablo ve Sütun Varlığı Koşulları
 
 `hasTable`, `hasColumn` ve `hasIndex` metodlarını kullanarak bir tablo, sütun veya dizinin varlığını belirleyebilirsiniz:
 

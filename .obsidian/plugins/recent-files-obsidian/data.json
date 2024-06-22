@@ -1,36 +1,128 @@
 {
   "recentFiles": [
     {
+      "basename": "2 - Relationships (İlişkiler)",
+      "path": "6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler).md"
+    },
+    {
       "basename": "1 - Eloquent'a Başlarken",
       "path": "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken.md"
     },
     {
-      "basename": "2 - Blade Yönergeleri",
-      "path": "6 - Laravel/8 - Blade Templates/2 - Blade Yönergeleri.md"
+      "basename": "1 - Views",
+      "path": "6 - Laravel/6 - Views/1 - Views.md"
     },
     {
-      "basename": "7 - Blade Şablonları (Bütün Konu)",
-      "path": "6 - Laravel/8 - Blade Templates/7 - Blade Şablonları (Bütün Konu).md"
+      "basename": "1 - Seeding",
+      "path": "6 - Laravel/17 - Seeding/1 - Seeding.md"
     },
     {
-      "basename": "6 - Stacks (Yığınlar)",
-      "path": "6 - Laravel/8 - Blade Templates/6 - Stacks (Yığınlar).md"
+      "basename": "1 - Migrations",
+      "path": "6 - Laravel/16 - Migrations/1 - Migrations.md"
     },
     {
-      "basename": "1 - Validation (Doğrulama)",
-      "path": "6 - Laravel/10 - Validation/1 - Validation (Doğrulama).md"
-    },
-    {
-      "basename": "1 - URL Oluşturma",
-      "path": "6 - Laravel/9 - URL Generation/1 - URL Oluşturma.md"
+      "basename": "1 - Koleksiyonlar",
+      "path": "6 - Laravel/12 - Collections/1 - Koleksiyonlar.md"
     },
     {
       "basename": "3 - HTTP Sessions",
       "path": "6 - Laravel/5 - Requests & Respones & Session/3 - HTTP Sessions.md"
     },
     {
+      "basename": "2 - HTTP Respones (Yanıtlar)",
+      "path": "6 - Laravel/5 - Requests & Respones & Session/2 - HTTP Respones (Yanıtlar).md"
+    },
+    {
+      "basename": "1 - HTTP Requests (İstekler)",
+      "path": "6 - Laravel/5 - Requests & Respones & Session/1 - HTTP Requests (İstekler).md"
+    },
+    {
+      "basename": "3 - Controllers",
+      "path": "6 - Laravel/4 - Controllers/3 - Controllers.md"
+    },
+    {
+      "basename": "3 - Middleware",
+      "path": "6 - Laravel/2 - Middleware/3 - Middleware.md"
+    },
+    {
+      "basename": "1 - Middleware Temelleri",
+      "path": "6 - Laravel/2 - Middleware/1 - Middleware Temelleri.md"
+    },
+    {
+      "basename": "4 - Routing",
+      "path": "6 - Laravel/1 - Routing/4 - Routing.md"
+    },
+    {
+      "basename": "3 - Rotalara Erişme, Düzenleme ve Cachleme",
+      "path": "6 - Laravel/1 - Routing/3 - Rotalara Erişme, Düzenleme ve Cachleme.md"
+    },
+    {
+      "basename": "1 - Routing Temelleri",
+      "path": "6 - Laravel/1 - Routing/1 - Routing Temelleri.md"
+    },
+    {
+      "basename": "5 - Dizin Yapısı",
+      "path": "5- Laravele Giriş/5 - Dizin Yapısı.md"
+    },
+    {
+      "basename": "4 - Bir İsteğin Yaşam Döngüsü",
+      "path": "5- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md"
+    },
+    {
+      "basename": "2 - Laravel Kurulumu",
+      "path": "5- Laravele Giriş/2 - Laravel Kurulumu.md"
+    },
+    {
+      "basename": "1 - Laravel’e Başlamadan Önce",
+      "path": "5- Laravele Giriş/1 - Laravel’e Başlamadan Önce.md"
+    },
+    {
+      "basename": "2 - Tablo Oluşturma",
+      "path": "6 - Laravel/16 - Migrations/2 - Tablo Oluşturma.md"
+    },
+    {
+      "basename": "9 - Facades",
+      "path": "5- Laravele Giriş/9 - Facades.md"
+    },
+    {
+      "basename": "8 - Service Providers",
+      "path": "5- Laravele Giriş/8 - Service Providers.md"
+    },
+    {
+      "basename": "6 - Frontend",
+      "path": "5- Laravele Giriş/6 - Frontend.md"
+    },
+    {
+      "basename": "7 - Service Container",
+      "path": "5- Laravele Giriş/7 - Service Container.md"
+    },
+    {
+      "basename": "1 - Hata Yakalama",
+      "path": "6 - Laravel/11 - Error Handling/1 - Hata Yakalama.md"
+    },
+    {
+      "basename": "7 - Blade Şablonları (Bütün Konu)",
+      "path": "6 - Laravel/8 - Blade Templates/7 - Blade Şablonları (Bütün Konu).md"
+    },
+    {
       "basename": "3 - Bileşenler",
       "path": "6 - Laravel/8 - Blade Templates/3 - Bileşenler.md"
+    },
+    {
+      "basename": "1 - Validation (Doğrulama)",
+      "path": "6 - Laravel/10 - Validation/1 - Validation (Doğrulama).md"
+    },
+    {
+      "basename": "6 - Stacks (Yığınlar)",
+      "path": "6 - Laravel/8 - Blade Templates/6 - Stacks (Yığınlar).md"
+    },
+    {
+      "basename": "2 - Blade Yönergeleri",
+      "path": "6 - Laravel/8 - Blade Templates/2 - Blade Yönergeleri.md"
+    },
+    {
+      "basename": "1 - URL Oluşturma",
+      "path": "6 - Laravel/9 - URL Generation/1 - URL Oluşturma.md"
     },
     {
       "basename": "12 - Breeze",
@@ -39,10 +131,6 @@
     {
       "basename": "7- PHP Strings (Dizeler)",
       "path": "1- PHP'ye Giriş/7- PHP Strings (Dizeler).md"
-    },
-    {
-      "basename": "3 - Bütün Konu",
-      "path": "6 - Laravel/2 - Middleware/3 - Bütün Konu.md"
     },
     {
       "basename": "5 - Formlar",
@@ -57,34 +145,6 @@
       "path": "6 - Laravel/8 - Blade Templates/1 - Blade Şablonlarına Giriş.md"
     },
     {
-      "basename": "1 - Migrations",
-      "path": "6 - Laravel/16 - Migrations/1 - Migrations.md"
-    },
-    {
-      "basename": "2 - Tablo Oluşturma",
-      "path": "6 - Laravel/16 - Migrations/2 - Tablo Oluşturma.md"
-    },
-    {
-      "basename": "1 - Views",
-      "path": "6 - Laravel/6 - Views/1 - Views.md"
-    },
-    {
-      "basename": "2 - HTTP Respones (Yanıtlar)",
-      "path": "6 - Laravel/5 - Requests & Respones & Session/2 - HTTP Respones (Yanıtlar).md"
-    },
-    {
-      "basename": "1 - HTTP Requests (İstekler)",
-      "path": "6 - Laravel/5 - Requests & Respones & Session/1 - HTTP Requests (İstekler).md"
-    },
-    {
-      "basename": "1 - Routing Temelleri",
-      "path": "6 - Laravel/1 - Routing/1 - Routing Temelleri.md"
-    },
-    {
-      "basename": "4 - Bütün Konu",
-      "path": "6 - Laravel/1 - Routing/4 - Bütün Konu.md"
-    },
-    {
       "basename": "5- PHP Data Types (Veri Türleri)",
       "path": "1- PHP'ye Giriş/5- PHP Data Types (Veri Türleri).md"
     },
@@ -93,20 +153,8 @@
       "path": "6 - Laravel/1 - Routing/2 - Gelişmiş Rotalar.md"
     },
     {
-      "basename": "3 - Rotalara Erişme, Düzenleme ve Cachleme",
-      "path": "6 - Laravel/1 - Routing/3 - Rotalara Erişme, Düzenleme ve Cachleme.md"
-    },
-    {
-      "basename": "1 - Middleware Temelleri",
-      "path": "6 - Laravel/2 - Middleware/1 - Middleware Temelleri.md"
-    },
-    {
       "basename": "2 - Gelişmiş Middleware",
       "path": "6 - Laravel/2 - Middleware/2 - Gelişmiş Middleware.md"
-    },
-    {
-      "basename": "3 - Bütün Konu",
-      "path": "6 - Laravel/4 - Controllers/3 - Bütün Konu.md"
     },
     {
       "basename": "1 - Controllers Temelleri",
@@ -117,20 +165,8 @@
       "path": "6 - Laravel/4 - Controllers/2 - Gelişmiş Controller.md"
     },
     {
-      "basename": "4 - Bir İsteğin Yaşam Döngüsü",
-      "path": "5- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md"
-    },
-    {
       "basename": "3 - Yapılandırma",
       "path": "5- Laravele Giriş/3 - Yapılandırma.md"
-    },
-    {
-      "basename": "2 - Laravel Kurulumu",
-      "path": "5- Laravele Giriş/2 - Laravel Kurulumu.md"
-    },
-    {
-      "basename": "1 - Laravel’e Başlamadan Önce",
-      "path": "5- Laravele Giriş/1 - Laravel’e Başlamadan Önce.md"
     },
     {
       "basename": "1 - CSRF Protection",
@@ -147,26 +183,6 @@
     {
       "basename": "4- Constructor (Yapıcı Metotlar)",
       "path": "3- PHP OOP/4- Constructor (Yapıcı Metotlar).md"
-    },
-    {
-      "basename": "6 - Frontend",
-      "path": "5- Laravele Giriş/6 - Frontend.md"
-    },
-    {
-      "basename": "5 - Dizin Yapısı",
-      "path": "5- Laravele Giriş/5 - Dizin Yapısı.md"
-    },
-    {
-      "basename": "7 - Service Container",
-      "path": "5- Laravele Giriş/7 - Service Container.md"
-    },
-    {
-      "basename": "8 - Service Providers",
-      "path": "5- Laravele Giriş/8 - Service Providers.md"
-    },
-    {
-      "basename": "9 - Facades",
-      "path": "5- Laravele Giriş/9 - Facades.md"
     }
   ],
   "omittedPaths": [],

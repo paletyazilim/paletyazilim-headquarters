@@ -11,3 +11,4 @@ Tüm kullanıcı tanımlı service provider’lar `bootstrap/providers.php` dosy
 
 # `#` Service Providers Oluşturma
 ---
+#çevrilecek 

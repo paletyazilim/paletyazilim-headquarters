@@ -403,10 +403,160 @@ Route::resource('photos', PhotoController::class);
 
 >Controllerlarınızı odaklı tutmayı unutmayın. Eğer kendinizi tipik resource işlemleri dışında metodlara ihtiyaç duyarken bulursanız, controller'ınızı iki daha küçük controller'a bölmeyi düşünün.
 
-## Singleton Controllers
+## Singleton Resource Controllers
 
-#çevrilecek 
+Bazen, uygulamanızın yalnızca tek bir örneği olabilecek resource'ları olabilir. Örneğin, bir kullanıcının "profili" düzenlenebilir veya güncellenebilir, ancak bir kullanıcının birden fazla "profili" olmayabilir. Benzer şekilde, bir resmin tek bir "küçük resmi" olabilir. Bu kaynaklar "tekil kaynaklar" olarak adlandırılır, yani kaynağın yalnızca bir örneği bulunabilir. Bu senaryolarda, bir "singleton" resource controller kaydedebilirsiniz:
 
-# `#` Dependecy Injection
+```php
+use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\Route;
+ 
+Route::singleton('profile', ProfileController::class);
+```
+
+Yukarıdaki singleton resource tanımı aşağıdaki rotaları kaydedecektir. Gördüğünüz gibi, "oluşturma" rotaları singleton resource'lar için kayıtlı değildir ve kayıtlı rotalar, kaynağın yalnızca bir örneği olabileceğinden bir tanımlayıcı kabul etmez:
+
+
+| HTTP Fiili | URI             | Action (Eylem) | Rota İsmi      |
+| ---------- | --------------- | -------------- | -------------- |
+| GET        | `/profile`      | show           | profile.show   |
+| GET        | `/profile/edit` | edit           | profile.edit   |
+| PUT/PATCH  | `/profile`      | update         | profile.update |
+Singleton resource'lar standart bir resource içinde de iç içe geçirilebilir:
+
+```php
+Route::singleton('photos.thumbnail', ThumbnailController::class);
+```
+
+Bu örnekte, `photos` resource tüm standart resource rotalarını alır; ancak `thumbnail` resource'u aşağıdaki rotalara sahip tekil bir kaynak olur:
+
+| HTTP Fiili | URI                              | Action (Eylem) | Rota İsmi                   |
+| ---------- | -------------------------------- | -------------- | --------------------------- |
+| GET        | `/photos/{photo}/thumbnail`      | show           | photos.thumbnail.show<br>   |
+| GET        | `/photos/{photo}/thumbnail/edit` | edit           | photos.thumbnail.edit<br>   |
+| PUT/PATCH  | `/photos/{photo}/thumbnail`      | update         | photos.thumbnail.update<br> |
+
+### Oluşturulabilir Singleton Resources
+
+Bazen, bir singleton resource için oluşturma ve depolama rotaları tanımlamak isteyebilirsiniz. Bunu gerçekleştirmek için, singleton resource rotasını kaydederken `creatable` metodunu çağırabilirsiniz:
+
+```php
+Route::singleton('photos.thumbnail', ThumbnailController::class)->creatable();
+```
+
+Bu örnekte, aşağıdaki rotalar kaydedilecektir. Gördüğünüz gibi, oluşturulabilir singleton kaynaklar için bir `DELETE` rotası da kaydedilecektir:
+
+| HTTP Fiili | URI                                | Action (Eylem) | Rota İsmi                    |
+| ---------- | ---------------------------------- | -------------- | ---------------------------- |
+| GET        | `/photos/{photo}/thumbnail/create` | create         | photos.thumbnail.create      |
+| POST       | `/photos/{photo}/thumbnail`        | store          | photos.thumbnail.store       |
+| GET        | `/photos/{photo}/thumbnail`        | show           | photos.thumbnail.show        |
+| GET        | `/photos/{photo}/thumbnail/edit`   | edit           | photos.thumbnail.edit<br>    |
+| PUT/PATCH  | `/photos/{photo}/thumbnail`        | update         | photos.thumbnail.update<br>  |
+| DELETE     | `/photos/{photo}/thumbnail`        | destroy        | photos.thumbnail.destroy<br> |
+Eğer Laravel'in bir singleton kaynak için `DELETE` rotasını kaydetmesini ancak oluşturma veya depolama rotalarını kaydetmemesini istiyorsanız, `destroyable` metodunu kullanabilirsiniz:
+
+```php
+Route::singleton(...)->destroyable();
+```
+
+### API Singleton Resources
+
+`apiSingleton` metodu, bir API aracılığıyla manipüle edilecek bir singleton resource kaydetmek için kullanılabilir, böylece oluşturma ve düzenleme rotaları gereksiz hale gelir:
+
+```php
+Route::apiSingleton('profile', ProfileController::class);
+```
+
+Elbette, API singleton resources'lar da `creatable` metodu kullanabilir, bu da resource için `store` ve `destroy` rotaları kaydedecektir:
+
+```php
+Route::apiSingleton('photos.thumbnail', ProfileController::class)->creatable();
+```
+
+# `#` Dependecy Injection ve Controller
 ---
-#çevrilecek 
+## Constructor Injection
+
+Laravel service container'i tüm Laravel controller'larını çözümlemek için kullanılır. Sonuç olarak, controller'ınızın constructor'unda ihtiyaç duyabileceği tüm bağımlılıkları type-hint ile bildirebilirsiniz. Bildirilen bağımlılıklar otomatik olarak çözümlenecek ve controller örneğine enjekte edilecektir:
+
+```php
+<?php
+ 
+namespace App\Http\Controllers;
+ 
+use App\Repositories\UserRepository;
+ 
+class UserController extends Controller
+{
+    /**
+     * Create a new controller instance.
+     */
+    public function __construct(
+        protected UserRepository $users,
+    ) {}
+}
+```
+
+## Method Injection
+
+Constructor enjeksiyonuna ek olarak, controller'ınızın metodlarına type-hint bağımlılıkları da ekleyebilirsiniz. Metot enjeksiyonu için yaygın bir kullanım durumu, `Illuminate\Http\Request` örneğini controller'înı metodlarınıza enjekte etmektir:
+
+```php
+<?php
+ 
+namespace App\Http\Controllers;
+ 
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Request;
+ 
+class UserController extends Controller
+{
+    /**
+     * Store a new user.
+     */
+    public function store(Request $request): RedirectResponse
+    {
+        $name = $request->name;
+ 
+        // Store the user...
+ 
+        return redirect('/users');
+    }
+}
+```
+
+Controller metodunuz bir rota parametresinden de girdi bekliyorsa, rota parametreleriniz diğer bağımlılıklarınızdan sonra listeleyin. Örneğin, rotanız şu şekilde tanımlanmışsa:
+
+```php
+use App\Http\Controllers\UserController;
+ 
+Route::put('/user/{id}', [UserController::class, 'update']);
+```
+
+Controller yönteminizi aşağıdaki gibi tanımlayarak `Illuminate\Http\Request`'i yazmaya devam edebilir ve `id` parametrenize erişebilirsiniz:
+
+```php
+<?php
+ 
+namespace App\Http\Controllers;
+ 
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Request;
+ 
+class UserController extends Controller
+{
+    /**
+     * Update the given user.
+     */
+    public function update(Request $request, string $id): RedirectResponse
+    {
+        // Update the user...
+ 
+        return redirect('/users');
+    }
+}
+```
+
+
+

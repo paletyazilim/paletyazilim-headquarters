@@ -421,5 +421,58 @@ Route::put('/post/{id}', function (string $id) {
 ```
 
 # `#` Terminable (Sonlandırılabilir) Middleware’ler
+---
+Bazen bir middleware'in HTTP yanıtı tarayıcıya gönderildikten sonra bazı işler yapması gerekebilir. Middleware'inizde bir `terminate` metodu tanımlarsanız ve web sunucunuz FastCGI kullanıyorsa, yanıt tarayıcıya gönderildikten sonra `terminate` metodu otomatik olarak çağrılacaktır:
+
+```php
+<?php
+ 
+namespace Illuminate\Session\Middleware;
+ 
+use Closure;
+use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Response;
+ 
+class TerminatingMiddleware
+{
+    /**
+     * Handle an incoming request.
+     *
+     * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
+     */
+    public function handle(Request $request, Closure $next): Response
+    {
+        return $next($request);
+    }
+ 
+    /**
+     * Handle tasks after the response has been sent to the browser.
+     */
+    public function terminate(Request $request, Response $response): void
+    {
+        // ...
+    }
+}
+```
+
+`terminate` metodu hem isteği hem de yanıtı almalıdır. Terminable bir middleware tanımladıktan sonra, bunu uygulamanızın `bootstrap/app.php` dosyasındaki rotalar veya global middleware listesine eklemelisiniz.
+
+Middleware'inizde `terminate` metodunu çağırırken, Laravel service container yeni bir middleware örneği çözümleyecektir. Eğer `handle` ve `terminate` metotları çağrıldığında aynı `middleware` örneğini kullanmak istiyorsanız, container'ın `singleton` metodunu kullanarak middleware'i container'a kaydedin. Tipik olarak bu işlem `AppServiceProvider`'ınızın `register` metodunda yapılmalıdır:
+
+```php
+use App\Http\Middleware\TerminatingMiddleware;
+ 
+/**
+ * Register any application services.
+ */
+public function register(): void
+{
+    $this->app->singleton(TerminatingMiddleware::class);
+}
+```
+
+
+
+
 
 

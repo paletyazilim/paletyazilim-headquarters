@@ -164,15 +164,57 @@ Genel olarak, IP adresleri güvenilmez, kullanıcı tarafından kontrol edilen g
 
 ## Content Negotiation
 
-#çevrilecek 
+Laravel, `Accept` başlığı aracılığıyla gelen isteğin istenen içerik türlerini incelemek için birkaç metot sağlar. İlk olarak, `getAcceptableContentTypes` metodu istek tarafından kabul edilen tüm içerik tiplerini içeren bir dizi döndürecektir:
+
+```php
+$contentTypes = $request->getAcceptableContentTypes();
+```
+
+`accepts` metodu bir dizi içerik türünü kabul eder ve içerik türlerinden herhangi biri istek tarafından kabul edilirse `true` değerini döndürür. Aksi takdirde `false` döndürülür:
+
+```php
+if ($request->accepts(['text/html', 'application/json'])) {
+    // ...
+}
+```
+
+Belirli bir içerik türü dizisinden hangi içerik türünün istek tarafından en çok tercih edildiğini belirlemek için `prefers` metodunu kullanabilirsiniz. Sağlanan içerik türlerinden hiçbiri istek tarafından kabul edilmiyorsa, `null` döndürülür:
+
+```php
+$preferred = $request->prefers(['text/html', 'application/json']);
+```
+
+Birçok uygulama yalnızca HTML veya JSON sunduğundan, gelen isteğin bir JSON yanıtı bekleyip beklemediğini hızlı bir şekilde belirlemek için `expectsJson` metodunu kullanabilirsiniz:
+
+```php
+if ($request->expectsJson()) {
+    // ...
+}
+```
 
 ## PSR-7 Requests
 
-#çevrilecek 
+PSR-7 standardı, istekler ve yanıtlar dahil olmak üzere HTTP mesajları için arayüzleri belirtir. Eğer bir Laravel isteği yerine PSR-7 isteğinin bir örneğini elde etmek isterseniz, öncelikle birkaç kütüphane yüklemeniz gerekecektir. Laravel, tipik Laravel isteklerini ve yanıtlarını PSR-7 uyumlu uygulamalara dönüştürmek için Symfony HTTP Mesaj Köprüsü bileşenini kullanır:
+
+```shell
+composer require symfony/psr-http-message-bridge
+composer require nyholm/psr7
+```
+
+Bu kütüphaneleri yükledikten sonra, rota kapatma veya controller metodunuzdaki istek arayüzünü yazarak bir PSR-7 isteği elde edebilirsiniz:
+
+```php
+use Psr\Http\Message\ServerRequestInterface;
+ 
+Route::get('/', function (ServerRequestInterface $request) {
+    // ...
+});
+```
+
+> Bir rota veya controllerdan bir PSR-7 yanıt örneği döndürürseniz, otomatik olarak bir Laravel yanıt örneğine dönüştürülecek ve framework tarafından görüntülenecektir.
 
 # `#` Input (Girdiler)
 ---
-
 ## Girdileri Yakalama
 
 ### Bütün Girdi Verilerini Yakalama
@@ -489,9 +531,35 @@ $value = $request->cookie('name');
 
 Varsayılan olarak, Laravel uygulamanızın global middlleware yığınına `Illuminate\Foundation\Http\Middleware\TrimStrings` ve `Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull` middleware'lerini dahil eder. Bu middleware istekteki tüm gelen dize girdilerini otomatik olarak kırpar ve boş dize alanlarını `null`'a dönüştürür. Bu sayede rotalarınızda ve denetleyicilerinizde bu normalleştirme endişeleriyle uğraşmanız gerekmez.
 
-### Disabling Input Normalization
+### Girdi Normalleştirmesini Devre Dışı Bırakma
 
-#çevrilecek 
+Bu davranışı tüm istekler için devre dışı bırakmak isterseniz, uygulamanızın `bootstrap/app.php` dosyasında `$middleware->remove` metodunu çağırarak iki ara yazılımı uygulamanızın ara yazılım yığınından kaldırabilirsiniz:
+
+```php
+use Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull;
+use Illuminate\Foundation\Http\Middleware\TrimStrings;
+ 
+->withMiddleware(function (Middleware $middleware) {
+    $middleware->remove([
+        ConvertEmptyStringsToNull::class,
+        TrimStrings::class,
+    ]);
+})
+```
+
+Uygulamanıza gelen isteklerin bir alt kümesi için dize trim'lemeyi ve boş dize dönüştürmeyi devre dışı bırakmak isterseniz, uygulamanızın `bootstrap/app.php` dosyasında `trimStrings` ve `convertEmptyStringsToNull` ara katman metodlarını kullanabilirsiniz. Her iki metot da, giriş normalleştirmesinin atlanıp atlanmayacağını belirtmek için `true` veya `false` döndürmesi gereken bir dizi closure kabul eder:
+
+```php
+->withMiddleware(function (Middleware $middleware) {
+    $middleware->convertEmptyStringsToNull(except: [
+        fn (Request $request) => $request->is('admin/*'),
+    ]);
+ 
+    $middleware->trimStrings(except: [
+        fn (Request $request) => $request->is('admin/*'),
+    ]);
+})
+```
 
 # `#` Files (Dosyalar)
 ---
@@ -556,10 +624,64 @@ $path = $request->photo->storeAs('images', 'filename.jpg');
 $path = $request->photo->storeAs('images', 'filename.jpg', 's3');
 ```
 
-# `#` Configuring Trusted Proxies
+# `#` Güvenilir Proxy'leri Yapılandırma
 ---
-#çevrilecek 
+Uygulamalarınızı TLS / SSL sertifikalarını sonlandıran bir load balancerların arkasında çalıştırırken, `url` yardımcısını kullanırken uygulamanızın bazen HTTPS bağlantıları oluşturmadığını fark edebilirsiniz. Genellikle bunun nedeni, uygulamanızın yük dengeleyicinizden 80 numaralı bağlantı noktası üzerinden trafik iletmesi ve güvenli bağlantılar oluşturması gerektiğini bilmemesidir.
 
-# `#` Configuring Trusted Hosts
+Bunu çözmek için, Laravel uygulamanızda bulunan `Illuminate\Http\Middleware\TrustProxies` middleware'ini etkinleştirebilirsiniz, bu da uygulamanız tarafından güvenilmesi gereken load balancerları veya proxy'leri hızlı bir şekilde özelleştirmenize olanak tanır. Güvenilir proxy'leriniz, uygulamanızın `bootstrap/app.php` dosyasındaki `trustProxies` middleware metodu kullanılarak belirtilmelidir:
+
+```php
+->withMiddleware(function (Middleware $middleware) {
+    $middleware->trustProxies(at: [
+        '192.168.1.1',
+        '192.168.1.2',
+    ]);
+})
+```
+
+Güvenilen proxy'leri yapılandırmanın yanı sıra, güvenilmesi gereken proxy başlıklarını da yapılandırabilirsiniz:
+
+```php
+->withMiddleware(function (Middleware $middleware) {
+    $middleware->trustProxies(headers: Request::HEADER_X_FORWARDED_FOR |
+        Request::HEADER_X_FORWARDED_HOST |
+        Request::HEADER_X_FORWARDED_PORT |
+        Request::HEADER_X_FORWARDED_PROTO |
+        Request::HEADER_X_FORWARDED_AWS_ELB
+    );
+})
+```
+
+## Bütün Proxy'lere Güvenme
+
+Amazon AWS veya başka bir "bulut" yük dengeleyici sağlayıcısı kullanıyorsanız, gerçek dengeleyicilerinizin IP adreslerini bilmiyor olabilirsiniz. Bu durumda, tüm proxy'lere güvenmek için `*` kullanabilirsiniz:
+
+```php
+->withMiddleware(function (Middleware $middleware) {
+    $middleware->trustProxies(at: '*');
+})
+```
+
+# `#` Güvenilir Hostları Yapılandırma
 ---
-#çevrilecek 
+Varsayılan olarak Laravel, HTTP isteğinin `Host` başlığının içeriğine bakmaksızın aldığı tüm isteklere yanıt verecektir. Buna ek olarak, `Host` başlığının değeri bir web isteği sırasında uygulamanıza mutlak URL'ler oluşturulurken kullanılacaktır.
+
+Tipik olarak, Nginx veya Apache gibi web sunucunuzu, uygulamanıza yalnızca belirli bir ana bilgisayar adıyla eşleşen istekleri gönderecek şekilde yapılandırmalısınız. Ancak, web sunucunuzu doğrudan özelleştirme yeteneğiniz yoksa ve Laravel'e yalnızca belirli ana bilgisayar adlarına yanıt vermesi talimatını vermeniz gerekiyorsa, bunu uygulamanız için `Illuminate\Http\Middleware\TrustHosts` middleware'ini etkinleştirerek yapabilirsiniz.
+
+`TrustHosts` middleware'ini etkinleştirmek için, uygulamanızın `bootstrap/app.php` dosyasında `trustHosts` middleware metodunu çağırmalısınız. Bu metodun `at` bağımsız değişkenini kullanarak, uygulamanızın yanıt vermesi gereken ana bilgisayar adlarını belirtebilirsiniz. Diğer `Host` başlıklarına sahip gelen istekler reddedilecektir:
+
+```php
+->withMiddleware(function (Middleware $middleware) {
+    $middleware->trustHosts(at: ['laravel.test']);
+})
+```
+
+Varsayılan olarak, uygulamanın URL'sinin alt alan adlarından gelen isteklere de otomatik olarak güvenilir. Bu davranışı devre dışı bırakmak isterseniz, `subdomains` bağımsız değişkenini kullanabilirsiniz:
+
+```php
+->withMiddleware(function (Middleware $middleware) {
+    $middleware->trustHosts(at: ['laravel.test'], subdomains: false);
+})
+```
+
+

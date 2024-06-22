@@ -471,7 +471,7 @@ public function messages(): array
 
 #### Doğrulama Niteliklerini Özelleştirme
 
-Laravel'in yerleşik doğrulama kuralı hata mesajlarının çoğu bir `:attribute` yer tutucusu içerir. Eğer doğrulama mesajınızın `:attribute` yer tutucusunun özel bir attribute ismi ile değiştirilmesini istiyorsanız, `attributes` metodunu geçersiz kılarak özel isimleri belirtebilirsiniz. Bu yöntem, öznitelik / ad çiftlerinden oluşan bir dizi döndürmelidir:
+Laravel'in yerleşik doğrulama kuralı hata mesajlarının çoğu bir `:attribute` placeholder'ı içerir. Eğer doğrulama mesajınızın `:attribute` placeholder'ı özel bir attribute ismi ile değiştirilmesini istiyorsanız, `attributes` metodunu geçersiz kılarak özel isimleri belirtebilirsiniz. Bu yöntem, öznitelik / ad çiftlerinden oluşan bir dizi döndürmelidir:
 
 ```php
 /**
@@ -519,7 +519,174 @@ protected function passedValidation(): void
 
 # `#` Manuel Doğrulama Oluşturma
 ---
-#çevrilecek 
+İstek üzerinde `validate` metodunu kullanmak istemiyorsanız, `Validator` facade'ini kullanarak manuel olarak bir validator örneği oluşturabilirsiniz. Facade üzerindeki `make` metodu yeni bir validator örneği oluşturur:
+
+```php
+<?php
+ 
+namespace App\Http\Controllers;
+ 
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+ 
+class PostController extends Controller
+{
+    /**
+     * Store a new blog post.
+     */
+    public function store(Request $request): RedirectResponse
+    {
+        $validator = Validator::make($request->all(), [
+            'title' => 'required|unique:posts|max:255',
+            'body' => 'required',
+        ]);
+ 
+        if ($validator->fails()) {
+            return redirect('post/create')
+                        ->withErrors($validator)
+                        ->withInput();
+        }
+ 
+        // Retrieve the validated input...
+        $validated = $validator->validated();
+ 
+        // Retrieve a portion of the validated input...
+        $validated = $validator->safe()->only(['name', 'email']);
+        $validated = $validator->safe()->except(['name', 'email']);
+ 
+        // Store the blog post...
+ 
+        return redirect('/posts');
+    }
+}
+```
+
+`make` metoduna aktarılan ilk bağımsız değişken, doğrulama altındaki verilerdir. İkinci bağımsız değişken, verilere uygulanması gereken doğrulama kurallarının bir dizisidir.
+
+İstek doğrulamasının başarısız olup olmadığını belirledikten sonra, hata mesajlarını oturuma göstermek için `withErrors` metodunu kullanabilirsiniz. Bu metodu kullanırken, `$errors` değişkeni yeniden yönlendirmeden sonra otomatik olarak görünümlerinizle paylaşılacak ve bunları kullanıcıya kolayca geri görüntülemenize olanak tanıyacaktır. `withErrors` metodu bir doğrulayıcı, bir `MessageBag` veya bir PHP `array` kabul eder.
+
+### İlk Doğrulama Hatasında Durdurma
+
+`stopOnFirstFailure` metodu, doğrulayıcıya tek bir doğrulama hatası oluştuğunda tüm nitelikleri doğrulamayı durdurması gerektiğini bildirir:
+
+```php
+if ($validator->stopOnFirstFailure()->fails()) {
+    // ...
+}
+```
+
+## Otomatik Yeniden Yönlendirme
+
+Manuel olarak bir doğrulayıcı örneği oluşturmak, ancak yine de HTTP isteğinin `validate` metodunun sunduğu otomatik yönlendirmeden yararlanmak istiyorsanız, mevcut bir doğrulayıcı örneği üzerinde `validate` metodunu çağırabilirsiniz. Doğrulama başarısız olursa, kullanıcı otomatik olarak yeniden yönlendirilir veya XHR isteği durumunda bir JSON yanıtı döndürülür:
+
+```php
+Validator::make($request->all(), [
+    'title' => 'required|unique:posts|max:255',
+    'body' => 'required',
+])->validate();
+```
+
+Doğrulama başarısız olursa hata mesajlarını adlandırılmış bir hata torbasında saklamak için `validateWithBag` metodunu kullanabilirsiniz:
+
+```php
+Validator::make($request->all(), [
+    'title' => 'required|unique:posts|max:255',
+    'body' => 'required',
+])->validateWithBag('post');
+```
+
+## İsimlendirilmiş Error Bags (Hata Torbaları)
+
+Tek bir sayfada birden fazla formunuz varsa, doğrulama hatalarını içeren `MessageBag`'i adlandırarak belirli bir form için hata mesajlarını almanıza izin vermek isteyebilirsiniz. Bunu başarmak için, `withErrors` öğesine ikinci bağımsız değişken olarak bir ad iletin:
+
+```php
+return redirect('register')->withErrors($validator, 'login');
+```
+
+Daha sonra isimlendirilmiş `MessageBag` örneğine `$errors` değişkeninden erişebilirsiniz:
+
+```php
+{{ $errors->login->first('email') }}
+```
+
+## Hata Mesajlarını Özelleştirme
+
+Gerekirse, Laravel tarafından sağlanan varsayılan hata mesajları yerine bir doğrulayıcı örneğinin kullanması gereken özel hata mesajları sağlayabilirsiniz. Özel mesajları belirtmenin birkaç yolu vardır. İlk olarak, özel mesajları `Validator::make` metoduna üçüncü argüman olarak aktarabilirsiniz:
+
+```php
+$validator = Validator::make($input, $rules, $messages = [
+    'required' => 'The :attribute field is required.',
+]);
+```
+
+Bu örnekte, `:attribute` placeholder'la, doğrulama altındaki alanın gerçek adıyla değiştirilecektir. Doğrulama mesajlarında başka placeholderlar da kullanabilirsiniz. Örneğin:
+
+```php
+$messages = [
+    'same' => 'The :attribute and :other must match.',
+    'size' => 'The :attribute must be exactly :size.',
+    'between' => 'The :attribute value :input is not between :min - :max.',
+    'in' => 'The :attribute must be one of the following types: :values',
+];
+```
+
+### Belirli Bir Nitelik İçin Özel Mesaj Belirleme
+
+Bazen yalnızca belirli bir nitelik için özel bir hata mesajı belirtmek isteyebilirsiniz. Bunu "nokta" notasyonu kullanarak yapabilirsiniz. Önce niteliğin adını, ardından kuralı belirtin:
+
+```php
+$messages = [
+    'email.required' => 'We need to know your email address!',
+];
+```
+
+### Özel Nitelik Değerlerini Belirtme
+
+Laravel'in yerleşik hata mesajlarının çoğu, doğrulama altındaki alanın veya niteliğin adıyla değiştirilen bir `:attribute` placeholder'ı içerir. Belirli alanlar için bu yer tutucuların yerine kullanılan değerleri özelleştirmek için, `Validator::make` metoduna dördüncü argüman olarak bir dizi özel nitelik iletebilirsiniz:
+
+```php
+$validator = Validator::make($input, $rules, $messages, [
+    'email' => 'email address',
+]);
+```
+
+## Ek Doğrulama Gerçekleştirme
+
+Bazen ilk doğrulama tamamlandıktan sonra ek doğrulama gerçekleştirmeniz gerekir. Bunu doğrulayıcının `after` metodunu kullanarak gerçekleştirebilirsiniz. `after` metodu, doğrulama tamamlandıktan sonra çağrılacak bir closure veya callable dizisi kabul eder. Verilen çağrılabilirler bir `Illuminate\Validation\Validator` örneği alır ve gerekirse ek hata mesajları oluşturmanıza olanak tanır:
+
+```php
+use Illuminate\Support\Facades\Validator;
+ 
+$validator = Validator::make(/* ... */);
+ 
+$validator->after(function ($validator) {
+    if ($this->somethingElseIsInvalid()) {
+        $validator->errors()->add(
+            'field', 'Something is wrong with this field!'
+        );
+    }
+});
+ 
+if ($validator->fails()) {
+    // ...
+}
+```
+
+Belirtildiği gibi, `after` metodu aynı zamanda bir callable dizisini de kabul eder; bu, özellikle "doğrulama sonrası" mantığınız, `__invoke` metodu aracılığıyla bir `Illuminate\Validation\Validator` örneği alacak olan çağrılabilir sınıflarda kapsüllenmişse kullanışlıdır:
+
+```php
+use App\Validation\ValidateShippingTime;
+use App\Validation\ValidateUserStatus;
+ 
+$validator->after([
+    new ValidateUserStatus,
+    new ValidateShippingTime,
+    function ($validator) {
+        // ...
+    },
+]);
+```
 
 # `#` Doğrulanmış Girdilerle Çalışma
 ---
@@ -642,7 +809,7 @@ Uygulamanızın doğrulama dili dosyalarında belirtilen nitelik ve kural kombin
 
 ### Dil Dosyalarında Nitelik Belirtme
 
-Laravel'in yerleşik hata mesajlarının çoğu, doğrulama altındaki alanın veya niteliğin adı ile değiştirilen bir `:attribute` yer tutucusu içerir. Eğer doğrulama mesajınızın `:attribute` kısmının özel bir değer ile değiştirilmesini istiyorsanız, `lang/xx/validation.php` dil dosyanızın `attributes` dizisinde özel nitelik adını belirtebilirsiniz:
+Laravel'in yerleşik hata mesajlarının çoğu, doğrulama altındaki alanın veya niteliğin adı ile değiştirilen bir `:attribute` placeholder'ı içerir. Eğer doğrulama mesajınızın `:attribute` kısmının özel bir değer ile değiştirilmesini istiyorsanız, `lang/xx/validation.php` dil dosyanızın `attributes` dizisinde özel nitelik adını belirtebilirsiniz:
 
 ```php
 'attributes' => [
@@ -652,7 +819,7 @@ Laravel'in yerleşik hata mesajlarının çoğu, doğrulama altındaki alanın v
 
 ### Dil Dosyalarında Değerlerin Belirtilmesi
 
-Laravel'in yerleşik doğrulama kuralı hata mesajlarından bazıları, istek niteliğinin geçerli değeri ile değiştirilen bir `:value` yer tutucusu içerir. Ancak, zaman zaman doğrulama mesajınızın `:value` kısmının değerin özel bir gösterimi ile değiştirilmesine ihtiyaç duyabilirsiniz. Örneğin, `payment_type` öğesinin `cc` değerine sahip olması durumunda bir kredi kartı numarasının gerekli olduğunu belirten aşağıdaki kuralı ele alalım:
+Laravel'in yerleşik doğrulama kuralı hata mesajlarından bazıları, istek niteliğinin geçerli değeri ile değiştirilen bir `:value` placeholder'ı içerir. Ancak, zaman zaman doğrulama mesajınızın `:value` kısmının değerin özel bir gösterimi ile değiştirilmesine ihtiyaç duyabilirsiniz. Örneğin, `payment_type` öğesinin `cc` değerine sahip olması durumunda bir kredi kartı numarasının gerekli olduğunu belirten aşağıdaki kuralı ele alalım:
 
 ```php
 Validator::make($request->all(), [
@@ -726,3 +893,318 @@ Aşağıda mevcut tüm doğrulama kurallarının bir listesi bulunmaktadır:
 
 # `#` Koşullu Kurallar
 ---
+## Koşullar Sağlandığında Doğrulamayı Atlama
+
+Bazen, başka bir alan belirli bir değere sahipse belirli bir alanı doğrulamamak isteyebilirsiniz. Bunu `exclude_if` doğrulama kuralını kullanarak gerçekleştirebilirsiniz. Bu örnekte, `has_appointment` alanı `false` değerine sahipse `appointment_date` ve `doctor_name` alanları doğrulanmayacaktır:
+
+```php
+use Illuminate\Support\Facades\Validator;
+ 
+$validator = Validator::make($data, [
+    'has_appointment' => 'required|boolean',
+    'appointment_date' => 'exclude_if:has_appointment,false|required|date',
+    'doctor_name' => 'exclude_if:has_appointment,false|required|string',
+]);
+```
+
+Alternatif olarak, başka bir alan belirli bir değere sahip olmadıkça belirli bir alanı doğrulamamak için `exclude_unless` kuralını kullanabilirsiniz:
+
+```php
+$validator = Validator::make($data, [
+    'has_appointment' => 'required|boolean',
+    'appointment_date' => 'exclude_unless:has_appointment,true|required|date',
+    'doctor_name' => 'exclude_unless:has_appointment,true|required|string',
+]);
+```
+
+## Mevcut Olduğunda Doğrulama
+
+Bazı durumlarda, bir alana yönelik doğrulama kontrollerini yalnızca o alan doğrulanan verilerde mevcutsa çalıştırmak isteyebilirsiniz. Bunu hızlı bir şekilde gerçekleştirmek için, kural listenize `sometimes` kuralı ekleyin:
+
+```php
+$v = Validator::make($data, [
+    'email' => 'sometimes|required|email',
+]);
+```
+
+Yukarıdaki örnekte, e-posta alanı yalnızca `$data` dizisinde mevcutsa doğrulanacaktır.
+
+## Karmaşık Koşullu Doğrulama
+
+Bazen daha karmaşık koşullu mantığa dayalı doğrulama kuralları eklemek isteyebilirsiniz. Örneğin, belirli bir alanın yalnızca başka bir alanın 100'den büyük bir değere sahip olması durumunda gerekli olmasını isteyebilirsiniz. Veya iki alanın yalnızca başka bir alan mevcut olduğunda belirli bir değere sahip olmasını isteyebilirsiniz. Bu doğrulama kurallarını eklemek zahmetli olmak zorunda değildir. İlk olarak, hiç değişmeyen statik kurallarınızla bir `Validator` örneği oluşturun:
+
+```php
+use Illuminate\Support\Facades\Validator;
+ 
+$validator = Validator::make($request->all(), [
+    'email' => 'required|email',
+    'games' => 'required|numeric',
+]);
+```
+
+Web uygulamamızın oyun koleksiyoncuları için olduğunu varsayalım. Bir oyun koleksiyoncusu uygulamamıza kaydolursa ve 100'den fazla oyuna sahipse, neden bu kadar çok oyuna sahip olduklarını açıklamalarını istiyoruz. Örneğin, belki bir oyun satış dükkanı işletiyorlardır ya da sadece oyun toplamaktan hoşlanıyorlardır. Bu gereksinimi koşullu olarak eklemek için `Validator` örneğinde `sometimes` metodunu kullanabiliriz.
+
+```php
+use Illuminate\Support\Fluent;
+ 
+$validator->sometimes('reason', 'required|max:500', function (Fluent $input) {
+    return $input->games >= 100;
+});
+```
+
+`sometimes` metoduna aktarılan ilk bağımsız değişken, koşullu olarak doğruladığımız alanın adıdır. İkinci bağımsız değişken, eklemek istediğimiz kuralların bir listesidir. Üçüncü bağımsız değişken olarak geçirilen kapanış `true` değerini döndürürse kurallar eklenir. Bu metot, karmaşık koşullu doğrulamalar oluşturmayı kolaylaştırır. Hatta aynı anda birden fazla alan için koşullu doğrulama ekleyebilirsiniz:
+
+```php
+$validator->sometimes(['reason', 'cost'], 'required', function (Fluent $input) {
+    return $input->games >= 100;
+});
+```
+
+> Kapanışınıza aktarılan `$input` parametresi bir `Illuminate\Support\Fluent` örneği olacaktır ve girdinize ve doğrulama altındaki dosyalara erişmek için kullanılabilir.
+
+### Karmaşık Koşullu Dizi Doğrulaması
+
+Bazen bir alanı, aynı iç içe dizideki indeksini bilmediğiniz başka bir alana göre doğrulamak isteyebilirsiniz. Bu gibi durumlarda, closure'unuzun ikinci bir argüman almasına izin verebilirsiniz; bu argüman, doğrulanan dizideki geçerli tekil öğe olacaktır:
+
+```php
+$input = [
+    'channels' => [
+        [
+            'type' => 'email',
+            'address' => 'abigail@example.com',
+        ],
+        [
+            'type' => 'url',
+            'address' => 'https://example.com',
+        ],
+    ],
+];
+ 
+$validator->sometimes('channels.*.address', 'email', function (Fluent $input, Fluent $item) {
+    return $item->type === 'email';
+});
+ 
+$validator->sometimes('channels.*.address', 'url', function (Fluent $input, Fluent $item) {
+    return $item->type !== 'email';
+});
+```
+
+Closure aktarılan `$input` parametresi gibi, `$item` parametresi de öznitelik verileri bir dizi olduğunda bir `Illuminate\Support\Fluent` örneğidir; aksi takdirde bir dizedir.
+
+# `#` Dizileri Doğrulama
+---
+`array` doğrulama kuralı belgelerinde açıklandığı gibi, `array` kuralı izin verilen dizi anahtarlarının bir listesini kabul eder. Dizi içinde herhangi bir ek anahtar varsa, doğrulama başarısız olur:
+
+```php
+use Illuminate\Support\Facades\Validator;
+ 
+$input = [
+    'user' => [
+        'name' => 'Taylor Otwell',
+        'username' => 'taylorotwell',
+        'admin' => true,
+    ],
+];
+ 
+Validator::make($input, [
+    'user' => 'array:name,username',
+]);
+```
+
+Genel olarak, dizinizde bulunmasına izin verilen dizi anahtarlarını her zaman belirtmelisiniz. Aksi takdirde, validator'ın `validate` ve `validated` metodları, dizi ve tüm anahtarları dahil olmak üzere, bu anahtarlar diğer iç içe dizi doğrulama kuralları tarafından doğrulanmamış olsa bile, doğrulanan tüm verileri döndürür.
+
+## İç İçe Dizileri Doğrulama
+
+İç içe geçmiş dizi tabanlı form giriş alanlarını doğrulamak zahmetli olmak zorunda değildir. Bir dizi içindeki nitelikleri doğrulamak için "nokta notasyonunu" kullanabilirsiniz. Örneğin, gelen HTTP isteği bir `photos[profile]` alanı içeriyorsa, bunu şu şekilde doğrulayabilirsiniz:
+
+```php
+use Illuminate\Support\Facades\Validator;
+ 
+$validator = Validator::make($request->all(), [
+    'photos.profile' => 'required|image',
+]);
+```
+
+Bir dizinin her bir öğesini de doğrulayabilirsiniz. Örneğin, belirli bir dizi giriş alanındaki her e-postanın benzersiz olduğunu doğrulamak için aşağıdakileri yapabilirsiniz:
+
+```php
+$validator = Validator::make($request->all(), [
+    'person.*.email' => 'email|unique:users',
+    'person.*.first_name' => 'required_with:person.*.last_name',
+]);
+```
+
+Benzer şekilde, dil dosyalarınızda özel doğrulama mesajları belirlerken `*` karakterini kullanabilirsiniz, böylece dizi tabanlı alanlar için tek bir doğrulama mesajı kullanmak çok kolay hale gelir:
+
+```php
+'custom' => [
+    'person.*.email' => [
+        'unique' => 'Each person must have a unique email address',
+    ]
+],
+```
+
+### İç İçe Dizi Verilerine Erişme
+
+Bazen, niteliğe doğrulama kuralları atarken belirli bir iç içe dizi öğesinin değerine erişmeniz gerekebilir. Bunu `Rule::forEach` metodunu kullanarak gerçekleştirebilirsiniz. `forEach` metodu, doğrulama altındaki dizi niteliğinin her yinelemesi için çağrılacak ve niteliğin değerini ve açık, tam genişletilmiş nitelik adını alacak bir closure kabul eder. Closure, dizi öğesine atanacak bir kural dizisi döndürmelidir:
+
+```php
+use App\Rules\HasPermission;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rule;
+ 
+$validator = Validator::make($request->all(), [
+    'companies.*.id' => Rule::forEach(function (string|null $value, string $attribute) {
+        return [
+            Rule::exists(Company::class, 'id'),
+            new HasPermission('manage-company', $value),
+        ];
+    }),
+]);
+```
+
+## Hata Mesajı Indexleri ve Konumları
+
+Dizileri doğrularken, uygulamanız tarafından görüntülenen hata mesajında doğrulamada başarısız olan belirli bir öğenin dizinine veya konumuna başvurmak isteyebilirsiniz. Bunu gerçekleştirmek için, özel doğrulama mesajınıza `:index` (0'dan başlar) ve `:position` (1'den başlar) placeholderlarını dahil edebilirsiniz:
+
+```php
+use Illuminate\Support\Facades\Validator;
+ 
+$input = [
+    'photos' => [
+        [
+            'name' => 'BeachVacation.jpg',
+            'description' => 'A photo of my beach vacation!',
+        ],
+        [
+            'name' => 'GrandCanyon.jpg',
+            'description' => '',
+        ],
+    ],
+];
+ 
+Validator::validate($input, [
+    'photos.*.description' => 'required',
+], [
+    'photos.*.description.required' => 'Please describe photo #:position.',
+]);
+```
+
+Yukarıdaki örnek göz önüne alındığında, doğrulama başarısız olacak ve kullanıcıya "Please describe photo #2" hatası sunulacaktır.
+
+Gerekirse, `second-index`, `second-position`, `third-index`, `third-position` vb. aracılığıyla daha derin iç içe geçmiş indekslere ve konumlara başvurabilirsiniz.
+
+# `#` Dosyaları Doğrulama
+---
+Laravel yüklenen dosyaları doğrulamak için kullanılabilecek `mimes`, `image`, `min` ve `max` gibi çeşitli doğrulama kuralları sağlar. Dosyaları doğrularken bu kuralları tek tek belirtmekte özgür olsanız da, Laravel ayrıca kullanışlı bulabileceğiniz akıcı bir dosya doğrulama kuralı oluşturucusu sunar:
+
+```php
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rules\File;
+ 
+Validator::validate($input, [
+    'attachment' => [
+        'required',
+        File::types(['mp3', 'wav'])
+            ->min(1024)
+            ->max(12 * 1024),
+    ],
+]);
+```
+
+Uygulamanız kullanıcılarınız tarafından yüklenen görüntüleri kabul ediyorsa, yüklenen dosyanın bir görüntü olması gerektiğini belirtmek için `File` kuralının `image` oluşturucu metodunu kullanabilirsiniz. Buna ek olarak, görüntünün boyutlarını sınırlamak için `dimensions` kuralı kullanılabilir:
+
+```php
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rule;
+use Illuminate\Validation\Rules\File;
+ 
+Validator::validate($input, [
+    'photo' => [
+        'required',
+        File::image()
+            ->min(1024)
+            ->max(12 * 1024)
+            ->dimensions(Rule::dimensions()->maxWidth(1000)->maxHeight(500)),
+    ],
+]);
+```
+
+## Dosya Boyutu
+
+Kolaylık sağlamak için, minimum ve maksimum dosya boyutları, dosya boyutu birimlerini belirten bir son ek ile birlikte bir dize olarak belirtilebilir. `kb`, `mb`, `gb` ve `tb` son ekleri desteklenir:
+
+```php
+File::image()
+    ->min('1kb')
+    ->max('10mb')
+```
+
+## Dosya Türleri
+
+`types` metodunu çağırırken yalnızca uzantıları belirtmeniz gerekse de, bu metot aslında dosyanın içeriğini okuyarak ve MIME türünü tahmin ederek dosyanın MIME türünü doğrular. MIME türlerinin ve bunlara karşılık gelen uzantıların tam bir listesi aşağıdaki konumda bulunabilir:
+
+https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types
+
+# `#` Parolaları Doğrulama
+---
+Parolaların yeterli düzeyde karmaşıklığa sahip olmasını sağlamak için Laravel'in `Password` kuralı nesnesini kullanabilirsiniz:
+
+```php
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rules\Password;
+ 
+$validator = Validator::make($request->all(), [
+    'password' => ['required', 'confirmed', Password::min(8)],
+]);
+```
+
+`Password` kuralı nesnesi, uygulamanız için parola karmaşıklığı gereksinimlerini kolayca özelleştirmenize olanak tanır; örneğin, parolaların en az bir harf, sayı, sembol veya karışık harfli karakterler gerektirdiğini belirtebilirsiniz:
+
+```php
+// Require at least 8 characters...
+Password::min(8)
+ 
+// Require at least one letter...
+Password::min(8)->letters()
+ 
+// Require at least one uppercase and one lowercase letter...
+Password::min(8)->mixedCase()
+ 
+// Require at least one number...
+Password::min(8)->numbers()
+ 
+// Require at least one symbol...
+Password::min(8)->symbols()
+```
+
+Ayrıca, herkese açık bir parola veri ihlali sızıntısında bir parolanın ele geçirilmediğinden, `uncompromised` metodu kullanarak emin olabilirsiniz:
+
+```php
+Password::min(8)->uncompromised()
+```
+
+Dahili olarak, `Password` kuralı nesnesi, kullanıcının gizliliğinden veya güvenliğinden ödün vermeden haveibeenpwned.com hizmeti aracılığıyla bir parolanın sızdırılıp sızdırılmadığını belirlemek için k-Anonymity modelini kullanır.
+
+Varsayılan olarak, bir parola bir veri sızıntısında en az bir kez görünürse, tehlikeye atılmış olarak kabul edilir. `unompromised` metodunun ilk bağımsız değişkenini kullanarak bu eşiği özelleştirebilirsiniz:
+
+```php
+Password::min(8)->uncompromised(3);
+```
+
+Elbette, yukarıdaki örneklerdeki tüm metotları zincirleyebilirsiniz:
+
+```php
+Password::min(8)
+    ->letters()
+    ->mixedCase()
+    ->numbers()
+    ->symbols()
+    ->uncompromised()
+```
+
+
+
+
+
+
