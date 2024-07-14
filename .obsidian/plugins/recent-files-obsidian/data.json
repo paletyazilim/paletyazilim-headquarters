@@ -1,8 +1,36 @@
 {
   "recentFiles": [
     {
+      "basename": "2- PHP Echo-Print",
+      "path": "1- PHP'ye Giriş/2- PHP Echo-Print.md"
+    },
+    {
+      "basename": "1- Başlarken",
+      "path": "1- PHP'ye Giriş/1- Başlarken.md"
+    },
+    {
       "basename": "2 - Relationships (İlişkiler)",
       "path": "6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler).md"
+    },
+    {
+      "basename": "3 - Controllers",
+      "path": "6 - Laravel/4 - Controllers/3 - Controllers.md"
+    },
+    {
+      "basename": "9 - Facades",
+      "path": "5- Laravele Giriş/9 - Facades.md"
+    },
+    {
+      "basename": "8 - Service Providers",
+      "path": "5- Laravele Giriş/8 - Service Providers.md"
+    },
+    {
+      "basename": "7 - Service Container",
+      "path": "5- Laravele Giriş/7 - Service Container.md"
+    },
+    {
+      "basename": "4 - Bir İsteğin Yaşam Döngüsü",
+      "path": "5- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md"
     },
     {
       "basename": "1 - Eloquent'a Başlarken",
@@ -37,10 +65,6 @@
       "path": "6 - Laravel/5 - Requests & Respones & Session/1 - HTTP Requests (İstekler).md"
     },
     {
-      "basename": "3 - Controllers",
-      "path": "6 - Laravel/4 - Controllers/3 - Controllers.md"
-    },
-    {
       "basename": "3 - Middleware",
       "path": "6 - Laravel/2 - Middleware/3 - Middleware.md"
     },
@@ -65,10 +89,6 @@
       "path": "5- Laravele Giriş/5 - Dizin Yapısı.md"
     },
     {
-      "basename": "4 - Bir İsteğin Yaşam Döngüsü",
-      "path": "5- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md"
-    },
-    {
       "basename": "2 - Laravel Kurulumu",
       "path": "5- Laravele Giriş/2 - Laravel Kurulumu.md"
     },
@@ -81,20 +101,8 @@
       "path": "6 - Laravel/16 - Migrations/2 - Tablo Oluşturma.md"
     },
     {
-      "basename": "9 - Facades",
-      "path": "5- Laravele Giriş/9 - Facades.md"
-    },
-    {
-      "basename": "8 - Service Providers",
-      "path": "5- Laravele Giriş/8 - Service Providers.md"
-    },
-    {
       "basename": "6 - Frontend",
       "path": "5- Laravele Giriş/6 - Frontend.md"
-    },
-    {
-      "basename": "7 - Service Container",
-      "path": "5- Laravele Giriş/7 - Service Container.md"
     },
     {
       "basename": "1 - Hata Yakalama",

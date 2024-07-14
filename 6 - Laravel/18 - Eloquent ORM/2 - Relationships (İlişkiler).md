@@ -13,7 +13,7 @@ Veritabanı tabloları genellikle birbirleriyle ilişkilidir. Örneğin, bir blo
 
 # `#` İlişki Tanımlama
 ---
-Eloquent ilişkileri, Eloquent model sınıflarınızda metotlar olarak tanımlanır. İlişkiler aynı zamanda güçlü sorgu oluşturucular olarak da hizmet verdiğinden, ilişkileri metotlar olarak tanımlamak güçlü metot zincirleme ve sorgulama yetenekleri sağlar. Örneğin, bu posts ilişkisi üzerinde ek sorgu kısıtlamalarını zincirleyebiliriz:
+Eloquent ilişkileri, Eloquent model sınıflarınızda metotlar olarak tanımlanır. İlişkiler aynı zamanda güçlü sorgu oluşturucular olarak da hizmet verdiğinden, ilişkileri metotlar olarak tanımlamak güçlü metot zincirleme ve sorgulama yetenekleri sağlar. Örneğin, bu `posts` ilişkisi üzerinde ek sorgu kısıtlamalarını zincirleyebiliriz:
 
 ```php
 $user->posts()->where('active', 1)->get();
@@ -326,6 +326,16 @@ public function oldestOrder(): HasOne
 Varsayılan olarak, `latestOfMany` ve `oldestOfMany` metodları, sıralanabilir olması gereken modelin birincil anahtarına dayalı olarak en son veya en eski ilgili modeli alır. Ancak, bazen farklı bir sıralama ölçütü kullanarak daha büyük bir ilişkiden tek bir model almak isteyebilirsiniz.
 
 Örneğin, `ofMany` metodunu kullanarak kullanıcının en pahalı siparişini alabilirsiniz. `ofMany` metodu, ilk bağımsız değişkeni olarak sıralanabilir sütunu ve ilgili model için sorgulama yaparken hangi aggreagate işlevinin (`min` veya `max`) uygulanacağını kabul eder:
+
+```php
+/**
+ * Get the user's largest order.
+ */
+public function largestOrder(): HasOne
+{
+    return $this->hasOne(Order::class)->ofMany('price', 'max');
+}
+```
 
 ### "Çok" İlişkiye Tek İlişkiye Dönüştürme
 
