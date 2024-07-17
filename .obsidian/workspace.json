@@ -13,20 +13,18 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1- PHP'ye Giriş/2- PHP Echo-Print.md",
+                "file": "6 - Laravel/18 - Eloquent ORM/4 - Mutators & Casts.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "011c775e26f56f8f",
+            "id": "4cc892c68bd78a6b",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.5"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ],
@@ -89,9 +87,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "1- PHP'ye Giriş/2- PHP Echo-Print.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -114,7 +110,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1- PHP'ye Giriş/2- PHP Echo-Print.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +126,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1- PHP'ye Giriş/2- PHP Echo-Print.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,16 +176,20 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e517a783a5bb8142",
+  "active": "4cc892c68bd78a6b",
   "lastOpenFiles": [
-    "1- PHP'ye Giriş/1- Başlarken.md",
+    "6 - Laravel/18 - Eloquent ORM/4 - Mutators & Casts.md",
+    "6 - Laravel/18 - Eloquent ORM/3 - Collections.md",
     "6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler).md",
+    "7 - Livewire",
+    "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken.md",
+    "1- PHP'ye Giriş/2- PHP Echo-Print.md",
+    "1- PHP'ye Giriş/1- Başlarken.md",
     "6 - Laravel/4 - Controllers/3 - Controllers.md",
     "5- Laravele Giriş/9 - Facades.md",
     "5- Laravele Giriş/8 - Service Providers.md",
     "5- Laravele Giriş/7 - Service Container.md",
     "5- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md",
-    "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken.md",
     "6 - Laravel/6 - Views/1 - Views.md",
     "6 - Laravel/17 - Seeding/1 - Seeding.md",
     "6 - Laravel/16 - Migrations/1 - Migrations.md",
@@ -207,9 +205,6 @@
     "5- Laravele Giriş/5 - Dizin Yapısı.md",
     "5- Laravele Giriş/2 - Laravel Kurulumu.md",
     "5- Laravele Giriş/1 - Laravel’e Başlamadan Önce.md",
-    "6 - Laravel/16 - Migrations/2 - Tablo Oluşturma.md",
-    "5- Laravele Giriş/6 - Frontend.md",
-    "6 - Laravel/11 - Error Handling/1 - Hata Yakalama.md",
     "6 - Laravel/17 - Seeding",
     "6 - Laravel/15 - Security",
     "6 - Laravel/14 - Mail",
@@ -221,7 +216,6 @@
     "6 - Laravel/10 - Validation",
     "6 - Laravel/9 - URL Generation",
     "Laravel/U - Auth",
-    "6 - Laravel/18 - Eloquent ORM",
     "6 - Laravel Temelleri/Başlıksız.canvas",
     "5- Laravele Giriş/Başlıksız.canvas",
     "6- Laravele Giriş/Başlıksız.canvas",
