@@ -6,6 +6,7 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "RiBookLine",
       "RiBookMarkFill",
       "RiBookOpenFill",
       "RiFolderFill",
@@ -50,5 +51,7 @@
   "6 - Laravel/11 - Error Handling": "RiBookMarkFill",
   "6 - Laravel/12 - Collections": "RiBookMarkFill",
   "6 - Laravel/17 - Seeding": "RiBookMarkFill",
-  "7 - Livewire": "RiBookFill"
+  "7 - Livewire": "RiBookFill",
+  "6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler)": "RiBookLine",
+  "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken": "RiBookLine"
 }

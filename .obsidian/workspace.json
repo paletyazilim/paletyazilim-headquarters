@@ -8,19 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0fca9e1313dd2d36",
+            "id": "4cc892c68bd78a6b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6 - Laravel/18 - Eloquent ORM/4 - Mutators & Casts.md",
+                "file": "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken/6 - Mutators & Casts.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4cc892c68bd78a6b",
+            "id": "8c57225f989ef612",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken/5 - Collections.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "86490e325592fd75",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -28,7 +40,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -176,13 +188,26 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4cc892c68bd78a6b",
+  "active": "86490e325592fd75",
   "lastOpenFiles": [
-    "6 - Laravel/18 - Eloquent ORM/4 - Mutators & Casts.md",
-    "6 - Laravel/18 - Eloquent ORM/3 - Collections.md",
-    "6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler).md",
+    "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken/6 - Mutators & Casts.md",
+    "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken/5 - Collections.md",
+    "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken/4 - Modelleri Sorgulama ve Karşılaştırma.md",
+    "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken/7 - Getting Started.md",
+    "6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler)/6 - Relationships.md",
+    "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken/3 - Modelleri Budama ve Kopyalama.md",
+    "6 - Laravel/18 - Eloquent ORM/Untitled.md",
+    "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken/2 - Modellerin Çağrılması ve Yönetilmesi.md",
+    "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken/1 - Eloquent Basics.md",
+    "6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler)/1 - Relationships Basics.md",
+    "6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler)/5 - İlgili Modelleri Oluşturma ve Güncelleme.md",
+    "6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler)/4 - Eager Loading.md",
+    "6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler)/3 - İlişkileri Sorgulama.md",
+    "6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler)/2 - Poliformik ve Dinamik İlişkiler.md",
+    "6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler)",
+    "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken",
+    "6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler)",
     "7 - Livewire",
-    "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken.md",
     "1- PHP'ye Giriş/2- PHP Echo-Print.md",
     "1- PHP'ye Giriş/1- Başlarken.md",
     "6 - Laravel/4 - Controllers/3 - Controllers.md",
@@ -195,16 +220,6 @@
     "6 - Laravel/16 - Migrations/1 - Migrations.md",
     "6 - Laravel/12 - Collections/1 - Koleksiyonlar.md",
     "6 - Laravel/5 - Requests & Respones & Session/3 - HTTP Sessions.md",
-    "6 - Laravel/5 - Requests & Respones & Session/2 - HTTP Respones (Yanıtlar).md",
-    "6 - Laravel/5 - Requests & Respones & Session/1 - HTTP Requests (İstekler).md",
-    "6 - Laravel/2 - Middleware/3 - Middleware.md",
-    "6 - Laravel/2 - Middleware/1 - Middleware Temelleri.md",
-    "6 - Laravel/1 - Routing/4 - Routing.md",
-    "6 - Laravel/1 - Routing/3 - Rotalara Erişme, Düzenleme ve Cachleme.md",
-    "6 - Laravel/1 - Routing/1 - Routing Temelleri.md",
-    "5- Laravele Giriş/5 - Dizin Yapısı.md",
-    "5- Laravele Giriş/2 - Laravel Kurulumu.md",
-    "5- Laravele Giriş/1 - Laravel’e Başlamadan Önce.md",
     "6 - Laravel/17 - Seeding",
     "6 - Laravel/15 - Security",
     "6 - Laravel/14 - Mail",
@@ -213,9 +228,6 @@
     "6 - Laravel/11 - Error Handling",
     "Untitled.canvas",
     "Untitled 1.canvas",
-    "6 - Laravel/10 - Validation",
-    "6 - Laravel/9 - URL Generation",
-    "Laravel/U - Auth",
     "6 - Laravel Temelleri/Başlıksız.canvas",
     "5- Laravele Giriş/Başlıksız.canvas",
     "6- Laravele Giriş/Başlıksız.canvas",

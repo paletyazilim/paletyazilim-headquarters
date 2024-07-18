@@ -1,20 +1,56 @@
 {
   "recentFiles": [
     {
-      "basename": "4 - Mutators & Casts",
-      "path": "6 - Laravel/18 - Eloquent ORM/4 - Mutators & Casts.md"
+      "basename": "6 - Mutators & Casts",
+      "path": "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken/6 - Mutators & Casts.md"
     },
     {
-      "basename": "3 - Collections",
-      "path": "6 - Laravel/18 - Eloquent ORM/3 - Collections.md"
+      "basename": "5 - Collections",
+      "path": "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken/5 - Collections.md"
     },
     {
-      "basename": "2 - Relationships (İlişkiler)",
-      "path": "6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler).md"
+      "basename": "4 - Modelleri Sorgulama ve Karşılaştırma",
+      "path": "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken/4 - Modelleri Sorgulama ve Karşılaştırma.md"
     },
     {
-      "basename": "1 - Eloquent'a Başlarken",
-      "path": "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken.md"
+      "basename": "7 - Getting Started",
+      "path": "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken/7 - Getting Started.md"
+    },
+    {
+      "basename": "6 - Relationships",
+      "path": "6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler)/6 - Relationships.md"
+    },
+    {
+      "basename": "3 - Modelleri Budama ve Kopyalama",
+      "path": "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken/3 - Modelleri Budama ve Kopyalama.md"
+    },
+    {
+      "basename": "2 - Modellerin Çağrılması ve Yönetilmesi",
+      "path": "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken/2 - Modellerin Çağrılması ve Yönetilmesi.md"
+    },
+    {
+      "basename": "1 - Eloquent Basics",
+      "path": "6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken/1 - Eloquent Basics.md"
+    },
+    {
+      "basename": "1 - Relationships Basics",
+      "path": "6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler)/1 - Relationships Basics.md"
+    },
+    {
+      "basename": "5 - İlgili Modelleri Oluşturma ve Güncelleme",
+      "path": "6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler)/5 - İlgili Modelleri Oluşturma ve Güncelleme.md"
+    },
+    {
+      "basename": "4 - Eager Loading",
+      "path": "6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler)/4 - Eager Loading.md"
+    },
+    {
+      "basename": "3 - İlişkileri Sorgulama",
+      "path": "6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler)/3 - İlişkileri Sorgulama.md"
+    },
+    {
+      "basename": "2 - Poliformik ve Dinamik İlişkiler",
+      "path": "6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler)/2 - Poliformik ve Dinamik İlişkiler.md"
     },
     {
       "basename": "2- PHP Echo-Print",
@@ -163,42 +199,6 @@
     {
       "basename": "5- PHP Data Types (Veri Türleri)",
       "path": "1- PHP'ye Giriş/5- PHP Data Types (Veri Türleri).md"
-    },
-    {
-      "basename": "2 - Gelişmiş Rotalar",
-      "path": "6 - Laravel/1 - Routing/2 - Gelişmiş Rotalar.md"
-    },
-    {
-      "basename": "2 - Gelişmiş Middleware",
-      "path": "6 - Laravel/2 - Middleware/2 - Gelişmiş Middleware.md"
-    },
-    {
-      "basename": "1 - Controllers Temelleri",
-      "path": "6 - Laravel/4 - Controllers/1 - Controllers Temelleri.md"
-    },
-    {
-      "basename": "2 - Gelişmiş Controller",
-      "path": "6 - Laravel/4 - Controllers/2 - Gelişmiş Controller.md"
-    },
-    {
-      "basename": "3 - Yapılandırma",
-      "path": "5- Laravele Giriş/3 - Yapılandırma.md"
-    },
-    {
-      "basename": "1 - CSRF Protection",
-      "path": "6 - Laravel/3 - CSRF Protection/1 - CSRF Protection.md"
-    },
-    {
-      "basename": "29- PHP RegEx",
-      "path": "1- PHP'ye Giriş/29- PHP RegEx.md"
-    },
-    {
-      "basename": "14- PHP Magic Constants (Ön Tanımlı Sabitler)",
-      "path": "1- PHP'ye Giriş/14- PHP Magic Constants (Ön Tanımlı Sabitler).md"
-    },
-    {
-      "basename": "4- Constructor (Yapıcı Metotlar)",
-      "path": "3- PHP OOP/4- Constructor (Yapıcı Metotlar).md"
     }
   ],
   "omittedPaths": [],
