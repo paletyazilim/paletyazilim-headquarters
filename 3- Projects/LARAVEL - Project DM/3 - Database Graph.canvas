@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"44c4a5402eb8db93","type":"text","text":"##### **User | users**\n---\n**\\[PK]** id (int | unsigned)\nmock_id (uuid | index)\n**\\[U]** username (string | index)\nfirst_name (string)\nlast_name (string)\npassword (string)\n**\\[U]** email (string | index)\n**\\[U]** phone (string | index | nullable)\ngender (enum)\nemail_verified_at (timestamp)\nremember_token (string | nullable)\ncreated_at (timestamp | nullable)\nupdated_at (timestamp | nullable)\n \n ","x":-1080,"y":-50,"width":440,"height":490,"color":"4"},
+		{"id":"daa0b33d3e5dfb71","type":"text","text":"##### **Menu | menus**\n---\n**\\[PK]** id (int | unsigned)\nmock_id (uuid | index)\nname (string)\nrestaurant_name (string)\naddress (string)\nopening_time (datetime)\nclosing_time (datetime)\n**\\[FK]** user_id (int | unsigned)\n ","x":-2020,"y":-50,"width":440,"height":490,"color":"4"},
+		{"id":"89f0f5304388f789","type":"text","text":"##### **Subscription Plan | subscription_plans**\n---\n**\\[PK]** id (int)\nmock_id (uuid | index)\nname (string)\nmenu_limit (smallint | unsigned)\namount (decimal)\nproperties (json)\nduration (smallint | unsigned)\nrecommended (boolean)\ncolor (string)\norder (int | unsigned | nullable)\ncreated_at (timestamp | nullable)\nupdated_at (timestamp | nullable)\n ","x":680,"y":-50,"width":440,"height":490,"color":"4"},
+		{"id":"a3f0c68c34970f09","type":"text","text":"# Relationships\n---\n**Yellow:** Has One\n**Blue:** Has Many\n**Purple:** Has One of Many | Has One Through | Has Many Through\n**Red:** Many To Many","x":-2220,"y":-2000,"width":580,"height":250,"color":"5"},
+		{"id":"9072fd933bc92814","type":"text","text":"##### **Subscription | subscriptions (Pivot)**\n---\nmock_id (uuid | index)\n**\\[FK]** user_id (int | unsigned)\n**\\[FK]** subscription_plan_id (int | unsigned)\nstart_date (datetime)\nend_date (datetime | nullable)\nstatus (enum)\ncreated_at (timestamp | nullable)\nupdated_at (timestamp | nullable)","x":-200,"y":-50,"width":440,"height":490,"color":"4"},
+		{"id":"3b732819c240770f","type":"text","text":"##### **Categories | menus**\n---\n**\\[PK]** id (int | unsigned)\nmock_id (uuid | index)\nname (string)\nrestaurant_name (string)\naddress (string)\nopening_time (datetime)\nclosing_time (datetime)\n**\\[FK]** user_id (int | unsigned)\n ","x":-2020,"y":520,"width":440,"height":490,"color":"4"}
+	],
+	"edges":[
+		{"id":"d41ee380d15d1b2c","fromNode":"44c4a5402eb8db93","fromSide":"right","toNode":"9072fd933bc92814","toSide":"left","fromEnd":"arrow","color":"1","label":"Many To Many"},
+		{"id":"ff29492b6ee1df71","fromNode":"89f0f5304388f789","fromSide":"left","toNode":"9072fd933bc92814","toSide":"right","fromEnd":"arrow","color":"1","label":"Many To Many"},
+		{"id":"05a90d258e340787","fromNode":"44c4a5402eb8db93","fromSide":"left","toNode":"daa0b33d3e5dfb71","toSide":"right","color":"5","label":"Has Many"}
+	]
+}

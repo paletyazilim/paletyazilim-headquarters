@@ -1,0 +1,11 @@
+- [ ] Yeni Konsept??
+- [x] Upgrade Module
+- [x] Currency (Sunlight)
+- [ ] Yeni Mekanik??
+- [ ] 5x, 10x ve Max Upgrade
+- [ ] UI
+    - [ ] Design Dili
+    - [ ] Upgrade Görselleri (Assets Manager)
+- [ ] DataStore
+    - [ ] Verilerin Kaydedilmesi
+    - [ ] Verilerin Yüklenmesi

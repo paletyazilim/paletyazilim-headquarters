@@ -1,0 +1,50 @@
+{
+  "is_obsidian_vault": true,
+  "new_user": false,
+  "chat_folder": "smart chat",
+  "smart_sources_embed_model": "TaylorAI/bge-micro-v2",
+  "smart_blocks_embed_model": "None",
+  "smart_connections_folder": ".smart-env",
+  "smart_connections_folder_last": ".smart-env",
+  "system_prompts_folder": "smart prompts",
+  "smart_chat_folder": "smart-chats",
+  "smart_chat_folder_last": "smart-chats",
+  "local_embedding_max_tokens": 2048,
+  "embedding_file_per_note": false,
+  "chat_model_platform_key": "open_router",
+  "open_router": {
+    "api_key": "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",
+    "model_name": "meta-llama/llama-3-8b-instruct:free"
+  },
+  "embed_input_min_chars": 100,
+  "multi_heading_blocks": true,
+  "enable_mobile": false,
+  "actions": {
+    "lookup": true
+  },
+  "api_key": "",
+  "excluded_headings": "",
+  "file_exclusions": "Untitled",
+  "folder_exclusions": "smart-chats",
+  "show_full_path": false,
+  "expanded_view": true,
+  "language": "en",
+  "log_render": false,
+  "log_render_files": false,
+  "recently_sent_retry_notice": false,
+  "version": "2.1.100",
+  "smart_sources": {
+    "embed_model_key": "TaylorAI/bge-micro-v2",
+    "embed_model": {
+      "TaylorAI/bge-micro-v2": {}
+    }
+  },
+  "smart_blocks": {
+    "embed_model_key": "None",
+    "embed_model": {
+      "None": {}
+    }
+  },
+  "smart_chats_folder": "smart-chats",
+  "free_chat_uses": 2
+}
