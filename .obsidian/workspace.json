@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3- Projects/ROBLOX - Project Terra/Game Details & Concept.md",
+                "file": "2- Web Development/2- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/3 - Modelleri Budama ve Kopyalama.md",
                 "mode": "source",
                 "source": false
               }
@@ -79,7 +79,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3- Projects/ROBLOX - Project Terra/Game Details & Concept.md"
+                "file": "2- Web Development/2- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/3 - Modelleri Budama ve Kopyalama.md"
               }
             }
           }
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3- Projects/ROBLOX - Project Terra/Game Details & Concept.md",
+                "file": "2- Web Development/2- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/3 - Modelleri Budama ve Kopyalama.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3- Projects/ROBLOX - Project Terra/Game Details & Concept.md",
+                "file": "2- Web Development/2- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/3 - Modelleri Budama ve Kopyalama.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,12 +189,16 @@
   },
   "active": "e517a783a5bb8142",
   "lastOpenFiles": [
+    "2- Web Development/2- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/1 - Eloquent Basics.md",
+    "3- Projects/ROBLOX - Project CORE/Yakında.md",
+    "2- Web Development/2- Laravel/3 - Eloquent & Database",
+    "3- Projects/ROBLOX - Project Terra/Game Details & Concept.md",
+    "3- Projects/ROBLOX - Project CORE",
     "2- Web Development/2- Laravel",
     "2- Web Development/1- PHP",
     "1- Entrance",
     "2- Web Development",
     "3- Projects/ROBLOX - Project Terra/Yapılacaklar Listesi.md",
-    "3- Projects/ROBLOX - Project Terra/Game Details & Concept.md",
     "3- Projects/LARAVEL - Project DM/2 - To Do List.md",
     "3- Projects/LARAVEL - Project DM/3 - Database Graph.canvas",
     "3- Projects/LARAVEL - Project DM/4 - Documentation.md",
@@ -202,12 +206,12 @@
     "3- Projects/LARAVEL - Project DM/6 - Roadmap.md",
     "3- Projects/LARAVEL - Project DM/5 - Properties.md",
     "Projects/Roblox Projesi/Untitled.canvas",
-    "2- Web Development/2- Laravel/6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler)/1 - Relationships Basics.md",
+    "2- Web Development/2- Laravel/3 - Eloquent & Database/3 - Relationships (İlişkiler)/1 - Relationships Basics.md",
     "3- Projects/ROBLOX - Project Terra",
-    "2- Web Development/2- Laravel/6 - Laravel/1 - Routing/4 - Routing.md",
-    "2- Web Development/2- Laravel/6 - Laravel/1 - Routing/2 - Gelişmiş Rotalar.md",
-    "2- Web Development/2- Laravel/6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken/6 - Mutators & Casts.md",
-    "2- Web Development/2- Laravel/6 - Laravel/8 - Blade Templates/3 - Bileşenler.md",
+    "2- Web Development/2- Laravel/2 - Temeller/1 - Routing/4 - Routing.md",
+    "2- Web Development/2- Laravel/2 - Temeller/1 - Routing/2 - Gelişmiş Rotalar.md",
+    "2- Web Development/2- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/6 - Mutators & Casts.md",
+    "2- Web Development/2- Laravel/2 - Temeller/8 - Blade Templates/3 - Bileşenler.md",
     "smart-chats",
     "smart-chats/UNTITLED CHAT 2024-09-05 21 24 21.md",
     "Projects/Palet-QR/3 -.md",
@@ -217,16 +221,12 @@
     "3- Projects/LARAVEL - Project AT/1 - Project Details.md",
     "3- Projects/LARAVEL - Project DM",
     "3- Projects/LARAVEL - Project AT",
-    "3- Projects",
-    "2- Web Development/2- Laravel/6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken/5 - Collections.md",
-    "2- Web Development/2- Laravel/6 - Laravel/1 - Routing/1 - Routing Temelleri.md",
-    "2- Web Development/2- Laravel/6 - Laravel/1 - Routing/3 - Rotalara Erişme, Düzenleme ve Cachleme.md",
-    "2- Web Development/2- Laravel/5- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md",
-    "2- Web Development/2- Laravel/5- Laravele Giriş/5 - Dizin Yapısı.md",
-    "2- Web Development/2- Laravel/5- Laravele Giriş/3 - Yapılandırma.md",
-    "2- Web Development/2- Laravel/5- Laravele Giriş/8 - Service Providers.md",
-    "2- Web Development/2- Laravel/6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler)",
-    "2- Web Development/2- Laravel/6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken",
+    "2- Web Development/2- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/5 - Collections.md",
+    "2- Web Development/2- Laravel/2 - Temeller/1 - Routing/1 - Routing Temelleri.md",
+    "2- Web Development/2- Laravel/2 - Temeller/1 - Routing/3 - Rotalara Erişme, Düzenleme ve Cachleme.md",
+    "2- Web Development/2- Laravel/1- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md",
+    "2- Web Development/2- Laravel/1- Laravele Giriş/5 - Dizin Yapısı.md",
+    "2- Web Development/2- Laravel/1- Laravele Giriş/3 - Yapılandırma.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "6 - Laravel Temelleri/Başlıksız.canvas",

@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "3 - Modelleri Budama ve Kopyalama",
+      "path": "2- Web Development/2- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/3 - Modelleri Budama ve Kopyalama.md"
+    },
+    {
+      "basename": "1 - Eloquent Basics",
+      "path": "2- Web Development/2- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/1 - Eloquent Basics.md"
+    },
+    {
+      "basename": "Yakında",
+      "path": "3- Projects/ROBLOX - Project CORE/Yakında.md"
+    },
+    {
       "basename": "Game Details & Concept",
       "path": "3- Projects/ROBLOX - Project Terra/Game Details & Concept.md"
     },
@@ -34,23 +46,23 @@
     },
     {
       "basename": "1 - Relationships Basics",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler)/1 - Relationships Basics.md"
+      "path": "2- Web Development/2- Laravel/3 - Eloquent & Database/3 - Relationships (İlişkiler)/1 - Relationships Basics.md"
     },
     {
       "basename": "4 - Routing",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/1 - Routing/4 - Routing.md"
+      "path": "2- Web Development/2- Laravel/2 - Temeller/1 - Routing/4 - Routing.md"
     },
     {
       "basename": "2 - Gelişmiş Rotalar",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/1 - Routing/2 - Gelişmiş Rotalar.md"
+      "path": "2- Web Development/2- Laravel/2 - Temeller/1 - Routing/2 - Gelişmiş Rotalar.md"
     },
     {
       "basename": "6 - Mutators & Casts",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken/6 - Mutators & Casts.md"
+      "path": "2- Web Development/2- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/6 - Mutators & Casts.md"
     },
     {
       "basename": "3 - Bileşenler",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/8 - Blade Templates/3 - Bileşenler.md"
+      "path": "2- Web Development/2- Laravel/2 - Temeller/8 - Blade Templates/3 - Bileşenler.md"
     },
     {
       "basename": "4 - Roadmap",
@@ -70,87 +82,79 @@
     },
     {
       "basename": "5 - Collections",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken/5 - Collections.md"
+      "path": "2- Web Development/2- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/5 - Collections.md"
     },
     {
       "basename": "1 - Routing Temelleri",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/1 - Routing/1 - Routing Temelleri.md"
+      "path": "2- Web Development/2- Laravel/2 - Temeller/1 - Routing/1 - Routing Temelleri.md"
     },
     {
       "basename": "3 - Rotalara Erişme, Düzenleme ve Cachleme",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/1 - Routing/3 - Rotalara Erişme, Düzenleme ve Cachleme.md"
+      "path": "2- Web Development/2- Laravel/2 - Temeller/1 - Routing/3 - Rotalara Erişme, Düzenleme ve Cachleme.md"
     },
     {
       "basename": "4 - Bir İsteğin Yaşam Döngüsü",
-      "path": "2- Web Development/2- Laravel/5- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md"
+      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md"
     },
     {
       "basename": "5 - Dizin Yapısı",
-      "path": "2- Web Development/2- Laravel/5- Laravele Giriş/5 - Dizin Yapısı.md"
+      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/5 - Dizin Yapısı.md"
     },
     {
       "basename": "3 - Yapılandırma",
-      "path": "2- Web Development/2- Laravel/5- Laravele Giriş/3 - Yapılandırma.md"
+      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/3 - Yapılandırma.md"
     },
     {
       "basename": "8 - Service Providers",
-      "path": "2- Web Development/2- Laravel/5- Laravele Giriş/8 - Service Providers.md"
+      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/8 - Service Providers.md"
     },
     {
       "basename": "7 - Service Container",
-      "path": "2- Web Development/2- Laravel/5- Laravele Giriş/7 - Service Container.md"
+      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/7 - Service Container.md"
     },
     {
       "basename": "6 - Frontend",
-      "path": "2- Web Development/2- Laravel/5- Laravele Giriş/6 - Frontend.md"
+      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/6 - Frontend.md"
     },
     {
       "basename": "2 - Laravel Kurulumu",
-      "path": "2- Web Development/2- Laravel/5- Laravele Giriş/2 - Laravel Kurulumu.md"
+      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/2 - Laravel Kurulumu.md"
     },
     {
       "basename": "1 - Koleksiyonlar",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/12 - Collections/1 - Koleksiyonlar.md"
+      "path": "2- Web Development/2- Laravel/2 - Temeller/12 - Collections/1 - Koleksiyonlar.md"
     },
     {
       "basename": "4 - Modelleri Sorgulama ve Karşılaştırma",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken/4 - Modelleri Sorgulama ve Karşılaştırma.md"
+      "path": "2- Web Development/2- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/4 - Modelleri Sorgulama ve Karşılaştırma.md"
     },
     {
       "basename": "7 - Getting Started",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken/7 - Getting Started.md"
+      "path": "2- Web Development/2- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/7 - Getting Started.md"
     },
     {
       "basename": "6 - Relationships",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler)/6 - Relationships.md"
-    },
-    {
-      "basename": "3 - Modelleri Budama ve Kopyalama",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken/3 - Modelleri Budama ve Kopyalama.md"
+      "path": "2- Web Development/2- Laravel/3 - Eloquent & Database/3 - Relationships (İlişkiler)/6 - Relationships.md"
     },
     {
       "basename": "2 - Modellerin Çağrılması ve Yönetilmesi",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken/2 - Modellerin Çağrılması ve Yönetilmesi.md"
-    },
-    {
-      "basename": "1 - Eloquent Basics",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/18 - Eloquent ORM/1 - Eloquent'a Başlarken/1 - Eloquent Basics.md"
+      "path": "2- Web Development/2- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/2 - Modellerin Çağrılması ve Yönetilmesi.md"
     },
     {
       "basename": "5 - İlgili Modelleri Oluşturma ve Güncelleme",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler)/5 - İlgili Modelleri Oluşturma ve Güncelleme.md"
+      "path": "2- Web Development/2- Laravel/3 - Eloquent & Database/3 - Relationships (İlişkiler)/5 - İlgili Modelleri Oluşturma ve Güncelleme.md"
     },
     {
       "basename": "4 - Eager Loading",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler)/4 - Eager Loading.md"
+      "path": "2- Web Development/2- Laravel/3 - Eloquent & Database/3 - Relationships (İlişkiler)/4 - Eager Loading.md"
     },
     {
       "basename": "3 - İlişkileri Sorgulama",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler)/3 - İlişkileri Sorgulama.md"
+      "path": "2- Web Development/2- Laravel/3 - Eloquent & Database/3 - Relationships (İlişkiler)/3 - İlişkileri Sorgulama.md"
     },
     {
       "basename": "2 - Poliformik ve Dinamik İlişkiler",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/18 - Eloquent ORM/2 - Relationships (İlişkiler)/2 - Poliformik ve Dinamik İlişkiler.md"
+      "path": "2- Web Development/2- Laravel/3 - Eloquent & Database/3 - Relationships (İlişkiler)/2 - Poliformik ve Dinamik İlişkiler.md"
     },
     {
       "basename": "2- PHP Echo-Print",
@@ -162,43 +166,39 @@
     },
     {
       "basename": "3 - Controllers",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/4 - Controllers/3 - Controllers.md"
+      "path": "2- Web Development/2- Laravel/2 - Temeller/4 - Controllers/3 - Controllers.md"
     },
     {
       "basename": "9 - Facades",
-      "path": "2- Web Development/2- Laravel/5- Laravele Giriş/9 - Facades.md"
+      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/9 - Facades.md"
     },
     {
       "basename": "1 - Views",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/6 - Views/1 - Views.md"
+      "path": "2- Web Development/2- Laravel/2 - Temeller/6 - Views/1 - Views.md"
     },
     {
       "basename": "1 - Seeding",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/17 - Seeding/1 - Seeding.md"
+      "path": "2- Web Development/2- Laravel/3 - Eloquent & Database/4 - Seeding/1 - Seeding.md"
     },
     {
       "basename": "1 - Migrations",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/16 - Migrations/1 - Migrations.md"
+      "path": "2- Web Development/2- Laravel/3 - Eloquent & Database/1 - Migrations/1 - Migrations.md"
     },
     {
       "basename": "3 - HTTP Sessions",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/5 - Requests & Respones & Session/3 - HTTP Sessions.md"
+      "path": "2- Web Development/2- Laravel/2 - Temeller/5 - Requests & Respones & Session/3 - HTTP Sessions.md"
     },
     {
       "basename": "2 - HTTP Respones (Yanıtlar)",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/5 - Requests & Respones & Session/2 - HTTP Respones (Yanıtlar).md"
+      "path": "2- Web Development/2- Laravel/2 - Temeller/5 - Requests & Respones & Session/2 - HTTP Respones (Yanıtlar).md"
     },
     {
       "basename": "1 - HTTP Requests (İstekler)",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/5 - Requests & Respones & Session/1 - HTTP Requests (İstekler).md"
+      "path": "2- Web Development/2- Laravel/2 - Temeller/5 - Requests & Respones & Session/1 - HTTP Requests (İstekler).md"
     },
     {
       "basename": "3 - Middleware",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/2 - Middleware/3 - Middleware.md"
-    },
-    {
-      "basename": "1 - Middleware Temelleri",
-      "path": "2- Web Development/2- Laravel/6 - Laravel/2 - Middleware/1 - Middleware Temelleri.md"
+      "path": "2- Web Development/2- Laravel/2 - Temeller/2 - Middleware/3 - Middleware.md"
     }
   ],
   "omittedPaths": [],
