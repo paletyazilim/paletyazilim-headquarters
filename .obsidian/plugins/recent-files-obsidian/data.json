@@ -1,6 +1,42 @@
 {
   "recentFiles": [
     {
+      "basename": "1 - Hata Yakalama",
+      "path": "2- Web Development/2- Laravel/2 - Temeller/11 - Error Handling/1 - Hata Yakalama.md"
+    },
+    {
+      "basename": "1 - Routing Temelleri",
+      "path": "2- Web Development/2- Laravel/2 - Temeller/1 - Routing/1 - Routing Temelleri.md"
+    },
+    {
+      "basename": "4 - Bir İsteğin Yaşam Döngüsü",
+      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md"
+    },
+    {
+      "basename": "3 - Yapılandırma",
+      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/3 - Yapılandırma.md"
+    },
+    {
+      "basename": "2 - Laravel Kurulumu",
+      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/2 - Laravel Kurulumu.md"
+    },
+    {
+      "basename": "1 - Laravel’e Başlamadan Önce",
+      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/1 - Laravel’e Başlamadan Önce.md"
+    },
+    {
+      "basename": "12 - Breeze",
+      "path": "2- Web Development/2- Laravel/2 - Temeller/U - Breeze/12 - Breeze.md"
+    },
+    {
+      "basename": "13- Iterables (Yinelenebilir Tür)",
+      "path": "2- Web Development/1- PHP/3- PHP OOP/13- Iterables (Yinelenebilir Tür).md"
+    },
+    {
+      "basename": "5 - Dizin Yapısı",
+      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/5 - Dizin Yapısı.md"
+    },
+    {
       "basename": "3 - Modelleri Budama ve Kopyalama",
       "path": "2- Web Development/2- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/3 - Modelleri Budama ve Kopyalama.md"
     },
@@ -85,24 +121,8 @@
       "path": "2- Web Development/2- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/5 - Collections.md"
     },
     {
-      "basename": "1 - Routing Temelleri",
-      "path": "2- Web Development/2- Laravel/2 - Temeller/1 - Routing/1 - Routing Temelleri.md"
-    },
-    {
       "basename": "3 - Rotalara Erişme, Düzenleme ve Cachleme",
       "path": "2- Web Development/2- Laravel/2 - Temeller/1 - Routing/3 - Rotalara Erişme, Düzenleme ve Cachleme.md"
-    },
-    {
-      "basename": "4 - Bir İsteğin Yaşam Döngüsü",
-      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md"
-    },
-    {
-      "basename": "5 - Dizin Yapısı",
-      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/5 - Dizin Yapısı.md"
-    },
-    {
-      "basename": "3 - Yapılandırma",
-      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/3 - Yapılandırma.md"
     },
     {
       "basename": "8 - Service Providers",
@@ -115,10 +135,6 @@
     {
       "basename": "6 - Frontend",
       "path": "2- Web Development/2- Laravel/1- Laravele Giriş/6 - Frontend.md"
-    },
-    {
-      "basename": "2 - Laravel Kurulumu",
-      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/2 - Laravel Kurulumu.md"
     },
     {
       "basename": "1 - Koleksiyonlar",
@@ -183,22 +199,6 @@
     {
       "basename": "1 - Migrations",
       "path": "2- Web Development/2- Laravel/3 - Eloquent & Database/1 - Migrations/1 - Migrations.md"
-    },
-    {
-      "basename": "3 - HTTP Sessions",
-      "path": "2- Web Development/2- Laravel/2 - Temeller/5 - Requests & Respones & Session/3 - HTTP Sessions.md"
-    },
-    {
-      "basename": "2 - HTTP Respones (Yanıtlar)",
-      "path": "2- Web Development/2- Laravel/2 - Temeller/5 - Requests & Respones & Session/2 - HTTP Respones (Yanıtlar).md"
-    },
-    {
-      "basename": "1 - HTTP Requests (İstekler)",
-      "path": "2- Web Development/2- Laravel/2 - Temeller/5 - Requests & Respones & Session/1 - HTTP Requests (İstekler).md"
-    },
-    {
-      "basename": "3 - Middleware",
-      "path": "2- Web Development/2- Laravel/2 - Temeller/2 - Middleware/3 - Middleware.md"
     }
   ],
   "omittedPaths": [],
