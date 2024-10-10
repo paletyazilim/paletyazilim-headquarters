@@ -1,7 +1,0 @@
----
-
----
-
-# Giriş
----
-Merhaba Berat aklsdlşasd
