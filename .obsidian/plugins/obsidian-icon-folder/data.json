@@ -1,16 +1,16 @@
 {
   "settings": {
-    "migrated": 4,
+    "migrated": 6,
     "iconPacksPath": ".obsidian/icons",
     "fontSize": 16,
-    "emojiStyle": "none",
+    "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiLivewire",
       "RiBookmarkFill",
       "RiBookLine",
       "RiBookFill",
-      "RiCodeSSlashLine",
-      "FabLaravel"
+      "RiCodeSSlashLine"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -25,24 +25,16 @@
     "iconInFrontmatterEnabled": false,
     "iconsBackgroundCheckEnabled": false,
     "iconsInNotesEnabled": true,
-    "iconIdentifier": ":"
+    "iconIdentifier": ":",
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsInLinksEnabled": true,
+    "lucideIconPackType": "native",
+    "debugMode": false
   },
   "Tutorial": "RiBookFill",
   "Laravel/U - Auth": "RiBookMarkFill",
-  "3- Projects": "RiCompassesFill",
-  "3- Projects/ROBLOX - Project Terra": "RiGameLine",
-  "3- Projects/LARAVEL - Project AT": "RiTable2",
-  "3- Projects/LARAVEL - Project AT/1 - Project Details.md": "RiInformationFill",
-  "3- Projects/LARAVEL - Project AT/2 - Documentation.md": "RiBook2Fill",
-  "3- Projects/LARAVEL - Project AT/4 - Roadmap.md": "RiRoadMapFill",
-  "3- Projects/LARAVEL - Project AT/3 - Properties.md": "RiShapesFill",
-  "3- Projects/LARAVEL - Project DM": "RiQrCodeLine",
-  "3- Projects/LARAVEL - Project DM/1 - Project Details.md": "RiInformationFill",
-  "3- Projects/LARAVEL - Project DM/2 - To Do List.md": "RiListCheck3",
-  "3- Projects/LARAVEL - Project DM/3 - Database Graph.canvas": "RiDatabase2Fill",
-  "3- Projects/LARAVEL - Project DM/4 - Documentation.md": "RiBook2Fill",
-  "3- Projects/LARAVEL - Project DM/5 - Properties.md": "RiShapesFill",
-  "3- Projects/LARAVEL - Project DM/6 - Roadmap.md": "RiRoadMapFill",
   "2- Web Development/7 - Livewire": "RiBookFill",
   "2- Web Development/1- PHP": {
     "iconName": "FabPhp",
@@ -58,7 +50,6 @@
     "iconColor": "#ff291a"
   },
   "2- Web Development": "RiCodeSSlashLine",
-  "3- Projects/ROBLOX - Project CORE": "RiGameLine",
   "2- Web Development/2- Laravel/1- Laravele Giriş": "RiBookFill",
   "2- Web Development/2- Laravel/2 - Temeller": "RiBookFill",
   "2- Web Development/2- Laravel/2 - Temeller/1 - Routing": "RiBookLine",
@@ -86,5 +77,24 @@
   "2- Web Development/2- Laravel/1- Laravele Giriş/6 - Frontend.md": "RiBookmarkFill",
   "2- Web Development/2- Laravel/1- Laravele Giriş/7 - Service Container.md": "RiBookmarkFill",
   "2- Web Development/2- Laravel/1- Laravele Giriş/8 - Service Providers.md": "RiBookmarkFill",
-  "2- Web Development/2- Laravel/1- Laravele Giriş/9 - Facades.md": "RiBookmarkFill"
+  "2- Web Development/2- Laravel/1- Laravele Giriş/9 - Facades.md": "RiBookmarkFill",
+  "2- Web Development/3- Livewire": {
+    "iconName": "SiLivewire",
+    "iconColor": "#fb70a9"
+  },
+  "4- Projects": "RiCompassesFill",
+  "4- Projects/ROBLOX - Project CORE": "RiGameLine",
+  "4- Projects/ROBLOX - Project Terra": "RiGameLine",
+  "4- Projects/LARAVEL - Project DM": "RiQrCodeLine",
+  "4- Projects/LARAVEL - Project AT": "RiTable2",
+  "4- Projects/LARAVEL - Project AT/1 - Project Details.md": "RiInformationFill",
+  "4- Projects/LARAVEL - Project AT/2 - Documentation.md": "RiBook2Fill",
+  "4- Projects/LARAVEL - Project AT/4 - Roadmap.md": "RiRoadMapFill",
+  "4- Projects/LARAVEL - Project AT/3 - Properties.md": "RiShapesFill",
+  "4- Projects/LARAVEL - Project DM/1 - Project Details.md": "RiInformationFill",
+  "4- Projects/LARAVEL - Project DM/2 - To Do List.md": "RiListCheck3",
+  "4- Projects/LARAVEL - Project DM/3 - Database Graph.canvas": "RiDatabase2Fill",
+  "4- Projects/LARAVEL - Project DM/4 - Documentation.md": "RiBook2Fill",
+  "4- Projects/LARAVEL - Project DM/5 - Properties.md": "RiShapesFill",
+  "4- Projects/LARAVEL - Project DM/6 - Roadmap.md": "RiRoadMapFill"
 }

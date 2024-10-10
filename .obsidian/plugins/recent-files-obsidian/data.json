@@ -1,6 +1,42 @@
 {
   "recentFiles": [
     {
+      "basename": "2 - Laravel Kurulumu",
+      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/2 - Laravel Kurulumu.md"
+    },
+    {
+      "basename": "1 - Laravel’e Başlamadan Önce",
+      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/1 - Laravel’e Başlamadan Önce.md"
+    },
+    {
+      "basename": "3- Tipografik Etiketler",
+      "path": "3- Dersler/3- Tipografik Etiketler.md"
+    },
+    {
+      "basename": "4 - Biçimlendirme Etiketleri",
+      "path": "3- Dersler/4 - Biçimlendirme Etiketleri.md"
+    },
+    {
+      "basename": "1 - HTML Nedir",
+      "path": "3- Dersler/1 - HTML Nedir.md"
+    },
+    {
+      "basename": "2- Temel HTML Etiketleri",
+      "path": "3- Dersler/2- Temel HTML Etiketleri.md"
+    },
+    {
+      "basename": "2 - Gelişmiş Rotalar",
+      "path": "2- Web Development/2- Laravel/2 - Temeller/1 - Routing/2 - Gelişmiş Rotalar.md"
+    },
+    {
+      "basename": "2 - To Do List",
+      "path": "4- Projects/LARAVEL - Project DM/2 - To Do List.md"
+    },
+    {
+      "basename": "Başlangıç",
+      "path": "2- Web Development/3- Livewire/Başlangıç.md"
+    },
+    {
       "basename": "1 - Hata Yakalama",
       "path": "2- Web Development/2- Laravel/2 - Temeller/11 - Error Handling/1 - Hata Yakalama.md"
     },
@@ -15,14 +51,6 @@
     {
       "basename": "3 - Yapılandırma",
       "path": "2- Web Development/2- Laravel/1- Laravele Giriş/3 - Yapılandırma.md"
-    },
-    {
-      "basename": "2 - Laravel Kurulumu",
-      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/2 - Laravel Kurulumu.md"
-    },
-    {
-      "basename": "1 - Laravel’e Başlamadan Önce",
-      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/1 - Laravel’e Başlamadan Önce.md"
     },
     {
       "basename": "12 - Breeze",
@@ -46,39 +74,35 @@
     },
     {
       "basename": "Yakında",
-      "path": "3- Projects/ROBLOX - Project CORE/Yakında.md"
+      "path": "4- Projects/ROBLOX - Project CORE/Yakında.md"
     },
     {
       "basename": "Game Details & Concept",
-      "path": "3- Projects/ROBLOX - Project Terra/Game Details & Concept.md"
+      "path": "4- Projects/ROBLOX - Project Terra/Game Details & Concept.md"
     },
     {
       "basename": "Yapılacaklar Listesi",
-      "path": "3- Projects/ROBLOX - Project Terra/Yapılacaklar Listesi.md"
-    },
-    {
-      "basename": "2 - To Do List",
-      "path": "3- Projects/LARAVEL - Project DM/2 - To Do List.md"
+      "path": "4- Projects/ROBLOX - Project Terra/Yapılacaklar Listesi.md"
     },
     {
       "basename": "3 - Database Graph",
-      "path": "3- Projects/LARAVEL - Project DM/3 - Database Graph.canvas"
+      "path": "4- Projects/LARAVEL - Project DM/3 - Database Graph.canvas"
     },
     {
       "basename": "4 - Documentation",
-      "path": "3- Projects/LARAVEL - Project DM/4 - Documentation.md"
+      "path": "4- Projects/LARAVEL - Project DM/4 - Documentation.md"
     },
     {
       "basename": "1 - Project Details",
-      "path": "3- Projects/LARAVEL - Project DM/1 - Project Details.md"
+      "path": "4- Projects/LARAVEL - Project DM/1 - Project Details.md"
     },
     {
       "basename": "6 - Roadmap",
-      "path": "3- Projects/LARAVEL - Project DM/6 - Roadmap.md"
+      "path": "4- Projects/LARAVEL - Project DM/6 - Roadmap.md"
     },
     {
       "basename": "5 - Properties",
-      "path": "3- Projects/LARAVEL - Project DM/5 - Properties.md"
+      "path": "4- Projects/LARAVEL - Project DM/5 - Properties.md"
     },
     {
       "basename": "1 - Relationships Basics",
@@ -87,10 +111,6 @@
     {
       "basename": "4 - Routing",
       "path": "2- Web Development/2- Laravel/2 - Temeller/1 - Routing/4 - Routing.md"
-    },
-    {
-      "basename": "2 - Gelişmiş Rotalar",
-      "path": "2- Web Development/2- Laravel/2 - Temeller/1 - Routing/2 - Gelişmiş Rotalar.md"
     },
     {
       "basename": "6 - Mutators & Casts",
@@ -102,19 +122,19 @@
     },
     {
       "basename": "4 - Roadmap",
-      "path": "3- Projects/LARAVEL - Project AT/4 - Roadmap.md"
+      "path": "4- Projects/LARAVEL - Project AT/4 - Roadmap.md"
     },
     {
       "basename": "3 - Properties",
-      "path": "3- Projects/LARAVEL - Project AT/3 - Properties.md"
+      "path": "4- Projects/LARAVEL - Project AT/3 - Properties.md"
     },
     {
       "basename": "2 - Documentation",
-      "path": "3- Projects/LARAVEL - Project AT/2 - Documentation.md"
+      "path": "4- Projects/LARAVEL - Project AT/2 - Documentation.md"
     },
     {
       "basename": "1 - Project Details",
-      "path": "3- Projects/LARAVEL - Project AT/1 - Project Details.md"
+      "path": "4- Projects/LARAVEL - Project AT/1 - Project Details.md"
     },
     {
       "basename": "5 - Collections",
@@ -179,26 +199,6 @@
     {
       "basename": "1- Başlarken",
       "path": "2- Web Development/1- PHP/1- PHP'ye Giriş/1- Başlarken.md"
-    },
-    {
-      "basename": "3 - Controllers",
-      "path": "2- Web Development/2- Laravel/2 - Temeller/4 - Controllers/3 - Controllers.md"
-    },
-    {
-      "basename": "9 - Facades",
-      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/9 - Facades.md"
-    },
-    {
-      "basename": "1 - Views",
-      "path": "2- Web Development/2- Laravel/2 - Temeller/6 - Views/1 - Views.md"
-    },
-    {
-      "basename": "1 - Seeding",
-      "path": "2- Web Development/2- Laravel/3 - Eloquent & Database/4 - Seeding/1 - Seeding.md"
-    },
-    {
-      "basename": "1 - Migrations",
-      "path": "2- Web Development/2- Laravel/3 - Eloquent & Database/1 - Migrations/1 - Migrations.md"
     }
   ],
   "omittedPaths": [],
