@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1c1ccb5e61464ad1",
+        "id": "39fb8fd785d47ef9",
         "type": "tabs",
         "children": [
           {
-            "id": "7eb49d9512d99d59",
+            "id": "823a3be75713fb6b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 498.5
+    "width": 200
   },
   "right": {
     "id": "19aedd361f9da44d",
@@ -166,7 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 345.5
+    "width": 510.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,17 +179,20 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e517a783a5bb8142",
+  "active": "da87a98059cefaba",
   "lastOpenFiles": [
+    "3- Projects/LARAVEL - Project DM/2 - To Do List.md",
+    "3- Projects/LARAVEL - Project AT/4 - Roadmap.md",
+    "3- Projects/LARAVEL - Project AT/3 - Properties.md",
+    "2- Web Development/2- Laravel/1- Laravele Giriş/1 - Laravel’e Başlamadan Önce.md",
+    "2- Web Development/2- Laravel/1- Laravele Giriş/5 - Dizin Yapısı.md",
+    "2- Web Development/2- Laravel/1- Laravele Giriş/2 - Laravel Kurulumu.md",
     "2- Web Development/2- Laravel/2 - Temeller/11 - Error Handling/1 - Hata Yakalama.md",
     "2- Web Development/2- Laravel/2 - Temeller/1 - Routing/1 - Routing Temelleri.md",
     "2- Web Development/2- Laravel/1- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md",
     "2- Web Development/2- Laravel/1- Laravele Giriş/3 - Yapılandırma.md",
-    "2- Web Development/2- Laravel/1- Laravele Giriş/2 - Laravel Kurulumu.md",
-    "2- Web Development/2- Laravel/1- Laravele Giriş/1 - Laravel’e Başlamadan Önce.md",
     "2- Web Development/2- Laravel/2 - Temeller/U - Breeze/12 - Breeze.md",
     "2- Web Development/1- PHP/3- PHP OOP/13- Iterables (Yinelenebilir Tür).md",
-    "2- Web Development/2- Laravel/1- Laravele Giriş/5 - Dizin Yapısı.md",
     "2- Web Development/2- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/3 - Modelleri Budama ve Kopyalama.md",
     "2- Web Development/2- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/1 - Eloquent Basics.md",
     "3- Projects/ROBLOX - Project CORE/Yakında.md",
@@ -201,7 +204,6 @@
     "1- Entrance",
     "2- Web Development",
     "3- Projects/ROBLOX - Project Terra/Yapılacaklar Listesi.md",
-    "3- Projects/LARAVEL - Project DM/2 - To Do List.md",
     "3- Projects/LARAVEL - Project DM/3 - Database Graph.canvas",
     "3- Projects/LARAVEL - Project DM/4 - Documentation.md",
     "3- Projects/LARAVEL - Project DM/1 - Project Details.md",
@@ -215,8 +217,6 @@
     "2- Web Development/2- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/6 - Mutators & Casts.md",
     "2- Web Development/2- Laravel/2 - Temeller/8 - Blade Templates/3 - Bileşenler.md",
     "smart-chats",
-    "smart-chats/UNTITLED CHAT 2024-09-05 21 24 21.md",
-    "Projects/Palet-QR/3 -.md",
     "3- Projects/LARAVEL - Project DM",
     "3- Projects/LARAVEL - Project AT",
     "Untitled.canvas",

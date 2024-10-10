@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "2 - To Do List",
+      "path": "3- Projects/LARAVEL - Project DM/2 - To Do List.md"
+    },
+    {
+      "basename": "4 - Roadmap",
+      "path": "3- Projects/LARAVEL - Project AT/4 - Roadmap.md"
+    },
+    {
+      "basename": "3 - Properties",
+      "path": "3- Projects/LARAVEL - Project AT/3 - Properties.md"
+    },
+    {
+      "basename": "1 - Laravel’e Başlamadan Önce",
+      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/1 - Laravel’e Başlamadan Önce.md"
+    },
+    {
+      "basename": "5 - Dizin Yapısı",
+      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/5 - Dizin Yapısı.md"
+    },
+    {
+      "basename": "2 - Laravel Kurulumu",
+      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/2 - Laravel Kurulumu.md"
+    },
+    {
       "basename": "1 - Hata Yakalama",
       "path": "2- Web Development/2- Laravel/2 - Temeller/11 - Error Handling/1 - Hata Yakalama.md"
     },
@@ -17,24 +41,12 @@
       "path": "2- Web Development/2- Laravel/1- Laravele Giriş/3 - Yapılandırma.md"
     },
     {
-      "basename": "2 - Laravel Kurulumu",
-      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/2 - Laravel Kurulumu.md"
-    },
-    {
-      "basename": "1 - Laravel’e Başlamadan Önce",
-      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/1 - Laravel’e Başlamadan Önce.md"
-    },
-    {
       "basename": "12 - Breeze",
       "path": "2- Web Development/2- Laravel/2 - Temeller/U - Breeze/12 - Breeze.md"
     },
     {
       "basename": "13- Iterables (Yinelenebilir Tür)",
       "path": "2- Web Development/1- PHP/3- PHP OOP/13- Iterables (Yinelenebilir Tür).md"
-    },
-    {
-      "basename": "5 - Dizin Yapısı",
-      "path": "2- Web Development/2- Laravel/1- Laravele Giriş/5 - Dizin Yapısı.md"
     },
     {
       "basename": "3 - Modelleri Budama ve Kopyalama",
@@ -55,10 +67,6 @@
     {
       "basename": "Yapılacaklar Listesi",
       "path": "3- Projects/ROBLOX - Project Terra/Yapılacaklar Listesi.md"
-    },
-    {
-      "basename": "2 - To Do List",
-      "path": "3- Projects/LARAVEL - Project DM/2 - To Do List.md"
     },
     {
       "basename": "3 - Database Graph",
@@ -99,14 +107,6 @@
     {
       "basename": "3 - Bileşenler",
       "path": "2- Web Development/2- Laravel/2 - Temeller/8 - Blade Templates/3 - Bileşenler.md"
-    },
-    {
-      "basename": "4 - Roadmap",
-      "path": "3- Projects/LARAVEL - Project AT/4 - Roadmap.md"
-    },
-    {
-      "basename": "3 - Properties",
-      "path": "3- Projects/LARAVEL - Project AT/3 - Properties.md"
     },
     {
       "basename": "2 - Documentation",
