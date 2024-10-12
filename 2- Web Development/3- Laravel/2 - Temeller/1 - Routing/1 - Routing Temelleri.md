@@ -92,7 +92,7 @@ Route::get('/user', function (Request $request) {
 
 ## Redirect (Yönlendirme) Rotaları
 
-Başka bir URI'ye yönlendiren bir rota tanımlıyorsanız, `Route::redirect` metodunu kullanabilirsiniz. Bu metot, basit bir yönlendirme gerçekleştirmek için tam bir rota veya controller enetleyici tanımlamak zorunda kalmamanız için kullanışlı bir kısayol sağlar:
+Başka bir URI'ye yönlendiren bir rota tanımlıyorsanız, `Route::redirect` metodunu kullanabilirsiniz. Bu metot, basit bir yönlendirme gerçekleştirmek için tam bir rota veya controller (denetleyici) tanımlamak zorunda kalmamanız için kullanışlı bir kısayol sağlar:
 
 ```php
 Route::get('/new-page', function () {

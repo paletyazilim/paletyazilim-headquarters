@@ -4,18 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b58c2ef6016497b8",
+        "id": "18a1bbbdfa5c68dc",
         "type": "tabs",
         "children": [
           {
-            "id": "adbfcb304059436c",
+            "id": "76769f873b0251e2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "2- Web Development/2- Laravel/1- Laravele Giriş/2 - Laravel Kurulumu.md",
-                "mode": "source",
-                "source": false
+                "file": "3- Kanban Board/Metin.canvas",
+                "viewState": {
+                  "x": 408.0533589525671,
+                  "y": 1763.8944441233734,
+                  "zoom": -2.333333333333333
+                }
               }
             }
           }
@@ -79,7 +82,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2- Web Development/2- Laravel/1- Laravele Giriş/2 - Laravel Kurulumu.md"
+                "file": "3- Kanban Board/Metin.canvas"
               }
             }
           }
@@ -87,7 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 211.5
+    "width": 358.5
   },
   "right": {
     "id": "19aedd361f9da44d",
@@ -103,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2- Web Development/2- Laravel/1- Laravele Giriş/2 - Laravel Kurulumu.md",
+                "file": "3- Kanban Board/Metin.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2- Web Development/2- Laravel/1- Laravele Giriş/2 - Laravel Kurulumu.md",
+                "file": "3- Kanban Board/Metin.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,45 +191,46 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "adbfcb304059436c",
+  "active": "e517a783a5bb8142",
   "lastOpenFiles": [
-    "2- Web Development/2- Laravel/1- Laravele Giriş/1 - Laravel’e Başlamadan Önce.md",
-    "3- Dersler/3- Tipografik Etiketler.md",
-    "3- Dersler/4 - Biçimlendirme Etiketleri.md",
-    "3- Dersler/1 - HTML Nedir.md",
-    "3- Dersler/2- Temel HTML Etiketleri.md",
+    "2- Web Development/3- Laravel/1- Laravele Giriş/1 - Laravel’e Başlamadan Önce.md",
+    "3- Kanban Board/Metin.canvas",
+    "2- Web Development/3- Laravel/1- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md",
+    "2- Web Development/1- HTML/1 - HTML Nedir.md",
+    "3- Kanban Board",
+    "2- Web Development/3- Laravel/2 - Temeller/1 - Routing/4 - Routing.md",
+    "2- Web Development/1- HTML",
+    "2- Web Development/Untitled.md",
+    "2- Web Development/3- Laravel/2 - Temeller/1 - Routing/1 - Routing Temelleri.md",
+    "2- Web Development/3- Laravel/2 - Temeller/1 - Routing/2 - Gelişmiş Rotalar.md",
+    "2- Web Development/3- Laravel/2 - Temeller/1 - Routing/3 - Rotalara Erişme, Düzenleme ve Cachleme.md",
+    "2- Web Development/3- Laravel/2 - Temeller/5 - Requests & Respones & Session/1 - HTTP Requests (İstekler).md",
+    "2- Web Development/3- Laravel/1- Laravele Giriş/6 - Frontend.md",
+    "2- Web Development/3- Laravel/1- Laravele Giriş/5 - Dizin Yapısı.md",
+    "2- Web Development/3- Laravel/1- Laravele Giriş/3 - Yapılandırma.md",
+    "2- Web Development/3- Laravel/1- Laravele Giriş/2 - Laravel Kurulumu.md",
+    "2- Web Development/1- HTML/3- Tipografik Etiketler.md",
+    "2- Web Development/1- HTML/4 - Biçimlendirme Etiketleri.md",
+    "2- Web Development/1- HTML/2- Temel HTML Etiketleri.md",
     "screencapture-file-D-Repos-html-example-html-2024-10-04-17_21_54.png",
     "3- Dersler/~$- HTML Nedir.docx",
     "3- Dersler/1 - HTML Nedir.docx",
     "3- Dersler/1 - HTML Nedir.html",
-    "2- Web Development/2- Laravel/2 - Temeller/1 - Routing/2 - Gelişmiş Rotalar.md",
     "4- Projects/LARAVEL - Project DM/2 - To Do List.md",
     "3- Dersler",
-    "2- Web Development/3- Livewire/Başlangıç.md",
-    "2- Web Development/3- Livewire",
-    "2- Web Development/2- Laravel/2 - Temeller/11 - Error Handling/1 - Hata Yakalama.md",
-    "2- Web Development/2- Laravel/2 - Temeller/1 - Routing/1 - Routing Temelleri.md",
-    "2- Web Development/2- Laravel/1- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md",
-    "2- Web Development/2- Laravel/1- Laravele Giriş/3 - Yapılandırma.md",
-    "2- Web Development/2- Laravel/1- Laravele Giriş/2 - Laravel Kurulumu.md",
-    "2- Web Development/2- Laravel/2 - Temeller/U - Breeze/12 - Breeze.md",
-    "2- Web Development/1- PHP/3- PHP OOP/13- Iterables (Yinelenebilir Tür).md",
-    "2- Web Development/2- Laravel/1- Laravele Giriş/5 - Dizin Yapısı.md",
-    "2- Web Development/2- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/3 - Modelleri Budama ve Kopyalama.md",
-    "2- Web Development/2- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/1 - Eloquent Basics.md",
+    "2- Web Development/4- Livewire/Başlangıç.md",
+    "2- Web Development/4- Livewire",
+    "2- Web Development/3- Laravel/2 - Temeller/11 - Error Handling/1 - Hata Yakalama.md",
+    "2- Web Development/3- Laravel/2 - Temeller/U - Breeze/12 - Breeze.md",
+    "2- Web Development/2- PHP/3- PHP OOP/13- Iterables (Yinelenebilir Tür).md",
+    "2- Web Development/3- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/3 - Modelleri Budama ve Kopyalama.md",
+    "2- Web Development/3- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/1 - Eloquent Basics.md",
     "4- Projects/ROBLOX - Project CORE/Yakında.md",
-    "2- Web Development/2- Laravel/3 - Eloquent & Database",
+    "2- Web Development/3- Laravel/3 - Eloquent & Database",
     "4- Projects/ROBLOX - Project Terra/Game Details & Concept.md",
     "4- Projects/ROBLOX - Project CORE",
-    "2- Web Development/2- Laravel",
-    "2- Web Development/1- PHP",
-    "1- Entrance",
-    "4- Projects/ROBLOX - Project Terra/Yapılacaklar Listesi.md",
+    "2- Web Development/3- Laravel",
     "4- Projects/LARAVEL - Project DM/3 - Database Graph.canvas",
-    "4- Projects/LARAVEL - Project DM/4 - Documentation.md",
-    "4- Projects/LARAVEL - Project DM/1 - Project Details.md",
-    "4- Projects/LARAVEL - Project DM/6 - Roadmap.md",
-    "4- Projects/LARAVEL - Project DM/5 - Properties.md",
     "Projects/Roblox Projesi/Untitled.canvas",
     "Untitled.canvas",
     "Untitled 1.canvas",
