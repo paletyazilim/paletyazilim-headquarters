@@ -26,7 +26,7 @@ Varsayılan Laravel uygulama yapısı hem büyük hem de küçük uygulamalar i�
 
 `public` dizini, uygulamanıza giren tüm isteklerin giriş noktası olan ve otomatik yüklemeyi yapılandıran `index.php` dosyasını içerir. Bu dizin ayrıca resimler, JavaScript ve CSS gibi varlıklarınızı da barındırır.
 
-## Resources Dizin
+## Resources Dizini
 
 `resources` dizini, views (görünümlerinizin) yanı sıra CSS veya JavaScript gibi ham, derlenmemiş varlıklarınızı da içerir.
 
