@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3- Kanban Board/1- Web Geliştirme Yol Haritası.md",
+                "file": "2- Web Development/3- Laravel/2 - Temeller/8 - Blade Templates/7 - Blade Şablonları (Bütün Konu).md",
                 "mode": "source",
                 "source": false
               }
@@ -79,7 +79,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3- Kanban Board/1- Web Geliştirme Yol Haritası.md"
+                "file": "2- Web Development/3- Laravel/2 - Temeller/8 - Blade Templates/7 - Blade Şablonları (Bütün Konu).md"
               }
             }
           }
@@ -87,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 358.5
+    "width": 358.5,
+    "collapsed": true
   },
   "right": {
     "id": "19aedd361f9da44d",
@@ -103,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3- Kanban Board/1- Web Geliştirme Yol Haritası.md",
+                "file": "2- Web Development/3- Laravel/2 - Temeller/8 - Blade Templates/7 - Blade Şablonları (Bütün Konu).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3- Kanban Board/1- Web Geliştirme Yol Haritası.md",
+                "file": "2- Web Development/3- Laravel/2 - Temeller/8 - Blade Templates/7 - Blade Şablonları (Bütün Konu).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,10 +189,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e517a783a5bb8142",
+  "active": "da87a98059cefaba",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "3- Kanban Board/1- Web Geliştirme Yol Haritası.md",
+    "conflict-files-obsidian-git.md",
     "3- Kanban Board/1 - Web Geliştirme Roadmap.canvas",
     "3- Kanban Board/Metin.canvas",
     "2- Web Development/3- Laravel/1- Laravele Giriş/1 - Laravel’e Başlamadan Önce.md",

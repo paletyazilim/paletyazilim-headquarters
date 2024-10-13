@@ -238,7 +238,7 @@ Koşullu ifadelere ek olarak Blade, PHP'nin döngü yapılarıyla çalışmak i�
 @endwhile
 ```
 
->Bir `foreach` döngüsünde yineleme yaparken, `döngü değişkenini (loop variable)` döngü hakkında değerli bilgiler elde etmek için kullanabilirsiniz (örneğin, döngüde ilk veya son yinelemede olup olmadığınız gibi).
+>Bir `foreach` döngüsünde yineleme yaparken, `$loop değişkenini (loop variable)` döngü hakkında değerli bilgiler elde etmek için kullanabilirsiniz (örneğin, döngüde ilk veya son yinelemede olup olmadığınız gibi).
 
 Döngüleri kullanırken, `@continue` ve `@break` yönergelerini kullanarak mevcut yinelemeyi atlayabilir veya döngüyü sonlandırabilirsiniz:
 
@@ -300,7 +300,6 @@ Bir `foreach` döngüsü içinde yineleme yaparken, döngünüzün içinde bir `
 
 `$loop` değişkeni ayrıca çeşitli başka yararlı özellikler de içerir:
 
-
 | Özellik            | Açıklama                                                  |
 | ------------------ | --------------------------------------------------------- |
 | `$loop->index`     | Geçerli döngü yinelemesinin indeksi (0'dan başlar).       |
@@ -353,7 +352,7 @@ Benzer şekilde, `@style` yönergesi bir HTML öğesine koşullu olarak satır i
 
 ## Ek Özellikler
 
-Kolaylık sağlamak amacıyla, belirli bir HTML onay kutusu girdisinin "checkedd" olup olmadığını kolayca belirtmek için `@checked` yönergesini kullanabilirsiniz. Bu yönerge, sağlanan koşul `true` olarak değerlendirilirse işaretli olarak gösterilecektir:
+Kolaylık sağlamak amacıyla, belirli bir HTML onay kutusu girdisinin "checked" olup olmadığını kolayca belirtmek için `@checked` yönergesini kullanabilirsiniz. Bu yönerge, sağlanan koşul `true` olarak değerlendirilirse işaretli olarak gösterilecektir:
 
 ```php
 <input type="checkbox"
