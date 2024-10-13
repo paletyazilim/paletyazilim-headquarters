@@ -79,7 +79,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "3- Kanban Board/1- Web Geliştirme Yol Haritası.md"
               }
             }
           }
@@ -103,6 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "3- Kanban Board/1- Web Geliştirme Yol Haritası.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,6 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "3- Kanban Board/1- Web Geliştirme Yol Haritası.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +188,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "da87a98059cefaba",
+  "active": "e517a783a5bb8142",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
     "3- Kanban Board/1- Web Geliştirme Yol Haritası.md",
