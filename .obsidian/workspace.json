@@ -79,7 +79,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3- Kanban Board/1- Web Geliştirme Yol Haritası.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           }
@@ -103,7 +103,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3- Kanban Board/1- Web Geliştirme Yol Haritası.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +119,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3- Kanban Board/1- Web Geliştirme Yol Haritası.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,12 +186,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e517a783a5bb8142",
+  "active": "da87a98059cefaba",
   "lastOpenFiles": [
-    "3- Kanban Board/1 - Web Geliştirme Roadmap.canvas",
-    "3- Kanban Board/1- Web Geliştirme Yol Haritası.md",
-    "3- Kanban Board/Metin.canvas",
     "conflict-files-obsidian-git.md",
+    "3- Kanban Board/1- Web Geliştirme Yol Haritası.md",
+    "3- Kanban Board/1 - Web Geliştirme Roadmap.canvas",
+    "3- Kanban Board/Metin.canvas",
     "2- Web Development/3- Laravel/1- Laravele Giriş/1 - Laravel’e Başlamadan Önce.md",
     "2- Web Development/3- Laravel/1- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md",
     "2- Web Development/1- HTML/1 - HTML Nedir.md",
