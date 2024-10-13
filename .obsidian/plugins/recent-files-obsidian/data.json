@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "1- Web Geliştirme Yol Haritası",
+      "path": "3- Kanban Board/1- Web Geliştirme Yol Haritası.md"
+    },
+    {
       "basename": "Metin",
       "path": "3- Kanban Board/Metin.canvas"
     },
@@ -191,10 +195,6 @@
     {
       "basename": "7 - Service Container",
       "path": "2- Web Development/3- Laravel/1- Laravele Giriş/7 - Service Container.md"
-    },
-    {
-      "basename": "1 - Koleksiyonlar",
-      "path": "2- Web Development/3- Laravel/2 - Temeller/12 - Collections/1 - Koleksiyonlar.md"
     }
   ],
   "omittedPaths": [],

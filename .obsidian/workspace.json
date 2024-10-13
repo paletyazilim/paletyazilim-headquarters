@@ -11,31 +11,15 @@
             "id": "76769f873b0251e2",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "3- Kanban Board/Metin.canvas",
-                "viewState": {
-                  "x": 408.0533589525671,
-                  "y": 1763.8944441233734,
-                  "zoom": -2.333333333333333
-                }
-              }
-            }
-          },
-          {
-            "id": "788c5d52448cfb2c",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "3- Kanban Board/1- Web Geliştirme Yol Haritası.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -95,7 +79,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "3- Kanban Board/1- Web Geliştirme Yol Haritası.md"
               }
             }
           }
@@ -119,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "3- Kanban Board/1- Web Geliştirme Yol Haritası.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "3- Kanban Board/1- Web Geliştirme Yol Haritası.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -204,8 +188,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "788c5d52448cfb2c",
+  "active": "e517a783a5bb8142",
   "lastOpenFiles": [
+    "3- Kanban Board/1 - Web Geliştirme Roadmap.canvas",
+    "3- Kanban Board/1- Web Geliştirme Yol Haritası.md",
     "3- Kanban Board/Metin.canvas",
     "conflict-files-obsidian-git.md",
     "2- Web Development/3- Laravel/1- Laravele Giriş/1 - Laravel’e Başlamadan Önce.md",
@@ -239,7 +225,6 @@
     "2- Web Development/2- PHP/3- PHP OOP/13- Iterables (Yinelenebilir Tür).md",
     "2- Web Development/3- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/3 - Modelleri Budama ve Kopyalama.md",
     "2- Web Development/3- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/1 - Eloquent Basics.md",
-    "4- Projects/ROBLOX - Project CORE/Yakında.md",
     "2- Web Development/3- Laravel/3 - Eloquent & Database",
     "4- Projects/ROBLOX - Project CORE",
     "2- Web Development/3- Laravel",
@@ -251,7 +236,6 @@
     "5- Laravele Giriş/Başlıksız.canvas",
     "6- Laravele Giriş/Başlıksız.canvas",
     "Tutorial/-a.canvas",
-    "Pasted image 20231112165207.png",
-    "Başlıksız.canvas"
+    "Pasted image 20231112165207.png"
   ]
 }
