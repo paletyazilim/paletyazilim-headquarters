@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "TiWorldWww",
       "RiBookmarkFill",
       "RiBookLine",
       "RiBookFill",
-      "RiCodeSSlashLine",
-      "FabLaravel"
+      "RiCodeSSlashLine"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -35,5 +35,6 @@
   },
   "Tutorial": "RiBookFill",
   "Laravel/U - Auth": "RiBookMarkFill",
-  "2- Web Development/7 - Livewire": "RiBookFill"
+  "2- Web Development/7 - Livewire": "RiBookFill",
+  "2- Web Geliştirme": "TiWorldWww"
 }
