@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "1- Alogirtma Temelleri Müfredatı",
+      "path": "5- Müfredat/1- Alogirtma Temelleri Müfredatı.md"
+    },
+    {
+      "basename": "2- Donanım Bilgisi Müfredatı",
+      "path": "5- Müfredat/2- Donanım Bilgisi Müfredatı.md"
+    },
+    {
       "basename": "7 - Blade Şablonları (Bütün Konu)",
       "path": "2- Web Geliştirme/3- Laravel/2 - Temeller/8 - Blade Templates/7 - Blade Şablonları (Bütün Konu).md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "5 - Collections",
       "path": "2- Web Geliştirme/3- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/5 - Collections.md"
-    },
-    {
-      "basename": "8 - Service Providers",
-      "path": "2- Web Geliştirme/3- Laravel/1- Laravele Giriş/8 - Service Providers.md"
-    },
-    {
-      "basename": "7 - Service Container",
-      "path": "2- Web Geliştirme/3- Laravel/1- Laravele Giriş/7 - Service Container.md"
     }
   ],
   "omittedPaths": [],

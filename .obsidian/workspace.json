@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2- Web Geliştirme/3- Laravel/2 - Temeller/8 - Blade Templates/7 - Blade Şablonları (Bütün Konu).md",
+                "file": "5- Müfredat/1- Alogirtma Temelleri Müfredatı.md",
                 "mode": "source",
                 "source": false
               }
@@ -79,7 +79,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2- Web Geliştirme/3- Laravel/2 - Temeller/8 - Blade Templates/7 - Blade Şablonları (Bütün Konu).md"
+                "file": "5- Müfredat/1- Alogirtma Temelleri Müfredatı.md"
               }
             }
           }
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2- Web Geliştirme/3- Laravel/2 - Temeller/8 - Blade Templates/7 - Blade Şablonları (Bütün Konu).md",
+                "file": "5- Müfredat/1- Alogirtma Temelleri Müfredatı.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2- Web Geliştirme/3- Laravel/2 - Temeller/8 - Blade Templates/7 - Blade Şablonları (Bütün Konu).md",
+                "file": "5- Müfredat/1- Alogirtma Temelleri Müfredatı.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -190,6 +190,9 @@
   },
   "active": "e517a783a5bb8142",
   "lastOpenFiles": [
+    "5- Müfredat/2- Donanım Bilgisi Müfredatı.md",
+    "5- Müfredat/1- Alogirtma Temelleri Müfredatı.md",
+    "2- Web Geliştirme/3- Laravel/2 - Temeller/8 - Blade Templates/7 - Blade Şablonları (Bütün Konu).md",
     "5- Müfredat",
     "3- Kanban Board/1- Web Geliştirme Yol Haritası.md",
     "conflict-files-obsidian-git.md",
@@ -224,11 +227,8 @@
     "2- Web Geliştirme/3- Laravel/2 - Temeller/11 - Error Handling/1 - Hata Yakalama.md",
     "2- Web Geliştirme/3- Laravel/2 - Temeller/U - Breeze/12 - Breeze.md",
     "2- Web Geliştirme/2- PHP/3- PHP OOP/13- Iterables (Yinelenebilir Tür).md",
-    "2- Web Geliştirme/3- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/3 - Modelleri Budama ve Kopyalama.md",
-    "2- Web Geliştirme/3- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/1 - Eloquent Basics.md",
     "2- Web Geliştirme/3- Laravel/3 - Eloquent & Database",
     "4- Projeler/ROBLOX - Project CORE",
-    "2- Web Geliştirme/3- Laravel",
     "4- Projeler/LARAVEL - Project DM/3 - Database Graph.canvas",
     "Projects/Roblox Projesi/Untitled.canvas",
     "Untitled.canvas",
