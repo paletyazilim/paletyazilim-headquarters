@@ -6,6 +6,7 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiLivewire",
       "TiBrandLaravel",
       "BoBxlPhp",
       "RiHtml5Line",
@@ -35,5 +36,6 @@
   "2- Web Geliştirme": "TiWorldWww",
   "2- Web Geliştirme/1- HTML": "RiHtml5Line",
   "2- Web Geliştirme/2- PHP": "BoBxlPhp",
-  "2- Web Geliştirme/3- Laravel": "TiBrandLaravel"
+  "2- Web Geliştirme/3- Laravel": "TiBrandLaravel",
+  "2- Web Geliştirme/4- Livewire": "SiLivewire"
 }
