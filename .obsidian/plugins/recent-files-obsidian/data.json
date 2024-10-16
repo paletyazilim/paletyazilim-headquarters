@@ -9,6 +9,10 @@
       "path": "5- Müfredat/2- Donanım Bilgisi Müfredatı.md"
     },
     {
+      "basename": "screencapture-file-D-Repos-html-example-html-2024-10-04-17_21_54",
+      "path": "screencapture-file-D-Repos-html-example-html-2024-10-04-17_21_54.png"
+    },
+    {
       "basename": "7 - Blade Şablonları (Bütün Konu)",
       "path": "2- Web Geliştirme/3- Laravel/2 - Temeller/8 - Blade Templates/7 - Blade Şablonları (Bütün Konu).md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "1 - Project Details",
       "path": "4- Projeler/LARAVEL - Project AT/1 - Project Details.md"
-    },
-    {
-      "basename": "5 - Collections",
-      "path": "2- Web Geliştirme/3- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/5 - Collections.md"
     }
   ],
   "omittedPaths": [],

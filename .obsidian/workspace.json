@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "18a1bbbdfa5c68dc",
+        "id": "51489dee419cea5c",
         "type": "tabs",
         "children": [
           {
-            "id": "76769f873b0251e2",
+            "id": "135e873fb177c30f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -188,9 +188,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e517a783a5bb8142",
+  "active": "135e873fb177c30f",
   "lastOpenFiles": [
     "5- Müfredat/2- Donanım Bilgisi Müfredatı.md",
+    "screencapture-file-D-Repos-html-example-html-2024-10-04-17_21_54.png",
     "5- Müfredat/1- Alogirtma Temelleri Müfredatı.md",
     "2- Web Geliştirme/3- Laravel/2 - Temeller/8 - Blade Templates/7 - Blade Şablonları (Bütün Konu).md",
     "5- Müfredat",
@@ -216,7 +217,6 @@
     "2- Web Geliştirme/1- HTML/3- Tipografik Etiketler.md",
     "2- Web Geliştirme/1- HTML/4 - Biçimlendirme Etiketleri.md",
     "2- Web Geliştirme/1- HTML/2- Temel HTML Etiketleri.md",
-    "screencapture-file-D-Repos-html-example-html-2024-10-04-17_21_54.png",
     "3- Dersler/~$- HTML Nedir.docx",
     "3- Dersler/1 - HTML Nedir.docx",
     "3- Dersler/1 - HTML Nedir.html",
@@ -226,7 +226,6 @@
     "2- Web Geliştirme/4- Livewire",
     "2- Web Geliştirme/3- Laravel/2 - Temeller/11 - Error Handling/1 - Hata Yakalama.md",
     "2- Web Geliştirme/3- Laravel/2 - Temeller/U - Breeze/12 - Breeze.md",
-    "2- Web Geliştirme/2- PHP/3- PHP OOP/13- Iterables (Yinelenebilir Tür).md",
     "2- Web Geliştirme/3- Laravel/3 - Eloquent & Database",
     "4- Projeler/ROBLOX - Project CORE",
     "4- Projeler/LARAVEL - Project DM/3 - Database Graph.canvas",
