@@ -26,8 +26,12 @@
             "id": "aaa9052fa2071e98",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "5- Müfredat/3- Temel Web Tasarım Müfredatı.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
@@ -105,6 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "5- Müfredat/3- Temel Web Tasarım Müfredatı.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,6 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "5- Müfredat/3- Temel Web Tasarım Müfredatı.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +180,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "5- Müfredat/3- Temel Web Tasarım Müfredatı.md"
+              }
             }
           }
         ],
@@ -198,10 +206,11 @@
   },
   "active": "aaa9052fa2071e98",
   "lastOpenFiles": [
+    "5- Müfredat/2- Donanım Bilgisi Müfredatı.md",
+    "5- Müfredat/3- Temel Web Tasarım Müfredatı.md",
+    "5- Müfredat/1- Alogirtma Temelleri Müfredatı.md",
     "2- Web Development/3- Laravel/2 - Temeller/1 - Routing/1 - Routing Temelleri.md",
     "conflict-files-obsidian-git.md",
-    "5- Müfredat/1- Alogirtma Temelleri Müfredatı.md",
-    "5- Müfredat/2- Donanım Bilgisi Müfredatı.md",
     "5- Müfredat",
     "4- Projeler/LARAVEL - Project AT/4 - Roadmap.md",
     "4- Projeler/ROBLOX - Project CORE/Yakında.md",
@@ -230,7 +239,6 @@
     "2- Web Geliştirme/3- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/2 - Modellerin Çağrılması ve Yönetilmesi.md",
     "2- Web Geliştirme/3- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/1 - Eloquent Basics.md",
     "2- Web Geliştirme/3- Laravel/3 - Eloquent & Database/1 - Migrations/2 - Tablo Oluşturma.md",
-    "2- Web Geliştirme/3- Laravel/3 - Eloquent & Database/1 - Migrations/1 - Migrations.md",
     "2- Web Geliştirme/3- Laravel/3 - Eloquent & Database/4 - Seeding",
     "2- Web Geliştirme/3- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken",
     "2- Web Geliştirme/3- Laravel/3 - Eloquent & Database/1 - Migrations",
