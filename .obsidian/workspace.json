@@ -4,35 +4,43 @@
     "type": "split",
     "children": [
       {
-        "id": "18a1bbbdfa5c68dc",
+        "id": "b6a6147a3ea059ed",
         "type": "tabs",
         "children": [
           {
-            "id": "76769f873b0251e2",
+            "id": "784b2491e44a775e",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
                 "file": "3- Kanban Board/Metin.canvas",
                 "viewState": {
-                  "x": 408.0533589525671,
-                  "y": 1763.8944441233734,
-                  "zoom": -2.333333333333333
+                  "x": -840,
+                  "y": 1220.7920997920996,
+                  "zoom": -2.065238373151298
                 }
               }
             }
           },
           {
-            "id": "788c5d52448cfb2c",
+            "id": "27f18315e6682722",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-<<<<<<< HEAD
-                "file": "2- Web Development/2- Laravel/2 - Temeller/1 - Routing/1 - Routing Temelleri.md",
-=======
-                "file": "conflict-files-obsidian-git.md",
->>>>>>> origin/main
+                "file": "2- Web Development/3- Laravel/2 - Temeller/1 - Routing/1 - Routing Temelleri.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d8d21c047c77a628",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2- Web Development/3- Laravel/1- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +76,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "has many",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -92,30 +100,12 @@
               "type": "recent-files",
               "state": {}
             }
-          },
-          {
-            "id": "fd82c0332247b845",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-<<<<<<< HEAD
-                "file": "2- Web Development/2- Laravel/2 - Temeller/1 - Routing/1 - Routing Temelleri.md"
-=======
-                "file": "conflict-files-obsidian-git.md"
->>>>>>> origin/main
-              }
-            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-<<<<<<< HEAD
-    "width": 350.5
-=======
-    "width": 358.5
->>>>>>> origin/main
+    "width": 293.5
   },
   "right": {
     "id": "19aedd361f9da44d",
@@ -131,11 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< HEAD
-                "file": "2- Web Development/2- Laravel/2 - Temeller/1 - Routing/1 - Routing Temelleri.md",
-=======
-                "file": "conflict-files-obsidian-git.md",
->>>>>>> origin/main
+                "file": "2- Web Development/3- Laravel/2 - Temeller/1 - Routing/1 - Routing Temelleri.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,11 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-<<<<<<< HEAD
-                "file": "2- Web Development/2- Laravel/2 - Temeller/1 - Routing/1 - Routing Temelleri.md",
-=======
-                "file": "conflict-files-obsidian-git.md",
->>>>>>> origin/main
+                "file": "2- Web Development/3- Laravel/2 - Temeller/1 - Routing/1 - Routing Temelleri.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -204,17 +186,23 @@
               "type": "smart-connections-chat-view",
               "state": {}
             }
+          },
+          {
+            "id": "9b96617c3d1d936c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2- Web Development/3- Laravel/2 - Temeller/1 - Routing/1 - Routing Temelleri.md"
+              }
+            }
           }
         ],
         "currentTab": 4
       }
     ],
     "direction": "horizontal",
-<<<<<<< HEAD
-    "width": 425.5
-=======
-    "width": 345.5
->>>>>>> origin/main
+    "width": 397.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -225,82 +213,50 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-git:Open Git source control": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-<<<<<<< HEAD
-  "active": "e517a783a5bb8142",
-  "lastOpenFiles": [
-    "2- Web Development/2- Laravel/1- Laravele Giriş/3 - Yapılandırma.md",
-    "2- Web Development/2- Laravel/1- Laravele Giriş/2 - Laravel Kurulumu.md",
-    "2- Web Development/2- Laravel/1- Laravele Giriş/1 - Laravel’e Başlamadan Önce.md",
-    "2- Web Development/3- Livewire/Başlangıç.md",
-    "conflict-files-obsidian-git.md",
-    "3- Dersler/4 - Biçimlendirme Etiketleri.md",
-    "3- Dersler/3- Tipografik Etiketler.md",
-    "3- Dersler/2- Temel HTML Etiketleri.md",
-    "3- Dersler/1 - HTML Nedir.md",
-    "3- Dersler",
-    "2- Web Development/3- Livewire",
-=======
-  "active": "788c5d52448cfb2c",
+  "active": "27f18315e6682722",
   "lastOpenFiles": [
     "3- Kanban Board/Metin.canvas",
-    "conflict-files-obsidian-git.md",
-    "2- Web Development/3- Laravel/1- Laravele Giriş/1 - Laravel’e Başlamadan Önce.md",
-    "2- Web Development/3- Laravel/1- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md",
-    "2- Web Development/1- HTML/1 - HTML Nedir.md",
-    "3- Kanban Board",
-    "2- Web Development/3- Laravel/2 - Temeller/1 - Routing/4 - Routing.md",
-    "2- Web Development/1- HTML",
-    "2- Web Development/Untitled.md",
     "2- Web Development/3- Laravel/2 - Temeller/1 - Routing/1 - Routing Temelleri.md",
+    "2- Web Development/3- Laravel/2 - Temeller/6 - Views/1 - Views.md",
     "2- Web Development/3- Laravel/2 - Temeller/1 - Routing/2 - Gelişmiş Rotalar.md",
-    "2- Web Development/3- Laravel/2 - Temeller/1 - Routing/3 - Rotalara Erişme, Düzenleme ve Cachleme.md",
-    "2- Web Development/3- Laravel/2 - Temeller/5 - Requests & Respones & Session/1 - HTTP Requests (İstekler).md",
-    "2- Web Development/3- Laravel/1- Laravele Giriş/6 - Frontend.md",
-    "2- Web Development/3- Laravel/1- Laravele Giriş/5 - Dizin Yapısı.md",
-    "2- Web Development/3- Laravel/1- Laravele Giriş/3 - Yapılandırma.md",
-    "2- Web Development/3- Laravel/1- Laravele Giriş/2 - Laravel Kurulumu.md",
-    "2- Web Development/1- HTML/3- Tipografik Etiketler.md",
-    "2- Web Development/1- HTML/4 - Biçimlendirme Etiketleri.md",
-    "2- Web Development/1- HTML/2- Temel HTML Etiketleri.md",
->>>>>>> origin/main
-    "screencapture-file-D-Repos-html-example-html-2024-10-04-17_21_54.png",
-    "3- Dersler/~$- HTML Nedir.docx",
-    "3- Dersler/1 - HTML Nedir.docx",
-    "3- Dersler/1 - HTML Nedir.html",
-    "4- Projects/LARAVEL - Project DM/2 - To Do List.md",
-    "3- Dersler",
+    "2- Web Development/3- Laravel/1- Laravele Giriş/9 - Facades.md",
     "2- Web Development/4- Livewire/Başlangıç.md",
+    "screencapture-file-D-Repos-html-example-html-2024-10-04-17_21_54.png",
+    "2- Web Development/3- Laravel/1- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md",
+    "2- Web Development/3- Laravel/1- Laravele Giriş/3 - Yapılandırma.md",
+    "2- Web Development/3- Laravel/2 - Temeller/8 - Blade Templates/7 - Blade Şablonları (Bütün Konu).md",
+    "conflict-files-obsidian-git.md",
+    "2- Web Development/2- Laravel/2 - Temeller/1 - Routing/1 - Routing Temelleri.md",
+    "3- Kanban Board",
     "2- Web Development/4- Livewire",
-    "2- Web Development/3- Laravel/2 - Temeller/11 - Error Handling/1 - Hata Yakalama.md",
     "2- Web Development/3- Laravel/2 - Temeller/U - Breeze/12 - Breeze.md",
-    "2- Web Development/2- PHP/3- PHP OOP/13- Iterables (Yinelenebilir Tür).md",
-    "2- Web Development/3- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/3 - Modelleri Budama ve Kopyalama.md",
-    "2- Web Development/3- Laravel/3 - Eloquent & Database/2 - Eloquent'a Başlarken/1 - Eloquent Basics.md",
-    "4- Projects/ROBLOX - Project CORE/Yakında.md",
-    "2- Web Development/3- Laravel/3 - Eloquent & Database",
-    "4- Projects/ROBLOX - Project CORE",
-<<<<<<< HEAD
-    "4- Projects/ROBLOX - Project Terra",
-    "4- Projects/LARAVEL - Project DM",
-    "4- Projects/LARAVEL - Project AT",
-    "4- Projects",
-    "3- Projects/LARAVEL - Project DM/2 - To Do List.md",
-    "3- Projects/LARAVEL - Project AT/4 - Roadmap.md",
-    "3- Projects/LARAVEL - Project AT/3 - Properties.md",
-    "2- Web Development/2- Laravel/1- Laravele Giriş/5 - Dizin Yapısı.md",
-    "2- Web Development/2- Laravel/2 - Temeller/11 - Error Handling/1 - Hata Yakalama.md",
-    "2- Web Development/2- Laravel/3 - Eloquent & Database",
-    "3- Projects/ROBLOX - Project CORE",
-    "2- Web Development/2- Laravel",
-    "3- Projects/LARAVEL - Project DM/3 - Database Graph.canvas",
-=======
-    "2- Web Development/3- Laravel",
+    "2- Web Development/3- Laravel/2 - Temeller/9 - URL Generation/1 - URL Oluşturma.md",
+    "2- Web Development/3- Laravel/2 - Temeller/8 - Blade Templates/6 - Stacks (Yığınlar).md",
+    "2- Web Development/3- Laravel/2 - Temeller/8 - Blade Templates/5 - Formlar.md",
+    "2- Web Development/3- Laravel/2 - Temeller/8 - Blade Templates/4 - Şablon Oluşturma.md",
+    "2- Web Development/3- Laravel/2 - Temeller/8 - Blade Templates/2 - Blade Yönergeleri.md",
+    "2- Web Development/3- Laravel/2 - Temeller/8 - Blade Templates/3 - Bileşenler.md",
+    "2- Web Development/3- Laravel/2 - Temeller/5 - Requests & Respones & Session/3 - HTTP Sessions.md",
+    "2- Web Development/3- Laravel/2 - Temeller/8 - Blade Templates/1 - Blade Şablonlarına Giriş.md",
+    "2- Web Development/3- Laravel/2 - Temeller/5 - Requests & Respones & Session/2 - HTTP Respones (Yanıtlar).md",
+    "2- Web Development/3- Laravel/2 - Temeller/4 - Controllers/3 - Controllers.md",
+    "2- Web Development/3- Laravel/2 - Temeller/5 - Requests & Respones & Session/1 - HTTP Requests (İstekler).md",
+    "2- Web Development/3- Laravel/2 - Temeller/4 - Controllers/2 - Gelişmiş Controller.md",
+    "2- Web Development/3- Laravel/2 - Temeller/3 - CSRF Protection/1 - CSRF Protection.md",
+    "2- Web Development/3- Laravel/2 - Temeller/4 - Controllers/1 - Controllers Temelleri.md",
+    "2- Web Development/3- Laravel/2 - Temeller/6 - Views",
+    "2- Web Development/3- Laravel/2 - Temeller/U - Breeze",
+    "2- Web Development/3- Laravel/2 - Temeller/9 - URL Generation",
+    "2- Web Development/3- Laravel/2 - Temeller/8 - Blade Templates",
+    "2- Web Development/3- Laravel/2 - Temeller/5 - Requests & Respones & Session",
+    "2- Web Development/3- Laravel/2 - Temeller/4 - Controllers",
+    "2- Web Development/3- Laravel/2 - Temeller/3 - CSRF Protection",
+    "2- Web Development/3- Laravel/2 - Temeller/2 - Middleware",
     "4- Projects/LARAVEL - Project DM/3 - Database Graph.canvas",
->>>>>>> origin/main
+    "3- Projects/LARAVEL - Project DM/3 - Database Graph.canvas",
     "Projects/Roblox Projesi/Untitled.canvas",
     "Untitled.canvas",
     "Untitled 1.canvas",
@@ -308,7 +264,6 @@
     "5- Laravele Giriş/Başlıksız.canvas",
     "6- Laravele Giriş/Başlıksız.canvas",
     "Tutorial/-a.canvas",
-    "Pasted image 20231112165207.png",
-    "Başlıksız.canvas"
+    "Pasted image 20231112165207.png"
   ]
 }
