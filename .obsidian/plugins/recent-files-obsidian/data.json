@@ -1,6 +1,46 @@
 {
   "recentFiles": [
     {
+      "basename": "6 - Stacks (Yığınlar)",
+      "path": "2- Web Geliştirme/3- Laravel/2 - Temeller/8 - Blade Templates/6 - Stacks (Yığınlar).md"
+    },
+    {
+      "basename": "4 - Routing",
+      "path": "2- Web Geliştirme/3- Laravel/2 - Temeller/1 - Routing/4 - Routing.md"
+    },
+    {
+      "basename": "2 - Gelişmiş Rotalar",
+      "path": "2- Web Geliştirme/3- Laravel/2 - Temeller/1 - Routing/2 - Gelişmiş Rotalar.md"
+    },
+    {
+      "basename": "3 - Rotalara Erişme, Düzenleme ve Cachleme",
+      "path": "2- Web Geliştirme/3- Laravel/2 - Temeller/1 - Routing/3 - Rotalara Erişme, Düzenleme ve Cachleme.md"
+    },
+    {
+      "basename": "screencapture-file-D-Repos-html-example-html-2024-10-04-17_21_54",
+      "path": "screencapture-file-D-Repos-html-example-html-2024-10-04-17_21_54.png"
+    },
+    {
+      "basename": "1 - Laravel’e Başlamadan Önce",
+      "path": "2- Web Geliştirme/3- Laravel/1- Laravele Giriş/1 - Laravel’e Başlamadan Önce.md"
+    },
+    {
+      "basename": "Metin",
+      "path": "3- Kanban Board/Metin.canvas"
+    },
+    {
+      "basename": "3- Tipografik Etiketler",
+      "path": "2- Web Geliştirme/1- HTML/3- Tipografik Etiketler.md"
+    },
+    {
+      "basename": "2- Temel HTML Etiketleri",
+      "path": "2- Web Geliştirme/1- HTML/2- Temel HTML Etiketleri.md"
+    },
+    {
+      "basename": "4 - Biçimlendirme Etiketleri",
+      "path": "2- Web Geliştirme/1- HTML/4 - Biçimlendirme Etiketleri.md"
+    },
+    {
       "basename": "3- Temel Web Tasarım Müfredatı",
       "path": "5- Müfredat/3- Temel Web Tasarım Müfredatı.md"
     },
@@ -11,14 +51,6 @@
     {
       "basename": "1- Alogirtma Temelleri Müfredatı",
       "path": "5- Müfredat/1- Alogirtma Temelleri Müfredatı.md"
-    },
-    {
-      "basename": "Metin",
-      "path": "3- Kanban Board/Metin.canvas"
-    },
-    {
-      "basename": "screencapture-file-D-Repos-html-example-html-2024-10-04-17_21_54",
-      "path": "screencapture-file-D-Repos-html-example-html-2024-10-04-17_21_54.png"
     }
   ],
   "omittedPaths": [],

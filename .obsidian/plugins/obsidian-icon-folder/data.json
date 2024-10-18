@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiCalendar",
       "SiLivewire",
       "SiLaravel",
       "FabPhp",
-      "RiHtml5Line",
-      "SiHtml5"
+      "RiHtml5Line"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -40,5 +40,6 @@
   "2- Web Geliştirme/1- HTML": "RiHtml5Line",
   "2- Web Geliştirme/2- PHP": "FabPhp",
   "2- Web Geliştirme/3- Laravel": "SiLaravel",
-  "2- Web Geliştirme/4- Livewire": "SiLivewire"
+  "2- Web Geliştirme/4- Livewire": "SiLivewire",
+  "5- Müfredat": "LiCalendar"
 }

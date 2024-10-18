@@ -4,7 +4,7 @@
 
 `{html icon} <pre> </pre>` etiketi `html` dokümanınızdaki tipografik etiketlerden biridir. *Önceden Biçimlendirilmiş* anlamına gelen `Preformatted` kelimesinin ilk üç harfini temsil etmektedir. `pre` etiketi içindeki metinler tam olarak HTML dokümanınızda nasıl yazılmışsa (girintiler, boşluklar) tarayıcıda da aynı şekilde gösterilmesini sağlar.
 
-`{html icon} <blockquote> </blockquote>` etiketi `html` dokümanınızdaki tipografik etiketlerden biridir. *Alıtnı Bloğu* anlamına gelen *Block Quotation* kelimelerini temsil eder. `blockquote` etiketi başka bir sayfadan yapılan bir alıntıyı belirtmek için kullanılır ve altını yapılan kaynağı belirtmek için `cite` niteliği içine kaynağın bağlantısı yapıştırılır.
+`{html icon} <blockquote> </blockquote>` etiketi `html` dokümanınızdaki tipografik etiketlerden biridir. *Alıntı Bloğu* anlamına gelen *Block Quotation* kelimelerini temsil eder. `blockquote` etiketi başka bir sayfadan yapılan bir alıntıyı belirtmek için kullanılır ve altını yapılan kaynağı belirtmek için `cite` niteliği içine kaynağın bağlantısı yapıştırılır.
 
 `{html icon} <q> </q>` etiketi `html` dokümanınızdaki tipografik etiketlerden biridir. *Alıntı* anlamına gelen *Quotation* kelimesinin ilk harfini temsil eder. `q` etiketi kısa alıntılar için satır içi kullanılır, `blockquote` etiketi gibi `cite` niteliği alabilir.
 
