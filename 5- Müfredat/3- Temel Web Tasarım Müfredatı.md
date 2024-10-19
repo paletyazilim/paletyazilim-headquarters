@@ -34,15 +34,15 @@
     - Listeler
         - Sıralı Listeler
         - Sırasız Listeler
+    - Blok ve İnline Etiketler
+        - div
+        - span
     - Tablolar
         - Tablo Başlıkları
         - Satır ve Sütunlar
     - Görseller
     - Sesler ve Medyalar
     - Formlar
-    - Blok ve İnline Etiketler
-        - div
-        - span
 - CSS & TailwindCSS
     - CSS Nedir?
         - Sözdizimi
