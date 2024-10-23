@@ -1,15 +1,15 @@
 {
 	"nodes":[
-		{"id":"1c97ef9e69557a79","type":"file","file":"2- Web Geliştirme/3- Laravel/1- Laravele Giriş/9 - Facades.md","x":-640,"y":-220,"width":400,"height":400},
-		{"id":"907369a612879989","type":"file","file":"2- Web Geliştirme/3- Laravel/1- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md","x":-1440,"y":-220,"width":400,"height":400},
-		{"id":"8ab4511616e5402d","type":"file","file":"2- Web Geliştirme/3- Laravel/2 - Temeller/1 - Routing/4 - Routing.md","x":-640,"y":560,"width":400,"height":400},
-		{"id":"8c63c327d66a60e8","type":"file","file":"2- Web Geliştirme/3- Laravel/2 - Temeller/5 - Requests & Respones & Session/1 - HTTP Requests (İstekler).md","x":-1440,"y":560,"width":400,"height":400},
-		{"id":"9934b9cb9794abd4","type":"file","file":"2- Web Geliştirme/3- Laravel/2 - Temeller/5 - Requests & Respones & Session/2 - HTTP Respones (Yanıtlar).md","x":-1440,"y":1320,"width":400,"height":400},
-		{"id":"3779916e507a0b36","type":"file","file":"2- Web Geliştirme/3- Laravel/2 - Temeller/5 - Requests & Respones & Session/3 - HTTP Sessions.md","x":-640,"y":1320,"width":400,"height":400},
-		{"id":"e454e79fb4eee289","type":"file","file":"2- Web Geliştirme/3- Laravel/2 - Temeller/6 - Views/1 - Views.md","x":-640,"y":2160,"width":400,"height":400},
-		{"id":"1c8d046fc4447bf8","type":"file","file":"2- Web Geliştirme/3- Laravel/2 - Temeller/8 - Blade Templates/7 - Blade Şablonları (Bütün Konu).md","x":-1440,"y":2160,"width":400,"height":400},
-		{"id":"b7e0c1696bbef715","x":-1440,"y":3040,"width":400,"height":400,"type":"file","file":"2- Web Geliştirme/3- Laravel/2 - Temeller/9 - URL Generation/1 - URL Oluşturma.md"},
-		{"id":"cc88614e7306d9c8","x":-640,"y":3040,"width":400,"height":400,"type":"file","file":"2- Web Geliştirme/3- Laravel/2 - Temeller/10 - Validation/1 - Validation (Doğrulama).md"}
+		{"id":"1c97ef9e69557a79","type":"file","file":"2- Web Geliştirme/3- Laravel 11/1- Laravele Giriş/9 - Facades.md","x":-640,"y":-220,"width":400,"height":400},
+		{"id":"907369a612879989","type":"file","file":"2- Web Geliştirme/3- Laravel 11/1- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md","x":-1440,"y":-220,"width":400,"height":400},
+		{"id":"8ab4511616e5402d","type":"file","file":"2- Web Geliştirme/3- Laravel 11/2 - Temeller/1 - Routing/4 - Routing.md","x":-640,"y":560,"width":400,"height":400},
+		{"id":"8c63c327d66a60e8","type":"file","file":"2- Web Geliştirme/3- Laravel 11/2 - Temeller/5 - Requests & Respones & Session/1 - HTTP Requests (İstekler).md","x":-1440,"y":560,"width":400,"height":400},
+		{"id":"9934b9cb9794abd4","type":"file","file":"2- Web Geliştirme/3- Laravel 11/2 - Temeller/5 - Requests & Respones & Session/2 - HTTP Respones (Yanıtlar).md","x":-1440,"y":1320,"width":400,"height":400},
+		{"id":"3779916e507a0b36","type":"file","file":"2- Web Geliştirme/3- Laravel 11/2 - Temeller/5 - Requests & Respones & Session/3 - HTTP Sessions.md","x":-640,"y":1320,"width":400,"height":400},
+		{"id":"e454e79fb4eee289","type":"file","file":"2- Web Geliştirme/3- Laravel 11/2 - Temeller/6 - Views/1 - Views.md","x":-640,"y":2160,"width":400,"height":400},
+		{"id":"1c8d046fc4447bf8","type":"file","file":"2- Web Geliştirme/3- Laravel 11/2 - Temeller/8 - Blade Templates/7 - Blade Şablonları (Bütün Konu).md","x":-1440,"y":2160,"width":400,"height":400},
+		{"id":"b7e0c1696bbef715","x":-1440,"y":3040,"width":400,"height":400,"type":"file","file":"2- Web Geliştirme/3- Laravel 11/2 - Temeller/9 - URL Generation/1 - URL Oluşturma.md"},
+		{"id":"cc88614e7306d9c8","x":-640,"y":3040,"width":400,"height":400,"type":"file","file":"2- Web Geliştirme/3- Laravel 11/2 - Temeller/10 - Validation/1 - Validation (Doğrulama).md"}
 	],
 	"edges":[
 		{"id":"fc43b67226f0d575","fromNode":"907369a612879989","fromSide":"right","toNode":"1c97ef9e69557a79","toSide":"left"},

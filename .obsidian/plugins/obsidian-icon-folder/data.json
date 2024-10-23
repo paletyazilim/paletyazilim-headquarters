@@ -38,8 +38,8 @@
   "2- Web Development/7 - Livewire": "RiBookFill",
   "2- Web Geliştirme": "TiWorldWww",
   "2- Web Geliştirme/1- HTML": "RiHtml5Line",
-  "2- Web Geliştirme/2- PHP": "FabPhp",
-  "2- Web Geliştirme/3- Laravel": "SiLaravel",
-  "2- Web Geliştirme/4- Livewire": "SiLivewire",
-  "5- Müfredat": "LiCalendar"
+  "5- Müfredat": "LiCalendar",
+  "2- Web Geliştirme/3- Laravel 11": "SiLaravel",
+  "2- Web Geliştirme/4- Livewire 3": "SiLivewire",
+  "2- Web Geliştirme/2- PHP": "FabPhp"
 }
