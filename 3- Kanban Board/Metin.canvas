@@ -1,7 +1,7 @@
 {
 	"nodes":[
-		{"id":"1c97ef9e69557a79","type":"file","file":"2- Web Geliştirme/3- Laravel 11/1- Laravele Giriş/9 - Facades.md","x":-640,"y":-220,"width":400,"height":400},
-		{"id":"907369a612879989","type":"file","file":"2- Web Geliştirme/3- Laravel 11/1- Laravele Giriş/4 - Bir İsteğin Yaşam Döngüsü.md","x":-1440,"y":-220,"width":400,"height":400},
+		{"id":"1c97ef9e69557a79","type":"file","file":"2- Web Geliştirme/3- Laravel 11/1- Laravel'e Giriş/9 - Facades.md","x":-640,"y":-220,"width":400,"height":400},
+		{"id":"907369a612879989","type":"file","file":"2- Web Geliştirme/3- Laravel 11/1- Laravel'e Giriş/4 - Bir İsteğin Yaşam Döngüsü.md","x":-1440,"y":-220,"width":400,"height":400},
 		{"id":"8ab4511616e5402d","type":"file","file":"2- Web Geliştirme/3- Laravel 11/2 - Temeller/1 - Routing/4 - Routing.md","x":-640,"y":560,"width":400,"height":400},
 		{"id":"8c63c327d66a60e8","type":"file","file":"2- Web Geliştirme/3- Laravel 11/2 - Temeller/5 - Requests & Respones & Session/1 - HTTP Requests (İstekler).md","x":-1440,"y":560,"width":400,"height":400},
 		{"id":"9934b9cb9794abd4","type":"file","file":"2- Web Geliştirme/3- Laravel 11/2 - Temeller/5 - Requests & Respones & Session/2 - HTTP Respones (Yanıtlar).md","x":-1440,"y":1320,"width":400,"height":400},

@@ -7,15 +7,6 @@
       "key": " "
     }
   ],
-  "editor:toggle-code": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "C"
-    }
-  ],
   "editor:insert-codeblock": [
     {
       "modifiers": [
@@ -59,6 +50,15 @@
         "Shift"
       ],
       "key": "E"
+    }
+  ],
+  "editor:toggle-code": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
     }
   ]
 }

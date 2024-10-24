@@ -385,7 +385,9 @@
           "activeCodeblockLineColour": "--color-base-30",
           "activeEditorLineColour": "--color-base-20",
           "defaultColour": "--text-highlight-bg",
-          "alternativeHighlights": {}
+          "alternativeHighlights": {
+            "error": "#F16955FF"
+          }
         },
         "inline": {
           "backgroundColour": "--code-background",
@@ -428,7 +430,9 @@
           "activeCodeblockLineColour": "--color-base-30",
           "activeEditorLineColour": "--color-base-20",
           "defaultColour": "#FFD00038",
-          "alternativeHighlights": {}
+          "alternativeHighlights": {
+            "error": "#F169554A"
+          }
         },
         "inline": {
           "backgroundColour": "--code-background",
